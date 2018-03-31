@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JHLoginRegisterController">
+            <connections>
+                <outlet property="backGroundImageView" destination="Dfh-1a-BbU" id="iMH-h4-yeK"/>
+                <outlet property="changeViewButton" destination="O7h-t3-d9I" id="Nty-Un-zIA"/>
+                <outlet property="leadingConstraints" destination="q9f-S5-x6y" id="mwX-rF-kcZ"/>
+                <outlet property="middleView" destination="MkK-9H-upz" id="Ixh-5r-PY5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="Dfh-1a-BbU">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qPC-CN-VMl">
+                    <rect key="frame" x="0.0" y="40" width="375" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7h-t3-d9I">
+                            <rect key="frame" x="283" y="2" width="82" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="注册账号"/>
+                            <state key="selected" title="已有账号?"/>
+                            <connections>
+                                <action selector="changeViewBtnClick:" destination="-1" eventType="touchUpInside" id="xdK-lj-33m"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="O7h-t3-d9I" secondAttribute="trailing" constant="10" id="7JY-Rx-bFc"/>
+                        <constraint firstItem="O7h-t3-d9I" firstAttribute="centerY" secondItem="qPC-CN-VMl" secondAttribute="centerY" id="bos-mG-N0j"/>
+                        <constraint firstAttribute="height" constant="40" id="cRV-KG-AKK"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MkK-9H-upz">
+                    <rect key="frame" x="0.0" y="80" width="750" height="387"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPi-kn-70v">
+                    <rect key="frame" x="0.0" y="467" width="375" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MbW-QU-Qmw">
+                            <rect key="frame" x="35" y="0.0" width="46" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="test"/>
+                            <connections>
+                                <action selector="testBtnClick:" destination="-1" eventType="touchUpInside" id="ada-Ep-kBi"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="j0T-CH-2S2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MkK-9H-upz" firstAttribute="top" secondItem="qPC-CN-VMl" secondAttribute="bottom" id="OYo-S6-q5R"/>
+                <constraint firstItem="Dfh-1a-BbU" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="OeL-je-X6x"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="MkK-9H-upz" secondAttribute="bottom" constant="200" id="VHM-Wd-fgN"/>
+                <constraint firstItem="Dfh-1a-BbU" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="eJE-g2-N7a"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="qPC-CN-VMl" secondAttribute="trailing" id="h60-Ym-d5g"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="WPi-kn-70v" secondAttribute="trailing" id="hlB-Ki-RtP"/>
+                <constraint firstItem="WPi-kn-70v" firstAttribute="top" secondItem="MkK-9H-upz" secondAttribute="bottom" id="i0d-am-0St"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Dfh-1a-BbU" secondAttribute="bottom" id="lw9-bA-aPz"/>
+                <constraint firstItem="MkK-9H-upz" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="q9f-S5-x6y"/>
+                <constraint firstItem="qPC-CN-VMl" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="qLX-To-sbX"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Dfh-1a-BbU" secondAttribute="trailing" id="sL9-xc-WUY"/>
+                <constraint firstItem="WPi-kn-70v" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="tEb-wq-RH3"/>
+                <constraint firstItem="MkK-9H-upz" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="2" id="vtM-Ay-3lQ"/>
+                <constraint firstItem="qPC-CN-VMl" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="xxa-qL-Kan"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="awe-Aw-9cz">
+            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" title="Button"/>
+            <point key="canvasLocation" x="347" y="189"/>
+        </button>
+    </objects>
+    <resources>
+        <image name="login-backgroundImage" width="750" height="1334"/>
+    </resources>
+</document>

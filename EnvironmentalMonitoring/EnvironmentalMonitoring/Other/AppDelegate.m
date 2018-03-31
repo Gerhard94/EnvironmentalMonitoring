@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "JHLoginRegisterController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,6 +16,21 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    //创建UI窗口
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    //创建登录控制器
+    JHLoginRegisterController *loginVC = [[JHLoginRegisterController alloc] init];
+    loginVC.view.backgroundColor = [UIColor grayColor];
+    
+    //设置根控制器
+    [_window setRootViewController:loginVC];
+    
+    //显示UI窗口
+    [_window makeKeyAndVisible];
+    
+    
     // Override point for customization after application launch.
     return YES;
 }

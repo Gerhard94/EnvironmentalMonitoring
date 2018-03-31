@@ -1,0 +1,15 @@
+//
+//  EnvironmentalMonitoring.pch
+//  EnvironmentalMonitoring
+//
+//  Created by Gerhard Z on 2018/1/10.
+//  Copyright © 2018年 lakers JH. All rights reserved.
+//
+
+#ifndef EnvironmentalMonitoring_pch
+#define EnvironmentalMonitoring_pch
+
+#define Screenbounds [UIScreen mainScreen].bounds
+
+
+#endif /* EnvironmentalMonitoring_pch */
