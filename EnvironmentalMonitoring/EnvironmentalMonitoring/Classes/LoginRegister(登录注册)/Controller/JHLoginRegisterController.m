@@ -163,7 +163,10 @@
     if ([userInfo objectForKey:@"account"] == view.accountTextField.text) {
         if ([userInfo objectForKey:@"password"] == view.passwordTextField.text) {
             JHMainController *mainVC = [[JHMainController alloc] init];
-            [[UIApplication sharedApplication].keyWindow setRootViewController:mainVC];
+            UINavigationController *navigationVC = [[UINavigationController alloc] initWithRootViewController:mainVC];
+            [[UIApplication sharedApplication].keyWindow setRootViewController:navigationVC];
+
+    
         } else {
             [MBProgressHUD showError:@"密码错误"];
         }

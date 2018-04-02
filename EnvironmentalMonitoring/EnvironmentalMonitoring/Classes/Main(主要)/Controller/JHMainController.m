@@ -10,13 +10,26 @@
 
 @interface JHMainController ()
 
+@property (weak, nonatomic) IBOutlet UIView *addDeviceView;
+
 @end
 
 @implementation JHMainController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.addDeviceView.layer.borderColor = [UIColor colorWithRed:201.0/255.0 green:201.0/255.0 blue:206.0/255.0 alpha:1].CGColor;
     // Do any additional setup after loading the view from its nib.
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.title = @"配电房列表";
+        
+    }
+    return self;
 }
 
 - (void)didReceiveMemoryWarning {
