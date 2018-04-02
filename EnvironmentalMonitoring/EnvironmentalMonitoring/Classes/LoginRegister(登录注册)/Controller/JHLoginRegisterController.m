@@ -9,6 +9,7 @@
 #import "JHLoginRegisterController.h"
 #import "JHLoginRegister.h"
 #import "JHMainController.h"
+#import <AFNetworking.h>
 
 @interface JHLoginRegisterController ()
 
@@ -34,8 +35,29 @@
     [super viewDidLoad];
     [self setBackGroundImage];
     [self setupMiddleView];
+    [self getUsernamePassword];
 }
 
+
+- (void)getUsernamePassword{
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager.requestSerializer setValue:Api_key forHTTPHeaderField:@"api-key"];
+    [manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
+    manager.requestSerializer.timeoutInterval = 8.f;
+    [manager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
+    
+
+    NSString *urlStr = [base_url stringByAppendingPathComponent:@"28167645/datastreams/password"];
+    
+    [manager GET:urlStr parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"%@",responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"%@",error);
+    }];
+    
+}
 
 /**
 进入主界面

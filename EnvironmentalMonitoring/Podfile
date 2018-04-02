@@ -1,0 +1,3 @@
+target 'EnvironmentalMonitoring' do
+  pod 'AFNetworking'
+end
