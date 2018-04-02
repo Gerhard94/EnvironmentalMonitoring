@@ -38,6 +38,9 @@
                     <state key="normal" title="登录" backgroundImage="login_register_button"/>
                     <state key="selected" backgroundImage="login_register_button_click"/>
                     <state key="highlighted" title="登录" backgroundImage="login_register_button_click"/>
+                    <connections>
+                        <action selector="loginButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="Bhg-ND-6nB"/>
+                    </connections>
                 </button>
                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OY-ZW-8Tz">
                     <rect key="frame" x="229" y="232" width="83" height="34"/>
@@ -53,13 +56,26 @@
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXG-uF-Dbh">
+                    <rect key="frame" x="284" y="121" width="28" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="28" id="DJz-TX-8no"/>
+                        <constraint firstAttribute="height" constant="16" id="QtD-2T-VSC"/>
+                    </constraints>
+                    <state key="normal" image="eye"/>
+                    <connections>
+                        <action selector="pwdTextSwitch:" destination="iN0-l3-epB" eventType="touchUpInside" id="MWm-CK-vh7"/>
+                    </connections>
+                </button>
             </subviews>
             <constraints>
                 <constraint firstItem="dzF-xV-cad" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="2yy-3Y-oHy"/>
                 <constraint firstItem="Ffq-io-tmY" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="6Kj-kD-qK1"/>
                 <constraint firstItem="8ny-y8-Idk" firstAttribute="top" secondItem="Ffq-io-tmY" secondAttribute="bottom" constant="20" id="96E-V8-t0S"/>
+                <constraint firstItem="FXG-uF-Dbh" firstAttribute="centerY" secondItem="GIP-8a-6zF" secondAttribute="centerY" id="DMi-67-xDt"/>
                 <constraint firstItem="GIP-8a-6zF" firstAttribute="top" secondItem="dzF-xV-cad" secondAttribute="bottom" id="Fla-zc-Gth"/>
                 <constraint firstItem="8ny-y8-Idk" firstAttribute="centerX" secondItem="GIP-8a-6zF" secondAttribute="centerX" id="I2Z-ma-3M3"/>
+                <constraint firstItem="FXG-uF-Dbh" firstAttribute="trailing" secondItem="GIP-8a-6zF" secondAttribute="trailing" id="JWD-6C-1PZ"/>
                 <constraint firstItem="2OY-ZW-8Tz" firstAttribute="trailing" secondItem="8ny-y8-Idk" secondAttribute="trailing" id="eAg-Bq-sHc"/>
                 <constraint firstItem="8ny-y8-Idk" firstAttribute="width" secondItem="GIP-8a-6zF" secondAttribute="width" id="gfE-aM-i2C"/>
                 <constraint firstItem="2OY-ZW-8Tz" firstAttribute="top" secondItem="8ny-y8-Idk" secondAttribute="bottom" constant="20" id="hWr-w7-Mth"/>
@@ -70,8 +86,9 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outlet property="accountTextField" destination="dzF-xV-cad" id="vz7-VU-WOx"/>
+                <outlet property="accountTextField" destination="dzF-xV-cad" id="eLo-Mi-Y1r"/>
                 <outlet property="loginButton" destination="8ny-y8-Idk" id="eR5-JM-ocQ"/>
+                <outlet property="passwordTextField" destination="GIP-8a-6zF" id="STh-qW-yfm"/>
             </connections>
             <point key="canvasLocation" x="24.5" y="52"/>
         </view>
@@ -132,6 +149,7 @@
         </view>
     </objects>
     <resources>
+        <image name="eye" width="28" height="16"/>
         <image name="login_register_button" width="87" height="40"/>
         <image name="login_register_button_click" width="87" height="40"/>
         <image name="login_rgister_textfield_bg" width="266" height="92"/>

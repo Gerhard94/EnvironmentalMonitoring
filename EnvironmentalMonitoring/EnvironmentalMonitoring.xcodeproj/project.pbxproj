@@ -15,13 +15,17 @@
 		6E1B72FC206F694F0095A184 /* JHLoginRegisterField.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1B72EB206F694F0095A184 /* JHLoginRegisterField.m */; };
 		6E1B72FD206F694F0095A184 /* JHLoginRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1B72EC206F694F0095A184 /* JHLoginRegister.m */; };
 		6E1B72FE206F694F0095A184 /* JHDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1B72EF206F694F0095A184 /* JHDetailController.m */; };
-		6E1B72FF206F694F0095A184 /* JHMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1B72F2206F694F0095A184 /* JHMainController.m */; };
 		6E1B7300206F694F0095A184 /* JHDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E1B72F3206F694F0095A184 /* JHDetailController.xib */; };
 		6E1B7301206F694F0095A184 /* JHMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E1B72F7206F694F0095A184 /* JHMainCell.xib */; };
 		6E1B7302206F694F0095A184 /* JHMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1B72F8206F694F0095A184 /* JHMainCell.m */; };
 		6E1B7307206F695C0095A184 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1B7305206F695C0095A184 /* main.m */; };
 		6E1B7308206F695C0095A184 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1B7306206F695C0095A184 /* AppDelegate.m */; };
 		6E1B730D206F6DE30095A184 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E1B730C206F6DE30095A184 /* Info.plist */; };
+		6E1E8224207238C800CFA1BF /* JHMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1E8222207238C800CFA1BF /* JHMainController.m */; };
+		6E1E8225207238C800CFA1BF /* JHMainController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E1E8223207238C800CFA1BF /* JHMainController.xib */; };
+		6E3425A6207217F800A5EA43 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3425A1207217F800A5EA43 /* MBProgressHUD.m */; };
+		6E3425A7207217F800A5EA43 /* MBProgressHUD+XMG.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3425A2207217F800A5EA43 /* MBProgressHUD+XMG.m */; };
+		6E3425A8207217F800A5EA43 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6E3425A5207217F800A5EA43 /* MBProgressHUD.bundle */; };
 		C544413BE6E6BAAB53B145D1 /* libPods-EnvironmentalMonitoring.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C28BDBBC49A733EF101962 /* libPods-EnvironmentalMonitoring.a */; };
 /* End PBXBuildFile section */
 
@@ -39,9 +43,7 @@
 		6E1B72EB206F694F0095A184 /* JHLoginRegisterField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHLoginRegisterField.m; sourceTree = "<group>"; };
 		6E1B72EC206F694F0095A184 /* JHLoginRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHLoginRegister.m; sourceTree = "<group>"; };
 		6E1B72EF206F694F0095A184 /* JHDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHDetailController.m; sourceTree = "<group>"; };
-		6E1B72F0206F694F0095A184 /* JHMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMainController.h; sourceTree = "<group>"; };
 		6E1B72F1206F694F0095A184 /* JHDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHDetailController.h; sourceTree = "<group>"; };
-		6E1B72F2206F694F0095A184 /* JHMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMainController.m; sourceTree = "<group>"; };
 		6E1B72F3206F694F0095A184 /* JHDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JHDetailController.xib; sourceTree = "<group>"; };
 		6E1B72F6206F694F0095A184 /* JHMainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMainCell.h; sourceTree = "<group>"; };
 		6E1B72F7206F694F0095A184 /* JHMainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JHMainCell.xib; sourceTree = "<group>"; };
@@ -51,6 +53,14 @@
 		6E1B7306206F695C0095A184 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6E1B730B206F6CD40095A184 /* EnvironmentalMonitoring.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnvironmentalMonitoring.pch; sourceTree = "<group>"; };
 		6E1B730C206F6DE30095A184 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E1E8221207238C800CFA1BF /* JHMainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHMainController.h; sourceTree = "<group>"; };
+		6E1E8222207238C800CFA1BF /* JHMainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHMainController.m; sourceTree = "<group>"; };
+		6E1E8223207238C800CFA1BF /* JHMainController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JHMainController.xib; sourceTree = "<group>"; };
+		6E3425A1207217F800A5EA43 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		6E3425A2207217F800A5EA43 /* MBProgressHUD+XMG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+XMG.m"; sourceTree = "<group>"; };
+		6E3425A3207217F800A5EA43 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		6E3425A4207217F800A5EA43 /* MBProgressHUD+XMG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+XMG.h"; sourceTree = "<group>"; };
+		6E3425A5207217F800A5EA43 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		A951E353918827AF3B2F302B /* Pods-EnvironmentalMonitoring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnvironmentalMonitoring.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnvironmentalMonitoring/Pods-EnvironmentalMonitoring.debug.xcconfig"; sourceTree = "<group>"; };
 		F9CA6D0D432C16D56C6A45D6 /* Pods-EnvironmentalMonitoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnvironmentalMonitoring.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnvironmentalMonitoring/Pods-EnvironmentalMonitoring.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +98,7 @@
 		6E1B72C9206F64EF0095A184 /* EnvironmentalMonitoring */ = {
 			isa = PBXGroup;
 			children = (
+				6E34259F207217F800A5EA43 /* Tool */,
 				6E1B72E0206F694F0095A184 /* Classes */,
 				6E1B72D3206F64EF0095A184 /* Assets.xcassets */,
 				6E1B72D5206F64EF0095A184 /* LaunchScreen.storyboard */,
@@ -137,10 +148,10 @@
 			isa = PBXGroup;
 			children = (
 				6E1B72E8206F694F0095A184 /* JHLoginRegister.xib */,
-				6E1B72E9206F694F0095A184 /* JHLoginRegisterField.h */,
 				6E1B72EA206F694F0095A184 /* JHLoginRegister.h */,
-				6E1B72EB206F694F0095A184 /* JHLoginRegisterField.m */,
 				6E1B72EC206F694F0095A184 /* JHLoginRegister.m */,
+				6E1B72E9206F694F0095A184 /* JHLoginRegisterField.h */,
+				6E1B72EB206F694F0095A184 /* JHLoginRegisterField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -158,11 +169,12 @@
 		6E1B72EE206F694F0095A184 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6E1B72EF206F694F0095A184 /* JHDetailController.m */,
-				6E1B72F0206F694F0095A184 /* JHMainController.h */,
 				6E1B72F1206F694F0095A184 /* JHDetailController.h */,
-				6E1B72F2206F694F0095A184 /* JHMainController.m */,
+				6E1B72EF206F694F0095A184 /* JHDetailController.m */,
 				6E1B72F3206F694F0095A184 /* JHDetailController.xib */,
+				6E1E8221207238C800CFA1BF /* JHMainController.h */,
+				6E1E8222207238C800CFA1BF /* JHMainController.m */,
+				6E1E8223207238C800CFA1BF /* JHMainController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -193,6 +205,26 @@
 				6E1B7305206F695C0095A184 /* main.m */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		6E34259F207217F800A5EA43 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				6E3425A0207217F800A5EA43 /* MBProgressHUD */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		6E3425A0207217F800A5EA43 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				6E3425A1207217F800A5EA43 /* MBProgressHUD.m */,
+				6E3425A2207217F800A5EA43 /* MBProgressHUD+XMG.m */,
+				6E3425A3207217F800A5EA43 /* MBProgressHUD.h */,
+				6E3425A4207217F800A5EA43 /* MBProgressHUD+XMG.h */,
+				6E3425A5207217F800A5EA43 /* MBProgressHUD.bundle */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		9487E7956BAE5B497969B46F /* Frameworks */ = {
@@ -277,6 +309,8 @@
 				6E1B72FB206F694F0095A184 /* JHLoginRegister.xib in Resources */,
 				6E1B72FA206F694F0095A184 /* JHLoginRegisterController.xib in Resources */,
 				6E1B7300206F694F0095A184 /* JHDetailController.xib in Resources */,
+				6E3425A8207217F800A5EA43 /* MBProgressHUD.bundle in Resources */,
+				6E1E8225207238C800CFA1BF /* JHMainController.xib in Resources */,
 				6E1B72D7206F64EF0095A184 /* LaunchScreen.storyboard in Resources */,
 				6E1B72D4206F64EF0095A184 /* Assets.xcassets in Resources */,
 				6E1B730D206F6DE30095A184 /* Info.plist in Resources */,
@@ -344,10 +378,12 @@
 				6E1B72FE206F694F0095A184 /* JHDetailController.m in Sources */,
 				6E1B72F9206F694F0095A184 /* JHLoginRegisterController.m in Sources */,
 				6E1B72FC206F694F0095A184 /* JHLoginRegisterField.m in Sources */,
-				6E1B72FF206F694F0095A184 /* JHMainController.m in Sources */,
+				6E3425A6207217F800A5EA43 /* MBProgressHUD.m in Sources */,
 				6E1B7308206F695C0095A184 /* AppDelegate.m in Sources */,
 				6E1B7302206F694F0095A184 /* JHMainCell.m in Sources */,
 				6E1B7307206F695C0095A184 /* main.m in Sources */,
+				6E3425A7207217F800A5EA43 /* MBProgressHUD+XMG.m in Sources */,
+				6E1E8224207238C800CFA1BF /* JHMainController.m in Sources */,
 				6E1B72FD206F694F0095A184 /* JHLoginRegister.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

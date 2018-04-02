@@ -52,16 +52,6 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPi-kn-70v">
                     <rect key="frame" x="0.0" y="467" width="375" height="30"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MbW-QU-Qmw">
-                            <rect key="frame" x="35" y="0.0" width="46" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="test"/>
-                            <connections>
-                                <action selector="testBtnClick:" destination="-1" eventType="touchUpInside" id="ada-Ep-kBi"/>
-                            </connections>
-                        </button>
-                    </subviews>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="j0T-CH-2S2"/>
                     </constraints>
