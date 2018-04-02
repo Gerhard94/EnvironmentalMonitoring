@@ -39,6 +39,11 @@
     [self getUsernamePassword];
 }
 
+- (IBAction)testButtonClick:(id)sender {
+    JHMainController *mainVC = [[JHMainController alloc] init];
+    UINavigationController *navigationVC = [[UINavigationController alloc] initWithRootViewController:mainVC];
+    [[UIApplication sharedApplication].keyWindow setRootViewController:navigationVC];
+}
 
 - (void)getUsernamePassword{
     //创建manager
