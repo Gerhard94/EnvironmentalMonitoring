@@ -22,9 +22,11 @@
 		6E1B7307206F695C0095A184 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1B7305206F695C0095A184 /* main.m */; };
 		6E1B7308206F695C0095A184 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1B7306206F695C0095A184 /* AppDelegate.m */; };
 		6E1B730D206F6DE30095A184 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E1B730C206F6DE30095A184 /* Info.plist */; };
+		C544413BE6E6BAAB53B145D1 /* libPods-EnvironmentalMonitoring.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C28BDBBC49A733EF101962 /* libPods-EnvironmentalMonitoring.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39C28BDBBC49A733EF101962 /* libPods-EnvironmentalMonitoring.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EnvironmentalMonitoring.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E1B72C7206F64EF0095A184 /* EnvironmentalMonitoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnvironmentalMonitoring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E1B72D3206F64EF0095A184 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E1B72D6206F64EF0095A184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		6E1B7306206F695C0095A184 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6E1B730B206F6CD40095A184 /* EnvironmentalMonitoring.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnvironmentalMonitoring.pch; sourceTree = "<group>"; };
 		6E1B730C206F6DE30095A184 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A951E353918827AF3B2F302B /* Pods-EnvironmentalMonitoring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnvironmentalMonitoring.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnvironmentalMonitoring/Pods-EnvironmentalMonitoring.debug.xcconfig"; sourceTree = "<group>"; };
+		F9CA6D0D432C16D56C6A45D6 /* Pods-EnvironmentalMonitoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnvironmentalMonitoring.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnvironmentalMonitoring/Pods-EnvironmentalMonitoring.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C544413BE6E6BAAB53B145D1 /* libPods-EnvironmentalMonitoring.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +72,8 @@
 			children = (
 				6E1B72C9206F64EF0095A184 /* EnvironmentalMonitoring */,
 				6E1B72C8206F64EF0095A184 /* Products */,
+				9CF16CE7164B13FDEB49A96F /* Pods */,
+				9487E7956BAE5B497969B46F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,6 +195,23 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		9487E7956BAE5B497969B46F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39C28BDBBC49A733EF101962 /* libPods-EnvironmentalMonitoring.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CF16CE7164B13FDEB49A96F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A951E353918827AF3B2F302B /* Pods-EnvironmentalMonitoring.debug.xcconfig */,
+				F9CA6D0D432C16D56C6A45D6 /* Pods-EnvironmentalMonitoring.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E1B72DD206F64EF0095A184 /* Build configuration list for PBXNativeTarget "EnvironmentalMonitoring" */;
 			buildPhases = (
+				252FD786CDD08241AC889F05 /* [CP] Check Pods Manifest.lock */,
 				6E1B72C3206F64EF0095A184 /* Sources */,
 				6E1B72C4206F64EF0095A184 /* Frameworks */,
 				6E1B72C5206F64EF0095A184 /* Resources */,
+				07B13E9C6CE0F58CDC7C314F /* [CP] Embed Pods Frameworks */,
+				84E6774EBC4163A8966CA34E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,6 +284,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07B13E9C6CE0F58CDC7C314F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EnvironmentalMonitoring/Pods-EnvironmentalMonitoring-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		252FD786CDD08241AC889F05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EnvironmentalMonitoring-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84E6774EBC4163A8966CA34E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EnvironmentalMonitoring/Pods-EnvironmentalMonitoring-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6E1B72C3206F64EF0095A184 /* Sources */ = {
@@ -394,11 +472,12 @@
 		};
 		6E1B72DE206F64EF0095A184 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A951E353918827AF3B2F302B /* Pods-EnvironmentalMonitoring.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8KZ977Y29Y;
-				GCC_PREFIX_HEADER = "/Users/lakersjh/开发资料/iOS/EnvironmentalMonitoring/EnvironmentalMonitoring/EnvironmentalMonitoring/EnvironmentalMonitoring/Other/EnvironmentalMonitoring.pch";
+				GCC_PREFIX_HEADER = "/Users/lakersjh/开发资料/EnvironmentalMonitoring/EnvironmentalMonitoring/EnvironmentalMonitoring/Other/EnvironmentalMonitoring.pch";
 				INFOPLIST_FILE = EnvironmentalMonitoring/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jh.EnvironmentalMonitoring;
@@ -409,11 +488,12 @@
 		};
 		6E1B72DF206F64EF0095A184 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9CA6D0D432C16D56C6A45D6 /* Pods-EnvironmentalMonitoring.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8KZ977Y29Y;
-				GCC_PREFIX_HEADER = "/Users/lakersjh/开发资料/iOS/EnvironmentalMonitoring/EnvironmentalMonitoring/EnvironmentalMonitoring/EnvironmentalMonitoring/Other/EnvironmentalMonitoring.pch";
+				GCC_PREFIX_HEADER = "/Users/lakersjh/开发资料/EnvironmentalMonitoring/EnvironmentalMonitoring/EnvironmentalMonitoring/Other/EnvironmentalMonitoring.pch";
 				INFOPLIST_FILE = EnvironmentalMonitoring/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jh.EnvironmentalMonitoring;
