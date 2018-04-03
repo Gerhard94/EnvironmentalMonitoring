@@ -1,3 +1,4 @@
 target 'EnvironmentalMonitoring' do
   pod 'AFNetworking'
+  pod 'MJExtension'
 end

@@ -23,6 +23,7 @@
 		6E1B730D206F6DE30095A184 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E1B730C206F6DE30095A184 /* Info.plist */; };
 		6E1E8224207238C800CFA1BF /* JHMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1E8222207238C800CFA1BF /* JHMainController.m */; };
 		6E1E8225207238C800CFA1BF /* JHMainController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E1E8223207238C800CFA1BF /* JHMainController.xib */; };
+		6E264A6C20734A6B00016B3B /* DeviceList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E264A6B20734A6B00016B3B /* DeviceList.m */; };
 		6E3425A6207217F800A5EA43 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3425A1207217F800A5EA43 /* MBProgressHUD.m */; };
 		6E3425A7207217F800A5EA43 /* MBProgressHUD+XMG.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3425A2207217F800A5EA43 /* MBProgressHUD+XMG.m */; };
 		6E3425A8207217F800A5EA43 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6E3425A5207217F800A5EA43 /* MBProgressHUD.bundle */; };
@@ -56,6 +57,8 @@
 		6E1E8221207238C800CFA1BF /* JHMainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHMainController.h; sourceTree = "<group>"; };
 		6E1E8222207238C800CFA1BF /* JHMainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHMainController.m; sourceTree = "<group>"; };
 		6E1E8223207238C800CFA1BF /* JHMainController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JHMainController.xib; sourceTree = "<group>"; };
+		6E264A6A20734A6B00016B3B /* DeviceList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceList.h; sourceTree = "<group>"; };
+		6E264A6B20734A6B00016B3B /* DeviceList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceList.m; sourceTree = "<group>"; };
 		6E3425A1207217F800A5EA43 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		6E3425A2207217F800A5EA43 /* MBProgressHUD+XMG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+XMG.m"; sourceTree = "<group>"; };
 		6E3425A3207217F800A5EA43 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
@@ -130,9 +133,9 @@
 		6E1B72E2206F694F0095A184 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6E1B72E5206F694F0095A184 /* JHLoginRegisterController.h */,
 				6E1B72E3206F694F0095A184 /* JHLoginRegisterController.m */,
 				6E1B72E4206F694F0095A184 /* JHLoginRegisterController.xib */,
-				6E1B72E5206F694F0095A184 /* JHLoginRegisterController.h */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -182,6 +185,8 @@
 		6E1B72F4206F694F0095A184 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6E264A6A20734A6B00016B3B /* DeviceList.h */,
+				6E264A6B20734A6B00016B3B /* DeviceList.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -382,6 +387,7 @@
 				6E1B7308206F695C0095A184 /* AppDelegate.m in Sources */,
 				6E1B7302206F694F0095A184 /* JHMainCell.m in Sources */,
 				6E1B7307206F695C0095A184 /* main.m in Sources */,
+				6E264A6C20734A6B00016B3B /* DeviceList.m in Sources */,
 				6E3425A7207217F800A5EA43 /* MBProgressHUD+XMG.m in Sources */,
 				6E1E8224207238C800CFA1BF /* JHMainController.m in Sources */,
 				6E1B72FD206F694F0095A184 /* JHLoginRegister.m in Sources */,

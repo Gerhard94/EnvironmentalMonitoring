@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class DeviceList;
 
 @interface JHMainCell : UITableViewCell
+
+@property (nonatomic, strong) DeviceList *deviceList;
 
 @end
