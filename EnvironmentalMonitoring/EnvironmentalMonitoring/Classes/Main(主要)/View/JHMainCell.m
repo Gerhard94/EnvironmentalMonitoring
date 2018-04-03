@@ -35,7 +35,13 @@
     self.idField.text = deviceList.idField;
     self.authInfo.text = deviceList.auth_info;
     self.createTime.text = deviceList.create_time;
-    self.online.backgroundColor = [deviceList.online isEqualToString:@"0"] ? [UIColor grayColor] : [UIColor greenColor];
+    UIImage *online = [UIImage imageNamed:@"online"];
+    UIImage *offline = [UIImage imageNamed:@"offline"];
+    self.online.image = [deviceList.online isEqualToString:@"0"] ? offline : online;
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
 }
 
 @end

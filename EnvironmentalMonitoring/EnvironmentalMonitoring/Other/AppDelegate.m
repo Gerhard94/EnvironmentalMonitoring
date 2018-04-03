@@ -30,6 +30,15 @@
     //显示UI窗口
     [_window makeKeyAndVisible];
     
+    UINavigationBar *bar = [UINavigationBar appearance];
+    
+    [bar setTitleTextAttributes:@{NSFontAttributeName : [UIFont fontWithName:@"Helvetica-Bold" size:18.0]}];
+    
+    //或者用这个都行
+    
+    
+    //    [bar setTitleTextAttributes:@{UITextAttributeTextColor : [UIColor whiteColor]}];
+    
     
     // Override point for customization after application launch.
     return YES;

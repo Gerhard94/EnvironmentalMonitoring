@@ -9,8 +9,6 @@
 #import "JHLoginRegisterController.h"
 #import "JHLoginRegister.h"
 #import "JHMainController.h"
-#import <AFNetworking.h>
-#import "MBProgressHUD+XMG.h"
 
 @interface JHLoginRegisterController () <JHLoginRegisterDelegate>
 

@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,53 +20,52 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiP-K3-7DM" userLabel="name">
-                        <rect key="frame" x="26" y="10" width="48" height="24"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <rect key="frame" x="20" y="10" width="39.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设备id:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9M-pg-LG7">
-                        <rect key="frame" x="26" y="44" width="51" height="20"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <rect key="frame" x="20" y="39.5" width="44.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zq0-An-ls7">
-                        <rect key="frame" x="87" y="44" width="40" height="20"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <rect key="frame" x="74.5" y="39.5" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设备编码:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Se5-Nl-aoc">
-                        <rect key="frame" x="26" y="74" width="70" height="20"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <rect key="frame" x="20" y="66.5" width="61.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBv-TP-e06">
-                        <rect key="frame" x="106" y="74" width="40" height="20"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <rect key="frame" x="91.5" y="66.5" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSV-CI-qdf">
-                        <rect key="frame" x="279" y="104" width="31" height="14.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSV-CI-qdf">
+                        <rect key="frame" x="269" y="105" width="31" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="创建时间:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bd3-ZO-m6C">
-                        <rect key="frame" x="216" y="104" width="53" height="14.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="创建时间:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bd3-ZO-m6C">
+                        <rect key="frame" x="206" y="105" width="53" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n28-Xm-g0Z">
-                        <rect key="frame" x="280" y="20" width="20" height="20"/>
-                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="success_fill" translatesAutoresizingMaskIntoConstraints="NO" id="n28-Xm-g0Z">
+                        <rect key="frame" x="264" y="10" width="36" height="36"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="20" id="Jjd-Yy-Ou3"/>
-                            <constraint firstAttribute="height" constant="20" id="rul-nw-wjR"/>
+                            <constraint firstAttribute="width" constant="36" id="Jjd-Yy-Ou3"/>
+                            <constraint firstAttribute="height" constant="36" id="rul-nw-wjR"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -82,14 +80,14 @@
                     <constraint firstItem="Zq0-An-ls7" firstAttribute="top" secondItem="P9M-pg-LG7" secondAttribute="top" id="3y3-mk-vwZ"/>
                     <constraint firstItem="NSV-CI-qdf" firstAttribute="leading" secondItem="bd3-ZO-m6C" secondAttribute="trailing" constant="10" id="9Le-So-6eu"/>
                     <constraint firstItem="Zq0-An-ls7" firstAttribute="leading" secondItem="P9M-pg-LG7" secondAttribute="trailing" constant="10" id="9Yt-88-n1X"/>
-                    <constraint firstItem="n28-Xm-g0Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="C4H-08-T7g"/>
+                    <constraint firstItem="n28-Xm-g0Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="C4H-08-T7g"/>
                     <constraint firstItem="Se5-Nl-aoc" firstAttribute="leading" secondItem="P9M-pg-LG7" secondAttribute="leading" id="FYH-9u-mUz"/>
-                    <constraint firstItem="AiP-K3-7DM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="Oqs-bj-tiM"/>
                     <constraint firstItem="bd3-ZO-m6C" firstAttribute="top" secondItem="NSV-CI-qdf" secondAttribute="top" id="UqA-nK-3OK"/>
                     <constraint firstItem="P9M-pg-LG7" firstAttribute="leading" secondItem="AiP-K3-7DM" secondAttribute="leading" id="V5C-E1-RuC"/>
+                    <constraint firstAttribute="bottom" secondItem="NSV-CI-qdf" secondAttribute="bottom" constant="10" id="VEA-H2-QfE"/>
                     <constraint firstItem="P9M-pg-LG7" firstAttribute="top" secondItem="AiP-K3-7DM" secondAttribute="bottom" constant="10" id="ZK2-Cj-cc2"/>
-                    <constraint firstItem="NSV-CI-qdf" firstAttribute="top" secondItem="kBv-TP-e06" secondAttribute="bottom" constant="10" id="arQ-Kg-ysa"/>
-                    <constraint firstAttribute="trailing" secondItem="NSV-CI-qdf" secondAttribute="trailing" constant="10" id="eSh-ZG-h9d"/>
+                    <constraint firstItem="AiP-K3-7DM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="a3S-w5-l2X"/>
+                    <constraint firstAttribute="trailing" secondItem="NSV-CI-qdf" secondAttribute="trailing" constant="20" id="eSh-ZG-h9d"/>
                     <constraint firstAttribute="trailing" secondItem="n28-Xm-g0Z" secondAttribute="trailing" constant="20" id="t4f-nK-P4d"/>
                     <constraint firstItem="kBv-TP-e06" firstAttribute="top" secondItem="Se5-Nl-aoc" secondAttribute="top" id="tPY-Cv-SXa"/>
                     <constraint firstItem="Se5-Nl-aoc" firstAttribute="top" secondItem="P9M-pg-LG7" secondAttribute="bottom" constant="10" id="yWH-4H-rcF"/>
@@ -107,4 +105,7 @@
             <point key="canvasLocation" x="29" y="-37"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="success_fill" width="32" height="32"/>
+    </resources>
 </document>

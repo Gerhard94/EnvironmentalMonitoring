@@ -9,6 +9,9 @@
 #ifndef EnvironmentalMonitoring_pch
 #define EnvironmentalMonitoring_pch
 
+#import <AFNetworking.h>
+#import "MBProgressHUD+XMG.h"
+
 #define Screenbounds [UIScreen mainScreen].bounds
 
 #define Api_key @"ddM7Dc3dBsyFNWWVChKvFYnfDro="

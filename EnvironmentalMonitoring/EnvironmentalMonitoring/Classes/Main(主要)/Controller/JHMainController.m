@@ -7,12 +7,10 @@
 //
 
 #import "JHMainController.h"
-#import <AFNetworking.h>
 #import <MJExtension/MJExtension.h>
 #import "DeviceList.h"
 #import "JHMainCell.h"
-#import "MBProgressHUD+XMG.h"
-
+#import "AddDeviceController.h"
 
 @interface JHMainController () <UITableViewDelegate,UITableViewDataSource,UISearchResultsUpdating,UISearchBarDelegate>
 
@@ -34,7 +32,7 @@ static NSString *ReuseId = @"ReuseId";
 #pragma mark - 懒加载
 - (UITableView *)tableView {
     if (_tableView == nil) {
-        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         [self.view addSubview:_tableView];
@@ -58,6 +56,11 @@ static NSString *ReuseId = @"ReuseId";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //设置右边按钮
+    UIImage *image = [UIImage imageNamed:@"plus"];
+    image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(addDevice)];
 
     //创建SearchController
     [self setupSearchController];
@@ -68,6 +71,12 @@ static NSString *ReuseId = @"ReuseId";
     //注册cell
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([JHMainCell class]) bundle:nil] forCellReuseIdentifier:ReuseId];
 }
+
+- (void)addDevice {
+    AddDeviceController *addDeviceVC = [[AddDeviceController alloc] init];
+    [self.navigationController pushViewController:addDeviceVC animated:YES];
+}
+
 
 - (void)getDeviceList {
     
@@ -80,9 +89,17 @@ static NSString *ReuseId = @"ReuseId";
         //获取设备信息数组
         NSDictionary *data = [responseObject objectForKey:@"data"];
         NSArray *devices = [data objectForKey:@"devices"];
+        NSMutableArray *arrayTemp = [NSMutableArray array];
+        
+        //隐藏管理账号密码的设备
+        for (NSDictionary *dict in devices) {
+            if (![dict[@"title"]  isEqual: @"admin"]) {
+                [arrayTemp addObject:dict];
+            }
+        }
         
         //数组转模型
-        _datas = [DeviceList mj_objectArrayWithKeyValuesArray:devices];
+        _datas = [DeviceList mj_objectArrayWithKeyValuesArray:arrayTemp];
         
         //刷新表格
         [self.tableView reloadData];
@@ -120,7 +137,7 @@ static NSString *ReuseId = @"ReuseId";
     //窗口透明化
     search.dimsBackgroundDuringPresentation = NO;
     
-    search.searchBar.placeholder = @"搜索";
+    search.searchBar.placeholder = @"快速搜索";
     
     //编辑搜索时隐藏导航栏
     search.hidesNavigationBarDuringPresentation = YES;
@@ -145,7 +162,7 @@ static NSString *ReuseId = @"ReuseId";
                        @"privateField" : @"private"
                     };
         }];
-        
+            
     }
     return self;
 }
@@ -181,12 +198,32 @@ static NSString *ReuseId = @"ReuseId";
         [self.results removeAllObjects];
     }
     for (DeviceList *deviceList in self.datas) {
-        if ([deviceList.title.lowercaseString rangeOfString:inputStr.lowercaseString].location != NSNotFound) {
+        if ([deviceList.title.lowercaseString rangeOfString:inputStr.lowercaseString].location != NSNotFound ||
+            [deviceList.idField.lowercaseString rangeOfString:inputStr.lowercaseString].location != NSNotFound ||
+            [deviceList.auth_info.lowercaseString rangeOfString:inputStr.lowercaseString].location != NSNotFound
+            ) {
                 [self.results addObject:deviceList];
         }
         [self.tableView reloadData];
     }
 }
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+- (NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewRowAction *deleteAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"删除" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+        NSLog(@"点击了删除");
+    }];
+    UITableViewRowAction *editAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"编辑" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+        NSLog(@"点击了编辑");
+    }];
+    editAction.backgroundColor = [UIColor grayColor];
+    return @[deleteAction,editAction];
+
+}
+
 
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
