@@ -25,8 +25,9 @@
 
 @property (nonatomic, strong) NSMutableArray *results;
 
-@property (nonatomic, assign) bool isPop;
+@property (nonatomic, assign) BOOL isPop;
 
+@property (nonatomic, assign) BOOL isDelete;
 
 @end
 
@@ -60,10 +61,31 @@ static NSUInteger page = 2;
     return _results;
 }
 
+
+
+#pragma mark - 控制器生命周期
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.title = @"配电房列表";
+        //替换模型名称
+        [DeviceList mj_setupReplacedKeyFromPropertyName:^NSDictionary *{
+            return @{  @"idField" : @"id",
+                       @"privateField" : @"private"
+                       };
+        }];
+        
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //不是pop
     self.isPop = NO;
+    
     //设置右边按钮
     UIImage *image = [UIImage imageNamed:@"plus"];
     image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -82,13 +104,49 @@ static NSUInteger page = 2;
     self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    //判断是否pop进来的
+    if (_isPop) {
+        [self loadNewData];
+        [[NSUserDefaults standardUserDefaults] setObject:@"push" forKey:@"isPop"];
+    }
+    _isPop = YES;
+
+}
+
+
+
+#pragma mark - 初始化视图控制器
 - (void)addDevice {
     AddDeviceController *addDeviceVC = [[AddDeviceController alloc] init];
     [self.navigationController pushViewController:addDeviceVC animated:YES];
 }
 
+- (void)setupSearchController {
+    //初始化
+    UISearchController *search = [[UISearchController alloc] initWithSearchResultsController:nil];
+    
+    //设置代理
+    search.searchResultsUpdater = self;
+    
+    //窗口透明化
+    search.dimsBackgroundDuringPresentation = NO;
+    
+    search.searchBar.placeholder = @"快速搜索";
+    
+    //编辑搜索时隐藏导航栏
+    search.hidesNavigationBarDuringPresentation = YES;
+    
+    search.searchBar.delegate = self;
+    self.searchController = search;
+    
+    //searchBar作为tableView的头部视图
+    self.tableView.tableHeaderView = search.searchBar;
+}
 
 
+#pragma mark - 发送网络请求
 - (void)loadNewData {
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
@@ -115,7 +173,14 @@ static NSUInteger page = 2;
         //刷新表格
         [self.tableView reloadData];
         [self.tableView.mj_header endRefreshing];
-        [MBProgressHUD showSuccess:@"加载成功"];
+        
+        if (_isDelete == YES) {
+
+        } else if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"isPop"] isEqualToString:@"pop"]) {
+
+        } else {
+            [MBProgressHUD showSuccess:@"加载成功"];
+        }
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSString *errorStr;
@@ -197,46 +262,36 @@ static NSUInteger page = 2;
     }
 }
 
-
-
-
-- (void)setupSearchController {
-    //初始化
-    UISearchController *search = [[UISearchController alloc] initWithSearchResultsController:nil];
-    
-    //设置代理
-    search.searchResultsUpdater = self;
-    
-    //窗口透明化
-    search.dimsBackgroundDuringPresentation = NO;
-    
-    search.searchBar.placeholder = @"快速搜索";
-    
-    //编辑搜索时隐藏导航栏
-    search.hidesNavigationBarDuringPresentation = YES;
-    
-    search.searchBar.delegate = self;
-    self.searchController = search;
-    
-    //searchBar作为tableView的头部视图
-    self.tableView.tableHeaderView = search.searchBar;
+- (void)deleteDataWithDevice:(NSString *)deviceID {
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager.requestSerializer setValue:Api_key forHTTPHeaderField:@"api-key"];
+    NSString *url = [base_url stringByAppendingPathComponent:deviceID];
+    [manager DELETE:url parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [MBProgressHUD showSuccess:@"删除成功"];
+        [self loadNewData];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSString *errorStr;
+        
+        //根据错误码显示错误提示语
+        switch (error.code) {
+            case -1001:
+                errorStr = @"网络请求超时";
+                break;
+            case -1009:
+                errorStr = @"没有网络连接";
+                break;
+            default:
+                errorStr = @"网络错误";
+                break;
+        }
+        [MBProgressHUD showError:errorStr];
+    }];
 }
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        self.title = @"配电房列表";
-        //替换模型名称
-        [DeviceList mj_setupReplacedKeyFromPropertyName:^NSDictionary *{
-            return @{  @"idField" : @"id",
-                       @"privateField" : @"private"
-                    };
-        }];
-            
-    }
-    return self;
-}
+
+
+
+
 
 #pragma mark - tableViewDataSource
 
@@ -269,9 +324,9 @@ static NSUInteger page = 2;
         [self.results removeAllObjects];
     }
     for (DeviceList *deviceList in self.datas) {
-        if ([deviceList.title.lowercaseString rangeOfString:inputStr.lowercaseString].location != NSNotFound ||
-            [deviceList.idField.lowercaseString rangeOfString:inputStr.lowercaseString].location != NSNotFound ||
-            [deviceList.auth_info.lowercaseString rangeOfString:inputStr.lowercaseString].location != NSNotFound
+        if ([deviceList.title.lowercaseString rangeOfString:inputStr.lowercaseString].location != NSNotFound || //搜索对应设备
+            [deviceList.idField.lowercaseString rangeOfString:inputStr.lowercaseString].location != NSNotFound || //搜索对应id
+            [deviceList.auth_info.lowercaseString rangeOfString:inputStr.lowercaseString].location != NSNotFound //搜索对应设备编号
             ) {
                 [self.results addObject:deviceList];
         }
@@ -284,12 +339,55 @@ static NSUInteger page = 2;
 }
 
 - (NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewRowAction *deleteAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"删除" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
-        NSLog(@"点击了删除");
+    
+    //左滑出现删除
+    UITableViewRowAction *deleteAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive
+                                                                            title:@"删除"
+                                                                          handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+
+                                                                              
+        //创建警报控制器
+        UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"核对信息"
+                                                                         message:@"请输入管理员密码"
+                                                                  preferredStyle:UIAlertControllerStyleAlert];
+        //创建TextField
+        [alertVC addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+            textField.placeholder = @"请输入管理员密码";
+            textField.secureTextEntry = YES;
+        }];
+        
+        //创建确定和取消按钮
+        [alertVC addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+            UITextField *alertTF = alertVC.textFields[0];
+            if ([alertTF.text isEqualToString:[[NSUserDefaults standardUserDefaults] objectForKey:@"password"]]) {
+                if (self.searchController.active) {
+                    self.isDelete = YES;
+                    DeviceList *list = _results[indexPath.row];
+                    [self deleteDataWithDevice:list.idField];
+                } else {
+                    self.isDelete = YES;
+                    DeviceList *list = _datas[indexPath.row];
+                    [self deleteDataWithDevice:list.idField];
+                }
+            } else {
+                [self presentViewController:alertVC animated:YES completion:nil];
+                [MBProgressHUD showError:@"输入密码有误请重新输入"];
+            }
+        }]];
+        
+        [alertVC addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            
+        }]];
+        
+        [self presentViewController:alertVC animated:YES completion:nil];
     }];
+    
+    //左滑出现编辑
     UITableViewRowAction *editAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"编辑" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
         NSLog(@"点击了编辑");
     }];
+    
+    
     editAction.backgroundColor = [UIColor grayColor];
     return @[deleteAction,editAction];
 
@@ -298,7 +396,7 @@ static NSUInteger page = 2;
 
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 130;
+    return 110;
 }
 
 - (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar{
@@ -311,14 +409,6 @@ static NSUInteger page = 2;
     return YES;
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    //判断是否pop进来的
-    if (_isPop) {
-        [self loadNewData];
-    }
-    _isPop = YES;
-}
 
 /*
 #pragma mark - Navigation

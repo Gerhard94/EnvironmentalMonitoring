@@ -22,7 +22,6 @@
 		6E1B7308206F695C0095A184 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1B7306206F695C0095A184 /* AppDelegate.m */; };
 		6E1B730D206F6DE30095A184 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E1B730C206F6DE30095A184 /* Info.plist */; };
 		6E1E8224207238C800CFA1BF /* JHMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1E8222207238C800CFA1BF /* JHMainController.m */; };
-		6E1E8225207238C800CFA1BF /* JHMainController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E1E8223207238C800CFA1BF /* JHMainController.xib */; };
 		6E264A6C20734A6B00016B3B /* DeviceList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E264A6B20734A6B00016B3B /* DeviceList.m */; };
 		6E3425A6207217F800A5EA43 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3425A1207217F800A5EA43 /* MBProgressHUD.m */; };
 		6E3425A7207217F800A5EA43 /* MBProgressHUD+XMG.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3425A2207217F800A5EA43 /* MBProgressHUD+XMG.m */; };
@@ -58,7 +57,6 @@
 		6E1B730C206F6DE30095A184 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E1E8221207238C800CFA1BF /* JHMainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHMainController.h; sourceTree = "<group>"; };
 		6E1E8222207238C800CFA1BF /* JHMainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHMainController.m; sourceTree = "<group>"; };
-		6E1E8223207238C800CFA1BF /* JHMainController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JHMainController.xib; sourceTree = "<group>"; };
 		6E264A6A20734A6B00016B3B /* DeviceList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceList.h; sourceTree = "<group>"; };
 		6E264A6B20734A6B00016B3B /* DeviceList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceList.m; sourceTree = "<group>"; };
 		6E3425A1207217F800A5EA43 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
@@ -183,7 +181,6 @@
 				6E1B72F3206F694F0095A184 /* JHDetailController.xib */,
 				6E1E8221207238C800CFA1BF /* JHMainController.h */,
 				6E1E8222207238C800CFA1BF /* JHMainController.m */,
-				6E1E8223207238C800CFA1BF /* JHMainController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -356,7 +353,6 @@
 				6E1B72FA206F694F0095A184 /* JHLoginRegisterController.xib in Resources */,
 				6E1B7300206F694F0095A184 /* JHDetailController.xib in Resources */,
 				6E3425A8207217F800A5EA43 /* MBProgressHUD.bundle in Resources */,
-				6E1E8225207238C800CFA1BF /* JHMainController.xib in Resources */,
 				6E1B72D7206F64EF0095A184 /* LaunchScreen.storyboard in Resources */,
 				6E1B72D4206F64EF0095A184 /* Assets.xcassets in Resources */,
 				6E1B730D206F6DE30095A184 /* Info.plist in Resources */,

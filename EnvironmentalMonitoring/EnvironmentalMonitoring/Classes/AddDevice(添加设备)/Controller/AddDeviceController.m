@@ -61,6 +61,10 @@
     NSMutableDictionary *parameters = [NSMutableDictionary dictionaryWithCapacity:0];
     parameters[@"title"] = self.titleTF.text;
     parameters[@"auth_info"] = self.auth_infoTF.text;
+    parameters[@"desc"] = self.descTF.text.length > 0 ? self.descTF.text : nil;
+    parameters[@"tags"] = self.tagsTF.text.length > 0 ? @[[NSString stringWithFormat:@"%@",self.tagsTF.text]] : nil;
+    parameters[@"private"] = self.privateSegment.selectedSegmentIndex == 0 ? @"true" : @"false";
+    parameters[@"location"] = @{@"lon" : self.lonTF.text ,@"lat" : self.latTF.text};
     
     //创建manager
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
@@ -74,14 +78,14 @@
     
     //创建会话并发送网络请求
     NSURLSessionDataTask *task = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
-        
         if (!error) {
-            if ([responseObject isKindOfClass:[NSDictionary class]]) {
+            if ([responseObject[@"error"] isEqualToString:@"succ"]) {
                 // 请求成功数据处理
+                [[NSUserDefaults standardUserDefaults] setObject:@"pop" forKey:@"isPop"];
                 [MBProgressHUD showSuccess:@"创建设备成功"];
                 [self.navigationController popViewControllerAnimated:YES];
             } else {
-                
+                [MBProgressHUD showError:responseObject[@"error"]];
             }
         } else {
             NSString *errorStr;
