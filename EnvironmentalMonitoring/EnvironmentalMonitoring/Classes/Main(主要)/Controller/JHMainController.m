@@ -11,6 +11,9 @@
 #import "DeviceList.h"
 #import "JHMainCell.h"
 #import "AddDeviceController.h"
+#import <MJRefresh/MJRefreshNormalHeader.h>
+#import <MJRefresh/MJRefreshBackNormalFooter.h>
+
 
 @interface JHMainController () <UITableViewDelegate,UITableViewDataSource,UISearchResultsUpdating,UISearchBarDelegate>
 
@@ -22,10 +25,13 @@
 
 @property (nonatomic, strong) NSMutableArray *results;
 
+@property (nonatomic, assign) bool isPop;
+
 
 @end
 
 static NSString *ReuseId = @"ReuseId";
+static NSUInteger page = 2;
 
 @implementation JHMainController
 
@@ -57,6 +63,7 @@ static NSString *ReuseId = @"ReuseId";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.isPop = NO;
     //设置右边按钮
     UIImage *image = [UIImage imageNamed:@"plus"];
     image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -66,10 +73,13 @@ static NSString *ReuseId = @"ReuseId";
     [self setupSearchController];
     
     //获取设备信息
-    [self getDeviceList];
+    [self loadNewData];
     
     //注册cell
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([JHMainCell class]) bundle:nil] forCellReuseIdentifier:ReuseId];
+    
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
+    self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
 }
 
 - (void)addDevice {
@@ -78,7 +88,8 @@ static NSString *ReuseId = @"ReuseId";
 }
 
 
-- (void)getDeviceList {
+
+- (void)loadNewData {
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [manager.requestSerializer setValue:Api_key forHTTPHeaderField:@"api-key"];
@@ -103,6 +114,8 @@ static NSString *ReuseId = @"ReuseId";
         
         //刷新表格
         [self.tableView reloadData];
+        [self.tableView.mj_header endRefreshing];
+        [MBProgressHUD showSuccess:@"加载成功"];
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSString *errorStr;
@@ -122,6 +135,66 @@ static NSString *ReuseId = @"ReuseId";
         [MBProgressHUD showError:errorStr];
         
     }];
+}
+
+- (void)loadMoreData {
+    {
+        
+        AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+        [manager.requestSerializer setValue:Api_key forHTTPHeaderField:@"api-key"];
+        
+        NSDictionary *parameters = @{@"page" : @(page)};
+
+        [manager GET:base_url parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
+            
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            
+            //获取设备信息数组
+            NSDictionary *data = [responseObject objectForKey:@"data"];
+            NSArray *devices = [data objectForKey:@"devices"];
+            NSMutableArray *arrayTemp = [NSMutableArray array];
+            
+            //如果没有页面没有值
+            if (devices.count == 0) {
+                [self.tableView.mj_footer endRefreshingWithNoMoreData];
+                return ;
+            }
+            
+            //隐藏管理账号密码的设备
+            for (NSDictionary *dict in devices) {
+                if (![dict[@"title"]  isEqual: @"admin"]) {
+                    [arrayTemp addObject:dict];
+                }
+            }
+            
+            //添加更新的数据
+            [_datas addObjectsFromArray:[DeviceList mj_objectArrayWithKeyValuesArray:arrayTemp]];
+            
+            //刷新表格
+            [self.tableView reloadData];
+            [self.tableView.mj_footer endRefreshing];
+            [MBProgressHUD showSuccess:@"加载成功"];
+            page++;
+            
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            NSString *errorStr;
+            
+            //根据错误码显示错误提示语
+            switch (error.code) {
+                case -1001:
+                    errorStr = @"网络请求超时";
+                    break;
+                case -1009:
+                    errorStr = @"没有网络连接";
+                    break;
+                default:
+                    errorStr = @"网络错误";
+                    break;
+            }
+            [MBProgressHUD showError:errorStr];
+            
+        }];
+    }
 }
 
 
@@ -147,8 +220,6 @@ static NSString *ReuseId = @"ReuseId";
     
     //searchBar作为tableView的头部视图
     self.tableView.tableHeaderView = search.searchBar;
-    
-    
 }
 
 - (instancetype)init
@@ -238,6 +309,15 @@ static NSString *ReuseId = @"ReuseId";
 - (BOOL)searchBarShouldEndEditing:(UISearchBar *)searchBar {
     
     return YES;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    //判断是否pop进来的
+    if (_isPop) {
+        [self loadNewData];
+    }
+    _isPop = YES;
 }
 
 /*

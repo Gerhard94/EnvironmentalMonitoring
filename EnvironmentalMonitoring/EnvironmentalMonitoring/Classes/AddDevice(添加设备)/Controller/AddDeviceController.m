@@ -38,23 +38,71 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+/**
+ 点击确认按钮
+ */
 - (IBAction)confirmButtonClick:(id)sender {
     if (self.titleTF.text.length == 0 || self.auth_infoTF.text.length == 0) {
         [MBProgressHUD showError:@"带*的必填项不能为空"];
         return;
     }
     
-    
-    
-    
-    [MBProgressHUD showSuccess:@"创建设备成功"];
-    [self.navigationController popViewControllerAnimated:YES];
+    [self addDevice];
 }
 
+
+/**
+ 发送添加设备的网络请求
+ */
 - (void)addDevice {
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    [manager.requestSerializer setValue:Api_key forHTTPHeaderField:@"api-key"];
+
+    //请求字典参数
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionaryWithCapacity:0];
+    parameters[@"title"] = self.titleTF.text;
+    parameters[@"auth_info"] = self.auth_infoTF.text;
     
+    //创建manager
+    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    
+    //创建request
+    NSMutableURLRequest *request = [[AFJSONRequestSerializer serializer] requestWithMethod:@"POST" URLString:base_url parameters:parameters error:nil];
+    
+    //设置网络请求超时时间和http头部
+    request.timeoutInterval = 8.f;
+    [request setValue:Api_key forHTTPHeaderField:@"api-key"];
+    
+    //创建会话并发送网络请求
+    NSURLSessionDataTask *task = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+        
+        if (!error) {
+            if ([responseObject isKindOfClass:[NSDictionary class]]) {
+                // 请求成功数据处理
+                [MBProgressHUD showSuccess:@"创建设备成功"];
+                [self.navigationController popViewControllerAnimated:YES];
+            } else {
+                
+            }
+        } else {
+            NSString *errorStr;
+            //根据错误码显示错误提示语
+            switch (error.code) {
+                case -1001:
+                    errorStr = @"网络请求超时";
+                    break;
+                case -1009:
+                    errorStr = @"没有网络连接";
+                    break;
+                default:
+                    errorStr = @"网络错误";
+                    break;
+            }
+            [MBProgressHUD showError:errorStr];
+        }
+    }];
+    
+    [task resume];
+
 }
 
 
