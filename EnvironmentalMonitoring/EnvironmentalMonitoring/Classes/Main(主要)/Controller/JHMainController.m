@@ -83,8 +83,15 @@ static NSUInteger page = 2;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@""
+                                                                             style:UIBarButtonItemStylePlain
+                                                                            target:self
+                                                                            action:nil];
+    
     //不是pop
     self.isPop = NO;
+    [[NSUserDefaults standardUserDefaults] setObject:@"push" forKey:@"isPop"];
+
     
     //设置右边按钮
     UIImage *image = [UIImage imageNamed:@"plus"];
@@ -109,7 +116,6 @@ static NSUInteger page = 2;
     //判断是否pop进来的
     if (_isPop) {
         [self loadNewData];
-        [[NSUserDefaults standardUserDefaults] setObject:@"push" forKey:@"isPop"];
     }
     _isPop = YES;
 
@@ -174,11 +180,9 @@ static NSUInteger page = 2;
         [self.tableView reloadData];
         [self.tableView.mj_header endRefreshing];
         
-        if (_isDelete == YES) {
-
-        } else if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"isPop"] isEqualToString:@"pop"]) {
-
-        } else {
+        if (_isDelete == YES) {}
+        else if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"isPop"] isEqualToString:@"pop"]) {}
+        else {
             [MBProgressHUD showSuccess:@"加载成功"];
         }
         

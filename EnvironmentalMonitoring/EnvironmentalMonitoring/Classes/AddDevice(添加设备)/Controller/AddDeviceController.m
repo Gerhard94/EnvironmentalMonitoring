@@ -64,7 +64,20 @@
     parameters[@"desc"] = self.descTF.text.length > 0 ? self.descTF.text : nil;
     parameters[@"tags"] = self.tagsTF.text.length > 0 ? @[[NSString stringWithFormat:@"%@",self.tagsTF.text]] : nil;
     parameters[@"private"] = self.privateSegment.selectedSegmentIndex == 0 ? @"true" : @"false";
-    parameters[@"location"] = @{@"lon" : self.lonTF.text ,@"lat" : self.latTF.text};
+    NSString *lonStr = self.lonTF.text.length > 0 ? self.lonTF.text : @"0";
+    if ([lonStr integerValue] > 180) {
+        [MBProgressHUD showError:@"经度不能大于180°"];
+        return;
+    }
+    NSString *latStr = self.latTF.text.length > 0 ? self.latTF.text : @"0";
+    
+    if ([latStr integerValue] > 90) {
+        [MBProgressHUD showError:@"纬度不能大于90°"];
+        return;
+    }
+    
+    parameters[@"location"] = @{@"lon" : lonStr ,@"lat" : latStr};
+
     
     //创建manager
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
