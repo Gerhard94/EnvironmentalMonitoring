@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class Location;
+
 @interface DeviceList : NSObject
 
 //是否公开
@@ -27,6 +29,13 @@
 
 //设备编号
 @property (nonatomic, strong) NSString * auth_info;
+
+//位置
+@property (nonatomic, strong) Location *location;
+
+@property (nonatomic, copy) NSString *tags;
+
+@property (nonatomic, copy) NSString *desc;
 
 
 @end

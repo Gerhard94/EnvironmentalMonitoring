@@ -388,7 +388,15 @@ static NSUInteger page = 2;
     
     //左滑出现编辑
     UITableViewRowAction *editAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"编辑" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
-        NSLog(@"点击了编辑");
+        DeviceList *list;
+        if (self.searchController.active) {
+            list = _results[indexPath.row];
+        } else {
+            list = _datas[indexPath.row];
+        }
+        AddDeviceController *addDeviceVC = [[AddDeviceController alloc] init];
+        addDeviceVC.deviceList = list;
+        [self.navigationController pushViewController:addDeviceVC animated:YES];
     }];
     
     

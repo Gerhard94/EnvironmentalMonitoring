@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class DeviceList;
+
 @interface AddDeviceController : UIViewController
+
+@property (nonatomic, strong) DeviceList *deviceList;
 
 @end

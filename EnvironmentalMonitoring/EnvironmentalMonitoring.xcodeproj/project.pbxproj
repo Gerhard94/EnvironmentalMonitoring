@@ -28,6 +28,7 @@
 		6E3425A8207217F800A5EA43 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6E3425A5207217F800A5EA43 /* MBProgressHUD.bundle */; };
 		6E4F8A9F207371FD00EB0838 /* AddDeviceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F8A9D207371FD00EB0838 /* AddDeviceController.m */; };
 		6E4F8AA0207371FD00EB0838 /* AddDeviceController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E4F8A9E207371FD00EB0838 /* AddDeviceController.xib */; };
+		6EBD369F207524B600CADA27 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBD369E207524B600CADA27 /* Location.m */; };
 		C544413BE6E6BAAB53B145D1 /* libPods-EnvironmentalMonitoring.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C28BDBBC49A733EF101962 /* libPods-EnvironmentalMonitoring.a */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,8 @@
 		6E4F8A9C207371FD00EB0838 /* AddDeviceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddDeviceController.h; sourceTree = "<group>"; };
 		6E4F8A9D207371FD00EB0838 /* AddDeviceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddDeviceController.m; sourceTree = "<group>"; };
 		6E4F8A9E207371FD00EB0838 /* AddDeviceController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddDeviceController.xib; sourceTree = "<group>"; };
+		6EBD369D207524B600CADA27 /* Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		6EBD369E207524B600CADA27 /* Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		A951E353918827AF3B2F302B /* Pods-EnvironmentalMonitoring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnvironmentalMonitoring.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnvironmentalMonitoring/Pods-EnvironmentalMonitoring.debug.xcconfig"; sourceTree = "<group>"; };
 		F9CA6D0D432C16D56C6A45D6 /* Pods-EnvironmentalMonitoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnvironmentalMonitoring.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnvironmentalMonitoring/Pods-EnvironmentalMonitoring.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,6 +193,8 @@
 			children = (
 				6E264A6A20734A6B00016B3B /* DeviceList.h */,
 				6E264A6B20734A6B00016B3B /* DeviceList.m */,
+				6EBD369D207524B600CADA27 /* Location.h */,
+				6EBD369E207524B600CADA27 /* Location.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -422,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E1B72FE206F694F0095A184 /* JHDetailController.m in Sources */,
+				6EBD369F207524B600CADA27 /* Location.m in Sources */,
 				6E4F8A9F207371FD00EB0838 /* AddDeviceController.m in Sources */,
 				6E1B72F9206F694F0095A184 /* JHLoginRegisterController.m in Sources */,
 				6E1B72FC206F694F0095A184 /* JHLoginRegisterField.m in Sources */,
