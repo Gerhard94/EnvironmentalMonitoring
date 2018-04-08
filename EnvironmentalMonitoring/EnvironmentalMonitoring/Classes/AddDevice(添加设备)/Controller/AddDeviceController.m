@@ -24,7 +24,11 @@
 @property (weak, nonatomic) IBOutlet UITextField *lonTF;
 
 @property (weak, nonatomic) IBOutlet UITextField *latTF;
+
+
 @end
+
+static NSString *originAuthInfo;
 
 @implementation AddDeviceController
 
@@ -48,6 +52,7 @@
     _descTF.text = _deviceList.desc;
     _lonTF.text = _deviceList.location.lon;
     _latTF.text = _deviceList.location.lat;
+    originAuthInfo = _deviceList.auth_info;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -90,19 +95,25 @@
     parameters[@"desc"] = self.descTF.text.length > 0 ? self.descTF.text : nil;
     parameters[@"tags"] = self.tagsTF.text.length > 0 ? @[[NSString stringWithFormat:@"%@",self.tagsTF.text]] : nil;
     parameters[@"private"] = self.privateSegment.selectedSegmentIndex == 0 ? @"true" : @"false";
-    NSString *lonStr = self.lonTF.text.length > 0 ? self.lonTF.text : @"0";
-    if ([lonStr integerValue] > 180) {
+
+    if ([self.lonTF.text integerValue] > 180) {
         [MBProgressHUD showError:@"经度不能大于180°"];
         return;
     }
-    NSString *latStr = self.latTF.text.length > 0 ? self.latTF.text : @"0";
-    
-    if ([latStr integerValue] > 90) {
+
+    if ([self.latTF.text integerValue] > 90) {
         [MBProgressHUD showError:@"纬度不能大于90°"];
         return;
     }
     
-    parameters[@"location"] = @{@"lon" : lonStr ,@"lat" : latStr};
+    if (self.lonTF.text.length != 0 && self.latTF.text != 0) {
+        parameters[@"location"] = @{@"lon" : self.lonTF.text ,@"lat" : self.latTF.text};
+    } else if (self.lonTF.text.length > 0) {
+        parameters[@"location"] = @{@"lon" : self.lonTF.text};
+    } else if (self.latTF.text.length > 0) {
+        parameters[@"location"] = @{@"lat" : self.latTF.text};
+    }
+    
 
     
     //创建manager
@@ -151,23 +162,31 @@
 - (void)updateDeviceInfo:(NSString *)deviceID {
     NSMutableDictionary *parameters = [NSMutableDictionary dictionaryWithCapacity:0];
     parameters[@"title"] = self.titleTF.text;
-    parameters[@"auth_info"] = self.auth_infoTF.text;
+    if (![self.auth_infoTF.text isEqualToString:originAuthInfo]) {
+        parameters[@"auth_info"] = self.auth_infoTF.text;
+    }
     parameters[@"desc"] = self.descTF.text.length > 0 ? self.descTF.text : nil;
     parameters[@"tags"] = self.tagsTF.text.length > 0 ? @[[NSString stringWithFormat:@"%@",self.tagsTF.text]] : nil;
     parameters[@"private"] = self.privateSegment.selectedSegmentIndex == 0 ? @"true" : @"false";
-    NSString *lonStr = self.lonTF.text.length > 0 ? self.lonTF.text : @"0";
-    if ([lonStr integerValue] > 180) {
+    
+    if ([self.lonTF.text integerValue] > 180) {
         [MBProgressHUD showError:@"经度不能大于180°"];
         return;
     }
-    NSString *latStr = self.latTF.text.length > 0 ? self.latTF.text : @"0";
     
-    if ([latStr integerValue] > 90) {
+    if ([self.latTF.text integerValue] > 90) {
         [MBProgressHUD showError:@"纬度不能大于90°"];
         return;
     }
     
-    parameters[@"location"] = @{@"lon" : lonStr ,@"lat" : latStr};
+    if (self.lonTF.text.length != 0 && self.latTF.text != 0) {
+        parameters[@"location"] = @{@"lon" : self.lonTF.text ,@"lat" : self.latTF.text};
+    } else if (self.lonTF.text.length > 0) {
+        parameters[@"location"] = @{@"lon" : self.lonTF.text};
+    } else if (self.latTF.text.length > 0) {
+        parameters[@"location"] = @{@"lat" : self.latTF.text};
+    }
+    
     
     NSString *urlStr = [base_url stringByAppendingPathComponent:deviceID];
     

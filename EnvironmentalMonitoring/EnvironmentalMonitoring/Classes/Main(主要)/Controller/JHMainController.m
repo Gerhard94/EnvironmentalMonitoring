@@ -316,9 +316,8 @@ static NSUInteger page = 2;
     return cell;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
 }
 
 #pragma mark - UISearchResultsUpdating
@@ -349,11 +348,11 @@ static NSUInteger page = 2;
                                                                             title:@"删除"
                                                                           handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
 
-                                                                              
         //创建警报控制器
         UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"核对信息"
                                                                          message:@"请输入管理员密码"
                                                                   preferredStyle:UIAlertControllerStyleAlert];
+                                                                              
         //创建TextField
         [alertVC addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
             textField.placeholder = @"请输入管理员密码";
@@ -382,7 +381,6 @@ static NSUInteger page = 2;
         [alertVC addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             
         }]];
-        
         [self presentViewController:alertVC animated:YES completion:nil];
     }];
     

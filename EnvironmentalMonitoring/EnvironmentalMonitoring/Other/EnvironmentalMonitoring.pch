@@ -14,7 +14,7 @@
 
 #define Screenbounds [UIScreen mainScreen].bounds
 
-#define Api_key @"ddM7Dc3dBsyFNWWVChKvFYnfDro="
+#define Api_key @"tpbCanP4sZQ7t=rPkw7q=RodyZc="
 #define base_url @"https://api.heclouds.com/devices"
 
 #endif /* EnvironmentalMonitoring_pch */

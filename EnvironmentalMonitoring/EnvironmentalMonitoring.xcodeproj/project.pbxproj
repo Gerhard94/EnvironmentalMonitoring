@@ -14,8 +14,6 @@
 		6E1B72FB206F694F0095A184 /* JHLoginRegister.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E1B72E8206F694F0095A184 /* JHLoginRegister.xib */; };
 		6E1B72FC206F694F0095A184 /* JHLoginRegisterField.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1B72EB206F694F0095A184 /* JHLoginRegisterField.m */; };
 		6E1B72FD206F694F0095A184 /* JHLoginRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1B72EC206F694F0095A184 /* JHLoginRegister.m */; };
-		6E1B72FE206F694F0095A184 /* JHDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1B72EF206F694F0095A184 /* JHDetailController.m */; };
-		6E1B7300206F694F0095A184 /* JHDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E1B72F3206F694F0095A184 /* JHDetailController.xib */; };
 		6E1B7301206F694F0095A184 /* JHMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E1B72F7206F694F0095A184 /* JHMainCell.xib */; };
 		6E1B7302206F694F0095A184 /* JHMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1B72F8206F694F0095A184 /* JHMainCell.m */; };
 		6E1B7307206F695C0095A184 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1B7305206F695C0095A184 /* main.m */; };
@@ -45,9 +43,6 @@
 		6E1B72EA206F694F0095A184 /* JHLoginRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHLoginRegister.h; sourceTree = "<group>"; };
 		6E1B72EB206F694F0095A184 /* JHLoginRegisterField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHLoginRegisterField.m; sourceTree = "<group>"; };
 		6E1B72EC206F694F0095A184 /* JHLoginRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHLoginRegister.m; sourceTree = "<group>"; };
-		6E1B72EF206F694F0095A184 /* JHDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHDetailController.m; sourceTree = "<group>"; };
-		6E1B72F1206F694F0095A184 /* JHDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHDetailController.h; sourceTree = "<group>"; };
-		6E1B72F3206F694F0095A184 /* JHDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JHDetailController.xib; sourceTree = "<group>"; };
 		6E1B72F6206F694F0095A184 /* JHMainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMainCell.h; sourceTree = "<group>"; };
 		6E1B72F7206F694F0095A184 /* JHMainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JHMainCell.xib; sourceTree = "<group>"; };
 		6E1B72F8206F694F0095A184 /* JHMainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMainCell.m; sourceTree = "<group>"; };
@@ -179,9 +174,6 @@
 		6E1B72EE206F694F0095A184 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6E1B72F1206F694F0095A184 /* JHDetailController.h */,
-				6E1B72EF206F694F0095A184 /* JHDetailController.m */,
-				6E1B72F3206F694F0095A184 /* JHDetailController.xib */,
 				6E1E8221207238C800CFA1BF /* JHMainController.h */,
 				6E1E8222207238C800CFA1BF /* JHMainController.m */,
 			);
@@ -356,7 +348,6 @@
 				6E1B7301206F694F0095A184 /* JHMainCell.xib in Resources */,
 				6E1B72FB206F694F0095A184 /* JHLoginRegister.xib in Resources */,
 				6E1B72FA206F694F0095A184 /* JHLoginRegisterController.xib in Resources */,
-				6E1B7300206F694F0095A184 /* JHDetailController.xib in Resources */,
 				6E3425A8207217F800A5EA43 /* MBProgressHUD.bundle in Resources */,
 				6E1B72D7206F64EF0095A184 /* LaunchScreen.storyboard in Resources */,
 				6E1B72D4206F64EF0095A184 /* Assets.xcassets in Resources */,
@@ -426,7 +417,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E1B72FE206F694F0095A184 /* JHDetailController.m in Sources */,
 				6EBD369F207524B600CADA27 /* Location.m in Sources */,
 				6E4F8A9F207371FD00EB0838 /* AddDeviceController.m in Sources */,
 				6E1B72F9206F694F0095A184 /* JHLoginRegisterController.m in Sources */,

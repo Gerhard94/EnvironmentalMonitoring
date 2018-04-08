@@ -56,7 +56,7 @@
     [manager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
     
     //设置Url和url元素
-    NSString *urlStr = [base_url stringByAppendingPathComponent:@"28167645/datastreams"];
+    NSString *urlStr = [base_url stringByAppendingPathComponent:@"28341037/datastreams"];
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     parameters[@"datastream_ids"] = @"account,password";
     

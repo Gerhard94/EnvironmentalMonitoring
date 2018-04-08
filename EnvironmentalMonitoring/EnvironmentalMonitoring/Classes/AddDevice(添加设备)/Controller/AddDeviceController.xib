@@ -52,7 +52,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入设备名(必填)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sKt-Ba-SiJ">
-                            <rect key="frame" x="129.5" y="13" width="146.5" height="20"/>
+                            <rect key="frame" x="129.5" y="13" width="235.5" height="20"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <textInputTraits key="textInputTraits"/>
@@ -63,6 +63,7 @@
                         <constraint firstItem="szb-S5-aV8" firstAttribute="leading" secondItem="EnP-dh-3Jq" secondAttribute="leading" constant="20" id="4hA-gS-hgW"/>
                         <constraint firstItem="szb-S5-aV8" firstAttribute="centerY" secondItem="EnP-dh-3Jq" secondAttribute="centerY" id="Ock-aR-ufE"/>
                         <constraint firstItem="sKt-Ba-SiJ" firstAttribute="centerY" secondItem="szb-S5-aV8" secondAttribute="centerY" id="ltI-p1-SSh"/>
+                        <constraint firstAttribute="trailing" secondItem="sKt-Ba-SiJ" secondAttribute="trailing" constant="10" id="rZP-KY-Rmt"/>
                         <constraint firstItem="sKt-Ba-SiJ" firstAttribute="leading" secondItem="szb-S5-aV8" secondAttribute="trailing" constant="30" id="sJ8-bp-rV7"/>
                     </constraints>
                 </view>
@@ -96,7 +97,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入设备编号(必填)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oia-Dy-Y9X">
-                            <rect key="frame" x="129.5" y="12.5" width="162.5" height="20"/>
+                            <rect key="frame" x="129.5" y="12.5" width="235.5" height="20"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -106,6 +107,7 @@
                     <constraints>
                         <constraint firstItem="HED-YW-8uZ" firstAttribute="leading" secondItem="j8q-29-fiK" secondAttribute="leading" constant="20" id="2b1-qs-aD9"/>
                         <constraint firstItem="Oia-Dy-Y9X" firstAttribute="leading" secondItem="HED-YW-8uZ" secondAttribute="trailing" constant="30" id="3Kx-oZ-ZOq"/>
+                        <constraint firstAttribute="trailing" secondItem="Oia-Dy-Y9X" secondAttribute="trailing" constant="10" id="KYt-bv-vOy"/>
                         <constraint firstItem="Oia-Dy-Y9X" firstAttribute="centerY" secondItem="HED-YW-8uZ" secondAttribute="centerY" id="NaO-BD-BHA"/>
                         <constraint firstItem="HED-YW-8uZ" firstAttribute="centerY" secondItem="j8q-29-fiK" secondAttribute="centerY" id="na1-E3-Ahe"/>
                     </constraints>
@@ -120,7 +122,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入设备标签(可选)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pPV-oM-JJz">
-                            <rect key="frame" x="129.5" y="12" width="162.5" height="20"/>
+                            <rect key="frame" x="129.5" y="12" width="235.5" height="20"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <textInputTraits key="textInputTraits"/>
@@ -130,6 +132,7 @@
                     <constraints>
                         <constraint firstItem="pPV-oM-JJz" firstAttribute="leading" secondItem="Ik7-4G-p2L" secondAttribute="trailing" constant="30" id="1x6-xK-Beo"/>
                         <constraint firstItem="pPV-oM-JJz" firstAttribute="centerY" secondItem="Ik7-4G-p2L" secondAttribute="centerY" id="CW6-G2-veS"/>
+                        <constraint firstAttribute="trailing" secondItem="pPV-oM-JJz" secondAttribute="trailing" constant="10" id="qP8-Nu-e1n"/>
                         <constraint firstItem="Ik7-4G-p2L" firstAttribute="centerY" secondItem="JuB-jx-ar9" secondAttribute="centerY" id="uW4-PU-bSi"/>
                     </constraints>
                 </view>
@@ -167,7 +170,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入设备描述(选填)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dlm-B6-0bW">
-                            <rect key="frame" x="129.5" y="13" width="162.5" height="20"/>
+                            <rect key="frame" x="129.5" y="13" width="235.5" height="20"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <textInputTraits key="textInputTraits"/>
@@ -176,6 +179,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="dlm-B6-0bW" firstAttribute="centerY" secondItem="Wsi-HG-Z53" secondAttribute="centerY" id="1iC-W9-dw8"/>
+                        <constraint firstAttribute="trailing" secondItem="dlm-B6-0bW" secondAttribute="trailing" constant="10" id="3dA-I1-7OD"/>
                         <constraint firstItem="dlm-B6-0bW" firstAttribute="leading" secondItem="Wsi-HG-Z53" secondAttribute="trailing" constant="30" id="AWr-sc-ko3"/>
                         <constraint firstItem="Wsi-HG-Z53" firstAttribute="centerY" secondItem="9T0-yg-uk9" secondAttribute="centerY" id="oYo-A7-tw9"/>
                     </constraints>
@@ -190,13 +194,13 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入设备经度(选填)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="On6-lr-Yul">
-                            <rect key="frame" x="129" y="12" width="162.5" height="20"/>
+                            <rect key="frame" x="129" y="12" width="236" height="20"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入设备纬度(选填)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fwU-cj-GGN">
-                            <rect key="frame" x="129" y="52" width="162.5" height="20"/>
+                            <rect key="frame" x="129" y="52" width="236" height="20"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -206,9 +210,11 @@
                     <constraints>
                         <constraint firstItem="On6-lr-Yul" firstAttribute="leading" secondItem="8NK-JI-3bS" secondAttribute="trailing" constant="30" id="12c-NQ-6U9"/>
                         <constraint firstItem="fwU-cj-GGN" firstAttribute="leading" secondItem="On6-lr-Yul" secondAttribute="leading" id="A81-JE-FQv"/>
+                        <constraint firstAttribute="trailing" secondItem="On6-lr-Yul" secondAttribute="trailing" constant="10" id="I05-93-ilU"/>
                         <constraint firstItem="8NK-JI-3bS" firstAttribute="top" secondItem="mFb-IJ-Uj2" secondAttribute="top" constant="12.5" id="NXW-Cz-Yu2"/>
                         <constraint firstItem="fwU-cj-GGN" firstAttribute="top" secondItem="On6-lr-Yul" secondAttribute="bottom" constant="20" id="ef7-O0-9Z6"/>
                         <constraint firstItem="On6-lr-Yul" firstAttribute="centerY" secondItem="8NK-JI-3bS" secondAttribute="centerY" id="gb8-8n-azj"/>
+                        <constraint firstAttribute="trailing" secondItem="fwU-cj-GGN" secondAttribute="trailing" constant="10" id="jO9-Ob-i3B"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XKZ-VB-Fl4">
