@@ -8,7 +8,7 @@
 
 #import "JHLoginRegisterController.h"
 #import "JHLoginRegister.h"
-#import "JHMainController.h"
+#import "JHTabBarController.h"
 
 @interface JHLoginRegisterController () <JHLoginRegisterDelegate>
 
@@ -38,9 +38,8 @@
 }
 
 - (IBAction)testButtonClick:(id)sender {
-    JHMainController *mainVC = [[JHMainController alloc] init];
-    UINavigationController *navigationVC = [[UINavigationController alloc] initWithRootViewController:mainVC];
-    [[UIApplication sharedApplication].keyWindow setRootViewController:navigationVC];
+    JHTabBarController *tabBarVC = [[JHTabBarController alloc] init];
+    [[UIApplication sharedApplication].keyWindow setRootViewController:tabBarVC];
 }
 
 - (void)getUsernamePassword{
@@ -72,22 +71,11 @@
         [[NSUserDefaults standardUserDefaults] setValue:passwordInfo[@"current_value"] forKey:@"password"];
 //        NSLog(@"%@---%@",[[NSUserDefaults standardUserDefaults] objectForKey:@"account"],[[NSUserDefaults standardUserDefaults] objectForKey:@"password"]);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSString *errorStr;
         
         //根据错误码显示错误提示语
-        switch (error.code) {
-            case -1001:
-                errorStr = @"网络请求超时";
-                break;
-            case -1009:
-                errorStr = @"没有网络连接";
-                break;
-            default:
-                errorStr = @"网络错误";
-                break;
-        }
+        [MBProgressHUD showErrorForErrorCode:error.code];
+
         
-        [MBProgressHUD showError:errorStr];
     }];
     
 }
@@ -165,9 +153,8 @@
     NSUserDefaults *userInfo = [NSUserDefaults standardUserDefaults];
     if ([userInfo objectForKey:@"account"] == view.accountTextField.text) {
         if ([userInfo objectForKey:@"password"] == view.passwordTextField.text) {
-            JHMainController *mainVC = [[JHMainController alloc] init];
-            UINavigationController *navigationVC = [[UINavigationController alloc] initWithRootViewController:mainVC];
-            [[UIApplication sharedApplication].keyWindow setRootViewController:navigationVC];
+            JHTabBarController *tabBarVC = [[JHTabBarController alloc] init];
+            [[UIApplication sharedApplication].keyWindow setRootViewController:tabBarVC];
 
     
         } else {

@@ -13,6 +13,7 @@
 #import "AddDeviceController.h"
 #import <MJRefresh/MJRefreshNormalHeader.h>
 #import <MJRefresh/MJRefreshBackNormalFooter.h>
+#import "DetailInfoController.h"
 
 
 @interface JHMainController () <UITableViewDelegate,UITableViewDataSource,UISearchResultsUpdating,UISearchBarDelegate>
@@ -25,14 +26,13 @@
 
 @property (nonatomic, strong) NSMutableArray *results;
 
-@property (nonatomic, assign) BOOL isPop;
-
 @property (nonatomic, assign) BOOL isDelete;
 
 @end
 
 static NSString *ReuseId = @"ReuseId";
 static NSUInteger page = 2;
+
 
 @implementation JHMainController
 
@@ -64,6 +64,7 @@ static NSUInteger page = 2;
 
 
 #pragma mark - 控制器生命周期
+
 - (instancetype)init
 {
     self = [super init];
@@ -88,10 +89,7 @@ static NSUInteger page = 2;
                                                                             target:self
                                                                             action:nil];
     
-    //不是pop
-    self.isPop = NO;
     [[NSUserDefaults standardUserDefaults] setObject:@"push" forKey:@"isPop"];
-
     
     //设置右边按钮
     UIImage *image = [UIImage imageNamed:@"plus"];
@@ -109,23 +107,24 @@ static NSUInteger page = 2;
     
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
     self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     //判断是否pop进来的
-    if (_isPop) {
-        [self loadNewData];
-    }
-    _isPop = YES;
-
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(listShouldRefresh) name:@"isChange" object:nil];
 }
 
+- (void)listShouldRefresh {
+    [self loadNewData];
+}
 
 
 #pragma mark - 初始化视图控制器
 - (void)addDevice {
     AddDeviceController *addDeviceVC = [[AddDeviceController alloc] init];
+    addDeviceVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:addDeviceVC animated:YES];
 }
 
@@ -184,25 +183,10 @@ static NSUInteger page = 2;
         else if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"isPop"] isEqualToString:@"pop"]) {}
         else {
             [MBProgressHUD showSuccess:@"加载成功"];
-        }
+}
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSString *errorStr;
-        
-        //根据错误码显示错误提示语
-        switch (error.code) {
-            case -1001:
-                errorStr = @"网络请求超时";
-                break;
-            case -1009:
-                errorStr = @"没有网络连接";
-                break;
-            default:
-                errorStr = @"网络错误";
-                break;
-        }
-        [MBProgressHUD showError:errorStr];
-        
+        [MBProgressHUD showErrorForErrorCode:error.code];        
     }];
 }
 
@@ -246,21 +230,10 @@ static NSUInteger page = 2;
             page++;
             
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            NSString *errorStr;
             
             //根据错误码显示错误提示语
-            switch (error.code) {
-                case -1001:
-                    errorStr = @"网络请求超时";
-                    break;
-                case -1009:
-                    errorStr = @"没有网络连接";
-                    break;
-                default:
-                    errorStr = @"网络错误";
-                    break;
-            }
-            [MBProgressHUD showError:errorStr];
+            [MBProgressHUD showErrorForErrorCode:error.code];
+
             
         }];
     }
@@ -274,28 +247,11 @@ static NSUInteger page = 2;
         [MBProgressHUD showSuccess:@"删除成功"];
         [self loadNewData];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSString *errorStr;
-        
+
         //根据错误码显示错误提示语
-        switch (error.code) {
-            case -1001:
-                errorStr = @"网络请求超时";
-                break;
-            case -1009:
-                errorStr = @"没有网络连接";
-                break;
-            default:
-                errorStr = @"网络错误";
-                break;
-        }
-        [MBProgressHUD showError:errorStr];
+        [MBProgressHUD showErrorForErrorCode:error.code];
     }];
 }
-
-
-
-
-
 
 #pragma mark - tableViewDataSource
 
@@ -314,10 +270,6 @@ static NSUInteger page = 2;
         cell.deviceList = deviceList;
     }
     return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
 }
 
 #pragma mark - UISearchResultsUpdating
@@ -405,9 +357,25 @@ static NSUInteger page = 2;
 
 
 #pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    DeviceList *list;
+    if (self.searchController.active) {
+        list = _results[indexPath.row];
+    } else {
+        list = _datas[indexPath.row];
+    }
+    DetailInfoController *detailInfoVC = [[DetailInfoController alloc] init];
+    detailInfoVC.deviceName = list.title;
+    [self.navigationController pushViewController:detailInfoVC animated:YES];
+    
+}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 110;
 }
+
+#pragma mark - UISearchBarDelegate
 
 - (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar{
     

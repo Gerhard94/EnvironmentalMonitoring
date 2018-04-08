@@ -26,6 +26,10 @@
 		6E3425A8207217F800A5EA43 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6E3425A5207217F800A5EA43 /* MBProgressHUD.bundle */; };
 		6E4F8A9F207371FD00EB0838 /* AddDeviceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F8A9D207371FD00EB0838 /* AddDeviceController.m */; };
 		6E4F8AA0207371FD00EB0838 /* AddDeviceController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E4F8A9E207371FD00EB0838 /* AddDeviceController.xib */; };
+		6E53B2792079BD2C00C2D468 /* DetailInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53B2772079BD2C00C2D468 /* DetailInfoController.m */; };
+		6E53B27A2079BD2C00C2D468 /* DetailInfoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E53B2782079BD2C00C2D468 /* DetailInfoController.xib */; };
+		6E8698912079E37900850166 /* JHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8698902079E37900850166 /* JHTabBarController.m */; };
+		6E8698942079FB4D00850166 /* JHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8698932079FB4D00850166 /* JHNavigationController.m */; };
 		6EBD369F207524B600CADA27 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBD369E207524B600CADA27 /* Location.m */; };
 		C544413BE6E6BAAB53B145D1 /* libPods-EnvironmentalMonitoring.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C28BDBBC49A733EF101962 /* libPods-EnvironmentalMonitoring.a */; };
 /* End PBXBuildFile section */
@@ -63,6 +67,13 @@
 		6E4F8A9C207371FD00EB0838 /* AddDeviceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddDeviceController.h; sourceTree = "<group>"; };
 		6E4F8A9D207371FD00EB0838 /* AddDeviceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddDeviceController.m; sourceTree = "<group>"; };
 		6E4F8A9E207371FD00EB0838 /* AddDeviceController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddDeviceController.xib; sourceTree = "<group>"; };
+		6E53B2762079BD2C00C2D468 /* DetailInfoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailInfoController.h; sourceTree = "<group>"; };
+		6E53B2772079BD2C00C2D468 /* DetailInfoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailInfoController.m; sourceTree = "<group>"; };
+		6E53B2782079BD2C00C2D468 /* DetailInfoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailInfoController.xib; sourceTree = "<group>"; };
+		6E86988F2079E37900850166 /* JHTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHTabBarController.h; sourceTree = "<group>"; };
+		6E8698902079E37900850166 /* JHTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHTabBarController.m; sourceTree = "<group>"; };
+		6E8698922079FB4D00850166 /* JHNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHNavigationController.h; sourceTree = "<group>"; };
+		6E8698932079FB4D00850166 /* JHNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHNavigationController.m; sourceTree = "<group>"; };
 		6EBD369D207524B600CADA27 /* Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		6EBD369E207524B600CADA27 /* Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		A951E353918827AF3B2F302B /* Pods-EnvironmentalMonitoring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnvironmentalMonitoring.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnvironmentalMonitoring/Pods-EnvironmentalMonitoring.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +129,7 @@
 				6E1B72E1206F694F0095A184 /* LoginRegister(登录注册) */,
 				6E1B72ED206F694F0095A184 /* Main(主要) */,
 				6E4F8A982073717B00EB0838 /* AddDevice(添加设备) */,
+				6E53B2722079BD0500C2D468 /* DetailInfo(详情页) */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -176,6 +188,10 @@
 			children = (
 				6E1E8221207238C800CFA1BF /* JHMainController.h */,
 				6E1E8222207238C800CFA1BF /* JHMainController.m */,
+				6E86988F2079E37900850166 /* JHTabBarController.h */,
+				6E8698902079E37900850166 /* JHTabBarController.m */,
+				6E8698922079FB4D00850166 /* JHNavigationController.h */,
+				6E8698932079FB4D00850166 /* JHNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -267,6 +283,40 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		6E53B2722079BD0500C2D468 /* DetailInfo(详情页) */ = {
+			isa = PBXGroup;
+			children = (
+				6E53B2732079BD0500C2D468 /* Controller */,
+				6E53B2742079BD0500C2D468 /* Model */,
+				6E53B2752079BD0500C2D468 /* View */,
+			);
+			path = "DetailInfo(详情页)";
+			sourceTree = "<group>";
+		};
+		6E53B2732079BD0500C2D468 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6E53B2762079BD2C00C2D468 /* DetailInfoController.h */,
+				6E53B2772079BD2C00C2D468 /* DetailInfoController.m */,
+				6E53B2782079BD2C00C2D468 /* DetailInfoController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6E53B2742079BD0500C2D468 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6E53B2752079BD0500C2D468 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9487E7956BAE5B497969B46F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,6 +401,7 @@
 				6E3425A8207217F800A5EA43 /* MBProgressHUD.bundle in Resources */,
 				6E1B72D7206F64EF0095A184 /* LaunchScreen.storyboard in Resources */,
 				6E1B72D4206F64EF0095A184 /* Assets.xcassets in Resources */,
+				6E53B27A2079BD2C00C2D468 /* DetailInfoController.xib in Resources */,
 				6E1B730D206F6DE30095A184 /* Info.plist in Resources */,
 				6E4F8AA0207371FD00EB0838 /* AddDeviceController.xib in Resources */,
 			);
@@ -417,6 +468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E53B2792079BD2C00C2D468 /* DetailInfoController.m in Sources */,
 				6EBD369F207524B600CADA27 /* Location.m in Sources */,
 				6E4F8A9F207371FD00EB0838 /* AddDeviceController.m in Sources */,
 				6E1B72F9206F694F0095A184 /* JHLoginRegisterController.m in Sources */,
@@ -429,6 +481,8 @@
 				6E3425A7207217F800A5EA43 /* MBProgressHUD+XMG.m in Sources */,
 				6E1E8224207238C800CFA1BF /* JHMainController.m in Sources */,
 				6E1B72FD206F694F0095A184 /* JHLoginRegister.m in Sources */,
+				6E8698942079FB4D00850166 /* JHNavigationController.m in Sources */,
+				6E8698912079E37900850166 /* JHTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

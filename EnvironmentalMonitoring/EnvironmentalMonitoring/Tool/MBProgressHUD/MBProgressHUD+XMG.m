@@ -74,4 +74,21 @@
 {
     [self hideHUDForView:nil];
 }
+
++ (void)showErrorForErrorCode:(NSUInteger)code {
+    NSString *errorStr;
+    switch (code) {
+        case -1001:
+            errorStr = @"网络请求超时";
+            break;
+        case -1009:
+            errorStr = @"没有网络连接";
+            break;
+        default:
+            errorStr = @"网络错误";
+            break;
+    }
+    [MBProgressHUD showError:errorStr];
+}
+
 @end

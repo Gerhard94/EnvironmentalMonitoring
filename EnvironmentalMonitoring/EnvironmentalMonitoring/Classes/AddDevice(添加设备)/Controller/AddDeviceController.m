@@ -133,6 +133,7 @@ static NSString *originAuthInfo;
                 // 请求成功数据处理
                 [[NSUserDefaults standardUserDefaults] setObject:@"pop" forKey:@"isPop"];
                 [MBProgressHUD showSuccess:@"创建设备成功"];
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"isChange" object:nil];
                 [self.navigationController popViewControllerAnimated:YES];
             } else {
                 [MBProgressHUD showError:responseObject[@"error"]];
@@ -208,6 +209,7 @@ static NSString *originAuthInfo;
                 // 请求成功数据处理
                 [[NSUserDefaults standardUserDefaults] setObject:@"pop" forKey:@"isPop"];
                 [MBProgressHUD showSuccess:@"更新设备成功"];
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"isChange" object:nil];
                 [self.navigationController popViewControllerAnimated:YES];
             } else {
                 [MBProgressHUD showError:responseObject[@"error"]];
