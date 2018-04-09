@@ -7,7 +7,6 @@
 //
 
 #import "JHMainController.h"
-#import <MJExtension/MJExtension.h>
 #import "DeviceList.h"
 #import "JHMainCell.h"
 #import "AddDeviceController.h"
@@ -367,6 +366,7 @@ static NSUInteger page = 2;
     }
     DetailInfoController *detailInfoVC = [[DetailInfoController alloc] init];
     detailInfoVC.deviceName = list.title;
+    detailInfoVC.deviceID = list.idField;
     [self.navigationController pushViewController:detailInfoVC animated:YES];
     
 }

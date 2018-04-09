@@ -30,7 +30,45 @@
 		6E53B27A2079BD2C00C2D468 /* DetailInfoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E53B2782079BD2C00C2D468 /* DetailInfoController.xib */; };
 		6E8698912079E37900850166 /* JHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8698902079E37900850166 /* JHTabBarController.m */; };
 		6E8698942079FB4D00850166 /* JHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8698932079FB4D00850166 /* JHNavigationController.m */; };
+		6EB2042B207B19460039946B /* JHView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2042A207B19460039946B /* JHView.m */; };
+		6EB2042E207B39CB0039946B /* DetailInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2042D207B39CB0039946B /* DetailInfo.m */; };
+		6EB20436207B59090039946B /* DataDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20435207B59090039946B /* DataDetailController.m */; };
+		6EB2047C207B5B7F0039946B /* AAHighchartsLib.js in Resources */ = {isa = PBXBuildFile; fileRef = 6EB20439207B5B7F0039946B /* AAHighchartsLib.js */; };
+		6EB2047D207B5B7F0039946B /* AAHighchartsMore.js in Resources */ = {isa = PBXBuildFile; fileRef = 6EB2043A207B5B7F0039946B /* AAHighchartsMore.js */; };
+		6EB2047E207B5B7F0039946B /* AAFunnel.js in Resources */ = {isa = PBXBuildFile; fileRef = 6EB2043B207B5B7F0039946B /* AAFunnel.js */; };
+		6EB2047F207B5B7F0039946B /* AAHighcharts-3d.js in Resources */ = {isa = PBXBuildFile; fileRef = 6EB2043C207B5B7F0039946B /* AAHighcharts-3d.js */; };
+		6EB20480207B5B7F0039946B /* AAChartView.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EB2043D207B5B7F0039946B /* AAChartView.html */; };
+		6EB20481207B5B7F0039946B /* AAAreaspline.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20440207B5B7F0039946B /* AAAreaspline.m */; };
+		6EB20482207B5B7F0039946B /* AALabels.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20442207B5B7F0039946B /* AALabels.m */; };
+		6EB20483207B5B7F0039946B /* AASeries.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20445207B5B7F0039946B /* AASeries.m */; };
+		6EB20484207B5B7F0039946B /* AAXAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20446207B5B7F0039946B /* AAXAxis.m */; };
+		6EB20485207B5B7F0039946B /* AAPlotOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20448207B5B7F0039946B /* AAPlotOptions.m */; };
+		6EB20486207B5B7F0039946B /* AADataLabels.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20449207B5B7F0039946B /* AADataLabels.m */; };
+		6EB20487207B5B7F0039946B /* AALine.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2044A207B5B7F0039946B /* AALine.m */; };
+		6EB20488207B5B7F0039946B /* AATooltip.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2044D207B5B7F0039946B /* AATooltip.m */; };
+		6EB20489207B5B7F0039946B /* AASubtitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2044F207B5B7F0039946B /* AASubtitle.m */; };
+		6EB2048A207B5B7F0039946B /* AAYAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20450207B5B7F0039946B /* AAYAxis.m */; };
+		6EB2048B207B5B7F0039946B /* AACrosshair.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20451207B5B7F0039946B /* AACrosshair.m */; };
+		6EB2048C207B5B7F0039946B /* AAColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20456207B5B7F0039946B /* AAColumn.m */; };
+		6EB2048D207B5B7F0039946B /* AAPlotLinesElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20457207B5B7F0039946B /* AAPlotLinesElement.m */; };
+		6EB2048E207B5B7F0039946B /* AAOptions3d.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20459207B5B7F0039946B /* AAOptions3d.m */; };
+		6EB2048F207B5B7F0039946B /* AAStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2045B207B5B7F0039946B /* AAStyle.m */; };
+		6EB20490207B5B7F0039946B /* AABar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2045C207B5B7F0039946B /* AABar.m */; };
+		6EB20491207B5B7F0039946B /* AATitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2045D207B5B7F0039946B /* AATitle.m */; };
+		6EB20492207B5B7F0039946B /* AAArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20460207B5B7F0039946B /* AAArea.m */; };
+		6EB20493207B5B7F0039946B /* AAAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20461207B5B7F0039946B /* AAAnimation.m */; };
+		6EB20494207B5B7F0039946B /* AALegend.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20462207B5B7F0039946B /* AALegend.m */; };
+		6EB20495207B5B7F0039946B /* AAMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20464207B5B7F0039946B /* AAMarker.m */; };
+		6EB20496207B5B7F0039946B /* AASpline.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20468207B5B7F0039946B /* AASpline.m */; };
+		6EB20497207B5B7F0039946B /* AAItemStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20469207B5B7F0039946B /* AAItemStyle.m */; };
+		6EB20498207B5B7F0039946B /* AAPie.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2046A207B5B7F0039946B /* AAPie.m */; };
+		6EB20499207B5B7F0039946B /* AAChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20470207B5B7F0039946B /* AAChart.m */; };
+		6EB2049A207B5B7F0039946B /* AAChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20473207B5B7F0039946B /* AAChartView.m */; };
+		6EB2049B207B5B7F0039946B /* AAChartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20476207B5B7F0039946B /* AAChartModel.m */; };
+		6EB2049C207B5B7F0039946B /* AAOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20478207B5B7F0039946B /* AAOptions.m */; };
+		6EB2049D207B5B7F0039946B /* AASeriesElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20479207B5B7F0039946B /* AASeriesElement.m */; };
 		6EBD369F207524B600CADA27 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBD369E207524B600CADA27 /* Location.m */; };
+		6EC6629E207A4718005433C7 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC6629D207A4718005433C7 /* UIColor+Hex.m */; };
 		C544413BE6E6BAAB53B145D1 /* libPods-EnvironmentalMonitoring.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C28BDBBC49A733EF101962 /* libPods-EnvironmentalMonitoring.a */; };
 /* End PBXBuildFile section */
 
@@ -74,8 +112,81 @@
 		6E8698902079E37900850166 /* JHTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHTabBarController.m; sourceTree = "<group>"; };
 		6E8698922079FB4D00850166 /* JHNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHNavigationController.h; sourceTree = "<group>"; };
 		6E8698932079FB4D00850166 /* JHNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHNavigationController.m; sourceTree = "<group>"; };
+		6EB20429207B19460039946B /* JHView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHView.h; sourceTree = "<group>"; };
+		6EB2042A207B19460039946B /* JHView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHView.m; sourceTree = "<group>"; };
+		6EB2042C207B39CB0039946B /* DetailInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailInfo.h; sourceTree = "<group>"; };
+		6EB2042D207B39CB0039946B /* DetailInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailInfo.m; sourceTree = "<group>"; };
+		6EB20434207B59090039946B /* DataDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataDetailController.h; sourceTree = "<group>"; };
+		6EB20435207B59090039946B /* DataDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataDetailController.m; sourceTree = "<group>"; };
+		6EB20439207B5B7F0039946B /* AAHighchartsLib.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = AAHighchartsLib.js; sourceTree = "<group>"; };
+		6EB2043A207B5B7F0039946B /* AAHighchartsMore.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = AAHighchartsMore.js; sourceTree = "<group>"; };
+		6EB2043B207B5B7F0039946B /* AAFunnel.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = AAFunnel.js; sourceTree = "<group>"; };
+		6EB2043C207B5B7F0039946B /* AAHighcharts-3d.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "AAHighcharts-3d.js"; sourceTree = "<group>"; };
+		6EB2043D207B5B7F0039946B /* AAChartView.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = AAChartView.html; sourceTree = "<group>"; };
+		6EB2043F207B5B7F0039946B /* AAArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAArea.h; sourceTree = "<group>"; };
+		6EB20440207B5B7F0039946B /* AAAreaspline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAAreaspline.m; sourceTree = "<group>"; };
+		6EB20441207B5B7F0039946B /* AATitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AATitle.h; sourceTree = "<group>"; };
+		6EB20442207B5B7F0039946B /* AALabels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AALabels.m; sourceTree = "<group>"; };
+		6EB20443207B5B7F0039946B /* AAStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAStyle.h; sourceTree = "<group>"; };
+		6EB20444207B5B7F0039946B /* AABar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AABar.h; sourceTree = "<group>"; };
+		6EB20445207B5B7F0039946B /* AASeries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AASeries.m; sourceTree = "<group>"; };
+		6EB20446207B5B7F0039946B /* AAXAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAXAxis.m; sourceTree = "<group>"; };
+		6EB20447207B5B7F0039946B /* AAOptions3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAOptions3d.h; sourceTree = "<group>"; };
+		6EB20448207B5B7F0039946B /* AAPlotOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPlotOptions.m; sourceTree = "<group>"; };
+		6EB20449207B5B7F0039946B /* AADataLabels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AADataLabels.m; sourceTree = "<group>"; };
+		6EB2044A207B5B7F0039946B /* AALine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AALine.m; sourceTree = "<group>"; };
+		6EB2044B207B5B7F0039946B /* AAMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAMarker.h; sourceTree = "<group>"; };
+		6EB2044C207B5B7F0039946B /* AALegend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AALegend.h; sourceTree = "<group>"; };
+		6EB2044D207B5B7F0039946B /* AATooltip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AATooltip.m; sourceTree = "<group>"; };
+		6EB2044E207B5B7F0039946B /* AAAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAAnimation.h; sourceTree = "<group>"; };
+		6EB2044F207B5B7F0039946B /* AASubtitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AASubtitle.m; sourceTree = "<group>"; };
+		6EB20450207B5B7F0039946B /* AAYAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAYAxis.m; sourceTree = "<group>"; };
+		6EB20451207B5B7F0039946B /* AACrosshair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AACrosshair.m; sourceTree = "<group>"; };
+		6EB20452207B5B7F0039946B /* AAPie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPie.h; sourceTree = "<group>"; };
+		6EB20453207B5B7F0039946B /* AAItemStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAItemStyle.h; sourceTree = "<group>"; };
+		6EB20454207B5B7F0039946B /* AASpline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AASpline.h; sourceTree = "<group>"; };
+		6EB20455207B5B7F0039946B /* AAChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAChart.h; sourceTree = "<group>"; };
+		6EB20456207B5B7F0039946B /* AAColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAColumn.m; sourceTree = "<group>"; };
+		6EB20457207B5B7F0039946B /* AAPlotLinesElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPlotLinesElement.m; sourceTree = "<group>"; };
+		6EB20458207B5B7F0039946B /* AAXAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAXAxis.h; sourceTree = "<group>"; };
+		6EB20459207B5B7F0039946B /* AAOptions3d.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAOptions3d.m; sourceTree = "<group>"; };
+		6EB2045A207B5B7F0039946B /* AASeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AASeries.h; sourceTree = "<group>"; };
+		6EB2045B207B5B7F0039946B /* AAStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAStyle.m; sourceTree = "<group>"; };
+		6EB2045C207B5B7F0039946B /* AABar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AABar.m; sourceTree = "<group>"; };
+		6EB2045D207B5B7F0039946B /* AATitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AATitle.m; sourceTree = "<group>"; };
+		6EB2045E207B5B7F0039946B /* AALabels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AALabels.h; sourceTree = "<group>"; };
+		6EB2045F207B5B7F0039946B /* AAAreaspline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAAreaspline.h; sourceTree = "<group>"; };
+		6EB20460207B5B7F0039946B /* AAArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAArea.m; sourceTree = "<group>"; };
+		6EB20461207B5B7F0039946B /* AAAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAAnimation.m; sourceTree = "<group>"; };
+		6EB20462207B5B7F0039946B /* AALegend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AALegend.m; sourceTree = "<group>"; };
+		6EB20463207B5B7F0039946B /* AATooltip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AATooltip.h; sourceTree = "<group>"; };
+		6EB20464207B5B7F0039946B /* AAMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAMarker.m; sourceTree = "<group>"; };
+		6EB20465207B5B7F0039946B /* AALine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AALine.h; sourceTree = "<group>"; };
+		6EB20466207B5B7F0039946B /* AADataLabels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AADataLabels.h; sourceTree = "<group>"; };
+		6EB20467207B5B7F0039946B /* AAPlotOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPlotOptions.h; sourceTree = "<group>"; };
+		6EB20468207B5B7F0039946B /* AASpline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AASpline.m; sourceTree = "<group>"; };
+		6EB20469207B5B7F0039946B /* AAItemStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAItemStyle.m; sourceTree = "<group>"; };
+		6EB2046A207B5B7F0039946B /* AAPie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPie.m; sourceTree = "<group>"; };
+		6EB2046B207B5B7F0039946B /* AACrosshair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AACrosshair.h; sourceTree = "<group>"; };
+		6EB2046C207B5B7F0039946B /* AAYAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAYAxis.h; sourceTree = "<group>"; };
+		6EB2046D207B5B7F0039946B /* AASubtitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AASubtitle.h; sourceTree = "<group>"; };
+		6EB2046E207B5B7F0039946B /* AAPlotLinesElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPlotLinesElement.h; sourceTree = "<group>"; };
+		6EB2046F207B5B7F0039946B /* AAColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAColumn.h; sourceTree = "<group>"; };
+		6EB20470207B5B7F0039946B /* AAChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAChart.m; sourceTree = "<group>"; };
+		6EB20472207B5B7F0039946B /* AAOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAOptions.h; sourceTree = "<group>"; };
+		6EB20473207B5B7F0039946B /* AAChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAChartView.m; sourceTree = "<group>"; };
+		6EB20474207B5B7F0039946B /* AAGlobalMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAGlobalMacro.h; sourceTree = "<group>"; };
+		6EB20475207B5B7F0039946B /* AASeriesElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AASeriesElement.h; sourceTree = "<group>"; };
+		6EB20476207B5B7F0039946B /* AAChartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAChartModel.m; sourceTree = "<group>"; };
+		6EB20477207B5B7F0039946B /* AAChartKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAChartKit.h; sourceTree = "<group>"; };
+		6EB20478207B5B7F0039946B /* AAOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAOptions.m; sourceTree = "<group>"; };
+		6EB20479207B5B7F0039946B /* AASeriesElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AASeriesElement.m; sourceTree = "<group>"; };
+		6EB2047A207B5B7F0039946B /* AAChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAChartView.h; sourceTree = "<group>"; };
+		6EB2047B207B5B7F0039946B /* AAChartModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAChartModel.h; sourceTree = "<group>"; };
 		6EBD369D207524B600CADA27 /* Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		6EBD369E207524B600CADA27 /* Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		6EC6629C207A4718005433C7 /* UIColor+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		6EC6629D207A4718005433C7 /* UIColor+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		A951E353918827AF3B2F302B /* Pods-EnvironmentalMonitoring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnvironmentalMonitoring.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnvironmentalMonitoring/Pods-EnvironmentalMonitoring.debug.xcconfig"; sourceTree = "<group>"; };
 		F9CA6D0D432C16D56C6A45D6 /* Pods-EnvironmentalMonitoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnvironmentalMonitoring.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnvironmentalMonitoring/Pods-EnvironmentalMonitoring.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +241,7 @@
 				6E1B72ED206F694F0095A184 /* Main(主要) */,
 				6E4F8A982073717B00EB0838 /* AddDevice(添加设备) */,
 				6E53B2722079BD0500C2D468 /* DetailInfo(详情页) */,
+				6EB20430207B58AB0039946B /* DataDetail(数据详情) */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -211,8 +323,8 @@
 			isa = PBXGroup;
 			children = (
 				6E1B72F6206F694F0095A184 /* JHMainCell.h */,
-				6E1B72F7206F694F0095A184 /* JHMainCell.xib */,
 				6E1B72F8206F694F0095A184 /* JHMainCell.m */,
+				6E1B72F7206F694F0095A184 /* JHMainCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -220,6 +332,7 @@
 		6E1B7303206F695C0095A184 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				6EC6629F207A4734005433C7 /* Category */,
 				6E1B7304206F695C0095A184 /* AppDelegate.h */,
 				6E1B7306206F695C0095A184 /* AppDelegate.m */,
 				6E1B730B206F6CD40095A184 /* EnvironmentalMonitoring.pch */,
@@ -231,6 +344,7 @@
 		6E34259F207217F800A5EA43 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				6EB20437207B5B7F0039946B /* AAChartKitLib */,
 				6E3425A0207217F800A5EA43 /* MBProgressHUD */,
 			);
 			path = Tool;
@@ -306,6 +420,8 @@
 		6E53B2742079BD0500C2D468 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6EB2042C207B39CB0039946B /* DetailInfo.h */,
+				6EB2042D207B39CB0039946B /* DetailInfo.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -315,6 +431,146 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		6EB20430207B58AB0039946B /* DataDetail(数据详情) */ = {
+			isa = PBXGroup;
+			children = (
+				6EB20431207B58AB0039946B /* Controller */,
+				6EB20432207B58AB0039946B /* Model */,
+				6EB20433207B58AB0039946B /* View */,
+			);
+			path = "DataDetail(数据详情)";
+			sourceTree = "<group>";
+		};
+		6EB20431207B58AB0039946B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6EB20434207B59090039946B /* DataDetailController.h */,
+				6EB20435207B59090039946B /* DataDetailController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6EB20432207B58AB0039946B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6EB20433207B58AB0039946B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6EB20437207B5B7F0039946B /* AAChartKitLib */ = {
+			isa = PBXGroup;
+			children = (
+				6EB20438207B5B7F0039946B /* AAJSFiles */,
+				6EB2043E207B5B7F0039946B /* AAOptionsModel */,
+				6EB20471207B5B7F0039946B /* AAChartConfiger */,
+			);
+			path = AAChartKitLib;
+			sourceTree = "<group>";
+		};
+		6EB20438207B5B7F0039946B /* AAJSFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6EB20439207B5B7F0039946B /* AAHighchartsLib.js */,
+				6EB2043A207B5B7F0039946B /* AAHighchartsMore.js */,
+				6EB2043B207B5B7F0039946B /* AAFunnel.js */,
+				6EB2043C207B5B7F0039946B /* AAHighcharts-3d.js */,
+				6EB2043D207B5B7F0039946B /* AAChartView.html */,
+			);
+			path = AAJSFiles;
+			sourceTree = "<group>";
+		};
+		6EB2043E207B5B7F0039946B /* AAOptionsModel */ = {
+			isa = PBXGroup;
+			children = (
+				6EB2043F207B5B7F0039946B /* AAArea.h */,
+				6EB20440207B5B7F0039946B /* AAAreaspline.m */,
+				6EB20441207B5B7F0039946B /* AATitle.h */,
+				6EB20442207B5B7F0039946B /* AALabels.m */,
+				6EB20443207B5B7F0039946B /* AAStyle.h */,
+				6EB20444207B5B7F0039946B /* AABar.h */,
+				6EB20445207B5B7F0039946B /* AASeries.m */,
+				6EB20446207B5B7F0039946B /* AAXAxis.m */,
+				6EB20447207B5B7F0039946B /* AAOptions3d.h */,
+				6EB20448207B5B7F0039946B /* AAPlotOptions.m */,
+				6EB20449207B5B7F0039946B /* AADataLabels.m */,
+				6EB2044A207B5B7F0039946B /* AALine.m */,
+				6EB2044B207B5B7F0039946B /* AAMarker.h */,
+				6EB2044C207B5B7F0039946B /* AALegend.h */,
+				6EB2044D207B5B7F0039946B /* AATooltip.m */,
+				6EB2044E207B5B7F0039946B /* AAAnimation.h */,
+				6EB2044F207B5B7F0039946B /* AASubtitle.m */,
+				6EB20450207B5B7F0039946B /* AAYAxis.m */,
+				6EB20451207B5B7F0039946B /* AACrosshair.m */,
+				6EB20452207B5B7F0039946B /* AAPie.h */,
+				6EB20453207B5B7F0039946B /* AAItemStyle.h */,
+				6EB20454207B5B7F0039946B /* AASpline.h */,
+				6EB20455207B5B7F0039946B /* AAChart.h */,
+				6EB20456207B5B7F0039946B /* AAColumn.m */,
+				6EB20457207B5B7F0039946B /* AAPlotLinesElement.m */,
+				6EB20458207B5B7F0039946B /* AAXAxis.h */,
+				6EB20459207B5B7F0039946B /* AAOptions3d.m */,
+				6EB2045A207B5B7F0039946B /* AASeries.h */,
+				6EB2045B207B5B7F0039946B /* AAStyle.m */,
+				6EB2045C207B5B7F0039946B /* AABar.m */,
+				6EB2045D207B5B7F0039946B /* AATitle.m */,
+				6EB2045E207B5B7F0039946B /* AALabels.h */,
+				6EB2045F207B5B7F0039946B /* AAAreaspline.h */,
+				6EB20460207B5B7F0039946B /* AAArea.m */,
+				6EB20461207B5B7F0039946B /* AAAnimation.m */,
+				6EB20462207B5B7F0039946B /* AALegend.m */,
+				6EB20463207B5B7F0039946B /* AATooltip.h */,
+				6EB20464207B5B7F0039946B /* AAMarker.m */,
+				6EB20465207B5B7F0039946B /* AALine.h */,
+				6EB20466207B5B7F0039946B /* AADataLabels.h */,
+				6EB20467207B5B7F0039946B /* AAPlotOptions.h */,
+				6EB20468207B5B7F0039946B /* AASpline.m */,
+				6EB20469207B5B7F0039946B /* AAItemStyle.m */,
+				6EB2046A207B5B7F0039946B /* AAPie.m */,
+				6EB2046B207B5B7F0039946B /* AACrosshair.h */,
+				6EB2046C207B5B7F0039946B /* AAYAxis.h */,
+				6EB2046D207B5B7F0039946B /* AASubtitle.h */,
+				6EB2046E207B5B7F0039946B /* AAPlotLinesElement.h */,
+				6EB2046F207B5B7F0039946B /* AAColumn.h */,
+				6EB20470207B5B7F0039946B /* AAChart.m */,
+			);
+			path = AAOptionsModel;
+			sourceTree = "<group>";
+		};
+		6EB20471207B5B7F0039946B /* AAChartConfiger */ = {
+			isa = PBXGroup;
+			children = (
+				6EB20472207B5B7F0039946B /* AAOptions.h */,
+				6EB20473207B5B7F0039946B /* AAChartView.m */,
+				6EB20474207B5B7F0039946B /* AAGlobalMacro.h */,
+				6EB20475207B5B7F0039946B /* AASeriesElement.h */,
+				6EB20476207B5B7F0039946B /* AAChartModel.m */,
+				6EB20477207B5B7F0039946B /* AAChartKit.h */,
+				6EB20478207B5B7F0039946B /* AAOptions.m */,
+				6EB20479207B5B7F0039946B /* AASeriesElement.m */,
+				6EB2047A207B5B7F0039946B /* AAChartView.h */,
+				6EB2047B207B5B7F0039946B /* AAChartModel.h */,
+			);
+			path = AAChartConfiger;
+			sourceTree = "<group>";
+		};
+		6EC6629F207A4734005433C7 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				6EC6629C207A4718005433C7 /* UIColor+Hex.h */,
+				6EC6629D207A4718005433C7 /* UIColor+Hex.m */,
+				6EB20429207B19460039946B /* JHView.h */,
+				6EB2042A207B19460039946B /* JHView.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		9487E7956BAE5B497969B46F /* Frameworks */ = {
@@ -398,11 +654,16 @@
 				6E1B7301206F694F0095A184 /* JHMainCell.xib in Resources */,
 				6E1B72FB206F694F0095A184 /* JHLoginRegister.xib in Resources */,
 				6E1B72FA206F694F0095A184 /* JHLoginRegisterController.xib in Resources */,
+				6EB2047D207B5B7F0039946B /* AAHighchartsMore.js in Resources */,
+				6EB2047E207B5B7F0039946B /* AAFunnel.js in Resources */,
+				6EB2047F207B5B7F0039946B /* AAHighcharts-3d.js in Resources */,
 				6E3425A8207217F800A5EA43 /* MBProgressHUD.bundle in Resources */,
 				6E1B72D7206F64EF0095A184 /* LaunchScreen.storyboard in Resources */,
+				6EB2047C207B5B7F0039946B /* AAHighchartsLib.js in Resources */,
 				6E1B72D4206F64EF0095A184 /* Assets.xcassets in Resources */,
 				6E53B27A2079BD2C00C2D468 /* DetailInfoController.xib in Resources */,
 				6E1B730D206F6DE30095A184 /* Info.plist in Resources */,
+				6EB20480207B5B7F0039946B /* AAChartView.html in Resources */,
 				6E4F8AA0207371FD00EB0838 /* AddDeviceController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,21 +729,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EB20498207B5B7F0039946B /* AAPie.m in Sources */,
+				6EB20494207B5B7F0039946B /* AALegend.m in Sources */,
 				6E53B2792079BD2C00C2D468 /* DetailInfoController.m in Sources */,
+				6EB20490207B5B7F0039946B /* AABar.m in Sources */,
+				6EB20499207B5B7F0039946B /* AAChart.m in Sources */,
 				6EBD369F207524B600CADA27 /* Location.m in Sources */,
+				6EB2048E207B5B7F0039946B /* AAOptions3d.m in Sources */,
 				6E4F8A9F207371FD00EB0838 /* AddDeviceController.m in Sources */,
+				6EB2042B207B19460039946B /* JHView.m in Sources */,
+				6EB2048F207B5B7F0039946B /* AAStyle.m in Sources */,
 				6E1B72F9206F694F0095A184 /* JHLoginRegisterController.m in Sources */,
 				6E1B72FC206F694F0095A184 /* JHLoginRegisterField.m in Sources */,
+				6EC6629E207A4718005433C7 /* UIColor+Hex.m in Sources */,
 				6E3425A6207217F800A5EA43 /* MBProgressHUD.m in Sources */,
+				6EB20488207B5B7F0039946B /* AATooltip.m in Sources */,
+				6EB20489207B5B7F0039946B /* AASubtitle.m in Sources */,
 				6E1B7308206F695C0095A184 /* AppDelegate.m in Sources */,
+				6EB20493207B5B7F0039946B /* AAAnimation.m in Sources */,
+				6EB2049B207B5B7F0039946B /* AAChartModel.m in Sources */,
+				6EB20497207B5B7F0039946B /* AAItemStyle.m in Sources */,
 				6E1B7302206F694F0095A184 /* JHMainCell.m in Sources */,
+				6EB20483207B5B7F0039946B /* AASeries.m in Sources */,
+				6EB20491207B5B7F0039946B /* AATitle.m in Sources */,
 				6E1B7307206F695C0095A184 /* main.m in Sources */,
 				6E264A6C20734A6B00016B3B /* DeviceList.m in Sources */,
+				6EB20486207B5B7F0039946B /* AADataLabels.m in Sources */,
+				6EB2049C207B5B7F0039946B /* AAOptions.m in Sources */,
+				6EB20436207B59090039946B /* DataDetailController.m in Sources */,
+				6EB2048C207B5B7F0039946B /* AAColumn.m in Sources */,
 				6E3425A7207217F800A5EA43 /* MBProgressHUD+XMG.m in Sources */,
+				6EB20485207B5B7F0039946B /* AAPlotOptions.m in Sources */,
+				6EB20487207B5B7F0039946B /* AALine.m in Sources */,
+				6EB2048D207B5B7F0039946B /* AAPlotLinesElement.m in Sources */,
+				6EB20492207B5B7F0039946B /* AAArea.m in Sources */,
 				6E1E8224207238C800CFA1BF /* JHMainController.m in Sources */,
+				6EB2049D207B5B7F0039946B /* AASeriesElement.m in Sources */,
+				6EB2042E207B39CB0039946B /* DetailInfo.m in Sources */,
 				6E1B72FD206F694F0095A184 /* JHLoginRegister.m in Sources */,
 				6E8698942079FB4D00850166 /* JHNavigationController.m in Sources */,
+				6EB20495207B5B7F0039946B /* AAMarker.m in Sources */,
+				6EB2048B207B5B7F0039946B /* AACrosshair.m in Sources */,
+				6EB2048A207B5B7F0039946B /* AAYAxis.m in Sources */,
 				6E8698912079E37900850166 /* JHTabBarController.m in Sources */,
+				6EB2049A207B5B7F0039946B /* AAChartView.m in Sources */,
+				6EB20496207B5B7F0039946B /* AASpline.m in Sources */,
+				6EB20481207B5B7F0039946B /* AAAreaspline.m in Sources */,
+				6EB20484207B5B7F0039946B /* AAXAxis.m in Sources */,
+				6EB20482207B5B7F0039946B /* AALabels.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,5 +11,6 @@
 @interface DetailInfoController : UIViewController
 
 @property (nonatomic, copy) NSString *deviceName;
+@property (nonatomic, copy) NSString *deviceID;
 
 @end
