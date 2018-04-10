@@ -13,6 +13,7 @@
 #import "MBProgressHUD+XMG.h"
 #import "UIColor+Hex.h"
 #import <MJExtension/MJExtension.h>
+#import "AAGlobalMacro.h"
 
 #define Screenbounds [UIScreen mainScreen].bounds
 

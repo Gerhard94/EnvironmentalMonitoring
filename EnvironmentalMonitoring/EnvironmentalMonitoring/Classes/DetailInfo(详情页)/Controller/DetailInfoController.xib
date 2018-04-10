@@ -75,7 +75,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TS6-Nm-Rei">
-                                    <rect key="frame" x="142" y="194.5" width="90" height="32.5"/>
+                                    <rect key="frame" x="142" y="184.5" width="90" height="32.5"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="humi" translatesAutoresizingMaskIntoConstraints="NO" id="S7E-1X-kmP">
                                             <rect key="frame" x="0.0" y="1" width="30" height="30"/>
@@ -115,7 +115,7 @@
                                 <constraint firstItem="OVf-SB-Nwc" firstAttribute="height" secondItem="FzN-E9-Z4P" secondAttribute="height" multiplier="0.5" id="Zcp-19-Kbc"/>
                                 <constraint firstItem="OVf-SB-Nwc" firstAttribute="width" secondItem="FzN-E9-Z4P" secondAttribute="width" multiplier="0.333" id="ak0-xs-nUc"/>
                                 <constraint firstItem="OVf-SB-Nwc" firstAttribute="top" secondItem="wfj-my-0Kr" secondAttribute="top" constant="30" id="lYo-Eh-71D"/>
-                                <constraint firstItem="TS6-Nm-Rei" firstAttribute="top" secondItem="OVf-SB-Nwc" secondAttribute="bottom" constant="30" id="nYC-FC-NbN"/>
+                                <constraint firstItem="TS6-Nm-Rei" firstAttribute="top" secondItem="OVf-SB-Nwc" secondAttribute="bottom" constant="20" id="nYC-FC-NbN"/>
                                 <constraint firstItem="TS6-Nm-Rei" firstAttribute="centerX" secondItem="wfj-my-0Kr" secondAttribute="centerX" id="qZ2-w8-0Oz"/>
                                 <constraint firstItem="MKZ-3c-rai" firstAttribute="centerY" secondItem="OVf-SB-Nwc" secondAttribute="centerY" id="t7n-Jv-jIB"/>
                                 <constraint firstItem="Pse-Xm-FFZ" firstAttribute="top" secondItem="FzN-E9-Z4P" secondAttribute="top" constant="10" id="ws9-mt-kv0"/>
@@ -279,8 +279,8 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNo-mp-YSQ" customClass="JHView">
                                     <rect key="frame" x="0.0" y="164.5" width="375" height="55"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 数据详情" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUI-Oy-aue">
-                                            <rect key="frame" x="40" y="15" width="86" height="24"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="数据详情" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUI-Oy-aue">
+                                            <rect key="frame" x="40" y="15" width="82" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -288,13 +288,13 @@
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstItem="tUI-Oy-aue" firstAttribute="leading" secondItem="dNo-mp-YSQ" secondAttribute="leading" constant="40" id="Txa-hE-3JE"/>
                                         <constraint firstItem="tUI-Oy-aue" firstAttribute="centerY" secondItem="dNo-mp-YSQ" secondAttribute="centerY" id="jVe-uQ-yjY"/>
                                     </constraints>
                                 </view>
                             </subviews>
                             <constraints>
                                 <constraint firstItem="7A4-LB-no9" firstAttribute="height" secondItem="BBA-iQ-ufa" secondAttribute="height" id="3IX-I8-kf1"/>
+                                <constraint firstItem="tUI-Oy-aue" firstAttribute="leading" secondItem="RRM-KC-ZBd" secondAttribute="leading" id="5Us-fL-dAc"/>
                                 <constraint firstItem="BBA-iQ-ufa" firstAttribute="height" secondItem="KcH-Iv-wda" secondAttribute="height" id="QYu-XY-bfG"/>
                                 <constraint firstItem="KcH-Iv-wda" firstAttribute="height" secondItem="dNo-mp-YSQ" secondAttribute="height" id="m2O-Xc-kTd"/>
                             </constraints>

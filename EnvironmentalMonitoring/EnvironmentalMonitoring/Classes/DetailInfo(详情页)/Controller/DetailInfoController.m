@@ -57,6 +57,10 @@ static NSUInteger isRefresh = 0;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@""
+                                                                             style:UIBarButtonItemStylePlain
+                                                                            target:self
+                                                                            action:nil];
     //设置标题和ID
     self.title = _deviceName;
     self.deviceIDLabel.text = self.deviceID;
@@ -78,6 +82,8 @@ static NSUInteger isRefresh = 0;
 
 - (void)pushDataDeatil {
     DataDetailController *dataDetailVC = [[DataDetailController alloc] init];
+    dataDetailVC.updataTime = self.updateTime.text;
+    dataDetailVC.deviceID = self.deviceIDLabel.text;
     [self.navigationController pushViewController:dataDetailVC animated:YES];
 }
 
@@ -106,7 +112,7 @@ static NSUInteger isRefresh = 0;
         //取出数组
         for (int i = 0; i < _resultArray.count; ++i) {
             DetailInfo *detailInfo = _resultArray[i];
-            NSString *state = detailInfo.current_value == 0 ? @"正常" : @"异常";
+            NSString *state = [detailInfo.current_value isEqualToString:@"0"] ? @"正常" : @"异常";
             switch (i) {
                 case 0:
                     self.roomTemp.text = [detailInfo.current_value stringByAppendingString:@"°"];

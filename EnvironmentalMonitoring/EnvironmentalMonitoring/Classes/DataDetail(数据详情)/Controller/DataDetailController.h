@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DataDetailController : UIViewController
+@interface DataDetailController : UITableViewController
+
+@property (nonatomic, copy) NSString *updataTime;
+@property (nonatomic, copy) NSString *deviceID;
 
 @end

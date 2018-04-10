@@ -69,6 +69,10 @@
 		6EB2049D207B5B7F0039946B /* AASeriesElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20479207B5B7F0039946B /* AASeriesElement.m */; };
 		6EBD369F207524B600CADA27 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBD369E207524B600CADA27 /* Location.m */; };
 		6EC6629E207A4718005433C7 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC6629D207A4718005433C7 /* UIColor+Hex.m */; };
+		6EFD5BFD207C8C4F00DBBF0E /* DataDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFD5BFC207C8C4F00DBBF0E /* DataDetail.m */; };
+		6EFD5C00207C908600DBBF0E /* Datapoints.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFD5BFF207C908600DBBF0E /* Datapoints.m */; };
+		6EFD5C0B207CC3F200DBBF0E /* DataDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFD5C09207CC3F200DBBF0E /* DataDetailCell.m */; };
+		6EFD5C0C207CC3F200DBBF0E /* DataDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EFD5C0A207CC3F200DBBF0E /* DataDetailCell.xib */; };
 		C544413BE6E6BAAB53B145D1 /* libPods-EnvironmentalMonitoring.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C28BDBBC49A733EF101962 /* libPods-EnvironmentalMonitoring.a */; };
 /* End PBXBuildFile section */
 
@@ -187,6 +191,13 @@
 		6EBD369E207524B600CADA27 /* Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		6EC6629C207A4718005433C7 /* UIColor+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		6EC6629D207A4718005433C7 /* UIColor+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		6EFD5BFB207C8C4F00DBBF0E /* DataDetail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataDetail.h; sourceTree = "<group>"; };
+		6EFD5BFC207C8C4F00DBBF0E /* DataDetail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataDetail.m; sourceTree = "<group>"; };
+		6EFD5BFE207C908600DBBF0E /* Datapoints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Datapoints.h; sourceTree = "<group>"; };
+		6EFD5BFF207C908600DBBF0E /* Datapoints.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Datapoints.m; sourceTree = "<group>"; };
+		6EFD5C08207CC3F200DBBF0E /* DataDetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataDetailCell.h; sourceTree = "<group>"; };
+		6EFD5C09207CC3F200DBBF0E /* DataDetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataDetailCell.m; sourceTree = "<group>"; };
+		6EFD5C0A207CC3F200DBBF0E /* DataDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataDetailCell.xib; sourceTree = "<group>"; };
 		A951E353918827AF3B2F302B /* Pods-EnvironmentalMonitoring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnvironmentalMonitoring.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnvironmentalMonitoring/Pods-EnvironmentalMonitoring.debug.xcconfig"; sourceTree = "<group>"; };
 		F9CA6D0D432C16D56C6A45D6 /* Pods-EnvironmentalMonitoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnvironmentalMonitoring.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnvironmentalMonitoring/Pods-EnvironmentalMonitoring.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -455,6 +466,10 @@
 		6EB20432207B58AB0039946B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6EFD5BFB207C8C4F00DBBF0E /* DataDetail.h */,
+				6EFD5BFC207C8C4F00DBBF0E /* DataDetail.m */,
+				6EFD5BFE207C908600DBBF0E /* Datapoints.h */,
+				6EFD5BFF207C908600DBBF0E /* Datapoints.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -462,6 +477,9 @@
 		6EB20433207B58AB0039946B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6EFD5C08207CC3F200DBBF0E /* DataDetailCell.h */,
+				6EFD5C09207CC3F200DBBF0E /* DataDetailCell.m */,
+				6EFD5C0A207CC3F200DBBF0E /* DataDetailCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -651,6 +669,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EFD5C0C207CC3F200DBBF0E /* DataDetailCell.xib in Resources */,
 				6E1B7301206F694F0095A184 /* JHMainCell.xib in Resources */,
 				6E1B72FB206F694F0095A184 /* JHLoginRegister.xib in Resources */,
 				6E1B72FA206F694F0095A184 /* JHLoginRegisterController.xib in Resources */,
@@ -737,6 +756,7 @@
 				6EBD369F207524B600CADA27 /* Location.m in Sources */,
 				6EB2048E207B5B7F0039946B /* AAOptions3d.m in Sources */,
 				6E4F8A9F207371FD00EB0838 /* AddDeviceController.m in Sources */,
+				6EFD5C00207C908600DBBF0E /* Datapoints.m in Sources */,
 				6EB2042B207B19460039946B /* JHView.m in Sources */,
 				6EB2048F207B5B7F0039946B /* AAStyle.m in Sources */,
 				6E1B72F9206F694F0095A184 /* JHLoginRegisterController.m in Sources */,
@@ -763,6 +783,7 @@
 				6EB20487207B5B7F0039946B /* AALine.m in Sources */,
 				6EB2048D207B5B7F0039946B /* AAPlotLinesElement.m in Sources */,
 				6EB20492207B5B7F0039946B /* AAArea.m in Sources */,
+				6EFD5BFD207C8C4F00DBBF0E /* DataDetail.m in Sources */,
 				6E1E8224207238C800CFA1BF /* JHMainController.m in Sources */,
 				6EB2049D207B5B7F0039946B /* AASeriesElement.m in Sources */,
 				6EB2042E207B39CB0039946B /* DetailInfo.m in Sources */,
@@ -774,6 +795,7 @@
 				6E8698912079E37900850166 /* JHTabBarController.m in Sources */,
 				6EB2049A207B5B7F0039946B /* AAChartView.m in Sources */,
 				6EB20496207B5B7F0039946B /* AASpline.m in Sources */,
+				6EFD5C0B207CC3F200DBBF0E /* DataDetailCell.m in Sources */,
 				6EB20481207B5B7F0039946B /* AAAreaspline.m in Sources */,
 				6EB20484207B5B7F0039946B /* AAXAxis.m in Sources */,
 				6EB20482207B5B7F0039946B /* AALabels.m in Sources */,
