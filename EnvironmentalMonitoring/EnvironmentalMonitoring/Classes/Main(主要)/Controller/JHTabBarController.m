@@ -9,6 +9,7 @@
 #import "JHTabBarController.h"
 #import "JHMainController.h"
 #import "JHNavigationController.h"
+#import "SettingController.h"
 
 @interface JHTabBarController ()
 
@@ -30,7 +31,8 @@
     mainNAV.tabBarItem.image = [UIImage imageNamed:@"list"];
     mainNAV.tabBarItem.selectedImage = [UIImage imageNamed:@"list_click"];
     
-    UIViewController *settingVC = [[UIViewController alloc] init];
+    UIStoryboard *settingSB = [UIStoryboard storyboardWithName:NSStringFromClass([SettingController class]) bundle:nil];
+    SettingController *settingVC = [settingSB instantiateInitialViewController];
     JHNavigationController *settingNAV = [[JHNavigationController alloc] initWithRootViewController:settingVC];
     settingNAV.tabBarItem.title = @"设置";
     settingNAV.tabBarItem.image = [UIImage imageNamed:@"setting"];
