@@ -69,6 +69,9 @@
 		6EB2049B207B5B7F0039946B /* AAChartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20476207B5B7F0039946B /* AAChartModel.m */; };
 		6EB2049C207B5B7F0039946B /* AAOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20478207B5B7F0039946B /* AAOptions.m */; };
 		6EB2049D207B5B7F0039946B /* AASeriesElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20479207B5B7F0039946B /* AASeriesElement.m */; };
+		6EB6CA9B207DA09F0064CC5A /* JHAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB6CA9A207DA09F0064CC5A /* JHAlertView.m */; };
+		6EB6CA9E207DA20A0064CC5A /* JHAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB6CA9D207DA20A0064CC5A /* JHAlertView.xib */; };
+		6EB6CAA4207DA95C0064CC5A /* AutoRefrshController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB6CAA3207DA95C0064CC5A /* AutoRefrshController.m */; };
 		6EBD369F207524B600CADA27 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBD369E207524B600CADA27 /* Location.m */; };
 		6EC6629E207A4718005433C7 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC6629D207A4718005433C7 /* UIColor+Hex.m */; };
 		6EFD5BFD207C8C4F00DBBF0E /* DataDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFD5BFC207C8C4F00DBBF0E /* DataDetail.m */; };
@@ -192,6 +195,11 @@
 		6EB20479207B5B7F0039946B /* AASeriesElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AASeriesElement.m; sourceTree = "<group>"; };
 		6EB2047A207B5B7F0039946B /* AAChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAChartView.h; sourceTree = "<group>"; };
 		6EB2047B207B5B7F0039946B /* AAChartModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAChartModel.h; sourceTree = "<group>"; };
+		6EB6CA99207DA09F0064CC5A /* JHAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHAlertView.h; sourceTree = "<group>"; };
+		6EB6CA9A207DA09F0064CC5A /* JHAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHAlertView.m; sourceTree = "<group>"; };
+		6EB6CA9D207DA20A0064CC5A /* JHAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JHAlertView.xib; sourceTree = "<group>"; };
+		6EB6CAA2207DA95C0064CC5A /* AutoRefrshController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoRefrshController.h; sourceTree = "<group>"; };
+		6EB6CAA3207DA95C0064CC5A /* AutoRefrshController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoRefrshController.m; sourceTree = "<group>"; };
 		6EBD369D207524B600CADA27 /* Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		6EBD369E207524B600CADA27 /* Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		6EC6629C207A4718005433C7 /* UIColor+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
@@ -363,6 +371,7 @@
 			children = (
 				6EB20437207B5B7F0039946B /* AAChartKitLib */,
 				6E3425A0207217F800A5EA43 /* MBProgressHUD */,
+				6EB6CA98207DA0200064CC5A /* JHAlertController */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -456,6 +465,7 @@
 				6E723369207D0C18006A7804 /* Controller */,
 				6E72336A207D0C18006A7804 /* Model */,
 				6E72336B207D0C18006A7804 /* View */,
+				6EB6CAA1207DA9240064CC5A /* ChildController */,
 			);
 			path = "Setting(设置)";
 			sourceTree = "<group>";
@@ -620,6 +630,25 @@
 			path = AAChartConfiger;
 			sourceTree = "<group>";
 		};
+		6EB6CA98207DA0200064CC5A /* JHAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				6EB6CA99207DA09F0064CC5A /* JHAlertView.h */,
+				6EB6CA9A207DA09F0064CC5A /* JHAlertView.m */,
+				6EB6CA9D207DA20A0064CC5A /* JHAlertView.xib */,
+			);
+			path = JHAlertController;
+			sourceTree = "<group>";
+		};
+		6EB6CAA1207DA9240064CC5A /* ChildController */ = {
+			isa = PBXGroup;
+			children = (
+				6EB6CAA2207DA95C0064CC5A /* AutoRefrshController.h */,
+				6EB6CAA3207DA95C0064CC5A /* AutoRefrshController.m */,
+			);
+			path = ChildController;
+			sourceTree = "<group>";
+		};
 		6EC6629F207A4734005433C7 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -723,6 +752,7 @@
 				6E1B72D4206F64EF0095A184 /* Assets.xcassets in Resources */,
 				6E53B27A2079BD2C00C2D468 /* DetailInfoController.xib in Resources */,
 				6E1B730D206F6DE30095A184 /* Info.plist in Resources */,
+				6EB6CA9E207DA20A0064CC5A /* JHAlertView.xib in Resources */,
 				6EB20480207B5B7F0039946B /* AAChartView.html in Resources */,
 				6E4F8AA0207371FD00EB0838 /* AddDeviceController.xib in Resources */,
 			);
@@ -815,10 +845,12 @@
 				6EB20483207B5B7F0039946B /* AASeries.m in Sources */,
 				6EB20491207B5B7F0039946B /* AATitle.m in Sources */,
 				6E1B7307206F695C0095A184 /* main.m in Sources */,
+				6EB6CAA4207DA95C0064CC5A /* AutoRefrshController.m in Sources */,
 				6E264A6C20734A6B00016B3B /* DeviceList.m in Sources */,
 				6EB20486207B5B7F0039946B /* AADataLabels.m in Sources */,
 				6EB2049C207B5B7F0039946B /* AAOptions.m in Sources */,
 				6EB20436207B59090039946B /* DataDetailController.m in Sources */,
+				6EB6CA9B207DA09F0064CC5A /* JHAlertView.m in Sources */,
 				6EB2048C207B5B7F0039946B /* AAColumn.m in Sources */,
 				6E3425A7207217F800A5EA43 /* MBProgressHUD+XMG.m in Sources */,
 				6EB20485207B5B7F0039946B /* AAPlotOptions.m in Sources */,

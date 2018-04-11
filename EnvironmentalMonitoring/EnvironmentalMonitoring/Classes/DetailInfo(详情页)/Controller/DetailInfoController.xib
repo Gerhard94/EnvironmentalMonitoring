@@ -20,6 +20,7 @@
                 <outlet property="deviceIDLabel" destination="d1d-Cl-dMF" id="TEK-Sc-kRc"/>
                 <outlet property="funTemp" destination="pJi-2k-BlS" id="bsw-VW-Vwr"/>
                 <outlet property="mainScrollView" destination="JsO-Di-mfq" id="Ota-zv-vg9"/>
+                <outlet property="refreshMode" destination="P0M-fh-rrp" id="K9a-Pi-pIY"/>
                 <outlet property="roomDoorIsClose" destination="Itx-KK-hmZ" id="A3f-I2-fnC"/>
                 <outlet property="roomHumi" destination="Iq6-Yj-IX2" id="nq5-NP-ANc"/>
                 <outlet property="roomTemp" destination="MKZ-3c-rai" id="NId-Q0-L70"/>
@@ -99,12 +100,19 @@
                                         <constraint firstItem="Iq6-Yj-IX2" firstAttribute="centerY" secondItem="S7E-1X-kmP" secondAttribute="centerY" id="qhh-gW-svv"/>
                                     </constraints>
                                 </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0M-fh-rrp">
+                                    <rect key="frame" x="10" y="37" width="35.5" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="OVf-SB-Nwc" firstAttribute="centerX" secondItem="FzN-E9-Z4P" secondAttribute="centerX" id="8B4-hi-zZ9"/>
                                 <constraint firstItem="MKZ-3c-rai" firstAttribute="centerX" secondItem="OVf-SB-Nwc" secondAttribute="centerX" id="AVF-zi-eWK"/>
                                 <constraint firstItem="d1d-Cl-dMF" firstAttribute="centerY" secondItem="Pse-Xm-FFZ" secondAttribute="centerY" id="BBm-J7-ffw"/>
+                                <constraint firstItem="P0M-fh-rrp" firstAttribute="leading" secondItem="Pse-Xm-FFZ" secondAttribute="leading" id="Hf1-ra-0Jh"/>
                                 <constraint firstItem="wfj-my-0Kr" firstAttribute="trailing" secondItem="DZc-d2-F7G" secondAttribute="trailing" constant="20" id="L4t-jS-xJc"/>
                                 <constraint firstItem="TS6-Nm-Rei" firstAttribute="height" secondItem="FzN-E9-Z4P" secondAttribute="height" multiplier="0.12" id="SV5-gy-0zG"/>
                                 <constraint firstItem="Pse-Xm-FFZ" firstAttribute="leading" secondItem="FzN-E9-Z4P" secondAttribute="leading" constant="10" id="Ua8-Bk-gMn"/>
@@ -117,6 +125,7 @@
                                 <constraint firstItem="OVf-SB-Nwc" firstAttribute="top" secondItem="wfj-my-0Kr" secondAttribute="top" constant="30" id="lYo-Eh-71D"/>
                                 <constraint firstItem="TS6-Nm-Rei" firstAttribute="top" secondItem="OVf-SB-Nwc" secondAttribute="bottom" constant="20" id="nYC-FC-NbN"/>
                                 <constraint firstItem="TS6-Nm-Rei" firstAttribute="centerX" secondItem="wfj-my-0Kr" secondAttribute="centerX" id="qZ2-w8-0Oz"/>
+                                <constraint firstItem="P0M-fh-rrp" firstAttribute="top" secondItem="Pse-Xm-FFZ" secondAttribute="bottom" constant="10" id="rGh-Js-t5f"/>
                                 <constraint firstItem="MKZ-3c-rai" firstAttribute="centerY" secondItem="OVf-SB-Nwc" secondAttribute="centerY" id="t7n-Jv-jIB"/>
                                 <constraint firstItem="Pse-Xm-FFZ" firstAttribute="top" secondItem="FzN-E9-Z4P" secondAttribute="top" constant="10" id="ws9-mt-kv0"/>
                                 <constraint firstItem="wfj-my-0Kr" firstAttribute="trailing" secondItem="CrC-sx-V3g" secondAttribute="trailing" constant="20" id="yNB-5p-TZ3"/>

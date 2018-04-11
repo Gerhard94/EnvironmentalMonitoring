@@ -7,10 +7,11 @@
 //
 
 #import "SettingController.h"
-
+#import "JHLoginRegisterController.h"
 @interface SettingController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *managerID;
+@property (weak, nonatomic) IBOutlet UILabel *autoRefreshState;
 
 @end
 
@@ -19,18 +20,44 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"设置";
+    
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@""
+                                                                             style:UIBarButtonItemStylePlain
+                                                                            target:self
+                                                                            action:nil];
+    
     self.managerID.text = [NSString stringWithFormat:@"管理员ID: %@",[[NSUserDefaults standardUserDefaults] objectForKey:@"account"]];
+    NSUInteger refreshSecond = [[[NSUserDefaults standardUserDefaults] valueForKey:@"autoRefresh"] integerValue];
+    self.autoRefreshState.text = [[NSUserDefaults standardUserDefaults] valueForKey:@"autoRefresh"] == 0 ? @"关闭" : [NSString stringWithFormat:@"%lu秒",(unsigned long)refreshSecond];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 1) {
+        if (indexPath.row == 1) {
+            JHLoginRegisterController *loginVC = [[JHLoginRegisterController alloc] init];
+            [[UIApplication sharedApplication].keyWindow setRootViewController:loginVC];
+        }
+    }
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSUInteger refreshSecond = [[[NSUserDefaults standardUserDefaults] valueForKey:@"autoRefresh"] integerValue];
+    self.autoRefreshState.text = refreshSecond == 0 ? @"关闭" : [NSString stringWithFormat:@"%lu秒",(unsigned long)refreshSecond];
 }
 
 

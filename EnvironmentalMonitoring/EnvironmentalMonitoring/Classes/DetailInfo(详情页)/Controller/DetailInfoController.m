@@ -12,23 +12,40 @@
 #import "DataDetailController.h"
 
 @interface DetailInfoController ()
+
+//是个ScrollView
 @property (weak, nonatomic) IBOutlet UIScrollView *mainScrollView;
+
+//画了个圆
 @property (weak, nonatomic) IBOutlet UIView *circleView;
+
+//设备ID
 @property (weak, nonatomic) IBOutlet UILabel *deviceIDLabel;
+
+//房间温湿度 空调和风扇的温度
 @property (weak, nonatomic) IBOutlet UILabel *roomTemp;
-@property (weak, nonatomic) IBOutlet UILabel *updateTime;
 @property (weak, nonatomic) IBOutlet UILabel *roomHumi;
+@property (weak, nonatomic) IBOutlet UILabel *airTemp;
+@property (weak, nonatomic) IBOutlet UILabel *funTemp;
+
+//漏水报警器 烟雾探测器 房门柜门闭合检测器
 @property (weak, nonatomic) IBOutlet UILabel *waterLeakage;
 @property (weak, nonatomic) IBOutlet UILabel *smokeDetector;
 @property (weak, nonatomic) IBOutlet UILabel *roomDoorIsClose;
-@property (weak, nonatomic) IBOutlet UILabel *airTemp;
-@property (weak, nonatomic) IBOutlet UILabel *funTemp;
 @property (weak, nonatomic) IBOutlet UILabel *cabinetDoorIsClose;
 
-@property (nonatomic, strong) NSMutableArray *resultArray;
+//更新时间 刷新模型
+@property (weak, nonatomic) IBOutlet UILabel *updateTime;
+@property (weak, nonatomic) IBOutlet UILabel *refreshMode;
 
+//数据详情
 @property (weak, nonatomic) IBOutlet UIView *dataDetail;
 
+//模型数组
+@property (nonatomic, strong) NSMutableArray *resultArray;
+
+//定时器
+@property (nonatomic, strong) NSTimer *timer;
 @end
 
 static NSUInteger isRefresh = 0;
@@ -42,6 +59,7 @@ static NSUInteger isRefresh = 0;
     return _resultArray;
 }
 
+#pragma mark - 控制器生命周期
 - (instancetype)init {
     self = [super init];
     if (self) {
@@ -52,6 +70,11 @@ static NSUInteger isRefresh = 0;
         }];
     }
     return self;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [_timer setFireDate:[NSDate distantPast]];
 }
 
 - (void)viewDidLoad {
@@ -78,8 +101,26 @@ static NSUInteger isRefresh = 0;
     //添加点击手势
     UITapGestureRecognizer *panGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushDataDeatil)];
     [self.dataDetail addGestureRecognizer:panGesture];
+    
+    NSUInteger refreshSecond = [[[NSUserDefaults standardUserDefaults] valueForKey:@"autoRefresh"] integerValue];
+    self.refreshMode.text = refreshSecond == 0 ? @"手动刷新" : [NSString stringWithFormat:@"自动刷新: %lu秒",(unsigned long)refreshSecond];
+    if (refreshSecond != 0) {
+        _timer = [NSTimer timerWithTimeInterval:refreshSecond target:self selector:@selector(refreshData) userInfo:nil repeats:YES];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(refreshSecond * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [[NSRunLoop mainRunLoop] addTimer:_timer forMode:NSDefaultRunLoopMode];
+        });
+    }
 }
 
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    [_timer setFireDate:[NSDate distantFuture]];
+    
+    //解决关闭定时器后进来提示语错误bug
+    isRefresh = 0;
+}
+
+//点击数据详情
 - (void)pushDataDeatil {
     DataDetailController *dataDetailVC = [[DataDetailController alloc] init];
     dataDetailVC.updataTime = self.updateTime.text;
@@ -87,12 +128,14 @@ static NSUInteger isRefresh = 0;
     [self.navigationController pushViewController:dataDetailVC animated:YES];
 }
 
+//刷新数据
 - (void)refreshData {
     //标志为刷新状态
     isRefresh = 1;
     [self checkMoreDatastreams];
 }
 
+//发送网络请求
 - (void)checkMoreDatastreams {
     //设置url
     NSString *urlStr = [[base_url stringByAppendingPathComponent:self.deviceID] stringByAppendingPathComponent:@"datastreams"];
@@ -113,6 +156,8 @@ static NSUInteger isRefresh = 0;
         for (int i = 0; i < _resultArray.count; ++i) {
             DetailInfo *detailInfo = _resultArray[i];
             NSString *state = [detailInfo.current_value isEqualToString:@"0"] ? @"正常" : @"异常";
+            
+            //展示数据
             switch (i) {
                 case 0:
                     self.roomTemp.text = [detailInfo.current_value stringByAppendingString:@"°"];
@@ -142,6 +187,7 @@ static NSUInteger isRefresh = 0;
                     break;
             }
             
+            //选择提示语
             if (isRefresh == 1) {
                 [MBProgressHUD showSuccess:@"刷新成功"];
             } else {

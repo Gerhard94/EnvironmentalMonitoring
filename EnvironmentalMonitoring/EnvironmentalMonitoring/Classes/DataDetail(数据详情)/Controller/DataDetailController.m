@@ -125,8 +125,6 @@ static NSString *ID = @"cell";
     [manager GET:urlStr parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSLog(@"%@",responseObject);
-    
         NSArray *datastreams = responseObject[@"data"][@"datastreams"];
         for (int i = 0; i < datastreams.count; ++i) {
             NSArray *array = datastreams[i];
@@ -151,7 +149,6 @@ static NSString *ID = @"cell";
         for (NSDictionary *dict in _airTempArray.datapoints) {
             NSString *dateStr = dict[@"at"];
             dateStr = [dateStr substringWithRange:NSMakeRange(11, 8)];
-            NSLog(@"%@",dateStr);
             [_airTempX addObject:dateStr];
             [_airTempY addObject:dict[@"value"]];
         }

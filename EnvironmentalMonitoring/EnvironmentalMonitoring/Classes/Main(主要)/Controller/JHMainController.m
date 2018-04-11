@@ -107,6 +107,7 @@ static NSUInteger page = 2;
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
     self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
     
+//    [[NSUserDefaults standardUserDefaults] setObject:@0 forKey:@"autoRefresh"];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -367,6 +368,7 @@ static NSUInteger page = 2;
     DetailInfoController *detailInfoVC = [[DetailInfoController alloc] init];
     detailInfoVC.deviceName = list.title;
     detailInfoVC.deviceID = list.idField;
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     [self.navigationController pushViewController:detailInfoVC animated:YES];
     
 }
