@@ -8,6 +8,8 @@
 
 #import "SettingController.h"
 #import "JHLoginRegisterController.h"
+#import <TYAlertController/UIView+TYAlertView.h>
+#import "AutoRefresh.h"
 @interface SettingController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *managerID;
@@ -39,16 +41,129 @@
     
 }
 
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+- (void)changedPassword:(NSString *)value{
+    
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionaryWithCapacity:0];
+    parameters[@"datastreams"] = @[@{@"id" : @"password",@"datapoints" : @[@{@"value" : value}]}];
+    
+    //创建manager
+    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    
+    //创建request
+    NSString *urlStr = [[base_url stringByAppendingPathComponent:@"28341037"] stringByAppendingPathComponent:@"datapoints"];
+    
+    NSMutableURLRequest *request = [[AFJSONRequestSerializer serializer] requestWithMethod:@"POST"
+                                                                                 URLString:urlStr
+                                                                                parameters:parameters
+                                                                                     error:nil];
+    
+    //设置网络请求超时时间和http头部
+    request.timeoutInterval = 8.f;
+    [request setValue:Api_key forHTTPHeaderField:@"api-key"];
+    
+    //创建会话并发送网络请求
+    NSURLSessionDataTask *task = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+        if (!error) {
+            if ([responseObject[@"error"] isEqualToString:@"succ"]) {
+                // 请求成功数据处理
+                [MBProgressHUD showSuccess:@"修改密码成功"];
+                [[NSUserDefaults standardUserDefaults] setObject:value forKey:@"password"];
+            } else {
+                [MBProgressHUD showError:responseObject[@"error"]];
+            }
+        } else {
+            //根据错误码显示错误提示语
+            [MBProgressHUD showErrorForErrorCode:error.code];
+        }
+    }];
+    
+    [task resume];
+    
+    
+    
+}
+
+- (UIAlertController *)setAlertControllerWithTitle:(NSString *)title message:(NSString *)message textFieldPlaceholder:(NSString *)textFieldPlaceholder {
+    
+    UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:title
+                                                                     message:message
+                                                              preferredStyle:UIAlertControllerStyleAlert];
+    
+    //创建TextField
+    [alertVC addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        textField.placeholder = textFieldPlaceholder;
+        textField.secureTextEntry = YES;
+    }];
+    
+    [alertVC addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }]];
+    return alertVC;
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 1) {
-        if (indexPath.row == 1) {
-            JHLoginRegisterController *loginVC = [[JHLoginRegisterController alloc] init];
-            [[UIApplication sharedApplication].keyWindow setRootViewController:loginVC];
+    if (indexPath.section == 0) {
+        if (indexPath.row == 2) {
+            AutoRefresh *autoRefreshView = [AutoRefresh createViewFromNib];
+            TYAlertController *alertC = [TYAlertController alertControllerWithAlertView:autoRefreshView preferredStyle:TYAlertControllerStyleActionSheet];
+            alertC.backgoundTapDismissEnable = YES;
+            
+            [alertC setViewWillHideHandler:^(UIView *alertView) {
+                AutoRefresh * alertV = (AutoRefresh *)alertView;
+                if (alertV.refreshSwitch.on == YES && ![alertV.valueLabel.text isEqualToString:@"0秒"]) {
+                    [[NSUserDefaults standardUserDefaults] setObject:alertV.valueLabel.text forKey:@"autoRefresh"];
+                    self.autoRefreshState.text = [alertV.valueLabel.text isEqualToString:@"0"] ? @"关闭" : alertV.valueLabel.text;
+                } else {
+                    [[NSUserDefaults standardUserDefaults] setObject:@0 forKey:@"autoRefresh"];
+                    self.autoRefreshState.text = @"关闭";
+                }
+            }];
+            [self presentViewController:alertC animated:YES completion:nil];
+        }
+    } else if (indexPath.section == 1) {
+        if (indexPath.row == 0) {
+            
+            UIAlertController *alertVC = [self setAlertControllerWithTitle:@"核对信息" message:@"请输入管理员密码" textFieldPlaceholder:@"请输入密码"];
+            
+            UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+                UITextField *alertTF = alertVC.textFields[0];
+                if ([alertTF.text isEqualToString:[[NSUserDefaults standardUserDefaults] objectForKey:@"password"]]) {
+                    
+                    UIAlertController *alertVC = [self setAlertControllerWithTitle:@"修改密码" message:@"请输入新密码" textFieldPlaceholder:@"请输入密码"];
+                    UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+                        UITextField *alertTF = alertVC.textFields[0];
+                        [self changedPassword:alertTF.text];
+                        
+                    }];
+                    [alertVC addAction:action];
+                    [self presentViewController:alertVC animated:YES completion:nil];
+                    
+                    
+                } else {
+                    [self presentViewController:alertVC animated:YES completion:nil];
+                    [MBProgressHUD showError:@"输入密码有误请重新输入"];
+                }
+            }];
+            
+            [alertVC addAction:action];
+            [self presentViewController:alertVC animated:YES completion:nil];
+
+        } else if (indexPath.row == 1) {
+            TYAlertView *alertView = [TYAlertView alertViewWithTitle:@"警告" message:@"确定要退出登录吗?"];
+            [alertView addAction:[TYAlertAction actionWithTitle:@"确定" style:TYAlertActionStyleDestructive handler:^(TYAlertAction *action) {
+                JHLoginRegisterController *loginVC = [[JHLoginRegisterController alloc] init];
+                [[UIApplication sharedApplication].keyWindow setRootViewController:loginVC];
+            }]];
+            [alertView addAction:[TYAlertAction actionWithTitle:@"取消" style:TYAlertActionStyleCancel handler:nil]];
+            TYAlertController *alertC = [TYAlertController alertControllerWithAlertView:alertView preferredStyle:TYAlertControllerStyleAlert transitionAnimation:TYAlertTransitionAnimationDropDown];
+            [self presentViewController:alertC animated:YES completion:nil];
         }
     }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

@@ -139,20 +139,8 @@ static NSString *originAuthInfo;
                 [MBProgressHUD showError:responseObject[@"error"]];
             }
         } else {
-            NSString *errorStr;
             //根据错误码显示错误提示语
-            switch (error.code) {
-                case -1001:
-                    errorStr = @"网络请求超时";
-                    break;
-                case -1009:
-                    errorStr = @"没有网络连接";
-                    break;
-                default:
-                    errorStr = @"网络错误";
-                    break;
-            }
-            [MBProgressHUD showError:errorStr];
+            [MBProgressHUD showErrorForErrorCode:error.code];
         }
     }];
     

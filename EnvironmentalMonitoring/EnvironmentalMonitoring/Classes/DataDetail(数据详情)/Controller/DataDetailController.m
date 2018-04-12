@@ -182,9 +182,9 @@ static NSString *ID = @"cell";
     .categoriesSet(_airTempX)
     .yAxisTitleSet(@"摄氏度")
     .seriesSet(@[
-                 AAObject(AASeriesElement).nameSet(@"房间温度").dataSet(_roomTempY),
-                             AAObject(AASeriesElement).nameSet(@"空调温度").dataSet(_airTempY),
-                             AAObject(AASeriesElement).nameSet(@"排气扇温度").dataSet(_funTempY)
+                 AAObject(AASeriesElement).nameSet(@"房间温度").dataSet(_roomTempY).colorSet(@"#ff6699"),
+                 AAObject(AASeriesElement).nameSet(@"空调温度").dataSet(_airTempY).colorSet(@"#3366ff"),
+                 AAObject(AASeriesElement).nameSet(@"排气扇温度").dataSet(_funTempY).colorSet(@"#FFFF00")
                              
                              ]
                            );
@@ -211,7 +211,7 @@ static NSString *ID = @"cell";
         chartModel.chartTypeSet(AAChartTypeAreaspline);
         chartModel.titleSet([NSString stringWithFormat:@"湿度统计图——%@",dateStr]);
         chartModel.seriesSet(@[
-                                AAObject(AASeriesElement).nameSet(@"房间湿度").dataSet(_roomHumiY)
+                               AAObject(AASeriesElement).nameSet(@"房间湿度%").dataSet(_roomHumiY).colorSet(@"#FF0000")
                                 ]
                               );
         
