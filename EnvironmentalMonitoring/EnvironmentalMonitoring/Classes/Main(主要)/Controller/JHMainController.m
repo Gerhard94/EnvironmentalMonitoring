@@ -15,7 +15,7 @@
 #import "DetailInfoController.h"
 
 
-@interface JHMainController () <UITableViewDelegate,UITableViewDataSource,UISearchResultsUpdating,UISearchBarDelegate>
+@interface JHMainController () <UITableViewDelegate,UITableViewDataSource,UISearchResultsUpdating,UISearchBarDelegate,UIViewControllerPreviewingDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 
@@ -269,7 +269,39 @@ static NSUInteger page = 2;
         DeviceList *deviceList = self.datas[indexPath.row];
         cell.deviceList = deviceList;
     }
+    
+    [self registerForPreviewingWithDelegate:self sourceView:cell];
+    
     return cell;
+}
+
+- (UIViewController *)previewingContext:(id<UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location {
+    // 获取tableview点击的位置
+    NSIndexPath *indexPath = [_tableView indexPathForCell:(UITableViewCell* )[previewingContext sourceView]];
+    DeviceList *list;
+    if (self.searchController.active) {
+        list = _results[indexPath.row];
+    } else {
+        list = _datas[indexPath.row];
+    }
+    DetailInfoController *detailInfoVC = [[DetailInfoController alloc] init];
+    detailInfoVC.deviceName = list.title;
+    detailInfoVC.deviceID = list.idField;
+    return detailInfoVC;
+}
+
+- (void)previewingContext:(id<UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit {
+    NSIndexPath *indexPath = [_tableView indexPathForCell:(UITableViewCell* )[previewingContext sourceView]];
+    DeviceList *list;
+    if (self.searchController.active) {
+        list = _results[indexPath.row];
+    } else {
+        list = _datas[indexPath.row];
+    }
+    DetailInfoController *detailInfoVC = [[DetailInfoController alloc] init];
+    detailInfoVC.deviceName = list.title;
+    detailInfoVC.deviceID = list.idField;
+    [self.navigationController pushViewController:detailInfoVC animated:YES];
 }
 
 #pragma mark - UISearchResultsUpdating

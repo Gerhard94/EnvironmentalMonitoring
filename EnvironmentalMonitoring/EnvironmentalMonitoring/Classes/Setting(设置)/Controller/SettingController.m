@@ -10,7 +10,8 @@
 #import "JHLoginRegisterController.h"
 #import <TYAlertController/UIView+TYAlertView.h>
 #import "AutoRefresh.h"
-@interface SettingController ()
+#import <PGDatePicker/PGDatePickManager.h>
+@interface SettingController () <PGDatePickerDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *managerID;
 @property (weak, nonatomic) IBOutlet UILabel *autoRefreshState;
@@ -126,6 +127,17 @@
                 }
             }];
             [self presentViewController:alertC animated:YES completion:nil];
+        } else if (indexPath.row == 3) {
+            PGDatePickManager *datePickManager = [[PGDatePickManager alloc] init];
+            PGDatePicker *datePicker = datePickManager.datePicker;
+            datePicker.isHiddenMiddleText = NO;
+            datePicker.datePickerType = PGDatePickerType3;
+            datePicker.delegate = self;
+            datePicker.datePickerMode = PGDatePickerModeDateHourMinute;
+            datePickManager.isShadeBackgroud = true;
+            datePickManager.headerViewBackgroundColor = [UIColor clearColor];
+            datePicker.textColorOfOtherRow = [UIColor grayColor];
+            [self presentViewController:datePickManager animated:YES completion:nil];
         }
     } else if (indexPath.section == 1) {
         if (indexPath.row == 0) {
@@ -167,6 +179,21 @@
         }
     }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+#pragma PGDatePickerDelegate
+- (void)datePicker:(PGDatePicker *)datePicker didSelectDate:(NSDateComponents *)dateComponents {
+    NSCalendar * calendar = [NSCalendar autoupdatingCurrentCalendar];
+    
+    NSDate * date = [calendar dateFromComponents:dateComponents];
+    
+    NSDateFormatter * formatter = [[NSDateFormatter alloc] init];
+    
+    formatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+    
+    NSString * str = [formatter stringFromDate:date];
+    str = [str stringByReplacingOccurrencesOfString:@" " withString:@"T"];
+    NSLog(@"%@",str);
 }
 
 - (void)viewWillAppear:(BOOL)animated {

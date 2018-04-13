@@ -789,6 +789,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-EnvironmentalMonitoring/Pods-EnvironmentalMonitoring-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/PGDatePicker/PGDatePicker/PGDatePicker.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (

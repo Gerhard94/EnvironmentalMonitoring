@@ -9,7 +9,7 @@
 #ifndef EnvironmentalMonitoring_pch
 #define EnvironmentalMonitoring_pch
 
-#import <AFNetworking.h>
+#import <AFNetworking/AFNetworking.h>
 #import "MBProgressHUD+XMG.h"
 #import "UIColor+Hex.h"
 #import <MJExtension/MJExtension.h>
