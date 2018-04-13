@@ -107,7 +107,6 @@ static NSUInteger page = 2;
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
     self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
     
-//    [[NSUserDefaults standardUserDefaults] setObject:@0 forKey:@"autoRefresh"];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -275,15 +274,12 @@ static NSUInteger page = 2;
     return cell;
 }
 
+#pragma mark - UIViewControllerPreviewingDelegate
 - (UIViewController *)previewingContext:(id<UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location {
     // 获取tableview点击的位置
     NSIndexPath *indexPath = [_tableView indexPathForCell:(UITableViewCell* )[previewingContext sourceView]];
-    DeviceList *list;
-    if (self.searchController.active) {
-        list = _results[indexPath.row];
-    } else {
-        list = _datas[indexPath.row];
-    }
+    DeviceList *list = _datas[indexPath.row];
+    
     DetailInfoController *detailInfoVC = [[DetailInfoController alloc] init];
     detailInfoVC.deviceName = list.title;
     detailInfoVC.deviceID = list.idField;
@@ -292,12 +288,7 @@ static NSUInteger page = 2;
 
 - (void)previewingContext:(id<UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit {
     NSIndexPath *indexPath = [_tableView indexPathForCell:(UITableViewCell* )[previewingContext sourceView]];
-    DeviceList *list;
-    if (self.searchController.active) {
-        list = _results[indexPath.row];
-    } else {
-        list = _datas[indexPath.row];
-    }
+    DeviceList *list = _datas[indexPath.row];
     DetailInfoController *detailInfoVC = [[DetailInfoController alloc] init];
     detailInfoVC.deviceName = list.title;
     detailInfoVC.deviceID = list.idField;
@@ -321,73 +312,6 @@ static NSUInteger page = 2;
     }
 }
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-
-- (NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    //左滑出现删除
-    UITableViewRowAction *deleteAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive
-                                                                            title:@"删除"
-                                                                          handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
-
-        //创建警报控制器
-        UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"核对信息"
-                                                                         message:@"请输入管理员密码"
-                                                                  preferredStyle:UIAlertControllerStyleAlert];
-                                                                              
-        //创建TextField
-        [alertVC addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
-            textField.placeholder = @"请输入管理员密码";
-            textField.secureTextEntry = YES;
-        }];
-        
-        //创建确定和取消按钮
-        [alertVC addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
-            UITextField *alertTF = alertVC.textFields[0];
-            if ([alertTF.text isEqualToString:[[NSUserDefaults standardUserDefaults] objectForKey:@"password"]]) {
-                if (self.searchController.active) {
-                    self.isDelete = YES;
-                    DeviceList *list = _results[indexPath.row];
-                    [self deleteDataWithDevice:list.idField];
-                } else {
-                    self.isDelete = YES;
-                    DeviceList *list = _datas[indexPath.row];
-                    [self deleteDataWithDevice:list.idField];
-                }
-            } else {
-                [self presentViewController:alertVC animated:YES completion:nil];
-                [MBProgressHUD showError:@"输入密码有误请重新输入"];
-            }
-        }]];
-        
-        [alertVC addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-            
-        }]];
-        [self presentViewController:alertVC animated:YES completion:nil];
-    }];
-    
-    //左滑出现编辑
-    UITableViewRowAction *editAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"编辑" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
-        DeviceList *list;
-        if (self.searchController.active) {
-            list = _results[indexPath.row];
-        } else {
-            list = _datas[indexPath.row];
-        }
-        AddDeviceController *addDeviceVC = [[AddDeviceController alloc] init];
-        addDeviceVC.deviceList = list;
-        [self.navigationController pushViewController:addDeviceVC animated:YES];
-    }];
-    
-    
-    editAction.backgroundColor = [UIColor grayColor];
-    return @[deleteAction,editAction];
-
-}
-
-
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -409,15 +333,90 @@ static NSUInteger page = 2;
     return 110;
 }
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+- (NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    //左滑出现删除
+    UITableViewRowAction *deleteAction = [UITableViewRowAction
+                                          rowActionWithStyle:UITableViewRowActionStyleDestructive
+                                          title:@"删除"
+                                          handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+                                              //创建警报控制器
+                                              UIAlertController *alertVC = [UIAlertController
+                                                                            alertControllerWithTitle:@"核对信息"
+                                                                            message:@"请输入管理员密码"
+                                                                            preferredStyle:UIAlertControllerStyleAlert];
+                                                    //创建TextField
+                                              [alertVC addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+                                                                                  textField.placeholder = @"请输入管理员密码";
+                                                                                  textField.secureTextEntry = YES;
+                                                                              }];
+                                              //创建确定和取消按钮
+                                              [alertVC
+                                               addAction:[UIAlertAction
+                                                          actionWithTitle:@"确定"
+                                                          style:UIAlertActionStyleDestructive
+                                                          handler:^(UIAlertAction * _Nonnull action) {
+                                                              UITextField *alertTF = alertVC.textFields[0];
+                                                              if ([alertTF.text
+                                                                   isEqualToString:[[NSUserDefaults standardUserDefaults]
+                                                                                    objectForKey:@"password"]]) {
+                                                                       if (self.searchController.active) {
+                                                                           self.isDelete = YES;
+                                                                           DeviceList *list = _results[indexPath.row];
+                                                                           [self deleteDataWithDevice:list.idField];
+                                                                       } else {
+                                                                           self.isDelete = YES;
+                                                                           DeviceList *list = _datas[indexPath.row];
+                                                                           [self deleteDataWithDevice:list.idField];
+                                                                       }
+                                                                       
+                                                                   } else {
+                                                                       [self presentViewController:alertVC animated:YES completion:nil];
+                                                                       [MBProgressHUD showError:@"输入密码有误请重新输入"];
+                                                                       
+                                                                   }
+                                                              
+                                                          }]];
+                                              [alertVC
+                                               addAction:[UIAlertAction
+                                                          actionWithTitle:@"取消"
+                                                          style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * _Nonnull action) {
+                                                          }]];
+                                              [self presentViewController:alertVC animated:YES completion:nil];
+                                          }];
+    
+    //左滑出现编辑
+    UITableViewRowAction *editAction = [UITableViewRowAction
+                                        rowActionWithStyle:UITableViewRowActionStyleNormal
+                                        title:@"编辑"
+                                        handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+                                            DeviceList *list;
+                                            if (self.searchController.active) {
+                                                list = _results[indexPath.row];
+                                            } else {
+                                                list = _datas[indexPath.row];
+                                            }
+                                            AddDeviceController *addDeviceVC = [[AddDeviceController alloc] init];
+                                            addDeviceVC.deviceList = list;
+                                            [self.navigationController pushViewController:addDeviceVC animated:YES];
+                                        }];
+    editAction.backgroundColor = [UIColor grayColor];
+    return @[deleteAction,editAction];
+    
+}
+
 #pragma mark - UISearchBarDelegate
 
 - (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar{
-    
     return YES;
 }
 
 - (BOOL)searchBarShouldEndEditing:(UISearchBar *)searchBar {
-    
     return YES;
 }
 

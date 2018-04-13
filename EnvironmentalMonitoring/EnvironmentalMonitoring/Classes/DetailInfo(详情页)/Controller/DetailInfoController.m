@@ -122,10 +122,14 @@ static NSUInteger isRefresh = 0;
 
 //点击数据详情
 - (void)pushDataDeatil {
+    if ([self.updateTime.text isEqualToString:@""]) {
+        [MBProgressHUD showError:@"暂无数据"];
+    } else {
     DataDetailController *dataDetailVC = [[DataDetailController alloc] init];
     dataDetailVC.updataTime = self.updateTime.text;
     dataDetailVC.deviceID = self.deviceIDLabel.text;
     [self.navigationController pushViewController:dataDetailVC animated:YES];
+    }
 }
 
 //刷新数据
@@ -148,6 +152,7 @@ static NSUInteger isRefresh = 0;
     [manager GET:urlStr parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        if ([responseObject[@"error"] isEqualToString:@"succ"]) {
         NSArray *dataArray = responseObject[@"data"];
         //将数据数组转成模型数组
         _resultArray = [DetailInfo mj_objectArrayWithKeyValuesArray:dataArray];
@@ -186,7 +191,6 @@ static NSUInteger isRefresh = 0;
                 default:
                     break;
             }
-            
             //选择提示语
             if (isRefresh == 1) {
                 [MBProgressHUD showSuccess:@"刷新成功"];
@@ -198,7 +202,12 @@ static NSUInteger isRefresh = 0;
                 isRefresh = 0;
             }];
         }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        } else {
+            [MBProgressHUD showError:@"暂无数据"];
+            [self.mainScrollView.mj_header endRefreshing];
+        }
+            
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [MBProgressHUD showErrorForErrorCode:error.code];
     }];
 }
