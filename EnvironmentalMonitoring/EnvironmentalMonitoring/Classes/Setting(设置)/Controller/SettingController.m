@@ -127,17 +127,6 @@
                 }
             }];
             [self presentViewController:alertC animated:YES completion:nil];
-        } else if (indexPath.row == 3) {
-            PGDatePickManager *datePickManager = [[PGDatePickManager alloc] init];
-            PGDatePicker *datePicker = datePickManager.datePicker;
-            datePicker.isHiddenMiddleText = NO;
-            datePicker.datePickerType = PGDatePickerType3;
-            datePicker.delegate = self;
-            datePicker.datePickerMode = PGDatePickerModeDateHourMinute;
-            datePickManager.isShadeBackgroud = true;
-            datePickManager.headerViewBackgroundColor = [UIColor clearColor];
-            datePicker.textColorOfOtherRow = [UIColor grayColor];
-            [self presentViewController:datePickManager animated:YES completion:nil];
         }
     } else if (indexPath.section == 1) {
         if (indexPath.row == 0) {

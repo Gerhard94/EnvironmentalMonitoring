@@ -17,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    
     //创建UI窗口
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
@@ -30,9 +32,12 @@
     //显示UI窗口
     [_window makeKeyAndVisible];
     
-    UINavigationBar *bar = [UINavigationBar appearance];
+//    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
     
-    [bar setTitleTextAttributes:@{NSFontAttributeName : [UIFont fontWithName:@"Helvetica-Bold" size:18.0]}];
+    UINavigationBar *bar = [UINavigationBar appearance];
+    bar.barTintColor = [UIColor colorWithHexString:@"39383e"];
+    bar.translucent = NO;
+    [bar setTitleTextAttributes:@{NSFontAttributeName : [UIFont fontWithName:@"Helvetica-Bold" size:18.0],NSForegroundColorAttributeName : [UIColor whiteColor]}];
     
     //或者用这个都行
     

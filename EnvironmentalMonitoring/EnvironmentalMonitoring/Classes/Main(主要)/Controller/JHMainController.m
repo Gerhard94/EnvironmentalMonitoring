@@ -68,6 +68,8 @@ static NSUInteger page = 2;
 {
     self = [super init];
     if (self) {
+        
+        self.tableView.backgroundColor = [UIColor colorWithHexString:@"ebebeb"];
         self.title = @"配电房列表";
         //替换模型名称
         [DeviceList mj_setupReplacedKeyFromPropertyName:^NSDictionary *{
@@ -259,8 +261,10 @@ static NSUInteger page = 2;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    //创建了一个UITableViewCell的实例
     JHMainCell *cell = [tableView dequeueReusableCellWithIdentifier:ReuseId];
     
+    //判定是否在搜索情况下 并取出相应的数组模型将cell赋值
     if (self.searchController.active) {
         DeviceList *deviceList = self.results[indexPath.row];
         cell.deviceList = deviceList;
@@ -271,6 +275,7 @@ static NSUInteger page = 2;
     
     [self registerForPreviewingWithDelegate:self sourceView:cell];
     
+    //返回一个UITableViewCellL类型
     return cell;
 }
 
