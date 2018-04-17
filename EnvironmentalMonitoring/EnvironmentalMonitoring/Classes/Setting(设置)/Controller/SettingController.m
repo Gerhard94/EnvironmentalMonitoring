@@ -10,8 +10,8 @@
 #import "JHLoginRegisterController.h"
 #import <TYAlertController/UIView+TYAlertView.h>
 #import "AutoRefresh.h"
-#import <PGDatePicker/PGDatePickManager.h>
-@interface SettingController () <PGDatePickerDelegate>
+#import "HistoryDataController.h"
+@interface SettingController () 
 
 @property (weak, nonatomic) IBOutlet UILabel *managerID;
 @property (weak, nonatomic) IBOutlet UILabel *autoRefreshState;
@@ -40,13 +40,6 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-}
-
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)changedPassword:(NSString *)value{
@@ -111,7 +104,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
-        if (indexPath.row == 2) {
+        if (indexPath.row == 1) {
+            HistoryDataController *historyDataVC = [[HistoryDataController alloc] init];
+            [self.navigationController pushViewController:historyDataVC animated:YES];
+        } else if (indexPath.row == 2) {
             AutoRefresh *autoRefreshView = [AutoRefresh createViewFromNib];
             TYAlertController *alertC = [TYAlertController alertControllerWithAlertView:autoRefreshView preferredStyle:TYAlertControllerStyleActionSheet];
             alertC.backgoundTapDismissEnable = YES;
@@ -170,20 +166,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
-#pragma PGDatePickerDelegate
-- (void)datePicker:(PGDatePicker *)datePicker didSelectDate:(NSDateComponents *)dateComponents {
-    NSCalendar * calendar = [NSCalendar autoupdatingCurrentCalendar];
-    
-    NSDate * date = [calendar dateFromComponents:dateComponents];
-    
-    NSDateFormatter * formatter = [[NSDateFormatter alloc] init];
-    
-    formatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
-    
-    NSString * str = [formatter stringFromDate:date];
-    str = [str stringByReplacingOccurrencesOfString:@" " withString:@"T"];
-    NSLog(@"%@",str);
-}
+
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];

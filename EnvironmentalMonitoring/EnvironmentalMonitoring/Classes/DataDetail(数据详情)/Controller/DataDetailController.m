@@ -208,7 +208,7 @@ static NSString *ID = @"cell";
         cell.titleLabel.text = @"温度统计图";
     } else {
         cell.titleLabel.text = @"湿度统计图";
-        chartModel.chartTypeSet(AAChartTypeAreaspline);
+        chartModel.chartTypeSet(AAChartTypeLine);
         chartModel.titleSet([NSString stringWithFormat:@"湿度统计图——%@",dateStr]);
         chartModel.seriesSet(@[
                                AAObject(AASeriesElement).nameSet(@"房间湿度%").dataSet(_roomHumiY).colorSet(@"#FF0000")
