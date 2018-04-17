@@ -73,6 +73,12 @@
 		6EB6CAA9207E0DA90064CC5A /* AutoRefresh.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB6CAA8207E0DA90064CC5A /* AutoRefresh.xib */; };
 		6EBD369F207524B600CADA27 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBD369E207524B600CADA27 /* Location.m */; };
 		6EC6629E207A4718005433C7 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC6629D207A4718005433C7 /* UIColor+Hex.m */; };
+		6ED5D117208448C400D8FE40 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED5D116208448C400D8FE40 /* CoreTelephony.framework */; };
+		6ED5D119208448E600D8FE40 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED5D118208448E600D8FE40 /* libz.tbd */; };
+		6ED5D11B208448EE00D8FE40 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED5D11A208448EE00D8FE40 /* libsqlite3.tbd */; };
+		6ED5D11D20844C9B00D8FE40 /* UMPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED5D11C20844C9B00D8FE40 /* UMPush.framework */; };
+		6ED5D11F20844CB100D8FE40 /* UMCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED5D11E20844CB100D8FE40 /* UMCommon.framework */; };
+		6ED5D12120844CBE00D8FE40 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED5D12020844CBD00D8FE40 /* UserNotifications.framework */; };
 		6EFD5BFD207C8C4F00DBBF0E /* DataDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFD5BFC207C8C4F00DBBF0E /* DataDetail.m */; };
 		6EFD5C00207C908600DBBF0E /* Datapoints.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFD5BFF207C908600DBBF0E /* Datapoints.m */; };
 		6EFD5C0B207CC3F200DBBF0E /* DataDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFD5C09207CC3F200DBBF0E /* DataDetailCell.m */; };
@@ -197,10 +203,17 @@
 		6EB6CAA5207E0D9C0064CC5A /* AutoRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoRefresh.h; sourceTree = "<group>"; };
 		6EB6CAA6207E0D9C0064CC5A /* AutoRefresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoRefresh.m; sourceTree = "<group>"; };
 		6EB6CAA8207E0DA90064CC5A /* AutoRefresh.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoRefresh.xib; sourceTree = "<group>"; };
+		6EBB300F2084771C001B4102 /* EnvironmentalMonitoring.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EnvironmentalMonitoring.entitlements; sourceTree = "<group>"; };
 		6EBD369D207524B600CADA27 /* Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		6EBD369E207524B600CADA27 /* Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		6EC6629C207A4718005433C7 /* UIColor+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		6EC6629D207A4718005433C7 /* UIColor+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		6ED5D116208448C400D8FE40 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		6ED5D118208448E600D8FE40 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		6ED5D11A208448EE00D8FE40 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		6ED5D11C20844C9B00D8FE40 /* UMPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMPush.framework; sourceTree = "<group>"; };
+		6ED5D11E20844CB100D8FE40 /* UMCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMCommon.framework; sourceTree = "<group>"; };
+		6ED5D12020844CBD00D8FE40 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		6EFD5BFB207C8C4F00DBBF0E /* DataDetail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataDetail.h; sourceTree = "<group>"; };
 		6EFD5BFC207C8C4F00DBBF0E /* DataDetail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataDetail.m; sourceTree = "<group>"; };
 		6EFD5BFE207C908600DBBF0E /* Datapoints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Datapoints.h; sourceTree = "<group>"; };
@@ -217,6 +230,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ED5D12120844CBE00D8FE40 /* UserNotifications.framework in Frameworks */,
+				6ED5D11B208448EE00D8FE40 /* libsqlite3.tbd in Frameworks */,
+				6ED5D119208448E600D8FE40 /* libz.tbd in Frameworks */,
+				6ED5D11D20844C9B00D8FE40 /* UMPush.framework in Frameworks */,
+				6ED5D11F20844CB100D8FE40 /* UMCommon.framework in Frameworks */,
+				6ED5D117208448C400D8FE40 /* CoreTelephony.framework in Frameworks */,
 				C544413BE6E6BAAB53B145D1 /* libPods-EnvironmentalMonitoring.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,6 +246,8 @@
 		6E1B72BE206F64EF0095A184 = {
 			isa = PBXGroup;
 			children = (
+				6ED5D11E20844CB100D8FE40 /* UMCommon.framework */,
+				6ED5D11C20844C9B00D8FE40 /* UMPush.framework */,
 				6E1B72C9206F64EF0095A184 /* EnvironmentalMonitoring */,
 				6E1B72C8206F64EF0095A184 /* Products */,
 				9CF16CE7164B13FDEB49A96F /* Pods */,
@@ -245,6 +266,7 @@
 		6E1B72C9206F64EF0095A184 /* EnvironmentalMonitoring */ = {
 			isa = PBXGroup;
 			children = (
+				6EBB300F2084771C001B4102 /* EnvironmentalMonitoring.entitlements */,
 				6E34259F207217F800A5EA43 /* Tool */,
 				6E1B72E0206F694F0095A184 /* Classes */,
 				6E1B72D3206F64EF0095A184 /* Assets.xcassets */,
@@ -650,6 +672,10 @@
 		9487E7956BAE5B497969B46F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6ED5D12020844CBD00D8FE40 /* UserNotifications.framework */,
+				6ED5D11A208448EE00D8FE40 /* libsqlite3.tbd */,
+				6ED5D118208448E600D8FE40 /* libz.tbd */,
+				6ED5D116208448C400D8FE40 /* CoreTelephony.framework */,
 				39C28BDBBC49A733EF101962 /* libPods-EnvironmentalMonitoring.a */,
 			);
 			name = Frameworks;
@@ -699,6 +725,14 @@
 					6E1B72C6206F64EF0095A184 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -986,12 +1020,17 @@
 			baseConfigurationReference = A951E353918827AF3B2F302B /* Pods-EnvironmentalMonitoring.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EnvironmentalMonitoring/EnvironmentalMonitoring.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8KZ977Y29Y;
+				DEVELOPMENT_TEAM = BN29L52BAW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "/Users/lakersjh/开发资料/EnvironmentalMonitoring/EnvironmentalMonitoring/EnvironmentalMonitoring/Other/EnvironmentalMonitoring.pch";
 				INFOPLIST_FILE = EnvironmentalMonitoring/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jh.EnvironmentalMonitoring;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jh.3nvironmentalMonitoring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1002,12 +1041,17 @@
 			baseConfigurationReference = F9CA6D0D432C16D56C6A45D6 /* Pods-EnvironmentalMonitoring.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EnvironmentalMonitoring/EnvironmentalMonitoring.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8KZ977Y29Y;
+				DEVELOPMENT_TEAM = BN29L52BAW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "/Users/lakersjh/开发资料/EnvironmentalMonitoring/EnvironmentalMonitoring/EnvironmentalMonitoring/Other/EnvironmentalMonitoring.pch";
 				INFOPLIST_FILE = EnvironmentalMonitoring/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jh.EnvironmentalMonitoring;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jh.3nvironmentalMonitoring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -8,7 +8,10 @@
 
 #import "AppDelegate.h"
 #import "JHLoginRegisterController.h"
-@interface AppDelegate ()
+#import <UMCommon/UMCommon.h>
+#import <UMPush/UMessage.h>
+#import <UserNotifications/UserNotifications.h>
+@interface AppDelegate () <UNUserNotificationCenterDelegate>
 
 @end
 
@@ -17,6 +20,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    //友盟基础
+    [UMConfigure initWithAppkey:@"5ad43f2c8f4a9d4f4f000010" channel:nil];
+    
+    //友盟推送
+    [UNUserNotificationCenter currentNotificationCenter].delegate = self;
+    UMessageRegisterEntity *entity = [[UMessageRegisterEntity alloc] init];
+    entity.types = UMessageAuthorizationOptionAlert | UMessageAuthorizationOptionBadge | UMessageAuthorizationOptionSound;
+    [UMessage registerForRemoteNotificationsWithLaunchOptions:launchOptions Entity:entity completionHandler:^(BOOL granted, NSError * _Nullable error) {
+        if (granted) {
+            
+        } else {
+            
+        }
+    }];
+    
+    //改变状态栏颜色
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     
     //创建UI窗口
@@ -74,6 +93,62 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+-(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+{
+    [UMessage setAutoAlert:NO];
+    if([[[UIDevice currentDevice] systemVersion]intValue] < 10){
+        [UMessage didReceiveRemoteNotification:userInfo];
+        
+        //    self.userInfo = userInfo;
+        //    //定制自定的的弹出框
+        //    if([UIApplication sharedApplication].applicationState == UIApplicationStateActive)
+        //    {
+        //        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"标题"
+        //                                                            message:@"Test On ApplicationStateActive"
+        //                                                           delegate:self
+        //                                                  cancelButtonTitle:@"确定"
+        //                                                  otherButtonTitles:nil];
+        //
+        //        [alertView show];
+        //
+        //    }
+        completionHandler(UIBackgroundFetchResultNewData);
+    }
+}
+
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler {
+    NSDictionary *userInfo = notification.request.content.userInfo;
+    if ([notification.request.trigger isKindOfClass:[UNPushNotificationTrigger class]]) {
+        [UMessage didReceiveRemoteNotification:userInfo];
+    }else {
+        
+    }
+    completionHandler(UNNotificationPresentationOptionAlert | UNNotificationPresentationOptionBadge | UNNotificationPresentationOptionSound);
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    NSLog(@"--%@--",[[[[deviceToken description] stringByReplacingOccurrencesOfString: @"<" withString: @""]
+                  stringByReplacingOccurrencesOfString: @">" withString: @""]
+                 stringByReplacingOccurrencesOfString: @" " withString: @""]);
+}
+
+- (void)application:(UIApplication *)application didFailToContinueUserActivityWithType:(NSString *)userActivityType error:(NSError *)error {
+    NSString *error_str = [NSString stringWithFormat: @"%@", error];
+    NSLog(@"Failed to get token, error:%@", error_str);
+}
+
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler {
+    NSDictionary * userInfo = response.notification.request.content.userInfo;
+    if([response.notification.request.trigger isKindOfClass:[UNPushNotificationTrigger class]]) {
+        //应用处于后台时的远程推送接受
+        //必须加这句代码
+        [UMessage didReceiveRemoteNotification:userInfo];
+        
+    }else{
+        //应用处于后台时的本地推送接受
+    }
 }
 
 
