@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E0CCED7208744BF00CAF3F1 /* HistoryDataController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E0CCED4208744BF00CAF3F1 /* HistoryDataController.xib */; };
+		6E0CCED8208744BF00CAF3F1 /* HistoryDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0CCED5208744BF00CAF3F1 /* HistoryDataController.m */; };
 		6E1B72D4206F64EF0095A184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E1B72D3206F64EF0095A184 /* Assets.xcassets */; };
 		6E1B72D7206F64EF0095A184 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E1B72D5206F64EF0095A184 /* LaunchScreen.storyboard */; };
 		6E1B72F9206F694F0095A184 /* JHLoginRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1B72E3206F694F0095A184 /* JHLoginRegisterController.m */; };
@@ -28,8 +30,6 @@
 		6E4F8AA0207371FD00EB0838 /* AddDeviceController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E4F8A9E207371FD00EB0838 /* AddDeviceController.xib */; };
 		6E53B2792079BD2C00C2D468 /* DetailInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53B2772079BD2C00C2D468 /* DetailInfoController.m */; };
 		6E53B27A2079BD2C00C2D468 /* DetailInfoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E53B2782079BD2C00C2D468 /* DetailInfoController.xib */; };
-		6E662B9A2085D02200D51DB1 /* HistoryDataController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E662B952085D02100D51DB1 /* HistoryDataController.xib */; };
-		6E662B9B2085D02200D51DB1 /* HistoryDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E662B962085D02100D51DB1 /* HistoryDataController.m */; };
 		6E662B9F2085D17800D51DB1 /* HistoryDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E662B9D2085D17800D51DB1 /* HistoryDataCell.m */; };
 		6E662BA02085D17800D51DB1 /* HistoryDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E662B9E2085D17800D51DB1 /* HistoryDataCell.xib */; };
 		6E72336E207D0C5E006A7804 /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E72336D207D0C5E006A7804 /* SettingController.m */; };
@@ -92,6 +92,9 @@
 
 /* Begin PBXFileReference section */
 		39C28BDBBC49A733EF101962 /* libPods-EnvironmentalMonitoring.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EnvironmentalMonitoring.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E0CCED3208744BF00CAF3F1 /* HistoryDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryDataController.h; sourceTree = "<group>"; };
+		6E0CCED4208744BF00CAF3F1 /* HistoryDataController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryDataController.xib; sourceTree = "<group>"; };
+		6E0CCED5208744BF00CAF3F1 /* HistoryDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryDataController.m; sourceTree = "<group>"; };
 		6E1B72C7206F64EF0095A184 /* EnvironmentalMonitoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnvironmentalMonitoring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E1B72D3206F64EF0095A184 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E1B72D6206F64EF0095A184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -126,9 +129,6 @@
 		6E53B2762079BD2C00C2D468 /* DetailInfoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailInfoController.h; sourceTree = "<group>"; };
 		6E53B2772079BD2C00C2D468 /* DetailInfoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailInfoController.m; sourceTree = "<group>"; };
 		6E53B2782079BD2C00C2D468 /* DetailInfoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailInfoController.xib; sourceTree = "<group>"; };
-		6E662B942085D02100D51DB1 /* HistoryDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryDataController.h; sourceTree = "<group>"; };
-		6E662B952085D02100D51DB1 /* HistoryDataController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryDataController.xib; sourceTree = "<group>"; };
-		6E662B962085D02100D51DB1 /* HistoryDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryDataController.m; sourceTree = "<group>"; };
 		6E662B9C2085D17800D51DB1 /* HistoryDataCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryDataCell.h; sourceTree = "<group>"; };
 		6E662B9D2085D17800D51DB1 /* HistoryDataCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryDataCell.m; sourceTree = "<group>"; };
 		6E662B9E2085D17800D51DB1 /* HistoryDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryDataCell.xib; sourceTree = "<group>"; };
@@ -253,6 +253,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E0CCED1208743C000CAF3F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6E0CCED2208744BF00CAF3F1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6E0CCED3208744BF00CAF3F1 /* HistoryDataController.h */,
+				6E0CCED5208744BF00CAF3F1 /* HistoryDataController.m */,
+				6E0CCED4208744BF00CAF3F1 /* HistoryDataController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6E0CCED6208744BF00CAF3F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6E1B72BE206F64EF0095A184 = {
 			isa = PBXGroup;
 			children = (
@@ -497,29 +521,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		6E662B932085D02100D51DB1 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				6E662B942085D02100D51DB1 /* HistoryDataController.h */,
-				6E662B962085D02100D51DB1 /* HistoryDataController.m */,
-				6E662B952085D02100D51DB1 /* HistoryDataController.xib */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		6E662B972085D02100D51DB1 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		6E723368207D0C18006A7804 /* Setting(设置) */ = {
 			isa = PBXGroup;
 			children = (
 				6E723369207D0C18006A7804 /* Controller */,
-				6E72336A207D0C18006A7804 /* Model */,
 				6E72336B207D0C18006A7804 /* View */,
+				6E0CCED1208743C000CAF3F1 /* Model */,
 				6EB6CAA1207DA9240064CC5A /* ChildController */,
 			);
 			path = "Setting(设置)";
@@ -533,13 +540,6 @@
 				6E72336F207D0C65006A7804 /* SettingController.storyboard */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		6E72336A207D0C18006A7804 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		6E72336B207D0C18006A7804 /* View */ = {
@@ -691,8 +691,8 @@
 		6EB6CAA1207DA9240064CC5A /* ChildController */ = {
 			isa = PBXGroup;
 			children = (
-				6E662B932085D02100D51DB1 /* Controller */,
-				6E662B972085D02100D51DB1 /* Model */,
+				6E0CCED2208744BF00CAF3F1 /* Controller */,
+				6E0CCED6208744BF00CAF3F1 /* Model */,
 				6E662B8F2085D02100D51DB1 /* View */,
 			);
 			path = ChildController;
@@ -804,9 +804,9 @@
 				6E1B7301206F694F0095A184 /* JHMainCell.xib in Resources */,
 				6E1B72FB206F694F0095A184 /* JHLoginRegister.xib in Resources */,
 				6E1B72FA206F694F0095A184 /* JHLoginRegisterController.xib in Resources */,
-				6E662B9A2085D02200D51DB1 /* HistoryDataController.xib in Resources */,
 				6EB2047D207B5B7F0039946B /* AAHighchartsMore.js in Resources */,
 				6E723370207D0C65006A7804 /* SettingController.storyboard in Resources */,
+				6E0CCED7208744BF00CAF3F1 /* HistoryDataController.xib in Resources */,
 				6E662BA02085D17800D51DB1 /* HistoryDataCell.xib in Resources */,
 				6EB2047E207B5B7F0039946B /* AAFunnel.js in Resources */,
 				6EB2047F207B5B7F0039946B /* AAHighcharts-3d.js in Resources */,
@@ -901,6 +901,7 @@
 				6EB20488207B5B7F0039946B /* AATooltip.m in Sources */,
 				6EB20489207B5B7F0039946B /* AASubtitle.m in Sources */,
 				6E1B7308206F695C0095A184 /* AppDelegate.m in Sources */,
+				6E0CCED8208744BF00CAF3F1 /* HistoryDataController.m in Sources */,
 				6EB20493207B5B7F0039946B /* AAAnimation.m in Sources */,
 				6EB2049B207B5B7F0039946B /* AAChartModel.m in Sources */,
 				6E72336E207D0C5E006A7804 /* SettingController.m in Sources */,
@@ -932,7 +933,6 @@
 				6E662B9F2085D17800D51DB1 /* HistoryDataCell.m in Sources */,
 				6E8698912079E37900850166 /* JHTabBarController.m in Sources */,
 				6EB2049A207B5B7F0039946B /* AAChartView.m in Sources */,
-				6E662B9B2085D02200D51DB1 /* HistoryDataController.m in Sources */,
 				6EB20496207B5B7F0039946B /* AASpline.m in Sources */,
 				6EFD5C0B207CC3F200DBBF0E /* DataDetailCell.m in Sources */,
 				6EB20481207B5B7F0039946B /* AAAreaspline.m in Sources */,

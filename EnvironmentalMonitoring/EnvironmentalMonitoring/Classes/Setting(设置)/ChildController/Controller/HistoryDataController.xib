@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HistoryDataController">
+            <connections>
+                <outlet property="endTime" destination="DK5-yr-nQc" id="Wrx-7G-Fjg"/>
+                <outlet property="searchButton" destination="Yyf-4N-9aQ" id="ec6-65-WeB"/>
+                <outlet property="startTime" destination="iAP-08-YW2" id="1Vx-at-pXA"/>
+                <outlet property="tableView" destination="ZFO-cZ-giD" id="Vml-uS-YTK"/>
+                <outlet property="view" destination="iN0-l3-epB" id="dpi-ab-08F"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CSY-AX-CPo">
+                    <rect key="frame" x="20" y="40" width="275" height="88"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAP-08-YW2">
+                            <rect key="frame" x="0.0" y="0.0" width="275" height="43.5"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="起始时间">
+                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="datePickerClick:" destination="-1" eventType="touchUpInside" id="UIe-of-u2a"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eNQ-1Q-gJy">
+                            <rect key="frame" x="0.0" y="43.5" width="275" height="1"/>
+                            <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="pd1-WK-k0v"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DK5-yr-nQc">
+                            <rect key="frame" x="0.0" y="44.5" width="275" height="43.5"/>
+                            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="截止时间">
+                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="datePickerClick:" destination="-1" eventType="touchUpInside" id="MMC-Gc-zgc"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="iAP-08-YW2" firstAttribute="height" secondItem="DK5-yr-nQc" secondAttribute="height" id="OB0-MN-QfX"/>
+                        <constraint firstAttribute="height" constant="88" id="aUa-3O-wVF"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yyf-4N-9aQ">
+                    <rect key="frame" x="307" y="60" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="tlq-AU-sb4"/>
+                        <constraint firstAttribute="width" constant="48" id="wfW-K0-hy0"/>
+                    </constraints>
+                    <state key="normal" image="搜索-4"/>
+                    <connections>
+                        <action selector="searchButtonClick:" destination="-1" eventType="touchUpInside" id="XzB-dX-ZYF"/>
+                    </connections>
+                </button>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZFO-cZ-giD">
+                    <rect key="frame" x="20" y="138" width="335" height="519"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="UsG-4N-OEb"/>
+                        <outlet property="delegate" destination="-1" id="Cdi-Wq-o38"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CSY-AX-CPo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="6fO-jZ-pEw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZFO-cZ-giD" secondAttribute="trailing" constant="20" id="73c-JE-Zg0"/>
+                <constraint firstItem="ZFO-cZ-giD" firstAttribute="top" secondItem="CSY-AX-CPo" secondAttribute="bottom" constant="10" id="EOw-FG-IUv"/>
+                <constraint firstItem="Yyf-4N-9aQ" firstAttribute="centerY" secondItem="CSY-AX-CPo" secondAttribute="centerY" id="TLe-Ok-K69"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CSY-AX-CPo" secondAttribute="trailing" constant="80" id="p4W-Uz-tOW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ZFO-cZ-giD" secondAttribute="bottom" constant="10" id="pTu-6w-Hec"/>
+                <constraint firstItem="ZFO-cZ-giD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="uYG-GW-eOq"/>
+                <constraint firstItem="CSY-AX-CPo" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="wjn-Z4-Sbj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Yyf-4N-9aQ" secondAttribute="trailing" constant="20" id="x2u-Yy-vw8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="搜索-4" width="48" height="48"/>
+    </resources>
+</document>
