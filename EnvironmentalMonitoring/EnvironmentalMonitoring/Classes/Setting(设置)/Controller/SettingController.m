@@ -105,8 +105,24 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         if (indexPath.row == 1) {
-            HistoryDataController *historyDataVC = [[HistoryDataController alloc] init];
-            [self.navigationController pushViewController:historyDataVC animated:YES];
+            //取出设备ID和设备名称
+            NSArray *titleArray = [[NSUserDefaults standardUserDefaults] objectForKey:@"titleArray"];
+            NSArray *IDArray = [[NSUserDefaults standardUserDefaults] objectForKey:@"IDArray"];
+            
+            //设置sheetView
+            TYAlertView *alertView = [TYAlertView alertViewWithTitle:@"这里假装有标题" message:@"选择你想查看的设备"];
+            for (int i = 0; i < titleArray.count; ++i) {
+                [alertView addAction:[TYAlertAction actionWithTitle:titleArray[i] style:TYAlertActionStyleDefault handler:^(TYAlertAction *action) {
+                    HistoryDataController *historyDataVC = [[HistoryDataController alloc] init];
+                    historyDataVC.IDField = IDArray[i];
+                    [self.navigationController pushViewController:historyDataVC animated:YES];
+                }]];
+            }
+            
+            TYAlertController *alertController = [TYAlertController alertControllerWithAlertView:alertView preferredStyle:TYAlertControllerStyleActionSheet];
+            [self presentViewController:alertController animated:YES completion:nil];
+            
+
         } else if (indexPath.row == 2) {
             AutoRefresh *autoRefreshView = [AutoRefresh createViewFromNib];
             TYAlertController *alertC = [TYAlertController alertControllerWithAlertView:autoRefreshView preferredStyle:TYAlertControllerStyleActionSheet];

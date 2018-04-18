@@ -22,6 +22,10 @@
 
 @end
 
+static NSMutableArray *IDArray;
+static NSMutableArray *titleArray;
+
+
 @implementation JHMainCell
 
 - (void)awakeFromNib {
@@ -38,6 +42,18 @@
     UIImage *online = [UIImage imageNamed:@"online"];
     UIImage *offline = [UIImage imageNamed:@"offline"];
     self.online.image = [deviceList.online isEqualToString:@"0"] ? offline : online;
+    if (IDArray == nil) {
+        IDArray = [NSMutableArray arrayWithCapacity:0];
+    }
+    [IDArray addObject:deviceList.idField];
+    [[NSUserDefaults standardUserDefaults] setObject:IDArray forKey:@"IDArray"];
+    
+    if (titleArray == nil) {
+        titleArray = [NSMutableArray arrayWithCapacity:0];
+    }
+    [titleArray addObject:deviceList.title];
+    [[NSUserDefaults standardUserDefaults] setObject:titleArray forKey:@"titleArray"];
+
 }
 
 - (void)layoutSubviews {
