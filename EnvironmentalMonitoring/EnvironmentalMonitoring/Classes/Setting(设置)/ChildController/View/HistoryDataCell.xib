@@ -98,15 +98,15 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
-                <outlet property="air_temp" destination="y5o-iA-ntE" id="bl3-uE-npn"/>
+                <outlet property="air_temp" destination="HQj-7z-EZ2" id="5aW-TH-d2t"/>
                 <outlet property="atDate" destination="fSc-1b-CS1" id="ODC-AL-uvz"/>
                 <outlet property="cabinet_door_isClose" destination="eUR-cp-gOQ" id="TTK-SJ-CS1"/>
-                <outlet property="fun_temp" destination="Dbj-WA-0ud" id="Y8K-QQ-zLR"/>
+                <outlet property="fun_temp" destination="bVc-fg-pvu" id="Qm9-bJ-KMD"/>
                 <outlet property="room_door_isClose" destination="KvD-db-JfK" id="dnc-S3-Xuu"/>
                 <outlet property="room_humi" destination="hQo-S5-qaL" id="HVA-2w-PeO"/>
                 <outlet property="room_temp" destination="MaY-93-ppY" id="wA8-Ts-Jsj"/>
-                <outlet property="smoke_detector" destination="bVc-fg-pvu" id="cNl-dz-WWE"/>
-                <outlet property="water_leakage" destination="HQj-7z-EZ2" id="Pkd-dO-3PV"/>
+                <outlet property="smoke_detector" destination="Dbj-WA-0ud" id="mRe-uf-Whm"/>
+                <outlet property="water_leakage" destination="y5o-iA-ntE" id="hkg-K8-DFC"/>
             </connections>
             <point key="canvasLocation" x="10.5" y="46"/>
         </tableViewCell>
