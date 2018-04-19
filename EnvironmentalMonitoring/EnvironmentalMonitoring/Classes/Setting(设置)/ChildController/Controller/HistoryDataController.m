@@ -271,6 +271,10 @@ static NSString *ID = @"cell";
         NSArray *datastreams = responseObject[@"data"][@"datastreams"];
         NSNumber *count = responseObject[@"data"][@"count"];
         self.tableView.hidden = self.exportDataView.hidden = [count isEqual:@0];
+        if ([count isEqual:@0]) {
+            [MBProgressHUD showError:@"暂无数据"];
+            return ;
+        }
         for (int i = 0; i < datastreams.count; ++i) {
             switch (i) {
                 case 0:

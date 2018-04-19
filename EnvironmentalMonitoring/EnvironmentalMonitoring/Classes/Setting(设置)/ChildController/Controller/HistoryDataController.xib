@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -61,6 +62,29 @@
                         <constraint firstAttribute="height" constant="88" id="aUa-3O-wVF"/>
                     </constraints>
                 </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eU1-Eu-iiT">
+                    <rect key="frame" x="87" y="243" width="200" height="200"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="无数据" translatesAutoresizingMaskIntoConstraints="NO" id="l7t-Kj-wSj">
+                            <rect key="frame" x="30.5" y="50" width="140" height="100"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无数据" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXx-Jw-3Vd">
+                            <rect key="frame" x="65.5" y="165" width="69.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.59999999999999998" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="l7t-Kj-wSj" firstAttribute="height" secondItem="eU1-Eu-iiT" secondAttribute="height" multiplier="0.5" id="040-q7-SjB"/>
+                        <constraint firstItem="l7t-Kj-wSj" firstAttribute="width" secondItem="eU1-Eu-iiT" secondAttribute="width" multiplier="0.7" id="9u2-rF-oKw"/>
+                        <constraint firstItem="LXx-Jw-3Vd" firstAttribute="top" secondItem="l7t-Kj-wSj" secondAttribute="bottom" constant="15" id="Lde-yB-adz"/>
+                        <constraint firstItem="LXx-Jw-3Vd" firstAttribute="centerX" secondItem="eU1-Eu-iiT" secondAttribute="centerX" id="Lpr-vV-uj4"/>
+                        <constraint firstItem="l7t-Kj-wSj" firstAttribute="centerY" secondItem="eU1-Eu-iiT" secondAttribute="centerY" id="mfA-wk-Krs"/>
+                        <constraint firstItem="l7t-Kj-wSj" firstAttribute="centerX" secondItem="eU1-Eu-iiT" secondAttribute="centerX" id="wBo-Iq-Wvk"/>
+                    </constraints>
+                </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yyf-4N-9aQ">
                     <rect key="frame" x="307" y="60" width="48" height="48"/>
                     <constraints>
@@ -95,8 +119,12 @@
                 <constraint firstItem="ZFO-cZ-giD" firstAttribute="top" secondItem="WIE-9w-17K" secondAttribute="bottom" id="TOz-d8-VGt"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WIE-9w-17K" secondAttribute="trailing" constant="20" id="bjF-55-qti"/>
                 <constraint firstItem="WIE-9w-17K" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="dTj-lO-WS9"/>
+                <constraint firstItem="eU1-Eu-iiT" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="jte-TO-ke9"/>
+                <constraint firstItem="eU1-Eu-iiT" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="k9s-IA-Xht"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CSY-AX-CPo" secondAttribute="trailing" constant="80" id="p4W-Uz-tOW"/>
+                <constraint firstItem="eU1-Eu-iiT" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.533" id="pDC-CA-ERA"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ZFO-cZ-giD" secondAttribute="bottom" constant="10" id="pTu-6w-Hec"/>
+                <constraint firstItem="eU1-Eu-iiT" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.3" id="qZi-6a-yUF"/>
                 <constraint firstItem="ZFO-cZ-giD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="uYG-GW-eOq"/>
                 <constraint firstItem="CSY-AX-CPo" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="wjn-Z4-Sbj"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Yyf-4N-9aQ" secondAttribute="trailing" constant="20" id="x2u-Yy-vw8"/>
@@ -107,5 +135,6 @@
     </objects>
     <resources>
         <image name="搜索-4" width="48" height="48"/>
+        <image name="无数据" width="128" height="84"/>
     </resources>
 </document>
