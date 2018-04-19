@@ -13,7 +13,9 @@
 #import "Datapoints.h"
 #import <MJRefresh/MJRefreshNormalHeader.h>
 #import <MJRefresh/MJRefreshBackNormalFooter.h>
-#import <LibXL/LibXL.h>
+#import <LibXL/libxl.h>
+
+
 @interface HistoryDataController () <PGDatePickerDelegate,UITableViewDelegate,UITableViewDataSource,UIDocumentInteractionControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *startTime;
 @property (weak, nonatomic) IBOutlet UIButton *endTime;
@@ -32,6 +34,7 @@
 @property (nonatomic, strong) NSMutableArray *room_door_isClose;
 @property (nonatomic, strong) NSMutableArray *smoke_detector;
 
+@property (weak, nonatomic) IBOutlet UIView *exportDataView;
 
 @property (nonatomic, strong) NSMutableArray *atDate;
 
@@ -69,7 +72,7 @@ static NSString *ID = @"cell";
     [headerView setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [headerView setTitleColor:[UIColor colorWithHexString:@"8a8a8a"] forState:UIControlStateHighlighted];
     [headerView addTarget:self action:@selector(exportData) forControlEvents:UIControlEventTouchUpInside];
-    [self.tableView setTableHeaderView:headerView];
+    [self.exportDataView addSubview:headerView];
     
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
     self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
@@ -82,86 +85,92 @@ static NSString *ID = @"cell";
     
     SheetHandle sheet = xlBookAddSheet(book, "Sheet1", NULL);
     //第一个参数代表插入哪个表，第二个是第几行（默认从0开始），第三个是第几列（默认从0开始）
-    xlSheetWriteStr(sheet, 1, 0, "时间", 0);
-    xlSheetWriteStr(sheet, 1, 2, "室内温度", 0);
-    xlSheetWriteStr(sheet, 1, 3, "室内湿度", 0);
-    xlSheetWriteStr(sheet, 1, 4, "空调口温度", 0);
-    xlSheetWriteStr(sheet, 1, 5, "排气口温度", 0);
-    xlSheetWriteStr(sheet, 1, 6, "漏水检测器状态", 0);
-    xlSheetWriteStr(sheet, 1, 7, "烟雾探测器状态", 0);
-    xlSheetWriteStr(sheet, 1, 8, "电房门状态", 0);
-    xlSheetWriteStr(sheet, 1, 9, "电柜门状态", 0);
+    xlSheetWriteStr(sheet, 2, 0, "序号", 0);
+    xlSheetWriteStr(sheet, 2, 1, "时间", 0);
+    xlSheetWriteStr(sheet, 2, 3, "室内温度", 0);
+    xlSheetWriteStr(sheet, 2, 4, "室内湿度", 0);
+    xlSheetWriteStr(sheet, 2, 5, "空调口温度", 0);
+    xlSheetWriteStr(sheet, 2, 6, "排气口温度", 0);
+    xlSheetWriteStr(sheet, 2, 7, "漏水检测器状态", 0);
+    xlSheetWriteStr(sheet, 2, 8, "烟雾探测器状态", 0);
+    xlSheetWriteStr(sheet, 2, 9, "电房门状态", 0);
+    xlSheetWriteStr(sheet, 2, 10, "电柜门状态", 0);
 
 
-    
+    for (int i = 0; i < self.room_temp.count; i++) {
+        NSString *str = [NSString stringWithFormat:@"%d",i+1];
+        const char *name_c = [str cStringUsingEncoding:NSUTF8StringEncoding];  //这里是将NSString字符串转为C语言字符串
+        xlSheetWriteStr(sheet, i+3, 0,name_c, 0);
+        
+    }
     
     for (int i = 0; i < self.room_temp.count; i++) {
         Datapoints *datapoints = self.room_temp[i];
         datapoints.at = [datapoints.at substringWithRange:NSMakeRange(0, 19)];
         const char *name_c = [datapoints.at cStringUsingEncoding:NSUTF8StringEncoding];  //这里是将NSString字符串转为C语言字符串
-        xlSheetWriteStr(sheet, i+2, 0,name_c, 0);
+        xlSheetWriteStr(sheet, i+3, 1,name_c, 0);
         
     }
     
     for (int i = 0; i < self.room_temp.count; i++) {
         Datapoints *datapoints = self.room_temp[i];
         const char *name_c = [datapoints.value cStringUsingEncoding:NSUTF8StringEncoding];  //这里是将NSString字符串转为C语言字符串
-        xlSheetWriteStr(sheet, i+2, 2,name_c, 0);
+        xlSheetWriteStr(sheet, i+3, 3,name_c, 0);
         
     }
     
     for (int i = 0; i < self.room_humi.count; i++) {
         Datapoints *datapoints = self.room_humi[i];
         const char *name_c = [datapoints.value cStringUsingEncoding:NSUTF8StringEncoding];  //这里是将NSString字符串转为C语言字符串
-        xlSheetWriteStr(sheet, i+2, 3,name_c, 0);
+        xlSheetWriteStr(sheet, i+3, 4,name_c, 0);
         
     }
     
     for (int i = 0; i < self.air_temp.count; i++) {
         Datapoints *datapoints = self.air_temp[i];
         const char *name_c = [datapoints.value cStringUsingEncoding:NSUTF8StringEncoding];  //这里是将NSString字符串转为C语言字符串
-        xlSheetWriteStr(sheet, i+2, 4,name_c, 0);
+        xlSheetWriteStr(sheet, i+3, 5,name_c, 0);
         
     }
     
     for (int i = 0; i < self.fun_temp.count; i++) {
         Datapoints *datapoints = self.fun_temp[i];
         const char *name_c = [datapoints.value cStringUsingEncoding:NSUTF8StringEncoding];  //这里是将NSString字符串转为C语言字符串
-        xlSheetWriteStr(sheet, i+2, 5,name_c, 0);
+        xlSheetWriteStr(sheet, i+3, 6,name_c, 0);
     }
     
     for (int i = 0; i < self.water_leakage.count; i++) {
         Datapoints *datapoints = self.water_leakage[i];
         NSString *result = [datapoints.value isEqualToString:@"0"] ? @"正常" : @"异常";
         const char *name_c = [result cStringUsingEncoding:NSUTF8StringEncoding];  //这里是将NSString字符串转为C语言字符串
-        xlSheetWriteStr(sheet, i+2, 6,name_c, 0);
+        xlSheetWriteStr(sheet, i+3, 7,name_c, 0);
     }
     
     for (int i = 0; i < self.smoke_detector.count; i++) {
         Datapoints *datapoints = self.smoke_detector[i];
         NSString *result = [datapoints.value isEqualToString:@"0"] ? @"正常" : @"异常";
         const char *name_c = [result cStringUsingEncoding:NSUTF8StringEncoding];  //这里是将NSString字符串转为C语言字符串
-        xlSheetWriteStr(sheet, i+2, 7,name_c, 0);
+        xlSheetWriteStr(sheet, i+3, 8,name_c, 0);
     }
     
     for (int i = 0; i < self.room_door_isClose.count; i++) {
         Datapoints *datapoints = self.room_door_isClose[i];
         NSString *result = [datapoints.value isEqualToString:@"0"] ? @"正常" : @"异常";
         const char *name_c = [result cStringUsingEncoding:NSUTF8StringEncoding];  //这里是将NSString字符串转为C语言字符串
-        xlSheetWriteStr(sheet, i+2, 8,name_c, 0);
+        xlSheetWriteStr(sheet, i+3, 9,name_c, 0);
     }
     
     for (int i = 0; i < self.cabinet_door_isClose.count; i++) {
         Datapoints *datapoints = self.cabinet_door_isClose[i];
         NSString *result = [datapoints.value isEqualToString:@"0"] ? @"正常" : @"异常";
         const char *name_c = [result cStringUsingEncoding:NSUTF8StringEncoding];  //这里是将NSString字符串转为C语言字符串
-        xlSheetWriteStr(sheet, i+2, 9,name_c, 0);
+        xlSheetWriteStr(sheet, i+3, 10,name_c, 0);
     }
     
     
-        NSString *infuse = @"该日志只保存已经加载的数据";
+        NSString *infuse = @"注:该日志只保存已经加载的数据,该日志只保存已经加载的数据,该日志只保存已经加载的数据";
         const char *name_c = [infuse cStringUsingEncoding:NSUTF8StringEncoding];  //这里是将NSString字符串转为C语言字符串
-        xlSheetWriteStr(sheet, 0, 10,name_c, 0);
+        xlSheetWriteStr(sheet, 1, 0,name_c, 0);
     
     
     NSString *documentPath =
@@ -189,7 +198,7 @@ static NSString *ID = @"cell";
 
 
 - (UIViewController *)documentInteractionControllerViewControllerForPreview:(UIDocumentInteractionController *)interactionController{
-    
+    [MBProgressHUD showMessage:@"请稍后"];
     return self;
     
 }
@@ -261,7 +270,7 @@ static NSString *ID = @"cell";
         cursor = [responseObject objectForKey:@"data"][@"cursor"];
         NSArray *datastreams = responseObject[@"data"][@"datastreams"];
         NSNumber *count = responseObject[@"data"][@"count"];
-        self.tableView.hidden = [count isEqual:@0];
+        self.tableView.hidden = self.exportDataView.hidden = [count isEqual:@0];
         for (int i = 0; i < datastreams.count; ++i) {
             switch (i) {
                 case 0:

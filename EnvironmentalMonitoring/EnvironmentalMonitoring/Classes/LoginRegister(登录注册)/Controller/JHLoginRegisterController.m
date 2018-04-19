@@ -35,6 +35,8 @@
     [self setBackGroundImage];
     [self setupMiddleView];
     [self getUsernamePassword];
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"IDArray"];
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"titleArray"];
 }
 
 - (IBAction)testButtonClick:(id)sender {

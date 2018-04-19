@@ -47,6 +47,8 @@
     hud.removeFromSuperViewOnHide = YES;
     // YES代表需要蒙版效果
     hud.dimBackground = YES;
+    
+    [hud hide:YES afterDelay:0.7];
     return hud;
 }
 

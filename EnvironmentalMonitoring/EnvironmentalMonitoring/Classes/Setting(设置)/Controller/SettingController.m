@@ -120,6 +120,7 @@
             }
             
             TYAlertController *alertController = [TYAlertController alertControllerWithAlertView:alertView preferredStyle:TYAlertControllerStyleActionSheet];
+            alertController.backgoundTapDismissEnable = YES;
             [self presentViewController:alertController animated:YES completion:nil];
             
 

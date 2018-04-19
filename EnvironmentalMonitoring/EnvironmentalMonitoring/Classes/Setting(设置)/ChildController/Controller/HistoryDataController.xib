@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HistoryDataController">
             <connections>
                 <outlet property="endTime" destination="DK5-yr-nQc" id="Wrx-7G-Fjg"/>
+                <outlet property="exportDataView" destination="WIE-9w-17K" id="z23-v2-aYn"/>
                 <outlet property="searchButton" destination="Yyf-4N-9aQ" id="ec6-65-WeB"/>
                 <outlet property="startTime" destination="iAP-08-YW2" id="1Vx-at-pXA"/>
                 <outlet property="tableView" destination="ZFO-cZ-giD" id="Vml-uS-YTK"/>
@@ -72,20 +73,28 @@
                     </connections>
                 </button>
                 <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZFO-cZ-giD">
-                    <rect key="frame" x="20" y="138" width="335" height="519"/>
+                    <rect key="frame" x="20" y="182" width="335" height="475"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="UsG-4N-OEb"/>
                         <outlet property="delegate" destination="-1" id="Cdi-Wq-o38"/>
                     </connections>
                 </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WIE-9w-17K">
+                    <rect key="frame" x="20" y="138" width="335" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
             </subviews>
             <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="CSY-AX-CPo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="6fO-jZ-pEw"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZFO-cZ-giD" secondAttribute="trailing" constant="20" id="73c-JE-Zg0"/>
-                <constraint firstItem="ZFO-cZ-giD" firstAttribute="top" secondItem="CSY-AX-CPo" secondAttribute="bottom" constant="10" id="EOw-FG-IUv"/>
+                <constraint firstItem="ZFO-cZ-giD" firstAttribute="top" secondItem="CSY-AX-CPo" secondAttribute="bottom" constant="54" id="EOw-FG-IUv"/>
+                <constraint firstItem="WIE-9w-17K" firstAttribute="top" secondItem="CSY-AX-CPo" secondAttribute="bottom" constant="10" id="EX0-VP-3xs"/>
                 <constraint firstItem="Yyf-4N-9aQ" firstAttribute="centerY" secondItem="CSY-AX-CPo" secondAttribute="centerY" id="TLe-Ok-K69"/>
+                <constraint firstItem="ZFO-cZ-giD" firstAttribute="top" secondItem="WIE-9w-17K" secondAttribute="bottom" id="TOz-d8-VGt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WIE-9w-17K" secondAttribute="trailing" constant="20" id="bjF-55-qti"/>
+                <constraint firstItem="WIE-9w-17K" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="dTj-lO-WS9"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CSY-AX-CPo" secondAttribute="trailing" constant="80" id="p4W-Uz-tOW"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ZFO-cZ-giD" secondAttribute="bottom" constant="10" id="pTu-6w-Hec"/>
                 <constraint firstItem="ZFO-cZ-giD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="uYG-GW-eOq"/>
@@ -93,6 +102,7 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Yyf-4N-9aQ" secondAttribute="trailing" constant="20" id="x2u-Yy-vw8"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
         </view>
     </objects>
     <resources>

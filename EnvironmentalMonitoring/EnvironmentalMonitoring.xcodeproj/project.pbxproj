@@ -1067,15 +1067,38 @@
 				CODE_SIGN_ENTITLEMENTS = EnvironmentalMonitoring/EnvironmentalMonitoring.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BN29L52BAW;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				GCC_PREFIX_HEADER = "/Users/lakersjh/开发资料/EnvironmentalMonitoring/EnvironmentalMonitoring/EnvironmentalMonitoring/Other/EnvironmentalMonitoring.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/EnvironmentalMonitoring/Other/EnvironmentalMonitoring.pch";
 				INFOPLIST_FILE = EnvironmentalMonitoring/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"MJExtension\"",
+					"-l\"MJRefresh\"",
+					"-l\"PGDatePicker\"",
+					"-l\"PGPickerView\"",
+					"-l\"TYAlertController\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-lstdc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jh.3nvironmentalMonitoring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1088,15 +1111,38 @@
 				CODE_SIGN_ENTITLEMENTS = EnvironmentalMonitoring/EnvironmentalMonitoring.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BN29L52BAW;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				GCC_PREFIX_HEADER = "/Users/lakersjh/开发资料/EnvironmentalMonitoring/EnvironmentalMonitoring/EnvironmentalMonitoring/Other/EnvironmentalMonitoring.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/EnvironmentalMonitoring/Other/EnvironmentalMonitoring.pch";
 				INFOPLIST_FILE = EnvironmentalMonitoring/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"MJExtension\"",
+					"-l\"MJRefresh\"",
+					"-l\"PGDatePicker\"",
+					"-l\"PGPickerView\"",
+					"-l\"TYAlertController\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-lstdc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jh.3nvironmentalMonitoring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
