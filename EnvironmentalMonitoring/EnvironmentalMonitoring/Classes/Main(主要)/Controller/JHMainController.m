@@ -177,9 +177,18 @@ static NSUInteger page = 2;
             }
         }
         
-        //数组转模型
-        _datas = [DeviceList mj_objectArrayWithKeyValuesArray:arrayTemp];
+        if (_arrayTitle == nil) {
+            _arrayTitle = [NSMutableArray arrayWithCapacity:0];
+        }
         
+        if (_arrayID == nil) {
+            _arrayID = [NSMutableArray arrayWithCapacity:0];
+        }
+        
+        [_arrayID removeAllObjects];
+        [_arrayTitle removeAllObjects];
+        
+        //数组转模型
         _datas = [DeviceList mj_objectArrayWithKeyValuesArray:arrayTemp];
         for (DeviceList *list in _datas) {
             [_arrayID addObject:list.idField];
