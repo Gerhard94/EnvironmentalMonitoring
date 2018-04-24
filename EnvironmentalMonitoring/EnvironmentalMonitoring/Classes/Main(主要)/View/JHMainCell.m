@@ -38,23 +38,6 @@
     UIImage *online = [UIImage imageNamed:@"online"];
     UIImage *offline = [UIImage imageNamed:@"offline"];
     self.online.image = [deviceList.online isEqualToString:@"0"] ? offline : online;
-
-    NSArray *arrayID = [[NSUserDefaults standardUserDefaults] objectForKey:@"IDArray"];
-    if (arrayID == nil) {
-        arrayID = [NSArray array];
-    }
-    NSMutableArray *arrID = [NSMutableArray arrayWithArray:arrayID];
-    [arrID addObject:deviceList.idField];
-    [[NSUserDefaults standardUserDefaults] setObject:arrID forKey:@"IDArray"];
-    
-    NSArray *arraytitle = [[NSUserDefaults standardUserDefaults] objectForKey:@"titleArray"];
-    if (arraytitle == nil) {
-        arraytitle = [NSArray array];
-    }
-    NSMutableArray *arrtitle = [NSMutableArray arrayWithArray:arraytitle];
-    [arrtitle addObject:deviceList.title];
-    [[NSUserDefaults standardUserDefaults] setObject:arrtitle forKey:@"titleArray"];
-
 }
 
 - (void)layoutSubviews {

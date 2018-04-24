@@ -27,6 +27,9 @@
 
 @property (nonatomic, assign) BOOL isDelete;
 
+@property (nonatomic, strong) NSMutableArray *arrayID;
+@property (nonatomic, strong) NSMutableArray *arrayTitle;
+
 @end
 
 static NSString *ReuseId = @"ReuseId";
@@ -143,6 +146,7 @@ static NSUInteger page = 2;
     
     //编辑搜索时隐藏导航栏
     search.hidesNavigationBarDuringPresentation = YES;
+    self.definesPresentationContext = YES;
     
     search.searchBar.delegate = self;
     self.searchController = search;
@@ -175,6 +179,15 @@ static NSUInteger page = 2;
         
         //数组转模型
         _datas = [DeviceList mj_objectArrayWithKeyValuesArray:arrayTemp];
+        
+        _datas = [DeviceList mj_objectArrayWithKeyValuesArray:arrayTemp];
+        for (DeviceList *list in _datas) {
+            [_arrayID addObject:list.idField];
+            [_arrayTitle addObject:list.title];
+        }
+        
+        [[NSUserDefaults standardUserDefaults] setObject:_arrayID forKey:@"IDArray"];
+        [[NSUserDefaults standardUserDefaults] setObject:_arrayTitle forKey:@"titleArray"];
         
         //刷新表格
         [self.tableView reloadData];
