@@ -155,6 +155,7 @@
     NSUserDefaults *userInfo = [NSUserDefaults standardUserDefaults];
     if ([userInfo objectForKey:@"account"] == view.accountTextField.text) {
         if ([userInfo objectForKey:@"password"] == view.passwordTextField.text) {
+            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"isLogined"];
             JHTabBarController *tabBarVC = [[JHTabBarController alloc] init];
             [[UIApplication sharedApplication].keyWindow setRootViewController:tabBarVC];
 

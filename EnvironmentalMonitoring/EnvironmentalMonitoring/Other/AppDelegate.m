@@ -11,6 +11,7 @@
 #import <UMCommon/UMCommon.h>
 #import <UMPush/UMessage.h>
 #import <UserNotifications/UserNotifications.h>
+#import "JHTabBarController.h"
 @interface AppDelegate () <UNUserNotificationCenterDelegate>
 
 @end
@@ -45,8 +46,14 @@
     JHLoginRegisterController *loginVC = [[JHLoginRegisterController alloc] init];
     loginVC.view.backgroundColor = [UIColor grayColor];
     
+    
+    
     //设置根控制器
-    [_window setRootViewController:loginVC];
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"isLogined"] == NO) {
+        [_window setRootViewController:loginVC];
+    } else {
+        [_window setRootViewController:[[JHTabBarController alloc] init]];
+    }
     
     //显示UI窗口
     [_window makeKeyAndVisible];
@@ -92,11 +99,11 @@
 
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
 -(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
 {
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"isLogined"] == YES) {
     [UMessage setAutoAlert:NO];
     if([[[UIDevice currentDevice] systemVersion]intValue] < 10){
         [UMessage didReceiveRemoteNotification:userInfo];
@@ -116,9 +123,11 @@
         //    }
         completionHandler(UIBackgroundFetchResultNewData);
     }
+    }
 }
 
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler {
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"isLogined"] == YES) {
     NSDictionary *userInfo = notification.request.content.userInfo;
     if ([notification.request.trigger isKindOfClass:[UNPushNotificationTrigger class]]) {
         [UMessage didReceiveRemoteNotification:userInfo];
@@ -126,6 +135,7 @@
         
     }
     completionHandler(UNNotificationPresentationOptionAlert | UNNotificationPresentationOptionBadge | UNNotificationPresentationOptionSound);
+    }
 }
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
@@ -140,6 +150,7 @@
 }
 
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler {
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"isLogined"] == YES) {
     NSDictionary * userInfo = response.notification.request.content.userInfo;
     if([response.notification.request.trigger isKindOfClass:[UNPushNotificationTrigger class]]) {
         //应用处于后台时的远程推送接受
@@ -148,6 +159,7 @@
         
     }else{
         //应用处于后台时的本地推送接受
+    }
     }
 }
 

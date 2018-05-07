@@ -172,8 +172,10 @@
         } else if (indexPath.row == 1) {
             TYAlertView *alertView = [TYAlertView alertViewWithTitle:@"警告" message:@"确定要退出登录吗?"];
             [alertView addAction:[TYAlertAction actionWithTitle:@"确定" style:TYAlertActionStyleDestructive handler:^(TYAlertAction *action) {
+                [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"isLogined"];
                 JHLoginRegisterController *loginVC = [[JHLoginRegisterController alloc] init];
                 [[UIApplication sharedApplication].keyWindow setRootViewController:loginVC];
+                
             }]];
             [alertView addAction:[TYAlertAction actionWithTitle:@"取消" style:TYAlertActionStyleCancel handler:nil]];
             TYAlertController *alertC = [TYAlertController alertControllerWithAlertView:alertView preferredStyle:TYAlertControllerStyleAlert transitionAnimation:TYAlertTransitionAnimationDropDown];
