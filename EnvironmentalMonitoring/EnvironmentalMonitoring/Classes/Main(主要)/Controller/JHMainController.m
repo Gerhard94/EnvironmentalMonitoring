@@ -13,6 +13,7 @@
 #import <MJRefresh/MJRefreshNormalHeader.h>
 #import <MJRefresh/MJRefreshBackNormalFooter.h>
 #import "DetailInfoController.h"
+#import "VoltageController.h"
 
 
 @interface JHMainController () <UITableViewDelegate,UITableViewDataSource,UISearchResultsUpdating,UISearchBarDelegate,UIViewControllerPreviewingDelegate>
@@ -348,11 +349,18 @@ static NSUInteger page = 2;
     } else {
         list = _datas[indexPath.row];
     }
+    /*
     DetailInfoController *detailInfoVC = [[DetailInfoController alloc] init];
     detailInfoVC.deviceName = list.title;
     detailInfoVC.deviceID = list.idField;
+     [self.navigationController pushViewController:detailInfoVC animated:YES];
+     */
+    VoltageController *voltageVC = [[VoltageController alloc] init];
+    voltageVC.deviceID = list.idField;
+    voltageVC.deviceName = list.title;
+    [self.navigationController pushViewController:voltageVC animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    [self.navigationController pushViewController:detailInfoVC animated:YES];
+    
     
 }
 

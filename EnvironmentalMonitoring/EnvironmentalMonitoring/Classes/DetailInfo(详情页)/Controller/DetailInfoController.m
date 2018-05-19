@@ -110,6 +110,8 @@ static NSUInteger isRefresh = 0;
             [[NSRunLoop mainRunLoop] addTimer:_timer forMode:NSDefaultRunLoopMode];
         });
     }
+    
+
 }
 
 - (void)viewDidDisappear:(BOOL)animated {

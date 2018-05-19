@@ -36,6 +36,10 @@
 		6E723370207D0C65006A7804 /* SettingController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E72336F207D0C65006A7804 /* SettingController.storyboard */; };
 		6E8698912079E37900850166 /* JHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8698902079E37900850166 /* JHTabBarController.m */; };
 		6E8698942079FB4D00850166 /* JHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8698932079FB4D00850166 /* JHNavigationController.m */; };
+		6E909E2520ABC4D300CBA09E /* VoltageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E909E2320ABC4D300CBA09E /* VoltageController.m */; };
+		6E909E2620ABC4D300CBA09E /* VoltageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E909E2420ABC4D300CBA09E /* VoltageController.xib */; };
+		6E909E2A20ABC7DB00CBA09E /* VoltageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E909E2820ABC7DB00CBA09E /* VoltageCell.m */; };
+		6E909E2B20ABC7DB00CBA09E /* VoltageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E909E2920ABC7DB00CBA09E /* VoltageCell.xib */; };
 		6EB2042B207B19460039946B /* JHView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2042A207B19460039946B /* JHView.m */; };
 		6EB2042E207B39CB0039946B /* DetailInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2042D207B39CB0039946B /* DetailInfo.m */; };
 		6EB20436207B59090039946B /* DataDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB20435207B59090039946B /* DataDetailController.m */; };
@@ -140,6 +144,12 @@
 		6E8698902079E37900850166 /* JHTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHTabBarController.m; sourceTree = "<group>"; };
 		6E8698922079FB4D00850166 /* JHNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHNavigationController.h; sourceTree = "<group>"; };
 		6E8698932079FB4D00850166 /* JHNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHNavigationController.m; sourceTree = "<group>"; };
+		6E909E2220ABC4D300CBA09E /* VoltageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoltageController.h; sourceTree = "<group>"; };
+		6E909E2320ABC4D300CBA09E /* VoltageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoltageController.m; sourceTree = "<group>"; };
+		6E909E2420ABC4D300CBA09E /* VoltageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VoltageController.xib; sourceTree = "<group>"; };
+		6E909E2720ABC7DB00CBA09E /* VoltageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VoltageCell.h; path = "EnvironmentalMonitoring/Classes/DetailInfo(详情页)/Controller/VoltageCell.h"; sourceTree = SOURCE_ROOT; };
+		6E909E2820ABC7DB00CBA09E /* VoltageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = VoltageCell.m; path = "EnvironmentalMonitoring/Classes/DetailInfo(详情页)/Controller/VoltageCell.m"; sourceTree = SOURCE_ROOT; };
+		6E909E2920ABC7DB00CBA09E /* VoltageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = VoltageCell.xib; path = "EnvironmentalMonitoring/Classes/DetailInfo(详情页)/Controller/VoltageCell.xib"; sourceTree = SOURCE_ROOT; };
 		6EB20429207B19460039946B /* JHView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHView.h; sourceTree = "<group>"; };
 		6EB2042A207B19460039946B /* JHView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHView.m; sourceTree = "<group>"; };
 		6EB2042C207B39CB0039946B /* DetailInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailInfo.h; sourceTree = "<group>"; };
@@ -495,6 +505,9 @@
 				6E53B2762079BD2C00C2D468 /* DetailInfoController.h */,
 				6E53B2772079BD2C00C2D468 /* DetailInfoController.m */,
 				6E53B2782079BD2C00C2D468 /* DetailInfoController.xib */,
+				6E909E2220ABC4D300CBA09E /* VoltageController.h */,
+				6E909E2320ABC4D300CBA09E /* VoltageController.m */,
+				6E909E2420ABC4D300CBA09E /* VoltageController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -511,6 +524,9 @@
 		6E53B2752079BD0500C2D468 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6E909E2720ABC7DB00CBA09E /* VoltageCell.h */,
+				6E909E2820ABC7DB00CBA09E /* VoltageCell.m */,
+				6E909E2920ABC7DB00CBA09E /* VoltageCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -809,8 +825,10 @@
 				6E1B72FB206F694F0095A184 /* JHLoginRegister.xib in Resources */,
 				6E1B72FA206F694F0095A184 /* JHLoginRegisterController.xib in Resources */,
 				6EB2047D207B5B7F0039946B /* AAHighchartsMore.js in Resources */,
+				6E909E2B20ABC7DB00CBA09E /* VoltageCell.xib in Resources */,
 				6E723370207D0C65006A7804 /* SettingController.storyboard in Resources */,
 				6E0CCED7208744BF00CAF3F1 /* HistoryDataController.xib in Resources */,
+				6E909E2620ABC4D300CBA09E /* VoltageController.xib in Resources */,
 				6E662BA02085D17800D51DB1 /* HistoryDataCell.xib in Resources */,
 				6EB2047E207B5B7F0039946B /* AAFunnel.js in Resources */,
 				6EB2047F207B5B7F0039946B /* AAHighcharts-3d.js in Resources */,
@@ -915,6 +933,7 @@
 				6EB6CAA7207E0D9C0064CC5A /* AutoRefresh.m in Sources */,
 				6EB20491207B5B7F0039946B /* AATitle.m in Sources */,
 				6E1B7307206F695C0095A184 /* main.m in Sources */,
+				6E909E2A20ABC7DB00CBA09E /* VoltageCell.m in Sources */,
 				6E264A6C20734A6B00016B3B /* DeviceList.m in Sources */,
 				6EB20486207B5B7F0039946B /* AADataLabels.m in Sources */,
 				6EB2049C207B5B7F0039946B /* AAOptions.m in Sources */,
@@ -923,6 +942,7 @@
 				6E3425A7207217F800A5EA43 /* MBProgressHUD+XMG.m in Sources */,
 				6EB20485207B5B7F0039946B /* AAPlotOptions.m in Sources */,
 				6EB20487207B5B7F0039946B /* AALine.m in Sources */,
+				6E909E2520ABC4D300CBA09E /* VoltageController.m in Sources */,
 				6EB2048D207B5B7F0039946B /* AAPlotLinesElement.m in Sources */,
 				6EB20492207B5B7F0039946B /* AAArea.m in Sources */,
 				6EFD5BFD207C8C4F00DBBF0E /* DataDetail.m in Sources */,
