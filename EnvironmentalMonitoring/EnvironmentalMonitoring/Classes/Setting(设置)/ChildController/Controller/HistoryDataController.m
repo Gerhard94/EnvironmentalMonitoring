@@ -13,6 +13,7 @@
 #import "Datapoints.h"
 #import <MJRefresh/MJRefreshNormalHeader.h>
 #import <MJRefresh/MJRefreshBackNormalFooter.h>
+#import "HistoryOfVoltageCell.h"
 #import <LibXL/libxl.h>
 
 
@@ -25,6 +26,7 @@
 @property (nonatomic, copy) NSString *endTimeStr;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+@property (nonatomic, strong) NSMutableArray *voltageArray;
 @property (nonatomic, strong) NSMutableArray *room_temp;
 @property (nonatomic, strong) NSMutableArray *room_humi;
 @property (nonatomic, strong) NSMutableArray *fun_temp;
@@ -63,7 +65,7 @@ static NSString *ID = @"cell";
     
     [self setupBorder];
     // Do any additional setup after loading the view.
-    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([HistoryDataCell class]) bundle:nil] forCellReuseIdentifier:ID];
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([HistoryOfVoltageCell class]) bundle:nil] forCellReuseIdentifier:ID];
     
     UIButton *headerView = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 44)];
     [headerView setImage:[UIImage imageNamed:@"download"] forState:UIControlStateNormal];
@@ -86,87 +88,48 @@ static NSString *ID = @"cell";
     SheetHandle sheet = xlBookAddSheet(book, "Sheet1", NULL);
     //第一个参数代表插入哪个表，第二个是第几行（默认从0开始），第三个是第几列（默认从0开始）
     xlSheetWriteStr(sheet, 2, 0, "序号", 0);
-    xlSheetWriteStr(sheet, 2, 1, "时间", 0);
-    xlSheetWriteStr(sheet, 2, 3, "室内温度", 0);
-    xlSheetWriteStr(sheet, 2, 4, "室内湿度", 0);
-    xlSheetWriteStr(sheet, 2, 5, "空调口温度", 0);
-    xlSheetWriteStr(sheet, 2, 6, "排气口温度", 0);
-    xlSheetWriteStr(sheet, 2, 7, "漏水检测器状态", 0);
-    xlSheetWriteStr(sheet, 2, 8, "烟雾探测器状态", 0);
-    xlSheetWriteStr(sheet, 2, 9, "电房门状态", 0);
-    xlSheetWriteStr(sheet, 2, 10, "电柜门状态", 0);
+    xlSheetWriteStr(sheet, 2, 1, "时期", 0);
+    xlSheetWriteStr(sheet, 2, 3, "A1", 0);
+    xlSheetWriteStr(sheet, 2, 4, "A2", 0);
+    xlSheetWriteStr(sheet, 2, 5, "A3", 0);
+    xlSheetWriteStr(sheet, 2, 6, "A4", 0);
+    xlSheetWriteStr(sheet, 2, 7, "A5", 0);
+    xlSheetWriteStr(sheet, 2, 8, "A6", 0);
+    xlSheetWriteStr(sheet, 2, 9, "A7", 0);
+    xlSheetWriteStr(sheet, 2, 10, "A8", 0);
+    xlSheetWriteStr(sheet, 2, 11, "A9", 0);
+    xlSheetWriteStr(sheet, 2, 12, "A10", 0);
 
 
-    for (int i = 0; i < self.room_temp.count; i++) {
+
+    for (int i = 0; i < _voltageArray.count; i++) {
         NSString *str = [NSString stringWithFormat:@"%d",i+1];
         const char *name_c = [str cStringUsingEncoding:NSUTF8StringEncoding];  //这里是将NSString字符串转为C语言字符串
         xlSheetWriteStr(sheet, i+3, 0,name_c, 0);
         
     }
     
-    for (int i = 0; i < self.room_temp.count; i++) {
-        Datapoints *datapoints = self.room_temp[i];
+    for (int i = 0; i < _voltageArray.count; i++) {
+        Datapoints *datapoints = self.voltageArray[i];
         datapoints.at = [datapoints.at substringWithRange:NSMakeRange(0, 19)];
         const char *name_c = [datapoints.at cStringUsingEncoding:NSUTF8StringEncoding];  //这里是将NSString字符串转为C语言字符串
         xlSheetWriteStr(sheet, i+3, 1,name_c, 0);
         
     }
     
-    for (int i = 0; i < self.room_temp.count; i++) {
-        Datapoints *datapoints = self.room_temp[i];
-        const char *name_c = [datapoints.value cStringUsingEncoding:NSUTF8StringEncoding];  //这里是将NSString字符串转为C语言字符串
-        xlSheetWriteStr(sheet, i+3, 3,name_c, 0);
+    for (int i = 0; i < _voltageArray.count; i++) {
+        Datapoints *datapoints = _voltageArray[i];
+        if (datapoints.value.length != 134) {
+            continue;
+        }
+        NSInteger role = i;
+        for (int i = 0; i < 10; ++i) {
+            NSString *str = [[datapoints.value substringFromIndex:14] substringWithRange:NSMakeRange(i * 12, 12)];
+            const char *name_c = [str cStringUsingEncoding:NSUTF8StringEncoding];  //这里是将NSString字符串转为C语言字符串
+            xlSheetWriteStr(sheet, 3 + role, i + 3,name_c, 0);
+        }
         
     }
-    
-    for (int i = 0; i < self.room_humi.count; i++) {
-        Datapoints *datapoints = self.room_humi[i];
-        const char *name_c = [datapoints.value cStringUsingEncoding:NSUTF8StringEncoding];  //这里是将NSString字符串转为C语言字符串
-        xlSheetWriteStr(sheet, i+3, 4,name_c, 0);
-        
-    }
-    
-    for (int i = 0; i < self.air_temp.count; i++) {
-        Datapoints *datapoints = self.air_temp[i];
-        const char *name_c = [datapoints.value cStringUsingEncoding:NSUTF8StringEncoding];  //这里是将NSString字符串转为C语言字符串
-        xlSheetWriteStr(sheet, i+3, 5,name_c, 0);
-        
-    }
-    
-    for (int i = 0; i < self.fun_temp.count; i++) {
-        Datapoints *datapoints = self.fun_temp[i];
-        const char *name_c = [datapoints.value cStringUsingEncoding:NSUTF8StringEncoding];  //这里是将NSString字符串转为C语言字符串
-        xlSheetWriteStr(sheet, i+3, 6,name_c, 0);
-    }
-    
-    for (int i = 0; i < self.water_leakage.count; i++) {
-        Datapoints *datapoints = self.water_leakage[i];
-        NSString *result = [datapoints.value isEqualToString:@"0"] ? @"正常" : @"异常";
-        const char *name_c = [result cStringUsingEncoding:NSUTF8StringEncoding];  //这里是将NSString字符串转为C语言字符串
-        xlSheetWriteStr(sheet, i+3, 7,name_c, 0);
-    }
-    
-    for (int i = 0; i < self.smoke_detector.count; i++) {
-        Datapoints *datapoints = self.smoke_detector[i];
-        NSString *result = [datapoints.value isEqualToString:@"0"] ? @"正常" : @"异常";
-        const char *name_c = [result cStringUsingEncoding:NSUTF8StringEncoding];  //这里是将NSString字符串转为C语言字符串
-        xlSheetWriteStr(sheet, i+3, 8,name_c, 0);
-    }
-    
-    for (int i = 0; i < self.room_door_isClose.count; i++) {
-        Datapoints *datapoints = self.room_door_isClose[i];
-        NSString *result = [datapoints.value isEqualToString:@"0"] ? @"正常" : @"异常";
-        const char *name_c = [result cStringUsingEncoding:NSUTF8StringEncoding];  //这里是将NSString字符串转为C语言字符串
-        xlSheetWriteStr(sheet, i+3, 9,name_c, 0);
-    }
-    
-    for (int i = 0; i < self.cabinet_door_isClose.count; i++) {
-        Datapoints *datapoints = self.cabinet_door_isClose[i];
-        NSString *result = [datapoints.value isEqualToString:@"0"] ? @"正常" : @"异常";
-        const char *name_c = [result cStringUsingEncoding:NSUTF8StringEncoding];  //这里是将NSString字符串转为C语言字符串
-        xlSheetWriteStr(sheet, i+3, 10,name_c, 0);
-    }
-    
     
         NSString *infuse = @"注:该日志只保存已经加载的数据,该日志只保存已经加载的数据,该日志只保存已经加载的数据";
         const char *name_c = [infuse cStringUsingEncoding:NSUTF8StringEncoding];  //这里是将NSString字符串转为C语言字符串
@@ -254,10 +217,10 @@ static NSString *ID = @"cell";
     NSString *urlStr = [[base_url stringByAppendingPathComponent:_IDField] stringByAppendingPathComponent:@"datapoints"];
     
     NSMutableDictionary *parameters = [NSMutableDictionary dictionaryWithCapacity:0];
-    parameters[@"datastream_id"] = @"room_temp,smoke_detector,room_humi,water_leakage,fun_temp,cabinet_door_isClose,air_temp,room_door_isClose";
+    parameters[@"datastream_id"] = @"data";
     parameters[@"start"] = _startTimeStr;
     parameters[@"end"] = _endTimeStr;
-    parameters[@"limit"] = @160;
+    parameters[@"limit"] = @20;
     parameters[@"sort"] = @"DESC";
     if (![cursor isEqualToString:@""]) {
         parameters[@"cursor"] = cursor;
@@ -275,62 +238,10 @@ static NSString *ID = @"cell";
             [MBProgressHUD showError:@"暂无数据"];
             return ;
         }
-        for (int i = 0; i < datastreams.count; ++i) {
-            switch (i) {
-                case 0:
-                    if (_cabinet_door_isClose == nil) {
-                        _cabinet_door_isClose = [NSMutableArray arrayWithCapacity:0];
-                    }
-                    [_cabinet_door_isClose addObjectsFromArray:[Datapoints mj_objectArrayWithKeyValuesArray:datastreams[i][@"datapoints"]]];
-                    break;
-                case 1:
-                    if (_air_temp == nil) {
-                        _air_temp = [NSMutableArray arrayWithCapacity:0];
-                    }
-                    [_air_temp addObjectsFromArray:[Datapoints mj_objectArrayWithKeyValuesArray:datastreams[i][@"datapoints"]]];
-                    break;
-                case 2:
-                    if (_room_door_isClose == nil) {
-                        _room_door_isClose = [NSMutableArray arrayWithCapacity:0];
-                    }
-                    [_room_door_isClose addObjectsFromArray:[Datapoints mj_objectArrayWithKeyValuesArray:datastreams[i][@"datapoints"]]];
-                    break;
-                case 3:
-                    if (_fun_temp == nil) {
-                        _fun_temp = [NSMutableArray arrayWithCapacity:0];
-                    }
-                    [_fun_temp addObjectsFromArray:[Datapoints mj_objectArrayWithKeyValuesArray:datastreams[i][@"datapoints"]]];
-                    break;
-                case 4:
-                    if (_smoke_detector == nil) {
-                        _smoke_detector = [NSMutableArray arrayWithCapacity:0];
-                    }
-                    [_smoke_detector addObjectsFromArray:[Datapoints mj_objectArrayWithKeyValuesArray:datastreams[i][@"datapoints"]]];
-                    break;
-                case 5:
-                    if (_room_humi == nil) {
-                        _room_humi = [NSMutableArray arrayWithCapacity:0];
-                    }
-                    [_room_humi addObjectsFromArray:[Datapoints mj_objectArrayWithKeyValuesArray:datastreams[i][@"datapoints"]]];
-                    break;
-                case 6:
-                    if (_room_temp == nil) {
-                        _room_temp = [NSMutableArray arrayWithCapacity:0];
-                    }
-                    [_room_temp addObjectsFromArray:[Datapoints mj_objectArrayWithKeyValuesArray:datastreams[i][@"datapoints"]]];
-                    break;
-                    
-                case 7:
-                    if (_water_leakage == nil) {
-                        _water_leakage = [NSMutableArray arrayWithCapacity:0];
-                    }
-                    [_water_leakage addObjectsFromArray:[Datapoints mj_objectArrayWithKeyValuesArray:datastreams[i][@"datapoints"]]];
-                    break;
-                    
-                default:
-                    break;
-            }
-        }
+        
+        NSArray *array = [[datastreams objectAtIndex:0] objectForKey:@"datapoints"];
+        _voltageArray = [Datapoints mj_objectArrayWithKeyValuesArray:array];
+        NSLog(@"%@",array);
         
         //        _room_temp = [DataDetail mj_objectWithKeyValues:datastreams[6]];
         [self.tableView reloadData];
@@ -390,38 +301,13 @@ static NSString *ID = @"cell";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _room_temp.count;
+    return _voltageArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    HistoryDataCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    Datapoints *datapoint = _room_temp[indexPath.row];
-    NSString *dateStr = datapoint.at;
-    cell.atDate.text = [dateStr substringWithRange:NSMakeRange(0, 19)];
-    cell.room_temp.text = [NSString stringWithFormat:@"室内温度: %@°",datapoint.value];
-    
-    datapoint = _room_humi[indexPath.row];
-    cell.room_humi.text = [NSString stringWithFormat:@"室内湿度: %@%%",datapoint.value];
-    
-    datapoint = _fun_temp[indexPath.row];
-    cell.fun_temp.text = [NSString stringWithFormat:@"排气口温度: %@°",datapoint.value];
-    
-    datapoint = _air_temp[indexPath.row];
-    cell.air_temp.text = [NSString stringWithFormat:@"空调口温度: %@°",datapoint.value];
-    
-    datapoint = _room_door_isClose[indexPath.row];
-    cell.room_door_isClose.text = [NSString stringWithFormat:@"电房门状态: %@",datapoint.value == 0 ? @"异常" : @"正常"];
-    
-    datapoint = _smoke_detector[indexPath.row];
-    cell.smoke_detector.text = [NSString stringWithFormat:@"烟雾探测器状态: %@",datapoint.value == 0 ? @"异常" : @"正常"];
-    
-    datapoint = _water_leakage[indexPath.row];
-    cell.water_leakage.text = [NSString stringWithFormat:@"漏水检测器状态: %@",datapoint.value == 0 ? @"异常" : @"正常"];
-    
-    datapoint = _cabinet_door_isClose[indexPath.row];
-    cell.cabinet_door_isClose.text = [NSString stringWithFormat:@"电柜门状态: %@",datapoint.value == 0 ? @"异常" : @"正常"];
-    
-    
+    HistoryOfVoltageCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    Datapoints *datapoint = _voltageArray[indexPath.row];
+    cell.points = datapoint;
     /*
 */
     return cell;
@@ -430,7 +316,7 @@ static NSString *ID = @"cell";
 
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    return 132;
+    return 155;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

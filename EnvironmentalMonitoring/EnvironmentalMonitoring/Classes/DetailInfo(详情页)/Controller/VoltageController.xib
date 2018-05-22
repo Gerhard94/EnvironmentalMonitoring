@@ -13,8 +13,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VoltageController">
             <connections>
                 <outlet property="CollectionView" destination="ANE-U4-gID" id="zHv-Xv-66S"/>
-                <outlet property="DataLabel" destination="HhD-jA-efI" id="f72-hv-7kB"/>
-                <outlet property="deviceIDLabel" destination="nCh-h8-QsZ" id="hrf-JG-Cb1"/>
+                <outlet property="DataLabel" destination="nCh-h8-QsZ" id="4xF-5P-C6g"/>
+                <outlet property="deviceIDLabel" destination="HhD-jA-efI" id="zNd-zZ-XBX"/>
                 <outlet property="mainScrollView" destination="DEr-YT-gpK" id="ckf-eR-41o"/>
                 <outlet property="refreshMode" destination="Lcd-GS-PRO" id="BWp-kA-BIe"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -29,23 +29,22 @@
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCh-h8-QsZ">
-                            <rect key="frame" x="20" y="20" width="42" height="21"/>
+                            <rect key="frame" x="20" y="10" width="42" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HhD-jA-efI">
-                            <rect key="frame" x="20" y="51" width="42" height="21"/>
+                            <rect key="frame" x="20" y="41" width="42" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ANE-U4-gID">
-                            <rect key="frame" x="20" y="210" width="335" height="397"/>
+                            <rect key="frame" x="10" y="140" width="355" height="417"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="397" id="Kr8-wR-Kzv"/>
-                                <constraint firstAttribute="width" constant="335" id="PnP-0X-dVd"/>
+                                <constraint firstAttribute="height" constant="417" id="AXq-8F-Mii"/>
                             </constraints>
                             <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="IaI-x1-dxP">
                                 <size key="itemSize" width="50" height="50"/>
@@ -59,14 +58,14 @@
                             </connections>
                         </collectionView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="电压表" translatesAutoresizingMaskIntoConstraints="NO" id="Ykf-bo-GGE">
-                            <rect key="frame" x="138" y="100" width="100" height="100"/>
+                            <rect key="frame" x="148" y="60" width="80" height="80"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="100" id="Jcy-xe-8yF"/>
-                                <constraint firstAttribute="height" constant="100" id="SnG-Wb-dmb"/>
+                                <constraint firstAttribute="width" constant="80" id="Jcy-xe-8yF"/>
+                                <constraint firstAttribute="height" constant="80" id="SnG-Wb-dmb"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lcd-GS-PRO">
-                            <rect key="frame" x="20" y="82" width="42" height="21"/>
+                            <rect key="frame" x="20" y="72" width="42" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -74,17 +73,18 @@
                     </subviews>
                     <constraints>
                         <constraint firstItem="Lcd-GS-PRO" firstAttribute="top" secondItem="HhD-jA-efI" secondAttribute="bottom" constant="10" id="4Na-8s-QbN"/>
+                        <constraint firstAttribute="trailing" secondItem="ANE-U4-gID" secondAttribute="trailing" constant="10" id="7eX-Sp-KGX"/>
+                        <constraint firstItem="ANE-U4-gID" firstAttribute="leading" secondItem="DEr-YT-gpK" secondAttribute="leading" constant="10" id="GBc-9K-oqr"/>
                         <constraint firstItem="Ykf-bo-GGE" firstAttribute="centerX" secondItem="DEr-YT-gpK" secondAttribute="centerX" id="RZH-lX-FBd"/>
-                        <constraint firstItem="nCh-h8-QsZ" firstAttribute="top" secondItem="DEr-YT-gpK" secondAttribute="top" constant="20" id="Vkv-fw-7Rn"/>
+                        <constraint firstAttribute="bottom" secondItem="ANE-U4-gID" secondAttribute="bottom" constant="10" id="TnI-xM-VQ9"/>
+                        <constraint firstItem="nCh-h8-QsZ" firstAttribute="top" secondItem="DEr-YT-gpK" secondAttribute="top" constant="10" id="Vkv-fw-7Rn"/>
                         <constraint firstItem="HhD-jA-efI" firstAttribute="leading" secondItem="DEr-YT-gpK" secondAttribute="leading" constant="20" id="Yw5-jd-sDn"/>
-                        <constraint firstItem="Ykf-bo-GGE" firstAttribute="top" secondItem="DEr-YT-gpK" secondAttribute="top" constant="100" id="aj6-5A-7yL"/>
-                        <constraint firstAttribute="bottom" secondItem="ANE-U4-gID" secondAttribute="bottom" constant="20" id="bef-VI-dx5"/>
+                        <constraint firstItem="Ykf-bo-GGE" firstAttribute="top" secondItem="DEr-YT-gpK" secondAttribute="top" constant="60" id="aj6-5A-7yL"/>
                         <constraint firstItem="Lcd-GS-PRO" firstAttribute="leading" secondItem="DEr-YT-gpK" secondAttribute="leading" constant="20" id="f0Y-y2-Cdc"/>
-                        <constraint firstAttribute="trailing" secondItem="ANE-U4-gID" secondAttribute="trailing" constant="20" id="jOo-kY-Qs0"/>
+                        <constraint firstItem="ANE-U4-gID" firstAttribute="top" secondItem="Ykf-bo-GGE" secondAttribute="bottom" id="hRU-vv-dXy"/>
+                        <constraint firstItem="ANE-U4-gID" firstAttribute="centerX" secondItem="DEr-YT-gpK" secondAttribute="centerX" id="lnV-oC-kOZ"/>
                         <constraint firstItem="nCh-h8-QsZ" firstAttribute="leading" secondItem="DEr-YT-gpK" secondAttribute="leading" constant="20" id="nVw-gM-09V"/>
                         <constraint firstItem="HhD-jA-efI" firstAttribute="top" secondItem="nCh-h8-QsZ" secondAttribute="bottom" constant="10" id="tK9-FP-eAm"/>
-                        <constraint firstItem="ANE-U4-gID" firstAttribute="top" secondItem="Ykf-bo-GGE" secondAttribute="bottom" constant="10" id="uFl-dm-QMy"/>
-                        <constraint firstItem="ANE-U4-gID" firstAttribute="leading" secondItem="DEr-YT-gpK" secondAttribute="leading" constant="20" id="uZt-CO-Fuh"/>
                     </constraints>
                 </scrollView>
             </subviews>

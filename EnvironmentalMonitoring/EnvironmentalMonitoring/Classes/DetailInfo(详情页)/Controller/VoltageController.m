@@ -110,9 +110,12 @@ static NSUInteger isRefresh = 0;
         NSString *current_value = [[data objectAtIndex:0] objectForKey:@"current_value"];
         _DataLabel.text = [NSString stringWithFormat:@"更新时间:%@",[[data objectAtIndex:0] objectForKey:@"update_at"]];
         [_dataArray removeAllObjects];
-        for (int i = 0; i < 8; ++i) {
+            if (current_value.length != 134) {
+                return;
+            }
+        for (int i = 0; i < 10; ++i) {
             NSString *subStr = [current_value substringFromIndex:14];
-            NSString *str = [subStr substringWithRange:NSMakeRange(i * 10, 8)];
+            NSString *str = [subStr substringWithRange:NSMakeRange(i * 12, 12)];
             [_dataArray addObject:str];
         }
         [self.CollectionView reloadData];
