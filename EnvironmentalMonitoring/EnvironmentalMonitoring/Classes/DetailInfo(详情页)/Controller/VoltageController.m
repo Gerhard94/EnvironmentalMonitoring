@@ -53,13 +53,6 @@ static NSUInteger isRefresh = 0;
     //定时器组
     [self setupTimer];
     
-    //数据详情
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"数据详情" style:UIBarButtonItemStylePlain target:self action:@selector(dataDetail)];
-    
-}
-
-- (void)dataDetail {
-    NSLog(@"111");
 }
 
 - (void)setupTimer {

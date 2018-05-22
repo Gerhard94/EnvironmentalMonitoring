@@ -74,7 +74,7 @@ static NSUInteger page = 2;
     if (self) {
         
         self.tableView.backgroundColor = [UIColor colorWithHexString:@"ebebeb"];
-        self.title = @"配电房列表";
+        self.title = @"设备列表";
         //替换模型名称
         [DeviceList mj_setupReplacedKeyFromPropertyName:^NSDictionary *{
             return @{  @"idField" : @"id",
