@@ -41,7 +41,8 @@ static NSUInteger page = 2;
 #pragma mark - 懒加载
 - (UITableView *)tableView {
     if (_tableView == nil) {
-        _tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
+        CGFloat height = IS_iPhoneX ? ScreenH - 83 : ScreenH - 49;
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenW, height) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         [self.view addSubview:_tableView];

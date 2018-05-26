@@ -1078,6 +1078,7 @@
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/EnvironmentalMonitoring/Other/EnvironmentalMonitoring.pch";
 				INFOPLIST_FILE = EnvironmentalMonitoring/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1122,6 +1123,7 @@
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/EnvironmentalMonitoring/Other/EnvironmentalMonitoring.pch";
 				INFOPLIST_FILE = EnvironmentalMonitoring/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",

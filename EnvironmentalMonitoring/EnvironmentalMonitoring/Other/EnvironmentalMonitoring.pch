@@ -16,6 +16,9 @@
 #import "AAGlobalMacro.h"
 
 #define Screenbounds [UIScreen mainScreen].bounds
+#define ScreenW [UIScreen mainScreen].bounds.size.width
+#define ScreenH [UIScreen mainScreen].bounds.size.height
+#define IS_iPhoneX [UIScreen mainScreen].bounds.size.height == 812.f
 
 #define Api_key @"tpbCanP4sZQ7t=rPkw7q=RodyZc="
 #define base_url @"https://api.heclouds.com/devices"
