@@ -106,6 +106,7 @@
     if (indexPath.section == 0) {
         if (indexPath.row == 1) {
             //取出设备ID和设备名称
+            /*
             NSArray *titleArray = [[NSUserDefaults standardUserDefaults] objectForKey:@"titleArray"];
             NSArray *IDArray = [[NSUserDefaults standardUserDefaults] objectForKey:@"IDArray"];
             
@@ -122,7 +123,10 @@
             TYAlertController *alertController = [TYAlertController alertControllerWithAlertView:alertView preferredStyle:TYAlertControllerStyleActionSheet];
             alertController.backgoundTapDismissEnable = YES;
             [self presentViewController:alertController animated:YES completion:nil];
-            
+             */
+            HistoryDataController *historyDataVC = [[HistoryDataController alloc] init];
+            historyDataVC.IDField = @"31019772";
+            [self.navigationController pushViewController:historyDataVC animated:YES];
 
         } else if (indexPath.row == 2) {
             AutoRefresh *autoRefreshView = [AutoRefresh createViewFromNib];

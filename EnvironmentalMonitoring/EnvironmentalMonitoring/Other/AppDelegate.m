@@ -22,7 +22,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     //友盟基础
-    [UMConfigure initWithAppkey:@"5ad43f2c8f4a9d4f4f000010" channel:nil];
+    [UMConfigure initWithAppkey:@"5b0bb7d8f43e48319d0001cd" channel:nil];
     
     //友盟推送
     [UNUserNotificationCenter currentNotificationCenter].delegate = self;
@@ -139,7 +139,7 @@
 }
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    NSLog(@"--%@--",[[[[deviceToken description] stringByReplacingOccurrencesOfString: @"<" withString: @""]
+    NSLog(@"注册成功 Device Token \n%@",[[[[deviceToken description] stringByReplacingOccurrencesOfString: @"<" withString: @""]
                   stringByReplacingOccurrencesOfString: @">" withString: @""]
                  stringByReplacingOccurrencesOfString: @" " withString: @""]);
 }
