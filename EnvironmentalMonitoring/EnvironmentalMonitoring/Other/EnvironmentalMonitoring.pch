@@ -16,7 +16,7 @@
 #import "AAGlobalMacro.h"
 
 #define Screenbounds [UIScreen mainScreen].bounds
-
+#define ScreenH [UIScreen mainScreen].bounds.size.height
 #define Api_key @"tpbCanP4sZQ7t=rPkw7q=RodyZc="
 #define base_url @"https://api.heclouds.com/devices"
 

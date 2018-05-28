@@ -102,10 +102,12 @@ static NSUInteger isRefresh = 0;
         NSArray *data = responseObject[@"data"];
         NSString *current_value = [[data objectAtIndex:0] objectForKey:@"current_value"];
         _DataLabel.text = [NSString stringWithFormat:@"更新时间:%@",[[data objectAtIndex:0] objectForKey:@"update_at"]];
-        [_dataArray removeAllObjects];
             if (current_value.length != 134) {
+                [self.mainScrollView.mj_header endRefreshing];
                 return;
+                
             }
+            [_dataArray removeAllObjects];
         for (int i = 0; i < 10; ++i) {
             NSString *subStr = [current_value substringFromIndex:14];
             NSString *str = [subStr substringWithRange:NSMakeRange(i * 12, 12)];
@@ -147,6 +149,22 @@ static NSUInteger isRefresh = 0;
     cell.voltageValue.text = _dataArray[indexPath.row];
     return cell;
 }
+
+//- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
+//{
+//    return 5;
+//}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (ScreenH == 568) {
+        return CGSizeMake(80, 80);
+    } else {
+    return CGSizeMake(100, 100);
+    }
+}
+
+
 
 /*
 #pragma mark - Navigation
