@@ -46,7 +46,7 @@
     JHLoginRegisterController *loginVC = [[JHLoginRegisterController alloc] init];
     loginVC.view.backgroundColor = [UIColor grayColor];
     
-    
+
     
     //设置根控制器
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"isLogined"] == NO) {
@@ -64,6 +64,8 @@
     bar.barTintColor = [UIColor colorWithHexString:@"39383e"];
     bar.translucent = NO;
     [bar setTitleTextAttributes:@{NSFontAttributeName : [UIFont fontWithName:@"Helvetica-Bold" size:18.0],NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    
+    [self cleanAlertNumber];
     
     //或者用这个都行
     
@@ -90,6 +92,21 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    [self cleanAlertNumber];
+
+}
+
+- (void)cleanAlertNumber {
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    //    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+    [manager GET:@"http://111.230.9.163/abcd" parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"%@",responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"%@",error);
+    }];
 }
 
 
