@@ -58,7 +58,7 @@ typedef NS_OPTIONS(NSUInteger, UMessageAuthorizationOptions) {
     UMessageAuthorizationOptionAlert   = (1 << 2),
 };
 
-typedef void (^UMPlaunchFinishBlock)();
+typedef void (^UMPlaunchFinishBlock)(void);
 
 @interface UMessageRegisterEntity : NSObject
 //需要注册的类型

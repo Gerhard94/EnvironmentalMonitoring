@@ -30,7 +30,7 @@
     self.refreshSlider.value = (float)refreshSecond;
     [self.refreshSlider addTarget:self action:@selector(valueChanged) forControlEvents:UIControlEventValueChanged];
     
-    self.valueLabel.text = [NSString stringWithFormat:@"%lu秒",refreshSecond];
+    self.valueLabel.text = [NSString stringWithFormat:@"%lu秒",(unsigned long)refreshSecond];
     
 }
 
