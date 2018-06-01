@@ -69,14 +69,7 @@
     bar.translucent = NO;
     [bar setTitleTextAttributes:@{NSFontAttributeName : [UIFont fontWithName:@"Helvetica-Bold" size:18.0],NSForegroundColorAttributeName : [UIColor whiteColor]}];
     
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    [manager GET:@"111.230.9.163/abc" parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
-        
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-    }];
+    [self cleanAlertNumber];
     
     //或者用这个都行
     
@@ -88,6 +81,18 @@
     return YES;
 }
 
+- (void)cleanAlertNumber {
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    //    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+    [manager GET:@"http://111.230.9.163/abc" parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"%@",responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"%@",error);
+    }];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -98,6 +103,7 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    [self cleanAlertNumber];
 }
 
 
