@@ -3,259 +3,250 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		013E07C494329273BE6DD23DC73EC764 /* PGDatePicker+Date.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E731DB27FF2F997B857B53075DA0A7 /* PGDatePicker+Date.m */; };
-		0214246CCB1FF7182F7222B9CCDF8FCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0339164673A5C75C5E4018F798CE5EEE /* Foundation.framework */; };
-		025EFD3A45AE5E813DCE21EFD4937171 /* PGDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = C8495125486559306BD48F83E89BA04D /* PGDatePickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		032E08A15F527E44D0AFF30B1F31502D /* PGDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE01DFE98AFFAC2412ED50EA77F55E3 /* PGDatePickerView.m */; };
-		04C708A2A62DD9D3AC0FDE4DD47693FA /* TYAlertScaleFadeAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E9490F0AFADD7BD0A9F90622AC26F5E /* TYAlertScaleFadeAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0887A17DD9DF1632570C94CA31CFB9E5 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = F487E8CE50B850A54CE0A84E7E5C9C70 /* MJProperty.m */; };
-		0A3A685BD9A56E789E9EA83A1FECBBAE /* MJRefreshAutoGifFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F198679D9998A9C36478FCE12A5EB8 /* MJRefreshAutoGifFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E9B17DD44DDC83C68DA3D1FD01A4A05 /* PGPickerColumnView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDA856CF74A12ED27E4343B3CD1148F /* PGPickerColumnView.m */; };
-		1341A7AC2439CB63D459D32EF985A414 /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D053DCF03547B7E46E87175713E82B27 /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1434D7A6D1859A511F640B33787B2E55 /* PGDatePicker+MonthDayHourMinute.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3B29BEB791E86D8F0CAFED8D714F5 /* PGDatePicker+MonthDayHourMinute.m */; };
-		15140171896BAB2278B0B08DDA348458 /* PGDatePicker+DateAndTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 0156B8B82F40BF0C7CF05E7C72BC40D1 /* PGDatePicker+DateAndTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		160E962CE69AF99AE0E349571A381C9A /* MJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B230D3E4E6F8D3C3654F925D9C52D4 /* MJRefreshFooter.m */; };
-		1615F44139A14CEC7C82D546361B0609 /* MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A2C153B9ADF228D017D6ADC89C4A757 /* MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		16470DE64806C7FBA0C79769FD644EDA /* PGDatePickManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0622EFF26BEE3BF333FBDB216C0FB4 /* PGDatePickManager.m */; };
-		17CF97E0482E963465887267329CEC5D /* PGDatePicker+Year.h in Headers */ = {isa = PBXBuildFile; fileRef = A8FF1D489452E5A7CE35779D6CF4AEE4 /* PGDatePicker+Year.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		186ECA7F2B213C7A11A8F871EFD917CE /* MJRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1656B60D03B5BFE445393842EFA14AC3 /* MJRefreshBackGifFooter.m */; };
-		1A2B7631DD7842BF7C4948132236BD90 /* PGPickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32224BBCDDF921B5B11B0CA5672AE24D /* PGPickerView-dummy.m */; };
-		1B52239818F04048F2521063DDC11527 /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44E2969DB862EB47A79BCD11B636FD /* MJPropertyType.m */; };
-		1BC873342C1939D321D3F66FAF918867 /* PGPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF1CB7A3D8BF56E78CBB9CC3FA78791 /* PGPickerView.m */; };
-		1E2E1AF6F9351E4FEF7F4D58C242A775 /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 59485E4694AC1DEF63C4893AF86D01ED /* MJRefreshGifHeader.m */; };
-		1E38527C36D3C3F2D2EEC3CD45533510 /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A723E182DDAB197C743D08B0BACFC21 /* MJRefreshAutoStateFooter.m */; };
-		1F3CD214CB6AA1759F5DDE3357262A22 /* UIView+TYAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 72563E6B0ABAD98D6859FF6A6C3F325B /* UIView+TYAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1F8FEA93407CEC682A2C0C282CDEAD89 /* MJProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E78BD92E0DC697A762FC6BEF9F33F6E /* MJProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		209571FB8E02D9CA5699D7917A26E238 /* PGDatePicker+Time.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A7AAFC57B170758230B25178B6F13A5 /* PGDatePicker+Time.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2216DD1C923DC73B9869CCF3F2327ECE /* TYShowAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 07920219DE924FB980B8BF6C7A7DFD88 /* TYShowAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2357DDC85500B4F45E37E411B596F562 /* NSObject+MJKeyValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 108E3493AADE24075102DD44C6BA3E2E /* NSObject+MJKeyValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		24966EBCFCA5A0FD7B3869CAB347802E /* PGDatePicker+MonthDayHour.h in Headers */ = {isa = PBXBuildFile; fileRef = C19EAC1D3C0EA046372DDD8CB57A3266 /* PGDatePicker+MonthDayHour.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2579663181BFA8F7DA4B5D7CF8537FC0 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B8D30D21E475F03C00293E56B192D8 /* UIActivityIndicatorView+AFNetworking.m */; };
-		2628E052581668356D4AE4EF616C6693 /* TYAlertDropDownAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CDAE8DC2777BD1FF41CD395F3E92A6E /* TYAlertDropDownAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		268DA924AEA51CCBE7D187332E4841A5 /* MJRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B77445A2FFCB78A4C04C18C2107BF2 /* MJRefreshBackNormalFooter.m */; };
-		26BBD4973848466DAB1EA6EB283A1CEF /* PGDatePicker+MonthDay.h in Headers */ = {isa = PBXBuildFile; fileRef = 6109A09582411BE5426E693E329B590C /* PGDatePicker+MonthDay.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		27FA9EB1451EF13B098A597CE96ACD8E /* PGDatePicker+DateHour.m in Sources */ = {isa = PBXBuildFile; fileRef = 705A6B4E76C2B3CE2CFDB5D07F85F39B /* PGDatePicker+DateHour.m */; };
-		293030084FF01E203FF7C6881C1C58D5 /* TYAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3735F8E4EBEEDD68CDD175AC32B2AAFF /* TYAlertView.m */; };
-		2AC677C7D32F72030B81CA00F24F65FD /* MJRefreshHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F379B9EC4E998DB3CDCDF9236E6DF73D /* MJRefreshHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B20A7A457F69EA4CFEC2DB9CFB37FC9 /* NSBundle+MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D53C81CFDF66FB779F574674449BE7 /* NSBundle+MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2DBDB85206472744DCC2706AB2939F76 /* PGDatePicker+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = F6716E7482C2B185AF5B926E0A6F08B3 /* PGDatePicker+Time.m */; };
-		2E0368CB5E43DF5325FAD0D62C1402E4 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B96CF68F0432F4DE37E06521E7DEDABA /* NSObject+MJCoding.m */; };
-		2EBAA518CB8B2DAF89A63637091D4615 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B59DBE08AFC23D1D61160DAD74261420 /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F60C666F24F4F527AF089868C7D4439 /* PGPickerTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1159AD52FDFF672534250D34B84531B /* PGPickerTableView.m */; };
-		3155A5B4617970C40A630FE8DEE84399 /* PGDatePicker+Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9DC06BB649DDA6B1A3C7BF8F044300 /* PGDatePicker+Logic.m */; };
-		31ED9BD97AF9E62874AF3CDF2F8090CF /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C226C743806AFCA1257E8E1CB9CA31F4 /* AFNetworkActivityIndicatorManager.m */; };
-		341A4BCFB7B1E78548ECD00869FE22B3 /* MJRefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EED28F9ECF2CEF2BF5F2CB46849B5BDB /* MJRefreshStateHeader.m */; };
-		373C7DE10FB0ABC21A8BCBAF268E84C1 /* PGPickerColumnView.h in Headers */ = {isa = PBXBuildFile; fileRef = 92DFE3AA4547A6BE4BB9C9AE2AB1FD47 /* PGPickerColumnView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A64A0B3137466C1DA232A8F612900C2 /* NSBundle+PGDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = BED194A7604DBD093BEB6C084F7ED05C /* NSBundle+PGDatePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3B0C70F9D57F0E01FBC8B102B37B78D4 /* PGDatePicker+MonthDayHourMinuteSecond.m in Sources */ = {isa = PBXBuildFile; fileRef = 7473DAFBAEAD65C20C696176A83BECEE /* PGDatePicker+MonthDayHourMinuteSecond.m */; };
-		3C06D125F876F20C6634F7A295B1EF18 /* UIColor+PGHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 46DE11474BCB78EC9ABAE9D6301AB36D /* UIColor+PGHex.m */; };
-		3D41E590C2D15195583D8070C49A765B /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE459DCE2ACE18D649B83BF03E2145F /* NSObject+MJProperty.m */; };
-		3F3C604E84F029D9272E17D1EC235CB1 /* PGDatePicker+MonthDayHour.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC7928A810CB9F4C5A831E445F9C471 /* PGDatePicker+MonthDayHour.m */; };
-		4112EEE7A86821ABFE5D467A816FE1C0 /* PGDatePicker+TimeAndSecond.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AB23312468716299F1470BD5BB526B /* PGDatePicker+TimeAndSecond.m */; };
-		423FD69A3C7B54C154B667E5747FF3DC /* PGDatePickManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A2EE726E7D4800EA520BD793F9630E9 /* PGDatePickManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		44D0497874BA59D1FD60B41D0196DCA3 /* PGDatePicker+DateHourMinuteSecond.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F8874137B04D2BE45F2D2250D84B71 /* PGDatePicker+DateHourMinuteSecond.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		455F85E9D4657DEF2E76A8A8021B2AE5 /* NSCalendar+PGCurrent.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EA81AE8BAA2083978641DF90316257 /* NSCalendar+PGCurrent.m */; };
-		4616E8895B75378BB01D3577CCEE4E26 /* UIView+TYAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B15055AD8659B72E0EB557DFC37F1D4 /* UIView+TYAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46401F3C7FF0B0CFE2E9B14914780835 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 17BC1220B5961EFD04A77BC785283BFE /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		464A617B29A630A043542E133F7A7985 /* TYAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3528B392BE55C14DF2834CF46D285FC /* TYAlertController.m */; };
-		46D931760B10C6FBE8B29D06AAC94228 /* MJRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CDE5BC238D9EF515EC1265CE7AF6BB /* MJRefreshBackStateFooter.m */; };
-		4982F6A38E149A01137311B533591DD5 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 3268FA7DAABF343A64816D282182A6B7 /* UIScrollView+MJRefresh.m */; };
-		4C6BFB4C1F6CF71C99E1FB270F0FEDAF /* MJPropertyKey.h in Headers */ = {isa = PBXBuildFile; fileRef = E27F2228BC1354D1EAC218FC9C18CD96 /* MJPropertyKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CC9C69E797A8B66E96A7A1C1B1B51CC /* MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 653442C6BD0D331AAE3394371CCAC500 /* MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D0E852A7DFAD520665B0E8942A06516 /* PGDatePickManagerHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAEB660ABD812CF05DC797108EF3F39 /* PGDatePickManagerHeaderView.m */; };
-		4D12AC4D83DB34A425A171DD383B8134 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 669DAB0B51C2FBC3498B707D64427079 /* MJRefreshComponent.m */; };
-		4E38D41313B9420037871A67158DAD0F /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ABEBA7CFF239740376A2287B6559AF /* NSObject+MJKeyValue.m */; };
-		4F0107A7976BB48BBDCFF4742BBA39E6 /* MJExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6182FD350CA99A2CCDE67F5691C6851A /* MJExtension-dummy.m */; };
-		5000B5AA92F7956AFA56581E82A81407 /* MJRefreshAutoNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B7C7E435639566162A7E11B1197557 /* MJRefreshAutoNormalFooter.m */; };
-		520C7A630CFB0AE970B158077AEADE69 /* NSCalendar+PGCurrent.h in Headers */ = {isa = PBXBuildFile; fileRef = 565CE98606614A6EC447F7EEFCDFFC67 /* NSCalendar+PGCurrent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52A0297E586102DCD825ACD0571BF2DD /* PGDatePicker+YearAndMonth.m in Sources */ = {isa = PBXBuildFile; fileRef = 9514845E8B0388BC97FC66F11B3E661D /* PGDatePicker+YearAndMonth.m */; };
-		52BA5ED3898FD3C7571E9B74782158A5 /* MJPropertyType.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FBC91D90E6E9330465CFC198AFD73E8 /* MJPropertyType.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52E28A0A333684B80D6CD7FFD42865E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0339164673A5C75C5E4018F798CE5EEE /* Foundation.framework */; };
-		559C41FD6D99B702CDA7EE0A35107473 /* TYAlertScaleFadeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBD63F7A4CC8941640EE3EF2D09A1C /* TYAlertScaleFadeAnimation.m */; };
-		5618F965C55FF0FC24FAB4048B86F921 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51EEF5F6B8DF9CB28A3362570D60C5A5 /* UIKit.framework */; };
-		5719F06B809080CDEF7E6BC75DEA1A3C /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 36F284FDB75B4384DAC1A884162E7386 /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5945033488F9995134DBB7014DE2412F /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A461E04441362C05A8AAF97932C722 /* AFURLRequestSerialization.m */; };
-		596B07F3A171459A296F5A138C978FF4 /* PGDatePicker+MinuteAndSecond.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CB2D10BC2F26B57360105432389D6F /* PGDatePicker+MinuteAndSecond.m */; };
-		597CEE76562EB4D948504B07655C54D6 /* MJRefreshStateHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 34F9FC7B2A450CAA75B0AD9CA323DEDF /* MJRefreshStateHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		59CF9E95314C2B98CD4E53BA7FE282E4 /* MJRefreshBackStateFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C25DCD8B8A7934A75D4E4D326C483D /* MJRefreshBackStateFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A712049B02B76A2002A2854312FB94A /* TYBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 585D69D5E6C6919B21045643A56474B2 /* TYBaseAnimation.m */; };
-		5B2B5076E71A82CABBD9ED369CCE37AD /* PGDatePicker+DateAndTime.m in Sources */ = {isa = PBXBuildFile; fileRef = A4890B7C9FB1EC70B6B157C1718B0362 /* PGDatePicker+DateAndTime.m */; };
-		5BDECA07DDC9A5F07C971DB12FCAFBA1 /* NSDate+PGCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A975D23B2F4CC635A3F905FACBBA6E2 /* NSDate+PGCategory.m */; };
-		5C0696B2AD1DC23F6473F5A19FAB6296 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B946B31527F553AC7BF89D85C818D1A /* AFImageDownloader.m */; };
-		5C610999E7E9DAB99F7715BA0A179630 /* PGPickerColumnCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EACB2A7174F7AABD1E6182E2C765780 /* PGPickerColumnCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6196563962D9B59C4C47B10224FF15A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0339164673A5C75C5E4018F798CE5EEE /* Foundation.framework */; };
-		61B69DCB5CCD6280F5C6B8D820E61110 /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 084DCE08F0AE9BBB909C05A1C5B6D929 /* NSObject+MJClass.m */; };
-		635F9EFF4A131A00C8F9BE720E78D446 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C2757A8A8743D3B23AFC1B00057FDCC3 /* MJRefreshAutoFooter.m */; };
-		66635EAAE52FF5571DBCDC626FB8CA86 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 304B691463784906CF0F3E4C01920277 /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		66DFEDEC6A5930E5DC199EDA5262879E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0339164673A5C75C5E4018F798CE5EEE /* Foundation.framework */; };
-		66E1040543AF7BA3DC3731FE17C85F5B /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBA5A81892789031A3F024E592D301F /* AFSecurityPolicy.m */; };
-		682B0E603612B6ADBCCF30580F9A4B09 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 72C8ADCA5F309298BB4EBFD7643E8233 /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B71CE5BA32574F407349C1DA20605B4 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A03D51B8D4912FDE5D2ED9425757E629 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B8E59D8C26F34D72EB14F5769D0DFEC /* MJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE72EBF6BAAB0951D4D47B6C454094 /* MJRefreshNormalHeader.m */; };
-		6FA2FB3765A6C7C9BFE8A24FA1FDA556 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51EEF5F6B8DF9CB28A3362570D60C5A5 /* UIKit.framework */; };
-		707E818332E5033501DF2D7826C639DF /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = B859966D6062A547A8313F868D8790F1 /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		73811DA312BCB537D44D62EC6AD15766 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1396101B007368A52C08B1087091F483 /* AFHTTPSessionManager.m */; };
-		774BFE769BB534897F384F894EF4DC82 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4E760A95D24A509497F3B371B76048 /* NSString+MJExtension.m */; };
-		775CE7A8107457BDE59F113D40020839 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A5680BCF62F59DC11D76AA0E420EE75E /* AFAutoPurgingImageCache.m */; };
-		7AE33E78E8FFD9B006D0110213084C3D /* TYAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 646EAF389FA23E3A5EE4A0E4296239C1 /* TYAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B2ED9E571E4E51168F7157F2EAE6199 /* MJRefreshAutoFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 60DF1C966151BD78618E923EC0944821 /* MJRefreshAutoFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7BCC442BD01838F26B7874978A7E2D42 /* NSBundle+PGDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE33D8F79D3866F37A8D49A36A8D5A /* NSBundle+PGDatePicker.m */; };
-		7CE298FC4680B93B3A466613E565BA0B /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 05EE3684FFA23B6172FDD78FBFC20AEB /* UIView+MJExtension.m */; };
-		8083FEC9F6DAC74A0E9E5900E945DDAA /* UIView+TYAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C577F17B72159133E898F56DAD764E3D /* UIView+TYAutoLayout.m */; };
-		80F0D2D73E4BFA85D98E6CCC269145E9 /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C645440C3F6F683236888DAE1334B62 /* MJPropertyKey.m */; };
-		83F5984CB828E2BA2C6D7F3B7F9E356F /* TYAlertController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0EA85C779723757BFF4C95A8055A3B /* TYAlertController-dummy.m */; };
-		85BBFB5F0008B8304BF840AA6449C61F /* MJRefreshAutoNormalFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 17B8D8625FDA6F212295EB0EF465CC7A /* MJRefreshAutoNormalFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		85D30678FF4F0AB306399A368EAA46B2 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 99910F305CE10A468A41CAE156072666 /* AFURLResponseSerialization.m */; };
-		88290D5C90C12F48F09E6AC463737F1F /* MJRefreshComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FE724C3FAAEACAD43001D504311C9D /* MJRefreshComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8958F2453EEBAF71BFEBD78FB48986EC /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 36915E62112BE2B884550CF24240BAFD /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89AB60027FB3F11C1EE10BEE52968270 /* PGDatePickerHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 60F7CE05FDB7BD660D188D1119CDF0DD /* PGDatePickerHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8ECA0EB38D34E24EF6A729EFBF6514A4 /* TYAlertFadeAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CBA26C2F7836DEDFA17091392E44A4A /* TYAlertFadeAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F5B8E2F24825777611FCBB8CAAB6AEB /* PGDatePicker+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DCE4BCB3E3D66941BF786356A6A236 /* PGDatePicker+Common.m */; };
-		903158692A045396106CA22C0DD13BA6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A78E5A576CDDF089002FA7301D2AD8 /* SystemConfiguration.framework */; };
-		925EBB6CDAA2E17791E1DDCDA62A3375 /* MJRefreshConst.h in Headers */ = {isa = PBXBuildFile; fileRef = B80F211CEE250A8588856CDAAFD7D8A5 /* MJRefreshConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		92937DC066543122186195A2941D3C60 /* MJFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B000D0D2CF55EB8C1CD7E617285B4E6 /* MJFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		937D8470C42AFD13036D9C01271FE223 /* PGDatePicker+DateHour.h in Headers */ = {isa = PBXBuildFile; fileRef = 55AB4823F789A5097772B1DF2D7736BA /* PGDatePicker+DateHour.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		954C54501E329F4DE199FD896229BBBA /* PGDatePicker+Year.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF40DC67E1B94A02129CBFC6D72304D /* PGDatePicker+Year.m */; };
-		957FB6E468F0CE34DAC41213A7FA5574 /* PGEnumeration.h in Headers */ = {isa = PBXBuildFile; fileRef = 11E3F6D85F28AF7B05246BEF2269D494 /* PGEnumeration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95F90F972DFDFBC3E012F069A6E24C33 /* MJRefreshGifHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = CD32DA2CB0160F6A9C18B099EBFCAB47 /* MJRefreshGifHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		97A86FAAD4B1AD9B3292FF6AF1D8F82B /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 906004E80C242C81E5EB4AFA70A669EB /* AFNetworking-dummy.m */; };
-		99364D96200D03FC3229E6A956E10ADB /* MJRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F0675B1B9B39897AEBA56E6DBC8B11 /* MJRefreshFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		99E8F7F66401D6276AA669BC71A895BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0339164673A5C75C5E4018F798CE5EEE /* Foundation.framework */; };
-		9DDC888AA9FE29CD96DCB574AF125142 /* MJRefreshNormalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 72EA781F1E1FCEBFED3129ED48BA5193 /* MJRefreshNormalHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9ED36D73584E73C391D18580D2ACED20 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 611A5A5E680F0006BFE883B5AEB14F55 /* MJFoundation.m */; };
-		9F0540F499796F97062121D0F6E3D4A2 /* PGDatePicker+MinuteAndSecond.h in Headers */ = {isa = PBXBuildFile; fileRef = B096DF16D7EE141F0AD781E04B338659 /* PGDatePicker+MinuteAndSecond.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F06B13BAA0376EAD4E125DA78456B3B /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E450D52EC1CB24460D413958D0ABE9 /* MJRefreshHeader.m */; };
-		9F5BB6B4995BA4A3B2C6AEBA6C31A6DB /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 958323BF38198C70C385DEA053E938CA /* AFURLSessionManager.m */; };
-		9FC096E3F0441B46919ED106D876748D /* TYAlertFadeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6862AD818389B3E2D47FD2BD73C566 /* TYAlertFadeAnimation.m */; };
-		A057361F58FDBB3557E76D1DC3E33580 /* PGDatePicker+DateHourMinuteSecond.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F07A709C56C13CECCAB6D12B30CC61 /* PGDatePicker+DateHourMinuteSecond.m */; };
-		A222D6AA1EE404A210895F8C0D86ADF9 /* PGDatePicker+DateHourMinute.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C87D0FABE1FE4AD9BB2F78CA0E8EE53 /* PGDatePicker+DateHourMinute.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A2484A97AC924E318D250B0F1E0C6208 /* TYAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D34FA9FB68123A9A1CAA512643C5F77 /* TYAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A277AD9070E44BED5A7DE0B1D64D6F15 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E1626373E162A7A2CE79C468939C94E1 /* UIImageView+AFNetworking.m */; };
-		A67059B6451EE4D4C8827F52621E54A3 /* UIScrollView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E70EB6EEF99CB457F61550DA5FD456F /* UIScrollView+MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7F7FDCD36E2DD8D8E346DB19452CC03 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 672386851A5357DE0F0D74261D585A9A /* UIWebView+AFNetworking.m */; };
-		AD680D4A742F76FCE9211342DD907EB1 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F50D156F84C60B489F6DC54E1C9A9B8 /* MJExtensionConst.m */; };
-		ADD69BFB0A0F3F7B7E162E410A67CF05 /* MJRefreshBackFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D959C0C345D06D1BCB10230FE279CA /* MJRefreshBackFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE457D01194A4B0CD70380FF5DDB44C3 /* PGPickerTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 90639E0BF5B344806A6C05F63C422A08 /* PGPickerTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AFAD7D440E8DE4CCA39B6B160EE459FF /* PGDatePicker+Date.h in Headers */ = {isa = PBXBuildFile; fileRef = A5959275BF7E7F1A968FE590F6F40210 /* PGDatePicker+Date.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B31C058A985A420AC113D5DF71B8FCC0 /* PGDatePicker+Logic.h in Headers */ = {isa = PBXBuildFile; fileRef = BE252EC6CC717F93761F0BD71CFB1B41 /* PGDatePicker+Logic.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B40756412613B53C80EE77C4C223990F /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 14377BF70D9E1DE614DC2AC179A884C6 /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B7EAF278902A9B25808126F504317845 /* NSBundle+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E23501AA0CB1DA0385E291CB22C16AF /* NSBundle+MJRefresh.m */; };
-		B84CD33084C9867E67BD56E47B7BFC04 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 813D95E99832E454842D82BE358CE42F /* UIRefreshControl+AFNetworking.m */; };
-		B8E6B595E9A99D2467A4E2A01AE6EE0D /* UIView+TYAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = D67AF6B5DFB0552784EB8D74C2A345A6 /* UIView+TYAlertView.m */; };
-		B915E3CFDFBA7B99411BC5430162868F /* NSObject+MJClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 71D8A58E1F2EC2807503116A74B9AA07 /* NSObject+MJClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC06A1147172D039FB71AAF7DDCC6ACA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0339164673A5C75C5E4018F798CE5EEE /* Foundation.framework */; };
-		BDA7650B1BB999519160ABFE5E089CD3 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B13B0B319D8B65AAC9447AC6904E3B /* MJRefreshBackFooter.m */; };
-		C16FDBA2BC10E28B8D59DE5CCF4758EC /* MJRefreshBackNormalFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 77A3319419B560EC7D2E7A24D888E9C6 /* MJRefreshBackNormalFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C1B32E7F224C2F7E1A9FA4678F28C7FF /* PGDatePicker+MonthDay.m in Sources */ = {isa = PBXBuildFile; fileRef = D7526D7ED7F6ECDDAE1CF7D238CE2600 /* PGDatePicker+MonthDay.m */; };
-		C1C0D7C93BF3DE14A26757273598D0FA /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 755874D6647FABCED493F727578F6981 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E435E0A531A8BFED1DE91B6F26A84B /* UIColor+PGHex.h in Headers */ = {isa = PBXBuildFile; fileRef = B5359940907073ADA0464AE59AE8212A /* UIColor+PGHex.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C3002957818A39448BC777C90F1AE913 /* PGPickerColumnCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E704246EBCF7394CDF39C3F79A0505 /* PGPickerColumnCell.m */; };
-		C36E382648AA7A57EEB087C02B64E4E0 /* PGDatePicker+Common.h in Headers */ = {isa = PBXBuildFile; fileRef = A98223C738C92AD29FDB1FAF7AD9CD12 /* PGDatePicker+Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C381C43086A0C70C85C8787CA35FFB68 /* PGDatePickManagerHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 05C1380F33DDBDBB5766BF13710DC3C3 /* PGDatePickManagerHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C64ADA912DD6E167B4E3C6DB870667C8 /* MJRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6195E223CC6AED5F564749A923FBD274 /* MJRefresh-dummy.m */; };
-		C68C5B2F401EA803A011A2C8ED10E60D /* TYAlertController+TransitionAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E612CB733B0430DDDD3FB869DD6D0F /* TYAlertController+TransitionAnimate.m */; };
-		CBA073485222F5F656AAF745EB499742 /* NSObject+MJCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = EDDC90BD110300A86245463F1D6E4962 /* NSObject+MJCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CBCCEAD402645565401CA93924736979 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041F55AE36E26F3BDCC4B40490B54E30 /* CoreGraphics.framework */; };
-		CFF2405F882073057D685753FB6F7875 /* PGDatePicker+TimeAndSecond.h in Headers */ = {isa = PBXBuildFile; fileRef = 740113AEE291320161D152A23378D22D /* PGDatePicker+TimeAndSecond.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CFFB8003D74DA9FA59CDE03E27051E9A /* PGDatePicker+YearAndMonth.h in Headers */ = {isa = PBXBuildFile; fileRef = 15B3A37F50678C96FB590944DF315005 /* PGDatePicker+YearAndMonth.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D10CC46035F7A0C868C0955664A34609 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B5CCB006FD9BA92480EDCC0E8EC6A2 /* UIButton+AFNetworking.m */; };
-		D32A702A881EE69FD59CB747DFD6C266 /* PGPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A7DB19110E73271C58F812A092C5650 /* PGPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D39B80B1E6E8992B4AE60189301AE62B /* TYAlertDropDownAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = DABA3015CBE1B261D493426EF9059A97 /* TYAlertDropDownAnimation.m */; };
-		D48619A63EFFF1294ECEEDF3105D5B59 /* PGDatePicker+MonthDayHourMinute.h in Headers */ = {isa = PBXBuildFile; fileRef = 13826A0AE6EE05F73E594163145737F2 /* PGDatePicker+MonthDayHourMinute.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D4AA4704CA7863CC86E22AAF88635836 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B128C18F91FCBDC619CB4D2B83E98C5 /* UIProgressView+AFNetworking.m */; };
-		D59FC98A74E440C4725B6FDC28F5951E /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 3365D52022E24DC9204087C21124D6E8 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D5CB999FB5FC80FC126A38AB4DF12227 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 61224F687A1EBCD521532E8848C0902F /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7BF4DBA76F12C797027E90648D9AEE0 /* MJExtensionConst.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D8C57CE513DA36266B7171D607ABDF0 /* MJExtensionConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D91A44E187477241B893D258E3F67A58 /* UIScrollView+MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = FD18F3DBF06485B93435328B22E88B59 /* UIScrollView+MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBDCE948DF1D74806D9D319F636A0E8B /* NSString+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 770868993FFC7965B4408EA72F98F2F8 /* NSString+MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DCA149E48D964666B113D1901C939684 /* PGDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3F6C4CEA2BA28567A5D48B6ACAADC0 /* PGDatePicker.m */; };
-		DCB36FE487029A0A053FF51839309FCE /* PGDatePicker+MonthDayHourMinuteSecond.h in Headers */ = {isa = PBXBuildFile; fileRef = 560C1E522938CCA5895926DF89797C1F /* PGDatePicker+MonthDayHourMinuteSecond.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD0AA9E8B308E45F90AD7A01F8BBC4DC /* NSObject+MJProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 9780AB69E2C89BE2B7D06F0E2144E2AC /* NSObject+MJProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE31BBF6A7963C5871A19655EF5532BE /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 479CD39F9A1A0730C64D0771EA11C731 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE825B8F32AB823F4BE5492CAC6FCB4B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66EB5B938802F986D305D37865A72F7F /* Security.framework */; };
-		E0EF330DB2D3521ED26E67B2E8687A2E /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B93A39322597EF6B03C5D82FBF6A8DC7 /* AFNetworkReachabilityManager.m */; };
-		E3F648DC9DDE86C990EC83FEE565D22B /* TYShowAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ACDCB36F3CFC40827C1383E0F0BAB0 /* TYShowAlertView.m */; };
-		E7B0270BEDCBE116DDD853F76E27B0BA /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3185494018BCD2F4EA755A97847D0B49 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E7FA008E96CF99E93D2F596722662B83 /* MJRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4098BF1D58E8003E45767A07B4010165 /* MJRefreshAutoGifFooter.m */; };
-		E8EEDD6F967B008630877820BFD14ED4 /* PGDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BAB03FD10E7755F2DA36EB784AA062C /* PGDatePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC207A50FA695011C18C2CF02CDDF70A /* NSDate+PGCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 06D9D97D86AC33713CD97C4B2CA051D3 /* NSDate+PGCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ED89F1A48BA44D203A2C4B9C6F53AC0B /* MJRefreshBackGifFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 34315243427E9C336439646F9793D20F /* MJRefreshBackGifFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EF8CB98EA9CDCECE4906307EA0878C9D /* TYBaseAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = D8CF4F3C351BE8B3D149AA713CDF8062 /* TYBaseAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F099E5987DD80E8D78E909AF81D3C587 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = BD58EC5317F81DA03FD03C5078222F73 /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F1D2542F9E3FC8DB1928D6C0C47A7027 /* Pods-EnvironmentalMonitoring-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 202AEB528103D00E5FD18A12F6FD01A8 /* Pods-EnvironmentalMonitoring-dummy.m */; };
-		F1F93EE1AA5E870F2CE81325CE9EB643 /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = F43977F6F02828D291D740ED7D84F1ED /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3CF963C92E7CADB73618A2929B6ABD3 /* PGDatePicker+DateHourMinute.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D54186A9B7839E7A15E63526FCD5F72 /* PGDatePicker+DateHourMinute.m */; };
-		F53754CAAB10BB3C954169DE35007A65 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDFAFAAED0F7C4984DD25E9529608B1 /* UIScrollView+MJExtension.m */; };
-		F5CC06F3E0C232483A72DCCFAF393BE0 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A6E28CA97730C0BFB2A61C8B141FBDCE /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5F6500B8753B849A2C2734B76FBE363 /* PGDatePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F378C9EAA671930431DCA77F2114BE /* PGDatePicker-dummy.m */; };
-		F71530448B7A282746853F4718DCA267 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0339164673A5C75C5E4018F798CE5EEE /* Foundation.framework */; };
-		F88580E07538A44A13193CA98E37ADCA /* UIView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = BC2D48A8BB41D38248CAA87D4915F5E7 /* UIView+MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8DCA6C3C05A59B2C95A1B5F1CBD8C99 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF435BBF67523FB6D2633A16438FDB4B /* MobileCoreServices.framework */; };
-		FC091A4266DB8F2CED4F0629F8AE59F2 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 547D93CE6BBAC1275D11DF98A4AB6987 /* MJRefreshConst.m */; };
-		FF1B68BB2C26B49D0DB408D77BF73D8C /* MJRefreshAutoStateFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2810DCE370C9EAA65DBBD6D0D2FB29 /* MJRefreshAutoStateFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01253EE4329D18E8A8451B9833960CC1 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B59DBE08AFC23D1D61160DAD74261420 /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		02E5ABAB4BC7033450FCD29B0C4825B7 /* PGDatePicker+Time.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A7AAFC57B170758230B25178B6F13A5 /* PGDatePicker+Time.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		03C590DC1A43F1AE1C7B36B7B4F1439A /* NSObject+MJCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = EDDC90BD110300A86245463F1D6E4962 /* NSObject+MJCoding.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0580CC9C4BCB7E968D327B50E8C4650F /* MJRefreshGifHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = CD32DA2CB0160F6A9C18B099EBFCAB47 /* MJRefreshGifHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		06670017EB8C06FB65F2EBC3D63AD6FB /* TYBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 585D69D5E6C6919B21045643A56474B2 /* TYBaseAnimation.m */; };
+		070B23E25EA639F3FA1EB0F38115C34D /* UIView+TYAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C577F17B72159133E898F56DAD764E3D /* UIView+TYAutoLayout.m */; };
+		071665EE524999B2F2FD30CEBE6A6A76 /* TYAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3735F8E4EBEEDD68CDD175AC32B2AAFF /* TYAlertView.m */; };
+		08B5214894171CE0AE3025D26F67275C /* UIColor+PGHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 46DE11474BCB78EC9ABAE9D6301AB36D /* UIColor+PGHex.m */; };
+		0C9DD3C5798B9F53F5F727B1600A3A10 /* PGDatePicker+YearAndMonth.m in Sources */ = {isa = PBXBuildFile; fileRef = 9514845E8B0388BC97FC66F11B3E661D /* PGDatePicker+YearAndMonth.m */; };
+		0DF489124A4047B07B4C51822B6DF2ED /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 304B691463784906CF0F3E4C01920277 /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0E20A9C550DC44E6AC5694E7DD2DD65D /* PGPickerTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 90639E0BF5B344806A6C05F63C422A08 /* PGPickerTableView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0E57918BD64445EDE0998DCA8F2A2E1D /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F50D156F84C60B489F6DC54E1C9A9B8 /* MJExtensionConst.m */; };
+		0F6788BFAD5BF640B57EAD93E4BC8FDF /* MJRefreshStateHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 34F9FC7B2A450CAA75B0AD9CA323DEDF /* MJRefreshStateHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		108B8C9CDEADEF1306C64E904AD22F58 /* PGDatePicker+MonthDayHourMinute.h in Headers */ = {isa = PBXBuildFile; fileRef = 13826A0AE6EE05F73E594163145737F2 /* PGDatePicker+MonthDayHourMinute.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		11441A09378488EF84BF5CA919D0F830 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A995B12D4BE0BE28CFA8AB963D398C25 /* CoreGraphics.framework */; };
+		1274F407FBD9D37E540958D1ACBA34B1 /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = F43977F6F02828D291D740ED7D84F1ED /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		129C54EA72707C517808B19EDA41083E /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 14377BF70D9E1DE614DC2AC179A884C6 /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		129E2D5E46F72531D0C661B1C1C83B89 /* TYAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 646EAF389FA23E3A5EE4A0E4296239C1 /* TYAlertController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		142C303DDD4FD9CA40B512A71637DE8C /* MJRefreshHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F379B9EC4E998DB3CDCDF9236E6DF73D /* MJRefreshHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		15D76EA02379A46209FBEB3C2A98430F /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 61224F687A1EBCD521532E8848C0902F /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		163770D89EEF7A946B973E0429B20E43 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFB090B4563F9175B1E99BC54E445CB6 /* MobileCoreServices.framework */; };
+		18BAB60B43C55380B3094CC4AE72920A /* UIColor+PGHex.h in Headers */ = {isa = PBXBuildFile; fileRef = B5359940907073ADA0464AE59AE8212A /* UIColor+PGHex.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		194962BB42E50329F1ED5E285A909DA8 /* TYAlertDropDownAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CDAE8DC2777BD1FF41CD395F3E92A6E /* TYAlertDropDownAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1D6B83B672340BF751F4E846F191E780 /* PGPickerTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1159AD52FDFF672534250D34B84531B /* PGPickerTableView.m */; };
+		1D6CB9F802A99CF7B68775D229F16A3B /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 3365D52022E24DC9204087C21124D6E8 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1E3638F29FD9DC330A35188E91669053 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE459DCE2ACE18D649B83BF03E2145F /* NSObject+MJProperty.m */; };
+		1FBDFF691CAEABC62DCDD6FA0D75A2C6 /* PGDatePickManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0622EFF26BEE3BF333FBDB216C0FB4 /* PGDatePickManager.m */; };
+		2286EEDC0733FEDA8AF326E5FED10658 /* MJRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CDE5BC238D9EF515EC1265CE7AF6BB /* MJRefreshBackStateFooter.m */; };
+		250441CFF281FEDD89807B01B403ED90 /* NSCalendar+PGCurrent.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EA81AE8BAA2083978641DF90316257 /* NSCalendar+PGCurrent.m */; };
+		27290A08F2D4A3C69C74968438971EF4 /* MJRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6195E223CC6AED5F564749A923FBD274 /* MJRefresh-dummy.m */; };
+		2775548B4998B0EF9EC8FD268BA4DB6C /* PGDatePicker+Logic.h in Headers */ = {isa = PBXBuildFile; fileRef = BE252EC6CC717F93761F0BD71CFB1B41 /* PGDatePicker+Logic.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		279F1FA5B0D675132300DDD8051B1FEA /* MJPropertyType.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FBC91D90E6E9330465CFC198AFD73E8 /* MJPropertyType.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		281D747FD59E29374E6F22CD23FC416A /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A5680BCF62F59DC11D76AA0E420EE75E /* AFAutoPurgingImageCache.m */; };
+		2E6C077C6E9D81012E7D852809701918 /* PGDatePicker+Date.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E731DB27FF2F997B857B53075DA0A7 /* PGDatePicker+Date.m */; };
+		367548C5A2EC0FDBB1B5DB9CAE4AFC57 /* MJRefreshBackGifFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 34315243427E9C336439646F9793D20F /* MJRefreshBackGifFooter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		36969546A218B21AB1D6153A0A49CD58 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B128C18F91FCBDC619CB4D2B83E98C5 /* UIProgressView+AFNetworking.m */; };
+		3841D9CE0C0DA0545CBBDDBFB0BD89E8 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B96CF68F0432F4DE37E06521E7DEDABA /* NSObject+MJCoding.m */; };
+		39FC08457E20F35528C9E478A54794DE /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E1626373E162A7A2CE79C468939C94E1 /* UIImageView+AFNetworking.m */; };
+		3C9E677B0C0CC96504821FFBCC2515BB /* PGDatePicker+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = F6716E7482C2B185AF5B926E0A6F08B3 /* PGDatePicker+Time.m */; };
+		3CB0DCF4EECBF247DF7340A30C4F98E6 /* MJRefreshAutoNormalFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 17B8D8625FDA6F212295EB0EF465CC7A /* MJRefreshAutoNormalFooter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3F1B86A421CDD545D192F4F00620EE59 /* PGDatePicker+DateHour.m in Sources */ = {isa = PBXBuildFile; fileRef = 705A6B4E76C2B3CE2CFDB5D07F85F39B /* PGDatePicker+DateHour.m */; };
+		3F7CA4BD79CA5E4D62C3D484E36A3CB3 /* TYAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D34FA9FB68123A9A1CAA512643C5F77 /* TYAlertView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4166CE8AD9CB6129EE5979593A8A4ADF /* TYAlertFadeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6862AD818389B3E2D47FD2BD73C566 /* TYAlertFadeAnimation.m */; };
+		44C04CD549A629017B887FE4FCE0F589 /* UIScrollView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E70EB6EEF99CB457F61550DA5FD456F /* UIScrollView+MJExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4803C0F2E3FDE13311A4F7B00F387FAB /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = F487E8CE50B850A54CE0A84E7E5C9C70 /* MJProperty.m */; };
+		49CC7137A7634FED96B820A469F329E5 /* PGDatePickManagerHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAEB660ABD812CF05DC797108EF3F39 /* PGDatePickManagerHeaderView.m */; };
+		4AFBB6245EF8EF45082E6534B56B2D2E /* TYShowAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 07920219DE924FB980B8BF6C7A7DFD88 /* TYShowAlertView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4B2D1908F3B409E5664414EC82A81E2E /* PGDatePickerHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 60F7CE05FDB7BD660D188D1119CDF0DD /* PGDatePickerHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4BEF78E1065A136DE9EFA3756298A136 /* MJRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B77445A2FFCB78A4C04C18C2107BF2 /* MJRefreshBackNormalFooter.m */; };
+		4CB61B691FF8434B048EC19049086082 /* NSCalendar+PGCurrent.h in Headers */ = {isa = PBXBuildFile; fileRef = 565CE98606614A6EC447F7EEFCDFFC67 /* NSCalendar+PGCurrent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4DE3A6F87E1374E8105A099FAA8B0B0D /* UIView+TYAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B15055AD8659B72E0EB557DFC37F1D4 /* UIView+TYAlertView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4E7A401DDE15EA921B15A58193A5B267 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ABEBA7CFF239740376A2287B6559AF /* NSObject+MJKeyValue.m */; };
+		4F0FCC6F86F18B48A3CB917F1C420ACA /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = BD58EC5317F81DA03FD03C5078222F73 /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5090419D551B06297D1D37065119C922 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 36915E62112BE2B884550CF24240BAFD /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		50ABB9D41238691B00BD48BD82E22408 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 36F284FDB75B4384DAC1A884162E7386 /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		51AC416EC6CE3452E484DAC6AB0C39BC /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E450D52EC1CB24460D413958D0ABE9 /* MJRefreshHeader.m */; };
+		51C3D81836CFFECC9F6C6839AF9E21AD /* Pods-EnvironmentalMonitoring-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 202AEB528103D00E5FD18A12F6FD01A8 /* Pods-EnvironmentalMonitoring-dummy.m */; };
+		52D758711E9ADF2A0B1CFCB64654F4FD /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3185494018BCD2F4EA755A97847D0B49 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		54832EDEA726236812BAEC090C8B1B47 /* PGEnumeration.h in Headers */ = {isa = PBXBuildFile; fileRef = 11E3F6D85F28AF7B05246BEF2269D494 /* PGEnumeration.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5652A23731748148CBE5E8794A035612 /* UIView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = BC2D48A8BB41D38248CAA87D4915F5E7 /* UIView+MJExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		573164B6986DF363037541BB9AAFE0F1 /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 59485E4694AC1DEF63C4893AF86D01ED /* MJRefreshGifHeader.m */; };
+		5792D9AA02483E17C895DFC033B575CC /* PGDatePicker+Year.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF40DC67E1B94A02129CBFC6D72304D /* PGDatePicker+Year.m */; };
+		581FC7FC90FCA8763D87222D58F356C0 /* MJRefreshAutoGifFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F198679D9998A9C36478FCE12A5EB8 /* MJRefreshAutoGifFooter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		595A6D65450F7CB78F57797C21B9621D /* PGDatePicker+MonthDay.m in Sources */ = {isa = PBXBuildFile; fileRef = D7526D7ED7F6ECDDAE1CF7D238CE2600 /* PGDatePicker+MonthDay.m */; };
+		5C0F7581C20219C281BA5DEE500077F9 /* MJRefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EED28F9ECF2CEF2BF5F2CB46849B5BDB /* MJRefreshStateHeader.m */; };
+		601251DC4199F445705C941009769D45 /* PGDatePicker+MonthDayHourMinuteSecond.m in Sources */ = {isa = PBXBuildFile; fileRef = 7473DAFBAEAD65C20C696176A83BECEE /* PGDatePicker+MonthDayHourMinuteSecond.m */; };
+		612A23C9C7EBCA5A6A9D49D31E7061B2 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B946B31527F553AC7BF89D85C818D1A /* AFImageDownloader.m */; };
+		61C7C837D6A597CF4C96B94CB883C159 /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D053DCF03547B7E46E87175713E82B27 /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		620DD64BB2C05A9F31F5B08A6414442C /* PGDatePicker+Date.h in Headers */ = {isa = PBXBuildFile; fileRef = A5959275BF7E7F1A968FE590F6F40210 /* PGDatePicker+Date.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		637A634FC595C4FE2F135FE3A9EC1100 /* PGDatePicker+Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9DC06BB649DDA6B1A3C7BF8F044300 /* PGDatePicker+Logic.m */; };
+		662E6E69496CCAE2499F40620CAD86AE /* PGDatePickManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A2EE726E7D4800EA520BD793F9630E9 /* PGDatePickManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		677767C75BD3CAEE224F5ED5670B5872 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 547D93CE6BBAC1275D11DF98A4AB6987 /* MJRefreshConst.m */; };
+		6B5C4F01AEFD4D5974480AC2EB032251 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDFAFAAED0F7C4984DD25E9529608B1 /* UIScrollView+MJExtension.m */; };
+		6D7F8E65EB1A9BD1946F33237334E925 /* PGDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3F6C4CEA2BA28567A5D48B6ACAADC0 /* PGDatePicker.m */; };
+		6DFD6F75F1C27CA625FC10919BE5DA15 /* PGDatePicker+MonthDayHour.h in Headers */ = {isa = PBXBuildFile; fileRef = C19EAC1D3C0EA046372DDD8CB57A3266 /* PGDatePicker+MonthDayHour.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6ECEF2E73215B345DB32EEF89E89CD72 /* NSBundle+PGDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE33D8F79D3866F37A8D49A36A8D5A /* NSBundle+PGDatePicker.m */; };
+		6ED6289891CC0EEBBFB9B1F37EB7D2AA /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C645440C3F6F683236888DAE1334B62 /* MJPropertyKey.m */; };
+		704F073E21714607AE0B2E5F7050E291 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBA5A81892789031A3F024E592D301F /* AFSecurityPolicy.m */; };
+		7144D3B203E74EE6011646A365F64502 /* MJRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F0675B1B9B39897AEBA56E6DBC8B11 /* MJRefreshFooter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		719301387D50174F4702164557670F7B /* TYAlertFadeAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CBA26C2F7836DEDFA17091392E44A4A /* TYAlertFadeAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7254417A41868B8333575630FDA773F1 /* PGDatePicker+DateAndTime.m in Sources */ = {isa = PBXBuildFile; fileRef = A4890B7C9FB1EC70B6B157C1718B0362 /* PGDatePicker+DateAndTime.m */; };
+		76B1180EE21C543282D439925E8CE90B /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 672386851A5357DE0F0D74261D585A9A /* UIWebView+AFNetworking.m */; };
+		79937C9C63DEB8056D54BE6882089A85 /* NSBundle+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E23501AA0CB1DA0385E291CB22C16AF /* NSBundle+MJRefresh.m */; };
+		79992E5FAA17690D47F4CD9D2AB74F26 /* MJRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4098BF1D58E8003E45767A07B4010165 /* MJRefreshAutoGifFooter.m */; };
+		7A37E2F0B3BB402D14E60E386519E392 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 05EE3684FFA23B6172FDD78FBFC20AEB /* UIView+MJExtension.m */; };
+		7CBE560C4E8E81FE558049E46965E912 /* PGDatePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F378C9EAA671930431DCA77F2114BE /* PGDatePicker-dummy.m */; };
+		7EFF7912664C65FA7DEAD8CC4837E9EF /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 3268FA7DAABF343A64816D282182A6B7 /* UIScrollView+MJRefresh.m */; };
+		818EE59B7528ECFA786DD11A2D0BB593 /* PGDatePicker+DateHourMinute.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C87D0FABE1FE4AD9BB2F78CA0E8EE53 /* PGDatePicker+DateHourMinute.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		82C3FC788914BC0443B7244CC1BBBE00 /* PGDatePicker+Year.h in Headers */ = {isa = PBXBuildFile; fileRef = A8FF1D489452E5A7CE35779D6CF4AEE4 /* PGDatePicker+Year.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		83DCF4CF2621D0D24FDB846B3A6E4F04 /* PGDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE01DFE98AFFAC2412ED50EA77F55E3 /* PGDatePickerView.m */; };
+		84F0A959C511809CAB36F4FDB299E77C /* NSDate+PGCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 06D9D97D86AC33713CD97C4B2CA051D3 /* NSDate+PGCategory.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		852593BB5EBC479D8F65988F0B9DB6B4 /* PGDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = C8495125486559306BD48F83E89BA04D /* PGDatePickerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		864B4221EA5682A0F1B85C4E29A4AEC3 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 958323BF38198C70C385DEA053E938CA /* AFURLSessionManager.m */; };
+		8A3FE2C9859B734BCCF232A1F6B4BDCC /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C2757A8A8743D3B23AFC1B00057FDCC3 /* MJRefreshAutoFooter.m */; };
+		8A9566F937711EEA958D1440906D1FBE /* PGDatePicker+DateHour.h in Headers */ = {isa = PBXBuildFile; fileRef = 55AB4823F789A5097772B1DF2D7736BA /* PGDatePicker+DateHour.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8C69A5F7A860ECCFEDB8AA878FD5875F /* NSObject+MJProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 9780AB69E2C89BE2B7D06F0E2144E2AC /* NSObject+MJProperty.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8D4FC3AE88ECF9CBA0079DA7249C4476 /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A723E182DDAB197C743D08B0BACFC21 /* MJRefreshAutoStateFooter.m */; };
+		8FAB250A3753FD7C1B5CFE2C76B2E72D /* PGDatePicker+MinuteAndSecond.h in Headers */ = {isa = PBXBuildFile; fileRef = B096DF16D7EE141F0AD781E04B338659 /* PGDatePicker+MinuteAndSecond.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		913E0D76E286389EDD2489B17A5C879A /* NSString+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 770868993FFC7965B4408EA72F98F2F8 /* NSString+MJExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		920E7FDF0A9E5654A946E42D057B76D9 /* TYAlertController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0EA85C779723757BFF4C95A8055A3B /* TYAlertController-dummy.m */; };
+		929D170D83A562EE5298FB71D23958B8 /* PGDatePicker+TimeAndSecond.h in Headers */ = {isa = PBXBuildFile; fileRef = 740113AEE291320161D152A23378D22D /* PGDatePicker+TimeAndSecond.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		935782A2C79C525F33690680ED4C98B2 /* MJRefreshAutoNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B7C7E435639566162A7E11B1197557 /* MJRefreshAutoNormalFooter.m */; };
+		96A4DDA8F8D7C4F80C638D24FBE39982 /* PGDatePicker+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DCE4BCB3E3D66941BF786356A6A236 /* PGDatePicker+Common.m */; };
+		9739204D7411BDA689EBF3B16A3708CA /* PGDatePicker+MinuteAndSecond.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CB2D10BC2F26B57360105432389D6F /* PGDatePicker+MinuteAndSecond.m */; };
+		993654C5042EE98A92F3A83C2DB7829C /* TYBaseAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = D8CF4F3C351BE8B3D149AA713CDF8062 /* TYBaseAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		993A0592AE4F9198A051B86DA4A4F017 /* MJExtensionConst.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D8C57CE513DA36266B7171D607ABDF0 /* MJExtensionConst.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		99A15DA5D2D55F014A88F3123D9A79BE /* PGPickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32224BBCDDF921B5B11B0CA5672AE24D /* PGPickerView-dummy.m */; };
+		99F7056E38017599BB2A6591A083791E /* TYAlertScaleFadeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBD63F7A4CC8941640EE3EF2D09A1C /* TYAlertScaleFadeAnimation.m */; };
+		9A1BF4C183C81AB3A8CC355DBE05E196 /* PGDatePicker+Common.h in Headers */ = {isa = PBXBuildFile; fileRef = A98223C738C92AD29FDB1FAF7AD9CD12 /* PGDatePicker+Common.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9C00E3D4644EC89956FD0662448AFBE3 /* PGDatePicker+MonthDayHour.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC7928A810CB9F4C5A831E445F9C471 /* PGDatePicker+MonthDayHour.m */; };
+		9C5491AE50773281F9F5F4E9C2FDB59C /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 669DAB0B51C2FBC3498B707D64427079 /* MJRefreshComponent.m */; };
+		9C99636ED49E34C6C07FE691FFB9A4F6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7A05CD7A4207D98AC56F87044BB522 /* Security.framework */; };
+		9D966963A7A592AB8E698E768FB45B20 /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 906004E80C242C81E5EB4AFA70A669EB /* AFNetworking-dummy.m */; };
+		9E15A8925B82CF94032363B07AAFFB0F /* TYAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3528B392BE55C14DF2834CF46D285FC /* TYAlertController.m */; };
+		A016F87150E9FC66584E1212FBCB8448 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 72C8ADCA5F309298BB4EBFD7643E8233 /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A11A1177242B90AAAEE4818208042DA0 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 755874D6647FABCED493F727578F6981 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A133B99D04FDCF1B6CFBBC3217E9BB16 /* MJFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B000D0D2CF55EB8C1CD7E617285B4E6 /* MJFoundation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A1896B941964FABAEF36F6458389B824 /* MJRefreshComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FE724C3FAAEACAD43001D504311C9D /* MJRefreshComponent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A1EAE925A70E43FB6EBBA32CBB0B1A59 /* PGPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A7DB19110E73271C58F812A092C5650 /* PGPickerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AA5A67AA13898BC9ECC3F5EBCCD00CED /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 813D95E99832E454842D82BE358CE42F /* UIRefreshControl+AFNetworking.m */; };
+		ABFF1760750665F940F5C3C9621C98E7 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A03D51B8D4912FDE5D2ED9425757E629 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ACDA682E329DD908708F6184D883BC01 /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = B859966D6062A547A8313F868D8790F1 /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AE65CB6C01DD3D3CB525C6EABD8D0A19 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4E760A95D24A509497F3B371B76048 /* NSString+MJExtension.m */; };
+		B1AEA832564AD586BE123EECC306214E /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A461E04441362C05A8AAF97932C722 /* AFURLRequestSerialization.m */; };
+		B28AE1E8C16FB83F6D68FF0459CD02DE /* PGPickerColumnView.h in Headers */ = {isa = PBXBuildFile; fileRef = 92DFE3AA4547A6BE4BB9C9AE2AB1FD47 /* PGPickerColumnView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B2CEC9E22024D517980E298D432BADFA /* MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A2C153B9ADF228D017D6ADC89C4A757 /* MJRefresh.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B31415956275112FF97C6D24263BC768 /* MJRefreshBackNormalFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 77A3319419B560EC7D2E7A24D888E9C6 /* MJRefreshBackNormalFooter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B3DD550959C5D5E746F82133CFADC850 /* NSBundle+PGDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = BED194A7604DBD093BEB6C084F7ED05C /* NSBundle+PGDatePicker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B5B6C37283CD05F7236E701F4E7C37E0 /* MJProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E78BD92E0DC697A762FC6BEF9F33F6E /* MJProperty.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B5D00724C8A46BB4FE05F2960898FF6D /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 479CD39F9A1A0730C64D0771EA11C731 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B8BF0B6EF03A4482957B83F97FB01B85 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B8D30D21E475F03C00293E56B192D8 /* UIActivityIndicatorView+AFNetworking.m */; };
+		B9C8660BB6181BE6207F5AC54470ED7B /* PGDatePicker+DateHourMinuteSecond.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F07A709C56C13CECCAB6D12B30CC61 /* PGDatePicker+DateHourMinuteSecond.m */; };
+		BB535E36FADC9A91220E45F1A0A5E6F8 /* PGDatePicker+MonthDay.h in Headers */ = {isa = PBXBuildFile; fileRef = 6109A09582411BE5426E693E329B590C /* PGDatePicker+MonthDay.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BBAD6440F8E620AF78EAEDC0DC3E73B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 390DF57511972B422540971705CE0A3A /* UIKit.framework */; };
+		BF53EF7FCD36AD68FC53767A2425C865 /* PGDatePicker+DateHourMinuteSecond.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F8874137B04D2BE45F2D2250D84B71 /* PGDatePicker+DateHourMinuteSecond.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C062F0BE5EF82D3DA1A27522C4AE86D3 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B93A39322597EF6B03C5D82FBF6A8DC7 /* AFNetworkReachabilityManager.m */; };
+		C158C5C592A851A5FC9FF0B04DF7A3B2 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C226C743806AFCA1257E8E1CB9CA31F4 /* AFNetworkActivityIndicatorManager.m */; };
+		C36ECE1885D6B6782248E5AFFA5E0352 /* MJRefreshAutoStateFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2810DCE370C9EAA65DBBD6D0D2FB29 /* MJRefreshAutoStateFooter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C3B95919F493D1192A2C92EAEE73758B /* UIView+TYAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 72563E6B0ABAD98D6859FF6A6C3F325B /* UIView+TYAutoLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C3F7247283A4DC39A84EA02BE29C2CA5 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 99910F305CE10A468A41CAE156072666 /* AFURLResponseSerialization.m */; };
+		C4FD7FB1D96B7145958D046D7DB914F1 /* PGPickerColumnCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E704246EBCF7394CDF39C3F79A0505 /* PGPickerColumnCell.m */; };
+		C8EA8265DB43EB4CF7B19A4B7B132002 /* NSObject+MJClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 71D8A58E1F2EC2807503116A74B9AA07 /* NSObject+MJClass.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C91ADA6BCB62F6E3501743BE922C3DE1 /* PGDatePickManagerHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 05C1380F33DDBDBB5766BF13710DC3C3 /* PGDatePickManagerHeaderView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CB6567B1B73F5B5E235E22780A1C01FB /* PGPickerColumnView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDA856CF74A12ED27E4343B3CD1148F /* PGPickerColumnView.m */; };
+		CC55F9A80C65421C093261BD15E7511C /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A6E28CA97730C0BFB2A61C8B141FBDCE /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CF8B07826835CD67551855D1EAB9310E /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B5CCB006FD9BA92480EDCC0E8EC6A2 /* UIButton+AFNetworking.m */; };
+		CFE0D73DF3D5E584CD7139CFAFE07A4B /* TYAlertScaleFadeAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E9490F0AFADD7BD0A9F90622AC26F5E /* TYAlertScaleFadeAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D0CFC17A2FA5334A74C43E1CB042AFB3 /* PGDatePicker+MonthDayHourMinuteSecond.h in Headers */ = {isa = PBXBuildFile; fileRef = 560C1E522938CCA5895926DF89797C1F /* PGDatePicker+MonthDayHourMinuteSecond.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D14F44EC89FCD3D1FBB6D8C61C997C32 /* UIView+TYAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = D67AF6B5DFB0552784EB8D74C2A345A6 /* UIView+TYAlertView.m */; };
+		D27FAC5973CA04E4837BD89A6474D181 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 611A5A5E680F0006BFE883B5AEB14F55 /* MJFoundation.m */; };
+		D28649B1D532DEB606717452E090EC60 /* PGDatePicker+DateHourMinute.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D54186A9B7839E7A15E63526FCD5F72 /* PGDatePicker+DateHourMinute.m */; };
+		D42BDF45AA9C5D6AB2D3D7194E1653C3 /* MJExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6182FD350CA99A2CCDE67F5691C6851A /* MJExtension-dummy.m */; };
+		D5226D7319EB102A38C76B9B2E77BC89 /* MJRefreshConst.h in Headers */ = {isa = PBXBuildFile; fileRef = B80F211CEE250A8588856CDAAFD7D8A5 /* MJRefreshConst.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D5D62651633B25C8376D73E746672DFE /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1396101B007368A52C08B1087091F483 /* AFHTTPSessionManager.m */; };
+		D66BBC488DAC88D12035A712341AB063 /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44E2969DB862EB47A79BCD11B636FD /* MJPropertyType.m */; };
+		D6F7838E24908CCBD045074A218B1EE8 /* MJRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1656B60D03B5BFE445393842EFA14AC3 /* MJRefreshBackGifFooter.m */; };
+		DE31436F93DE87D99F66D3AB60BD2030 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 17BC1220B5961EFD04A77BC785283BFE /* AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E07567BF333733CFD55EC2BD07C614CF /* NSBundle+MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D53C81CFDF66FB779F574674449BE7 /* NSBundle+MJRefresh.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E244531142258BB595FF189A5E1A9E1C /* PGDatePicker+TimeAndSecond.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AB23312468716299F1470BD5BB526B /* PGDatePicker+TimeAndSecond.m */; };
+		E2F5817E19C6E18ACD1B1AEEADD14614 /* MJRefreshAutoFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 60DF1C966151BD78618E923EC0944821 /* MJRefreshAutoFooter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E30A83EE876CEAFF841C8AE5EDD9BB4B /* PGDatePicker+MonthDayHourMinute.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B3B29BEB791E86D8F0CAFED8D714F5 /* PGDatePicker+MonthDayHourMinute.m */; };
+		E50A96925501925AA829D7B9B09B5D54 /* MJPropertyKey.h in Headers */ = {isa = PBXBuildFile; fileRef = E27F2228BC1354D1EAC218FC9C18CD96 /* MJPropertyKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E6F0AD8D94E7201EAC5ADBFC975818D0 /* PGDatePicker+DateAndTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 0156B8B82F40BF0C7CF05E7C72BC40D1 /* PGDatePicker+DateAndTime.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E7CF8D6F74A81DA1E9B80EAB05BF0267 /* PGPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF1CB7A3D8BF56E78CBB9CC3FA78791 /* PGPickerView.m */; };
+		E7D8C5D4FDF48E85C2FB2D4F5FC60180 /* TYAlertDropDownAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = DABA3015CBE1B261D493426EF9059A97 /* TYAlertDropDownAnimation.m */; };
+		E818D98F5ED54FF8F72260606E97241B /* MJRefreshBackFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D959C0C345D06D1BCB10230FE279CA /* MJRefreshBackFooter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EAFABACBA257B6B2FF394A8CC1B1BEB1 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B13B0B319D8B65AAC9447AC6904E3B /* MJRefreshBackFooter.m */; };
+		EB5BC84403EC7B70DF6E3EEF7855BEEE /* NSObject+MJKeyValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 108E3493AADE24075102DD44C6BA3E2E /* NSObject+MJKeyValue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EB616860C07DABAF5BFDC633B08606D1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A345CADC7F83B13220BE76D86EAD65F /* SystemConfiguration.framework */; };
+		ECD4D4937770BF8AB75C739EAA3A5DE5 /* MJRefreshBackStateFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C25DCD8B8A7934A75D4E4D326C483D /* MJRefreshBackStateFooter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F05F4539FE29BE422E8F3EC26782B1A7 /* MJRefreshNormalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 72EA781F1E1FCEBFED3129ED48BA5193 /* MJRefreshNormalHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F16E8F1485414AA6CF110F3CFF4EADA2 /* MJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B230D3E4E6F8D3C3654F925D9C52D4 /* MJRefreshFooter.m */; };
+		F202BD74CB7F0AEFC77018C49F04EEAB /* NSDate+PGCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A975D23B2F4CC635A3F905FACBBA6E2 /* NSDate+PGCategory.m */; };
+		F380DB05AF102DE6B7B9CDDB93060791 /* PGDatePicker+YearAndMonth.h in Headers */ = {isa = PBXBuildFile; fileRef = 15B3A37F50678C96FB590944DF315005 /* PGDatePicker+YearAndMonth.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F39E719EC0DBFFD65ABE270D4CA559FA /* MJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE72EBF6BAAB0951D4D47B6C454094 /* MJRefreshNormalHeader.m */; };
+		F526536AF15AB3A2631B22C1DBE0E291 /* PGPickerColumnCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EACB2A7174F7AABD1E6182E2C765780 /* PGPickerColumnCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F6CE47DBEE3FF8DFC5FB5743AAB191DA /* UIScrollView+MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = FD18F3DBF06485B93435328B22E88B59 /* UIScrollView+MJRefresh.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F8F166859ABC0FE17A6FDBAB00007462 /* TYShowAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ACDCB36F3CFC40827C1383E0F0BAB0 /* TYShowAlertView.m */; };
+		FA929F7A1BB6AFB019E0DB16D3487B37 /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 084DCE08F0AE9BBB909C05A1C5B6D929 /* NSObject+MJClass.m */; };
+		FCA0A0C65549D88B25EBE325C22C5895 /* TYAlertController+TransitionAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E612CB733B0430DDDD3FB869DD6D0F /* TYAlertController+TransitionAnimate.m */; };
+		FCDA3072890AAD2F8C9E7D72D7B7E3F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 390DF57511972B422540971705CE0A3A /* UIKit.framework */; };
+		FEE70090A90454F99239AB23FBF1787D /* PGDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BAB03FD10E7755F2DA36EB784AA062C /* PGDatePicker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FFD68F016322A318143BBCCF0902504F /* MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 653442C6BD0D331AAE3394371CCAC500 /* MJExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		279F385F26BF10D5A9651E67F4900471 /* PBXContainerItemProxy */ = {
+		0E86923A29666F54827F4E1424496A48 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EF32FDB3A282AB193EFC66EFC3C26C4F;
-			remoteInfo = PGDatePicker;
-		};
-		3DFCB9084D6997057E082E78FFD4FAC4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 63CA8EC3F0833D492A624470223626FE;
-			remoteInfo = PGPickerView;
-		};
-		4F8085D2A01EE4A1CB38B6CFCB806EE7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 63CA8EC3F0833D492A624470223626FE;
-			remoteInfo = PGPickerView;
-		};
-		632DE846ECC7CFF1D7DBA226CD2B3C4E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9E033EDB5EC0819481B0546434FA577B;
-			remoteInfo = AFNetworking;
-		};
-		A6BB28479AD2D1374305994650AB9D5F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 04CF549EBEEE7BC87AEAE35397184D94;
+			remoteGlobalIDString = 488D77882F65BA00D291462E43C45C54;
 			remoteInfo = MJRefresh;
 		};
-		E07F25758F592C7C1524EE87D3F4375E /* PBXContainerItemProxy */ = {
+		22C666FFA91D0A48922DF5F802EDC448 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CCE48B179421B9FFFD3AC75B1FA27B55;
+			remoteGlobalIDString = E99F35D46275D04DFD566593CECC7304;
+			remoteInfo = MJExtension;
+		};
+		5C031CA5724A4B8340CB611CD1D8F1F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD6E92E9F59FDA3D1B560F46D2519845;
 			remoteInfo = TYAlertController;
 		};
-		E5677C73FFC2D9422EA0A4DDB9C594B2 /* PBXContainerItemProxy */ = {
+		91E357961121771D3D01247899CA9802 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A316B54C67E947D23CECD230FA5BFAEF;
-			remoteInfo = MJExtension;
+			remoteGlobalIDString = 53186AFAF791AED01FDCF6C67CB1C154;
+			remoteInfo = PGPickerView;
+		};
+		A0241328C4F8DAE7AE0BD012ABAD6468 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AF218FD7A134D8063D84CB10E60FB47;
+			remoteInfo = AFNetworking;
+		};
+		ABBCC11583FFC004BA3777C24B772172 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53186AFAF791AED01FDCF6C67CB1C154;
+			remoteInfo = PGPickerView;
+		};
+		B861C1DE47A5CBE247D194EC36A10A43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A8129019156E20ABEE2BE294A408D24;
+			remoteInfo = PGDatePicker;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00DE33D8F79D3866F37A8D49A36A8D5A /* NSBundle+PGDatePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+PGDatePicker.m"; path = "PGDatePicker/NSBundle+PGDatePicker.m"; sourceTree = "<group>"; };
 		0156B8B82F40BF0C7CF05E7C72BC40D1 /* PGDatePicker+DateAndTime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PGDatePicker+DateAndTime.h"; path = "PGDatePicker/PGDatePicker+DateAndTime.h"; sourceTree = "<group>"; };
-		0339164673A5C75C5E4018F798CE5EEE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		041F55AE36E26F3BDCC4B40490B54E30 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		054E97DB787814DE29837DCE2516C4BA /* TYAlertController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TYAlertController.xcconfig; sourceTree = "<group>"; };
 		05C1380F33DDBDBB5766BF13710DC3C3 /* PGDatePickManagerHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGDatePickManagerHeaderView.h; path = PGDatePicker/PGDatePickManagerHeaderView.h; sourceTree = "<group>"; };
 		05EE3684FFA23B6172FDD78FBFC20AEB /* UIView+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MJExtension.m"; path = "MJRefresh/UIView+MJExtension.m"; sourceTree = "<group>"; };
@@ -304,14 +295,15 @@
 		36B230D3E4E6F8D3C3654F925D9C52D4 /* MJRefreshFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshFooter.m; path = MJRefresh/Base/MJRefreshFooter.m; sourceTree = "<group>"; };
 		36F284FDB75B4384DAC1A884162E7386 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
 		3735F8E4EBEEDD68CDD175AC32B2AAFF /* TYAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYAlertView.m; path = TYAlertControllerDemo/TYAlertController/TYAlertView.m; sourceTree = "<group>"; };
+		390DF57511972B422540971705CE0A3A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		3C3F6C4CEA2BA28567A5D48B6ACAADC0 /* PGDatePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGDatePicker.m; path = PGDatePicker/PGDatePicker.m; sourceTree = "<group>"; };
+		3E7A05CD7A4207D98AC56F87044BB522 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		3E9490F0AFADD7BD0A9F90622AC26F5E /* TYAlertScaleFadeAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYAlertScaleFadeAnimation.h; path = TYAlertControllerDemo/TYAlertController/TYAlertScaleFadeAnimation.h; sourceTree = "<group>"; };
 		4098BF1D58E8003E45767A07B4010165 /* MJRefreshAutoGifFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoGifFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.m; sourceTree = "<group>"; };
 		43ACDCB36F3CFC40827C1383E0F0BAB0 /* TYShowAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYShowAlertView.m; path = TYAlertControllerDemo/TYAlertController/TYShowAlertView.m; sourceTree = "<group>"; };
 		46DE11474BCB78EC9ABAE9D6301AB36D /* UIColor+PGHex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+PGHex.m"; path = "PGDatePicker/UIColor+PGHex.m"; sourceTree = "<group>"; };
 		479CD39F9A1A0730C64D0771EA11C731 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
 		4F8814110BAE8B6520E68B5B13496EE9 /* Pods-EnvironmentalMonitoring-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EnvironmentalMonitoring-acknowledgements.plist"; sourceTree = "<group>"; };
-		51EEF5F6B8DF9CB28A3362570D60C5A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		547D93CE6BBAC1275D11DF98A4AB6987 /* MJRefreshConst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshConst.m; path = MJRefresh/MJRefreshConst.m; sourceTree = "<group>"; };
 		55AB4823F789A5097772B1DF2D7736BA /* PGDatePicker+DateHour.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PGDatePicker+DateHour.h"; path = "PGDatePicker/PGDatePicker+DateHour.h"; sourceTree = "<group>"; };
 		55E731DB27FF2F997B857B53075DA0A7 /* PGDatePicker+Date.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PGDatePicker+Date.m"; path = "PGDatePicker/PGDatePicker+Date.m"; sourceTree = "<group>"; };
@@ -336,11 +328,10 @@
 		653442C6BD0D331AAE3394371CCAC500 /* MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJExtension.h; path = MJExtension/MJExtension.h; sourceTree = "<group>"; };
 		65A461E04441362C05A8AAF97932C722 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
 		669DAB0B51C2FBC3498B707D64427079 /* MJRefreshComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshComponent.m; path = MJRefresh/Base/MJRefreshComponent.m; sourceTree = "<group>"; };
-		66EB5B938802F986D305D37865A72F7F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		672386851A5357DE0F0D74261D585A9A /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		6A2EE726E7D4800EA520BD793F9630E9 /* PGDatePickManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGDatePickManager.h; path = PGDatePicker/PGDatePickManager.h; sourceTree = "<group>"; };
 		6BAB03FD10E7755F2DA36EB784AA062C /* PGDatePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGDatePicker.h; path = PGDatePicker/PGDatePicker.h; sourceTree = "<group>"; };
-		6CA8C39EB9FA57DDFC411775B47E1995 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA8C39EB9FA57DDFC411775B47E1995 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAFNetworking.a; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CCE72EBF6BAAB0951D4D47B6C454094 /* MJRefreshNormalHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshNormalHeader.m; path = MJRefresh/Custom/Header/MJRefreshNormalHeader.m; sourceTree = "<group>"; };
 		705A6B4E76C2B3CE2CFDB5D07F85F39B /* PGDatePicker+DateHour.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PGDatePicker+DateHour.m"; path = "PGDatePicker/PGDatePicker+DateHour.m"; sourceTree = "<group>"; };
 		70F378C9EAA671930431DCA77F2114BE /* PGDatePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PGDatePicker-dummy.m"; sourceTree = "<group>"; };
@@ -366,7 +357,7 @@
 		83E704246EBCF7394CDF39C3F79A0505 /* PGPickerColumnCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPickerColumnCell.m; path = PGPickerView/PGPickerColumnCell.m; sourceTree = "<group>"; };
 		84F8874137B04D2BE45F2D2250D84B71 /* PGDatePicker+DateHourMinuteSecond.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PGDatePicker+DateHourMinuteSecond.h"; path = "PGDatePicker/PGDatePicker+DateHourMinuteSecond.h"; sourceTree = "<group>"; };
 		872E1E2D3FF6FEBC85DC6427EFDA8805 /* Pods-EnvironmentalMonitoring-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EnvironmentalMonitoring-frameworks.sh"; sourceTree = "<group>"; };
-		884B08EF5A3977B8AA0220C3D52E395F /* libPGDatePicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPGDatePicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		884B08EF5A3977B8AA0220C3D52E395F /* libPGDatePicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPGDatePicker.a; path = libPGDatePicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A2C153B9ADF228D017D6ADC89C4A757 /* MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefresh.h; path = MJRefresh/MJRefresh.h; sourceTree = "<group>"; };
 		8B4E760A95D24A509497F3B371B76048 /* NSString+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MJExtension.m"; path = "MJExtension/NSString+MJExtension.m"; sourceTree = "<group>"; };
 		906004E80C242C81E5EB4AFA70A669EB /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
@@ -374,11 +365,12 @@
 		916615C1D48B08E601D52AD1B185AC94 /* MJExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJExtension-prefix.pch"; sourceTree = "<group>"; };
 		91B7C7E435639566162A7E11B1197557 /* MJRefreshAutoNormalFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoNormalFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.m; sourceTree = "<group>"; };
 		92DFE3AA4547A6BE4BB9C9AE2AB1FD47 /* PGPickerColumnView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPickerColumnView.h; path = PGPickerView/PGPickerColumnView.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9514845E8B0388BC97FC66F11B3E661D /* PGDatePicker+YearAndMonth.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PGDatePicker+YearAndMonth.m"; path = "PGDatePicker/PGDatePicker+YearAndMonth.m"; sourceTree = "<group>"; };
 		958323BF38198C70C385DEA053E938CA /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
 		9780AB69E2C89BE2B7D06F0E2144E2AC /* NSObject+MJProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MJProperty.h"; path = "MJExtension/NSObject+MJProperty.h"; sourceTree = "<group>"; };
 		99910F305CE10A468A41CAE156072666 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		9A345CADC7F83B13220BE76D86EAD65F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		9A7DB19110E73271C58F812A092C5650 /* PGPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGPickerView.h; path = PGPickerView/PGPickerView.h; sourceTree = "<group>"; };
 		9CBA26C2F7836DEDFA17091392E44A4A /* TYAlertFadeAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYAlertFadeAnimation.h; path = TYAlertControllerDemo/TYAlertController/TYAlertFadeAnimation.h; sourceTree = "<group>"; };
 		9E78BD92E0DC697A762FC6BEF9F33F6E /* MJProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJProperty.h; path = MJExtension/MJProperty.h; sourceTree = "<group>"; };
@@ -386,15 +378,16 @@
 		A03D51B8D4912FDE5D2ED9425757E629 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		A1F198679D9998A9C36478FCE12A5EB8 /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoGifFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
 		A4890B7C9FB1EC70B6B157C1718B0362 /* PGDatePicker+DateAndTime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PGDatePicker+DateAndTime.m"; path = "PGDatePicker/PGDatePicker+DateAndTime.m"; sourceTree = "<group>"; };
-		A4A78E5A576CDDF089002FA7301D2AD8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		A5680BCF62F59DC11D76AA0E420EE75E /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
-		A58809DB9AADC069291F019353D9F27A /* libTYAlertController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTYAlertController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A58809DB9AADC069291F019353D9F27A /* libTYAlertController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTYAlertController.a; path = libTYAlertController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5959275BF7E7F1A968FE590F6F40210 /* PGDatePicker+Date.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PGDatePicker+Date.h"; path = "PGDatePicker/PGDatePicker+Date.h"; sourceTree = "<group>"; };
 		A6E28CA97730C0BFB2A61C8B141FBDCE /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
 		A8FF1D489452E5A7CE35779D6CF4AEE4 /* PGDatePicker+Year.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PGDatePicker+Year.h"; path = "PGDatePicker/PGDatePicker+Year.h"; sourceTree = "<group>"; };
 		A98223C738C92AD29FDB1FAF7AD9CD12 /* PGDatePicker+Common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PGDatePicker+Common.h"; path = "PGDatePicker/PGDatePicker+Common.h"; sourceTree = "<group>"; };
+		A995B12D4BE0BE28CFA8AB963D398C25 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		A99EF8BA9FD5621632CA07863491A30F /* PGDatePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PGDatePicker-prefix.pch"; sourceTree = "<group>"; };
 		AB2810DCE370C9EAA65DBBD6D0D2FB29 /* MJRefreshAutoStateFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoStateFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoStateFooter.h; sourceTree = "<group>"; };
+		AFB090B4563F9175B1E99BC54E445CB6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		AFF40DC67E1B94A02129CBFC6D72304D /* PGDatePicker+Year.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PGDatePicker+Year.m"; path = "PGDatePicker/PGDatePicker+Year.m"; sourceTree = "<group>"; };
 		B096DF16D7EE141F0AD781E04B338659 /* PGDatePicker+MinuteAndSecond.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PGDatePicker+MinuteAndSecond.h"; path = "PGDatePicker/PGDatePicker+MinuteAndSecond.h"; sourceTree = "<group>"; };
 		B38CEA717E291CAD790C28794FC88330 /* Pods-EnvironmentalMonitoring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EnvironmentalMonitoring.debug.xcconfig"; sourceTree = "<group>"; };
@@ -411,20 +404,20 @@
 		BD58EC5317F81DA03FD03C5078222F73 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
 		BE252EC6CC717F93761F0BD71CFB1B41 /* PGDatePicker+Logic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PGDatePicker+Logic.h"; path = "PGDatePicker/PGDatePicker+Logic.h"; sourceTree = "<group>"; };
 		BED194A7604DBD093BEB6C084F7ED05C /* NSBundle+PGDatePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+PGDatePicker.h"; path = "PGDatePicker/NSBundle+PGDatePicker.h"; sourceTree = "<group>"; };
-		BFF919D0DE31F1AB0ED5BFF757B548C4 /* libMJExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMJExtension.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFF919D0DE31F1AB0ED5BFF757B548C4 /* libMJExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMJExtension.a; path = libMJExtension.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1159AD52FDFF672534250D34B84531B /* PGPickerTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGPickerTableView.m; path = PGPickerView/PGPickerTableView.m; sourceTree = "<group>"; };
 		C19EAC1D3C0EA046372DDD8CB57A3266 /* PGDatePicker+MonthDayHour.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PGDatePicker+MonthDayHour.h"; path = "PGDatePicker/PGDatePicker+MonthDayHour.h"; sourceTree = "<group>"; };
 		C226C743806AFCA1257E8E1CB9CA31F4 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
 		C2757A8A8743D3B23AFC1B00057FDCC3 /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoFooter.m; path = MJRefresh/Base/MJRefreshAutoFooter.m; sourceTree = "<group>"; };
 		C2D959C0C345D06D1BCB10230FE279CA /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackFooter.h; path = MJRefresh/Base/MJRefreshBackFooter.h; sourceTree = "<group>"; };
 		C314126FC74B39626001D234A0C91085 /* Pods-EnvironmentalMonitoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EnvironmentalMonitoring.release.xcconfig"; sourceTree = "<group>"; };
-		C49E6BE0AB0FA8862702AD5A2B6B618B /* libPGPickerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPGPickerView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C49E6BE0AB0FA8862702AD5A2B6B618B /* libPGPickerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPGPickerView.a; path = libPGPickerView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DCE4BCB3E3D66941BF786356A6A236 /* PGDatePicker+Common.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PGDatePicker+Common.m"; path = "PGDatePicker/PGDatePicker+Common.m"; sourceTree = "<group>"; };
 		C522EA5671E733261986978A04BCEA1D /* PGPickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PGPickerView-prefix.pch"; sourceTree = "<group>"; };
 		C577F17B72159133E898F56DAD764E3D /* UIView+TYAutoLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TYAutoLayout.m"; path = "TYAlertControllerDemo/TYAlertController/UIView+TYAutoLayout.m"; sourceTree = "<group>"; };
-		C6B19C79C1939B30EF3A28231E771A69 /* libMJRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMJRefresh.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6B19C79C1939B30EF3A28231E771A69 /* libMJRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMJRefresh.a; path = libMJRefresh.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6EA81AE8BAA2083978641DF90316257 /* NSCalendar+PGCurrent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCalendar+PGCurrent.m"; path = "PGDatePicker/NSCalendar+PGCurrent.m"; sourceTree = "<group>"; };
-		C827F99F7020FA0BE0A220195FC622C5 /* libPods-EnvironmentalMonitoring.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EnvironmentalMonitoring.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C827F99F7020FA0BE0A220195FC622C5 /* libPods-EnvironmentalMonitoring.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-EnvironmentalMonitoring.a"; path = "libPods-EnvironmentalMonitoring.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8495125486559306BD48F83E89BA04D /* PGDatePickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PGDatePickerView.h; path = PGDatePicker/PGDatePickerView.h; sourceTree = "<group>"; };
 		CC44E2969DB862EB47A79BCD11B636FD /* MJPropertyType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJPropertyType.m; path = MJExtension/MJPropertyType.m; sourceTree = "<group>"; };
 		CCBA5A81892789031A3F024E592D301F /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
@@ -444,7 +437,6 @@
 		DBE01DFE98AFFAC2412ED50EA77F55E3 /* PGDatePickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PGDatePickerView.m; path = PGDatePicker/PGDatePickerView.m; sourceTree = "<group>"; };
 		DD9DC06BB649DDA6B1A3C7BF8F044300 /* PGDatePicker+Logic.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PGDatePicker+Logic.m"; path = "PGDatePicker/PGDatePicker+Logic.m"; sourceTree = "<group>"; };
 		DDDFAFAAED0F7C4984DD25E9529608B1 /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+MJExtension.m"; path = "MJRefresh/UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
-		DF435BBF67523FB6D2633A16438FDB4B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		E1626373E162A7A2CE79C468939C94E1 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		E1AD4BE4C4AEC885179A9D374CE78651 /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
 		E27F2228BC1354D1EAC218FC9C18CD96 /* MJPropertyKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJPropertyKey.h; path = MJExtension/MJPropertyKey.h; sourceTree = "<group>"; };
@@ -466,65 +458,58 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1A7E1A7B5D4D9C1950E8C568E6B9BC71 /* Frameworks */ = {
+		0603197866BA889FFEB2CE37384877FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC06A1147172D039FB71AAF7DDCC6ACA /* Foundation.framework in Frameworks */,
-				5618F965C55FF0FC24FAB4048B86F921 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1AA0E094B4DC424075C69F0BADA02BC8 /* Frameworks */ = {
+		1C35DBB82CDB73D8E5E241FD4DA0FEA7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6196563962D9B59C4C47B10224FF15A2 /* Foundation.framework in Frameworks */,
+				FCDA3072890AAD2F8C9E7D72D7B7E3F7 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		28E774C4B121659C96AB1168F51D1905 /* Frameworks */ = {
+		6371A62502DDEFD60C8994E295484C36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99E8F7F66401D6276AA669BC71A895BA /* Foundation.framework in Frameworks */,
-				6FA2FB3765A6C7C9BFE8A24FA1FDA556 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD70F5099EAA6CE88D53D736D053B878 /* Frameworks */ = {
+		85BF65AB4BB54A3FBE58EB4952D327FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66DFEDEC6A5930E5DC199EDA5262879E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B57134F14D0B782971053CD2EB92CC0C /* Frameworks */ = {
+		CB08C16303F096EC3C8590375DF51384 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52E28A0A333684B80D6CD7FFD42865E2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E1FFA9BD201F7FCE2311B14D2E5AA8C0 /* Frameworks */ = {
+		CCD5D455BCE386870666B5F1FDFC4702 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F71530448B7A282746853F4718DCA267 /* Foundation.framework in Frameworks */,
+				11441A09378488EF84BF5CA919D0F830 /* CoreGraphics.framework in Frameworks */,
+				163770D89EEF7A946B973E0429B20E43 /* MobileCoreServices.framework in Frameworks */,
+				9C99636ED49E34C6C07FE691FFB9A4F6 /* Security.framework in Frameworks */,
+				EB616860C07DABAF5BFDC633B08606D1 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3284DBE3CA8932733932AD2A48445B2 /* Frameworks */ = {
+		F96ED511F157356A7A3210A55509C796 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBCCEAD402645565401CA93924736979 /* CoreGraphics.framework in Frameworks */,
-				0214246CCB1FF7182F7222B9CCDF8FCB /* Foundation.framework in Frameworks */,
-				F8DCA6C3C05A59B2C95A1B5F1CBD8C99 /* MobileCoreServices.framework in Frameworks */,
-				DE825B8F32AB823F4BE5492CAC6FCB4B /* Security.framework in Frameworks */,
-				903158692A045396106CA22C0DD13BA6 /* SystemConfiguration.framework in Frameworks */,
+				BBAD6440F8E620AF78EAEDC0DC3E73B1 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,14 +525,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/AFNetworking";
-			sourceTree = "<group>";
-		};
-		0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FBE2CE3B81E4A1287EFFD440F4CCD3AE /* iOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		120D8F4252DE478EB8A2FC4534C2FE60 /* MJExtension */ = {
@@ -576,6 +553,7 @@
 				8B4E760A95D24A509497F3B371B76048 /* NSString+MJExtension.m */,
 				45F48F9D94E2DD66AD9135D371907573 /* Support Files */,
 			);
+			name = MJExtension;
 			path = MJExtension;
 			sourceTree = "<group>";
 		};
@@ -590,6 +568,14 @@
 				6342A9456DD8BDE0C0049BB5B14D6B6F /* TYAlertController */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD512271F4BCB5F8CDB475DF1C2E6D48 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		27172A3D9142C04BC4728125A0FB17E4 /* Serialization */ = {
@@ -656,6 +642,7 @@
 				FC32CD9B696A28770A3EED5B251E2461 /* Resources */,
 				BC09137723520612C94B980DD22EAC73 /* Support Files */,
 			);
+			name = MJRefresh;
 			path = MJRefresh;
 			sourceTree = "<group>";
 		};
@@ -681,6 +668,7 @@
 				0544399E22EE08B75AE4196A3EC73FEC /* Support Files */,
 				6A901543EC5E376F3B02EAB742CFE45C /* UIKit */,
 			);
+			name = AFNetworking;
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
@@ -719,6 +707,7 @@
 				C577F17B72159133E898F56DAD764E3D /* UIView+TYAutoLayout.m */,
 				808F189AE1BBB9D794799405CC9CB061 /* Support Files */,
 			);
+			name = TYAlertController;
 			path = TYAlertController;
 			sourceTree = "<group>";
 		};
@@ -767,7 +756,7 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */,
+				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
 				12E08877187BC65579A489BC3140C180 /* Pods */,
 				6C39C08CC1CAB4F9CC61EC208A2525E5 /* Products */,
 				80EECE02FD90889BBC18670F5AC6F4B4 /* Targets Support Files */,
@@ -858,7 +847,20 @@
 				2B64166D0B22B4469F7C74211F9DA356 /* Resources */,
 				C66B3326BD337975135C79378D74BA6C /* Support Files */,
 			);
+			name = PGDatePicker;
 			path = PGDatePicker;
+			sourceTree = "<group>";
+		};
+		AD512271F4BCB5F8CDB475DF1C2E6D48 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A995B12D4BE0BE28CFA8AB963D398C25 /* CoreGraphics.framework */,
+				AFB090B4563F9175B1E99BC54E445CB6 /* MobileCoreServices.framework */,
+				3E7A05CD7A4207D98AC56F87044BB522 /* Security.framework */,
+				9A345CADC7F83B13220BE76D86EAD65F /* SystemConfiguration.framework */,
+				390DF57511972B422540971705CE0A3A /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		BC09137723520612C94B980DD22EAC73 /* Support Files */ = {
@@ -920,6 +922,7 @@
 				2CF1CB7A3D8BF56E78CBB9CC3FA78791 /* PGPickerView.m */,
 				61847A54241F9E0523D9EA749F74D04C /* Support Files */,
 			);
+			name = PGPickerView;
 			path = PGPickerView;
 			sourceTree = "<group>";
 		};
@@ -934,19 +937,6 @@
 			name = NSURLSession;
 			sourceTree = "<group>";
 		};
-		FBE2CE3B81E4A1287EFFD440F4CCD3AE /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				041F55AE36E26F3BDCC4B40490B54E30 /* CoreGraphics.framework */,
-				0339164673A5C75C5E4018F798CE5EEE /* Foundation.framework */,
-				DF435BBF67523FB6D2633A16438FDB4B /* MobileCoreServices.framework */,
-				66EB5B938802F986D305D37865A72F7F /* Security.framework */,
-				A4A78E5A576CDDF089002FA7301D2AD8 /* SystemConfiguration.framework */,
-				51EEF5F6B8DF9CB28A3362570D60C5A5 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		FC32CD9B696A28770A3EED5B251E2461 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -958,180 +948,146 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0A1C2B07813030B0D51EB1D804A4439E /* Headers */ = {
+		40ED26693C7C36A6CDE050456DFF4C8F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1F93EE1AA5E870F2CE81325CE9EB643 /* AFAutoPurgingImageCache.h in Headers */,
-				6B71CE5BA32574F407349C1DA20605B4 /* AFHTTPSessionManager.h in Headers */,
-				707E818332E5033501DF2D7826C639DF /* AFImageDownloader.h in Headers */,
-				E7B0270BEDCBE116DDD853F76E27B0BA /* AFNetworkActivityIndicatorManager.h in Headers */,
-				46401F3C7FF0B0CFE2E9B14914780835 /* AFNetworking.h in Headers */,
-				DE31BBF6A7963C5871A19655EF5532BE /* AFNetworkReachabilityManager.h in Headers */,
-				D59FC98A74E440C4725B6FDC28F5951E /* AFSecurityPolicy.h in Headers */,
-				C1C0D7C93BF3DE14A26757273598D0FA /* AFURLRequestSerialization.h in Headers */,
-				66635EAAE52FF5571DBCDC626FB8CA86 /* AFURLResponseSerialization.h in Headers */,
-				F5CC06F3E0C232483A72DCCFAF393BE0 /* AFURLSessionManager.h in Headers */,
-				682B0E603612B6ADBCCF30580F9A4B09 /* UIActivityIndicatorView+AFNetworking.h in Headers */,
-				2EBAA518CB8B2DAF89A63637091D4615 /* UIButton+AFNetworking.h in Headers */,
-				1341A7AC2439CB63D459D32EF985A414 /* UIImage+AFNetworking.h in Headers */,
-				D5CB999FB5FC80FC126A38AB4DF12227 /* UIImageView+AFNetworking.h in Headers */,
-				5719F06B809080CDEF7E6BC75DEA1A3C /* UIKit+AFNetworking.h in Headers */,
-				B40756412613B53C80EE77C4C223990F /* UIProgressView+AFNetworking.h in Headers */,
-				F099E5987DD80E8D78E909AF81D3C587 /* UIRefreshControl+AFNetworking.h in Headers */,
-				8958F2453EEBAF71BFEBD78FB48986EC /* UIWebView+AFNetworking.h in Headers */,
+				1274F407FBD9D37E540958D1ACBA34B1 /* AFAutoPurgingImageCache.h in Headers */,
+				ABFF1760750665F940F5C3C9621C98E7 /* AFHTTPSessionManager.h in Headers */,
+				ACDA682E329DD908708F6184D883BC01 /* AFImageDownloader.h in Headers */,
+				52D758711E9ADF2A0B1CFCB64654F4FD /* AFNetworkActivityIndicatorManager.h in Headers */,
+				DE31436F93DE87D99F66D3AB60BD2030 /* AFNetworking.h in Headers */,
+				B5D00724C8A46BB4FE05F2960898FF6D /* AFNetworkReachabilityManager.h in Headers */,
+				1D6CB9F802A99CF7B68775D229F16A3B /* AFSecurityPolicy.h in Headers */,
+				A11A1177242B90AAAEE4818208042DA0 /* AFURLRequestSerialization.h in Headers */,
+				0DF489124A4047B07B4C51822B6DF2ED /* AFURLResponseSerialization.h in Headers */,
+				CC55F9A80C65421C093261BD15E7511C /* AFURLSessionManager.h in Headers */,
+				A016F87150E9FC66584E1212FBCB8448 /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				01253EE4329D18E8A8451B9833960CC1 /* UIButton+AFNetworking.h in Headers */,
+				61C7C837D6A597CF4C96B94CB883C159 /* UIImage+AFNetworking.h in Headers */,
+				15D76EA02379A46209FBEB3C2A98430F /* UIImageView+AFNetworking.h in Headers */,
+				50ABB9D41238691B00BD48BD82E22408 /* UIKit+AFNetworking.h in Headers */,
+				129C54EA72707C517808B19EDA41083E /* UIProgressView+AFNetworking.h in Headers */,
+				4F0FCC6F86F18B48A3CB917F1C420ACA /* UIRefreshControl+AFNetworking.h in Headers */,
+				5090419D551B06297D1D37065119C922 /* UIWebView+AFNetworking.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4B55EEEEF3C4B12DCB334C1C88DBD812 /* Headers */ = {
+		640DCD08CBF521E613BEB15637815A9D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AE33E78E8FFD9B006D0110213084C3D /* TYAlertController.h in Headers */,
-				2628E052581668356D4AE4EF616C6693 /* TYAlertDropDownAnimation.h in Headers */,
-				8ECA0EB38D34E24EF6A729EFBF6514A4 /* TYAlertFadeAnimation.h in Headers */,
-				04C708A2A62DD9D3AC0FDE4DD47693FA /* TYAlertScaleFadeAnimation.h in Headers */,
-				A2484A97AC924E318D250B0F1E0C6208 /* TYAlertView.h in Headers */,
-				EF8CB98EA9CDCECE4906307EA0878C9D /* TYBaseAnimation.h in Headers */,
-				2216DD1C923DC73B9869CCF3F2327ECE /* TYShowAlertView.h in Headers */,
-				4616E8895B75378BB01D3577CCEE4E26 /* UIView+TYAlertView.h in Headers */,
-				1F3CD214CB6AA1759F5DDE3357262A22 /* UIView+TYAutoLayout.h in Headers */,
+				B3DD550959C5D5E746F82133CFADC850 /* NSBundle+PGDatePicker.h in Headers */,
+				4CB61B691FF8434B048EC19049086082 /* NSCalendar+PGCurrent.h in Headers */,
+				84F0A959C511809CAB36F4FDB299E77C /* NSDate+PGCategory.h in Headers */,
+				9A1BF4C183C81AB3A8CC355DBE05E196 /* PGDatePicker+Common.h in Headers */,
+				620DD64BB2C05A9F31F5B08A6414442C /* PGDatePicker+Date.h in Headers */,
+				E6F0AD8D94E7201EAC5ADBFC975818D0 /* PGDatePicker+DateAndTime.h in Headers */,
+				8A9566F937711EEA958D1440906D1FBE /* PGDatePicker+DateHour.h in Headers */,
+				818EE59B7528ECFA786DD11A2D0BB593 /* PGDatePicker+DateHourMinute.h in Headers */,
+				BF53EF7FCD36AD68FC53767A2425C865 /* PGDatePicker+DateHourMinuteSecond.h in Headers */,
+				2775548B4998B0EF9EC8FD268BA4DB6C /* PGDatePicker+Logic.h in Headers */,
+				8FAB250A3753FD7C1B5CFE2C76B2E72D /* PGDatePicker+MinuteAndSecond.h in Headers */,
+				BB535E36FADC9A91220E45F1A0A5E6F8 /* PGDatePicker+MonthDay.h in Headers */,
+				6DFD6F75F1C27CA625FC10919BE5DA15 /* PGDatePicker+MonthDayHour.h in Headers */,
+				108B8C9CDEADEF1306C64E904AD22F58 /* PGDatePicker+MonthDayHourMinute.h in Headers */,
+				D0CFC17A2FA5334A74C43E1CB042AFB3 /* PGDatePicker+MonthDayHourMinuteSecond.h in Headers */,
+				02E5ABAB4BC7033450FCD29B0C4825B7 /* PGDatePicker+Time.h in Headers */,
+				929D170D83A562EE5298FB71D23958B8 /* PGDatePicker+TimeAndSecond.h in Headers */,
+				82C3FC788914BC0443B7244CC1BBBE00 /* PGDatePicker+Year.h in Headers */,
+				F380DB05AF102DE6B7B9CDDB93060791 /* PGDatePicker+YearAndMonth.h in Headers */,
+				FEE70090A90454F99239AB23FBF1787D /* PGDatePicker.h in Headers */,
+				4B2D1908F3B409E5664414EC82A81E2E /* PGDatePickerHeader.h in Headers */,
+				852593BB5EBC479D8F65988F0B9DB6B4 /* PGDatePickerView.h in Headers */,
+				662E6E69496CCAE2499F40620CAD86AE /* PGDatePickManager.h in Headers */,
+				C91ADA6BCB62F6E3501743BE922C3DE1 /* PGDatePickManagerHeaderView.h in Headers */,
+				54832EDEA726236812BAEC090C8B1B47 /* PGEnumeration.h in Headers */,
+				18BAB60B43C55380B3094CC4AE72920A /* UIColor+PGHex.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		759FB6DCA49972B610A4F1F2DC9E0298 /* Headers */ = {
+		68EFAC15AF30E8CBB3525BA28EC9F0D8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C610999E7E9DAB99F7715BA0A179630 /* PGPickerColumnCell.h in Headers */,
-				373C7DE10FB0ABC21A8BCBAF268E84C1 /* PGPickerColumnView.h in Headers */,
-				AE457D01194A4B0CD70380FF5DDB44C3 /* PGPickerTableView.h in Headers */,
-				D32A702A881EE69FD59CB747DFD6C266 /* PGPickerView.h in Headers */,
+				B2CEC9E22024D517980E298D432BADFA /* MJRefresh.h in Headers */,
+				E2F5817E19C6E18ACD1B1AEEADD14614 /* MJRefreshAutoFooter.h in Headers */,
+				581FC7FC90FCA8763D87222D58F356C0 /* MJRefreshAutoGifFooter.h in Headers */,
+				3CB0DCF4EECBF247DF7340A30C4F98E6 /* MJRefreshAutoNormalFooter.h in Headers */,
+				C36ECE1885D6B6782248E5AFFA5E0352 /* MJRefreshAutoStateFooter.h in Headers */,
+				E818D98F5ED54FF8F72260606E97241B /* MJRefreshBackFooter.h in Headers */,
+				367548C5A2EC0FDBB1B5DB9CAE4AFC57 /* MJRefreshBackGifFooter.h in Headers */,
+				B31415956275112FF97C6D24263BC768 /* MJRefreshBackNormalFooter.h in Headers */,
+				ECD4D4937770BF8AB75C739EAA3A5DE5 /* MJRefreshBackStateFooter.h in Headers */,
+				A1896B941964FABAEF36F6458389B824 /* MJRefreshComponent.h in Headers */,
+				D5226D7319EB102A38C76B9B2E77BC89 /* MJRefreshConst.h in Headers */,
+				7144D3B203E74EE6011646A365F64502 /* MJRefreshFooter.h in Headers */,
+				0580CC9C4BCB7E968D327B50E8C4650F /* MJRefreshGifHeader.h in Headers */,
+				142C303DDD4FD9CA40B512A71637DE8C /* MJRefreshHeader.h in Headers */,
+				F05F4539FE29BE422E8F3EC26782B1A7 /* MJRefreshNormalHeader.h in Headers */,
+				0F6788BFAD5BF640B57EAD93E4BC8FDF /* MJRefreshStateHeader.h in Headers */,
+				E07567BF333733CFD55EC2BD07C614CF /* NSBundle+MJRefresh.h in Headers */,
+				44C04CD549A629017B887FE4FCE0F589 /* UIScrollView+MJExtension.h in Headers */,
+				F6CE47DBEE3FF8DFC5FB5743AAB191DA /* UIScrollView+MJRefresh.h in Headers */,
+				5652A23731748148CBE5E8794A035612 /* UIView+MJExtension.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		864D7FF60E899EA81A55C0B7F82FC174 /* Headers */ = {
+		94E2C54C9842E20CE0D622B1F4584D57 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CC9C69E797A8B66E96A7A1C1B1B51CC /* MJExtension.h in Headers */,
-				D7BF4DBA76F12C797027E90648D9AEE0 /* MJExtensionConst.h in Headers */,
-				92937DC066543122186195A2941D3C60 /* MJFoundation.h in Headers */,
-				1F8FEA93407CEC682A2C0C282CDEAD89 /* MJProperty.h in Headers */,
-				4C6BFB4C1F6CF71C99E1FB270F0FEDAF /* MJPropertyKey.h in Headers */,
-				52BA5ED3898FD3C7571E9B74782158A5 /* MJPropertyType.h in Headers */,
-				B915E3CFDFBA7B99411BC5430162868F /* NSObject+MJClass.h in Headers */,
-				CBA073485222F5F656AAF745EB499742 /* NSObject+MJCoding.h in Headers */,
-				2357DDC85500B4F45E37E411B596F562 /* NSObject+MJKeyValue.h in Headers */,
-				DD0AA9E8B308E45F90AD7A01F8BBC4DC /* NSObject+MJProperty.h in Headers */,
-				DBDCE948DF1D74806D9D319F636A0E8B /* NSString+MJExtension.h in Headers */,
+				F526536AF15AB3A2631B22C1DBE0E291 /* PGPickerColumnCell.h in Headers */,
+				B28AE1E8C16FB83F6D68FF0459CD02DE /* PGPickerColumnView.h in Headers */,
+				0E20A9C550DC44E6AC5694E7DD2DD65D /* PGPickerTableView.h in Headers */,
+				A1EAE925A70E43FB6EBBA32CBB0B1A59 /* PGPickerView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BCF57EC6DF4DD2736C7C216D9CEB9428 /* Headers */ = {
+		9C3731799E9E78149599E70BAE003FF6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1615F44139A14CEC7C82D546361B0609 /* MJRefresh.h in Headers */,
-				7B2ED9E571E4E51168F7157F2EAE6199 /* MJRefreshAutoFooter.h in Headers */,
-				0A3A685BD9A56E789E9EA83A1FECBBAE /* MJRefreshAutoGifFooter.h in Headers */,
-				85BBFB5F0008B8304BF840AA6449C61F /* MJRefreshAutoNormalFooter.h in Headers */,
-				FF1B68BB2C26B49D0DB408D77BF73D8C /* MJRefreshAutoStateFooter.h in Headers */,
-				ADD69BFB0A0F3F7B7E162E410A67CF05 /* MJRefreshBackFooter.h in Headers */,
-				ED89F1A48BA44D203A2C4B9C6F53AC0B /* MJRefreshBackGifFooter.h in Headers */,
-				C16FDBA2BC10E28B8D59DE5CCF4758EC /* MJRefreshBackNormalFooter.h in Headers */,
-				59CF9E95314C2B98CD4E53BA7FE282E4 /* MJRefreshBackStateFooter.h in Headers */,
-				88290D5C90C12F48F09E6AC463737F1F /* MJRefreshComponent.h in Headers */,
-				925EBB6CDAA2E17791E1DDCDA62A3375 /* MJRefreshConst.h in Headers */,
-				99364D96200D03FC3229E6A956E10ADB /* MJRefreshFooter.h in Headers */,
-				95F90F972DFDFBC3E012F069A6E24C33 /* MJRefreshGifHeader.h in Headers */,
-				2AC677C7D32F72030B81CA00F24F65FD /* MJRefreshHeader.h in Headers */,
-				9DDC888AA9FE29CD96DCB574AF125142 /* MJRefreshNormalHeader.h in Headers */,
-				597CEE76562EB4D948504B07655C54D6 /* MJRefreshStateHeader.h in Headers */,
-				2B20A7A457F69EA4CFEC2DB9CFB37FC9 /* NSBundle+MJRefresh.h in Headers */,
-				A67059B6451EE4D4C8827F52621E54A3 /* UIScrollView+MJExtension.h in Headers */,
-				D91A44E187477241B893D258E3F67A58 /* UIScrollView+MJRefresh.h in Headers */,
-				F88580E07538A44A13193CA98E37ADCA /* UIView+MJExtension.h in Headers */,
+				129E2D5E46F72531D0C661B1C1C83B89 /* TYAlertController.h in Headers */,
+				194962BB42E50329F1ED5E285A909DA8 /* TYAlertDropDownAnimation.h in Headers */,
+				719301387D50174F4702164557670F7B /* TYAlertFadeAnimation.h in Headers */,
+				CFE0D73DF3D5E584CD7139CFAFE07A4B /* TYAlertScaleFadeAnimation.h in Headers */,
+				3F7CA4BD79CA5E4D62C3D484E36A3CB3 /* TYAlertView.h in Headers */,
+				993654C5042EE98A92F3A83C2DB7829C /* TYBaseAnimation.h in Headers */,
+				4AFBB6245EF8EF45082E6534B56B2D2E /* TYShowAlertView.h in Headers */,
+				4DE3A6F87E1374E8105A099FAA8B0B0D /* UIView+TYAlertView.h in Headers */,
+				C3B95919F493D1192A2C92EAEE73758B /* UIView+TYAutoLayout.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CDCCAE2DF16A1AAC5309DB7B967D99E6 /* Headers */ = {
+		FA9C14700D470ADE3D695E57C5A0528D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A64A0B3137466C1DA232A8F612900C2 /* NSBundle+PGDatePicker.h in Headers */,
-				520C7A630CFB0AE970B158077AEADE69 /* NSCalendar+PGCurrent.h in Headers */,
-				EC207A50FA695011C18C2CF02CDDF70A /* NSDate+PGCategory.h in Headers */,
-				C36E382648AA7A57EEB087C02B64E4E0 /* PGDatePicker+Common.h in Headers */,
-				AFAD7D440E8DE4CCA39B6B160EE459FF /* PGDatePicker+Date.h in Headers */,
-				15140171896BAB2278B0B08DDA348458 /* PGDatePicker+DateAndTime.h in Headers */,
-				937D8470C42AFD13036D9C01271FE223 /* PGDatePicker+DateHour.h in Headers */,
-				A222D6AA1EE404A210895F8C0D86ADF9 /* PGDatePicker+DateHourMinute.h in Headers */,
-				44D0497874BA59D1FD60B41D0196DCA3 /* PGDatePicker+DateHourMinuteSecond.h in Headers */,
-				B31C058A985A420AC113D5DF71B8FCC0 /* PGDatePicker+Logic.h in Headers */,
-				9F0540F499796F97062121D0F6E3D4A2 /* PGDatePicker+MinuteAndSecond.h in Headers */,
-				26BBD4973848466DAB1EA6EB283A1CEF /* PGDatePicker+MonthDay.h in Headers */,
-				24966EBCFCA5A0FD7B3869CAB347802E /* PGDatePicker+MonthDayHour.h in Headers */,
-				D48619A63EFFF1294ECEEDF3105D5B59 /* PGDatePicker+MonthDayHourMinute.h in Headers */,
-				DCB36FE487029A0A053FF51839309FCE /* PGDatePicker+MonthDayHourMinuteSecond.h in Headers */,
-				209571FB8E02D9CA5699D7917A26E238 /* PGDatePicker+Time.h in Headers */,
-				CFF2405F882073057D685753FB6F7875 /* PGDatePicker+TimeAndSecond.h in Headers */,
-				17CF97E0482E963465887267329CEC5D /* PGDatePicker+Year.h in Headers */,
-				CFFB8003D74DA9FA59CDE03E27051E9A /* PGDatePicker+YearAndMonth.h in Headers */,
-				E8EEDD6F967B008630877820BFD14ED4 /* PGDatePicker.h in Headers */,
-				89AB60027FB3F11C1EE10BEE52968270 /* PGDatePickerHeader.h in Headers */,
-				025EFD3A45AE5E813DCE21EFD4937171 /* PGDatePickerView.h in Headers */,
-				423FD69A3C7B54C154B667E5747FF3DC /* PGDatePickManager.h in Headers */,
-				C381C43086A0C70C85C8787CA35FFB68 /* PGDatePickManagerHeaderView.h in Headers */,
-				957FB6E468F0CE34DAC41213A7FA5574 /* PGEnumeration.h in Headers */,
-				C2E435E0A531A8BFED1DE91B6F26A84B /* UIColor+PGHex.h in Headers */,
+				FFD68F016322A318143BBCCF0902504F /* MJExtension.h in Headers */,
+				993A0592AE4F9198A051B86DA4A4F017 /* MJExtensionConst.h in Headers */,
+				A133B99D04FDCF1B6CFBBC3217E9BB16 /* MJFoundation.h in Headers */,
+				B5B6C37283CD05F7236E701F4E7C37E0 /* MJProperty.h in Headers */,
+				E50A96925501925AA829D7B9B09B5D54 /* MJPropertyKey.h in Headers */,
+				279F1FA5B0D675132300DDD8051B1FEA /* MJPropertyType.h in Headers */,
+				C8EA8265DB43EB4CF7B19A4B7B132002 /* NSObject+MJClass.h in Headers */,
+				03C590DC1A43F1AE1C7B36B7B4F1439A /* NSObject+MJCoding.h in Headers */,
+				EB5BC84403EC7B70DF6E3EEF7855BEEE /* NSObject+MJKeyValue.h in Headers */,
+				8C69A5F7A860ECCFEDB8AA878FD5875F /* NSObject+MJProperty.h in Headers */,
+				913E0D76E286389EDD2489B17A5C879A /* NSString+MJExtension.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		04CF549EBEEE7BC87AEAE35397184D94 /* MJRefresh */ = {
+		3AF218FD7A134D8063D84CB10E60FB47 /* AFNetworking */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 35FA3F9D780F0A57E55222615ED55C72 /* Build configuration list for PBXNativeTarget "MJRefresh" */;
+			buildConfigurationList = C4DBDFD1FEACD5449F178F90A06ED35D /* Build configuration list for PBXNativeTarget "AFNetworking" */;
 			buildPhases = (
-				B33344124068CA24916553C4E50D541C /* Sources */,
-				E1FFA9BD201F7FCE2311B14D2E5AA8C0 /* Frameworks */,
-				BCF57EC6DF4DD2736C7C216D9CEB9428 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MJRefresh;
-			productName = MJRefresh;
-			productReference = C6B19C79C1939B30EF3A28231E771A69 /* libMJRefresh.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		63CA8EC3F0833D492A624470223626FE /* PGPickerView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C24289F45168C2F0630825AE22AB8D6C /* Build configuration list for PBXNativeTarget "PGPickerView" */;
-			buildPhases = (
-				E6C27E0E714610E1A32B3D32D268064A /* Sources */,
-				28E774C4B121659C96AB1168F51D1905 /* Frameworks */,
-				759FB6DCA49972B610A4F1F2DC9E0298 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = PGPickerView;
-			productName = PGPickerView;
-			productReference = C49E6BE0AB0FA8862702AD5A2B6B618B /* libPGPickerView.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		9E033EDB5EC0819481B0546434FA577B /* AFNetworking */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 483FBC4A668BF7F1A8767452E7E188AC /* Build configuration list for PBXNativeTarget "AFNetworking" */;
-			buildPhases = (
-				0068413C89BADAAF4691AA78AFE62C3E /* Sources */,
-				F3284DBE3CA8932733932AD2A48445B2 /* Frameworks */,
-				0A1C2B07813030B0D51EB1D804A4439E /* Headers */,
+				80926DDCF0AAE79D69C63601F604AD83 /* Sources */,
+				CCD5D455BCE386870666B5F1FDFC4702 /* Frameworks */,
+				40ED26693C7C36A6CDE050456DFF4C8F /* Headers */,
 			);
 			buildRules = (
 			);
@@ -1142,30 +1098,87 @@
 			productReference = 6CA8C39EB9FA57DDFC411775B47E1995 /* libAFNetworking.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		A316B54C67E947D23CECD230FA5BFAEF /* MJExtension */ = {
+		488D77882F65BA00D291462E43C45C54 /* MJRefresh */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 64EE246612F53A73C8FBFCEC3A61508A /* Build configuration list for PBXNativeTarget "MJExtension" */;
+			buildConfigurationList = 4F267348C4865160704454902BECF5D4 /* Build configuration list for PBXNativeTarget "MJRefresh" */;
 			buildPhases = (
-				DE3C7F77ACB98406106FD6A2FC240643 /* Sources */,
-				B57134F14D0B782971053CD2EB92CC0C /* Frameworks */,
-				864D7FF60E899EA81A55C0B7F82FC174 /* Headers */,
+				C9AF65A951B0616164171CFA3728482F /* Sources */,
+				85BF65AB4BB54A3FBE58EB4952D327FC /* Frameworks */,
+				68EFAC15AF30E8CBB3525BA28EC9F0D8 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MJExtension;
-			productName = MJExtension;
-			productReference = BFF919D0DE31F1AB0ED5BFF757B548C4 /* libMJExtension.a */;
+			name = MJRefresh;
+			productName = MJRefresh;
+			productReference = C6B19C79C1939B30EF3A28231E771A69 /* libMJRefresh.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		CCE48B179421B9FFFD3AC75B1FA27B55 /* TYAlertController */ = {
+		53186AFAF791AED01FDCF6C67CB1C154 /* PGPickerView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7BF1EED4436C16B99C5F42834F000856 /* Build configuration list for PBXNativeTarget "TYAlertController" */;
+			buildConfigurationList = B9E156E4B018563F74949070B9291305 /* Build configuration list for PBXNativeTarget "PGPickerView" */;
 			buildPhases = (
-				81E5F1B71CD3DD3C1C2C46BBDDD6FE38 /* Sources */,
-				AD70F5099EAA6CE88D53D736D053B878 /* Frameworks */,
-				4B55EEEEF3C4B12DCB334C1C88DBD812 /* Headers */,
+				BC0ADA75251E64DD9AA1149C9F9EC16F /* Sources */,
+				F96ED511F157356A7A3210A55509C796 /* Frameworks */,
+				94E2C54C9842E20CE0D622B1F4584D57 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PGPickerView;
+			productName = PGPickerView;
+			productReference = C49E6BE0AB0FA8862702AD5A2B6B618B /* libPGPickerView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		83035E88B4254A95F5898E89B8B712BA /* Pods-EnvironmentalMonitoring */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4886377FE727ED12F52CD1E0B99FED45 /* Build configuration list for PBXNativeTarget "Pods-EnvironmentalMonitoring" */;
+			buildPhases = (
+				847E1E44C50FB1A80A8E6CB44BC48FD6 /* Sources */,
+				6371A62502DDEFD60C8994E295484C36 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AE0ED9D128BAFCBA9F65CB36CED27E4 /* PBXTargetDependency */,
+				A46F05ADEE53FB0F74AC7B5A781FE6C7 /* PBXTargetDependency */,
+				27F14DED689F137BA7CEECD6EB1434BB /* PBXTargetDependency */,
+				007ADA0314D1FFADA26FD580B8E5F365 /* PBXTargetDependency */,
+				11FB070759E3697A4138CE1171704689 /* PBXTargetDependency */,
+				698162437285962209D004799F9BBF3F /* PBXTargetDependency */,
+			);
+			name = "Pods-EnvironmentalMonitoring";
+			productName = "Pods-EnvironmentalMonitoring";
+			productReference = C827F99F7020FA0BE0A220195FC622C5 /* libPods-EnvironmentalMonitoring.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9A8129019156E20ABEE2BE294A408D24 /* PGDatePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F8A9D336261CA09CE243CADE92220A1 /* Build configuration list for PBXNativeTarget "PGDatePicker" */;
+			buildPhases = (
+				4DDE983CAD2245F16784BFB80EA4D409 /* Sources */,
+				1C35DBB82CDB73D8E5E241FD4DA0FEA7 /* Frameworks */,
+				640DCD08CBF521E613BEB15637815A9D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F773287FF1BD94E737082E84AE3C6C74 /* PBXTargetDependency */,
+			);
+			name = PGDatePicker;
+			productName = PGDatePicker;
+			productReference = 884B08EF5A3977B8AA0220C3D52E395F /* libPGDatePicker.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DD6E92E9F59FDA3D1B560F46D2519845 /* TYAlertController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 516397E11961F600D6F40C3B840B0EC5 /* Build configuration list for PBXNativeTarget "TYAlertController" */;
+			buildPhases = (
+				F50EE568DD6ABC31C347C259489F97AA /* Sources */,
+				CB08C16303F096EC3C8590375DF51384 /* Frameworks */,
+				9C3731799E9E78149599E70BAE003FF6 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -1176,44 +1189,21 @@
 			productReference = A58809DB9AADC069291F019353D9F27A /* libTYAlertController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		CD879F908EE397899B3DE35F570083A0 /* Pods-EnvironmentalMonitoring */ = {
+		E99F35D46275D04DFD566593CECC7304 /* MJExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BA0C3734438944BE1B685E5271BC8E99 /* Build configuration list for PBXNativeTarget "Pods-EnvironmentalMonitoring" */;
+			buildConfigurationList = 798A2BB86934F96F6B797BC33B16139D /* Build configuration list for PBXNativeTarget "MJExtension" */;
 			buildPhases = (
-				8B02DA3F2721FFEA91038CF1CD5B2220 /* Sources */,
-				1AA0E094B4DC424075C69F0BADA02BC8 /* Frameworks */,
+				5BD0191AB3EBEF5DD50FBA5F669C34C5 /* Sources */,
+				0603197866BA889FFEB2CE37384877FC /* Frameworks */,
+				FA9C14700D470ADE3D695E57C5A0528D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3AFF8B8DA67CE0C5EB98AC841793397A /* PBXTargetDependency */,
-				9EBABC708D31804AB3B215ABD3030B55 /* PBXTargetDependency */,
-				1202BFF792310B9AA86AC28326CEB49A /* PBXTargetDependency */,
-				17939AD41A82B097FDBFC7F6ADC5E784 /* PBXTargetDependency */,
-				7009C730B796DF38056B599290978BF3 /* PBXTargetDependency */,
-				CBF1E5A676D41A16076BB696B2669405 /* PBXTargetDependency */,
 			);
-			name = "Pods-EnvironmentalMonitoring";
-			productName = "Pods-EnvironmentalMonitoring";
-			productReference = C827F99F7020FA0BE0A220195FC622C5 /* libPods-EnvironmentalMonitoring.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		EF32FDB3A282AB193EFC66EFC3C26C4F /* PGDatePicker */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E598CB3747A04A2A99CFAE33A783C826 /* Build configuration list for PBXNativeTarget "PGDatePicker" */;
-			buildPhases = (
-				1CAF952A2C54BFFC1747E2ABD66F2556 /* Sources */,
-				1A7E1A7B5D4D9C1950E8C568E6B9BC71 /* Frameworks */,
-				CDCCAE2DF16A1AAC5309DB7B967D99E6 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B96323DFEBE6AB849915659F5D583AD0 /* PBXTargetDependency */,
-			);
-			name = PGDatePicker;
-			productName = PGDatePicker;
-			productReference = 884B08EF5A3977B8AA0220C3D52E395F /* libPGDatePicker.a */;
+			name = MJExtension;
+			productName = MJExtension;
+			productReference = BFF919D0DE31F1AB0ED5BFF757B548C4 /* libMJExtension.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -1222,7 +1212,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -1237,235 +1227,214 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9E033EDB5EC0819481B0546434FA577B /* AFNetworking */,
-				A316B54C67E947D23CECD230FA5BFAEF /* MJExtension */,
-				04CF549EBEEE7BC87AEAE35397184D94 /* MJRefresh */,
-				EF32FDB3A282AB193EFC66EFC3C26C4F /* PGDatePicker */,
-				63CA8EC3F0833D492A624470223626FE /* PGPickerView */,
-				CD879F908EE397899B3DE35F570083A0 /* Pods-EnvironmentalMonitoring */,
-				CCE48B179421B9FFFD3AC75B1FA27B55 /* TYAlertController */,
+				3AF218FD7A134D8063D84CB10E60FB47 /* AFNetworking */,
+				E99F35D46275D04DFD566593CECC7304 /* MJExtension */,
+				488D77882F65BA00D291462E43C45C54 /* MJRefresh */,
+				9A8129019156E20ABEE2BE294A408D24 /* PGDatePicker */,
+				53186AFAF791AED01FDCF6C67CB1C154 /* PGPickerView */,
+				83035E88B4254A95F5898E89B8B712BA /* Pods-EnvironmentalMonitoring */,
+				DD6E92E9F59FDA3D1B560F46D2519845 /* TYAlertController */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0068413C89BADAAF4691AA78AFE62C3E /* Sources */ = {
+		4DDE983CAD2245F16784BFB80EA4D409 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				775CE7A8107457BDE59F113D40020839 /* AFAutoPurgingImageCache.m in Sources */,
-				73811DA312BCB537D44D62EC6AD15766 /* AFHTTPSessionManager.m in Sources */,
-				5C0696B2AD1DC23F6473F5A19FAB6296 /* AFImageDownloader.m in Sources */,
-				31ED9BD97AF9E62874AF3CDF2F8090CF /* AFNetworkActivityIndicatorManager.m in Sources */,
-				97A86FAAD4B1AD9B3292FF6AF1D8F82B /* AFNetworking-dummy.m in Sources */,
-				E0EF330DB2D3521ED26E67B2E8687A2E /* AFNetworkReachabilityManager.m in Sources */,
-				66E1040543AF7BA3DC3731FE17C85F5B /* AFSecurityPolicy.m in Sources */,
-				5945033488F9995134DBB7014DE2412F /* AFURLRequestSerialization.m in Sources */,
-				85D30678FF4F0AB306399A368EAA46B2 /* AFURLResponseSerialization.m in Sources */,
-				9F5BB6B4995BA4A3B2C6AEBA6C31A6DB /* AFURLSessionManager.m in Sources */,
-				2579663181BFA8F7DA4B5D7CF8537FC0 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
-				D10CC46035F7A0C868C0955664A34609 /* UIButton+AFNetworking.m in Sources */,
-				A277AD9070E44BED5A7DE0B1D64D6F15 /* UIImageView+AFNetworking.m in Sources */,
-				D4AA4704CA7863CC86E22AAF88635836 /* UIProgressView+AFNetworking.m in Sources */,
-				B84CD33084C9867E67BD56E47B7BFC04 /* UIRefreshControl+AFNetworking.m in Sources */,
-				A7F7FDCD36E2DD8D8E346DB19452CC03 /* UIWebView+AFNetworking.m in Sources */,
+				6ECEF2E73215B345DB32EEF89E89CD72 /* NSBundle+PGDatePicker.m in Sources */,
+				250441CFF281FEDD89807B01B403ED90 /* NSCalendar+PGCurrent.m in Sources */,
+				F202BD74CB7F0AEFC77018C49F04EEAB /* NSDate+PGCategory.m in Sources */,
+				96A4DDA8F8D7C4F80C638D24FBE39982 /* PGDatePicker+Common.m in Sources */,
+				2E6C077C6E9D81012E7D852809701918 /* PGDatePicker+Date.m in Sources */,
+				7254417A41868B8333575630FDA773F1 /* PGDatePicker+DateAndTime.m in Sources */,
+				3F1B86A421CDD545D192F4F00620EE59 /* PGDatePicker+DateHour.m in Sources */,
+				D28649B1D532DEB606717452E090EC60 /* PGDatePicker+DateHourMinute.m in Sources */,
+				B9C8660BB6181BE6207F5AC54470ED7B /* PGDatePicker+DateHourMinuteSecond.m in Sources */,
+				637A634FC595C4FE2F135FE3A9EC1100 /* PGDatePicker+Logic.m in Sources */,
+				9739204D7411BDA689EBF3B16A3708CA /* PGDatePicker+MinuteAndSecond.m in Sources */,
+				595A6D65450F7CB78F57797C21B9621D /* PGDatePicker+MonthDay.m in Sources */,
+				9C00E3D4644EC89956FD0662448AFBE3 /* PGDatePicker+MonthDayHour.m in Sources */,
+				E30A83EE876CEAFF841C8AE5EDD9BB4B /* PGDatePicker+MonthDayHourMinute.m in Sources */,
+				601251DC4199F445705C941009769D45 /* PGDatePicker+MonthDayHourMinuteSecond.m in Sources */,
+				3C9E677B0C0CC96504821FFBCC2515BB /* PGDatePicker+Time.m in Sources */,
+				E244531142258BB595FF189A5E1A9E1C /* PGDatePicker+TimeAndSecond.m in Sources */,
+				5792D9AA02483E17C895DFC033B575CC /* PGDatePicker+Year.m in Sources */,
+				0C9DD3C5798B9F53F5F727B1600A3A10 /* PGDatePicker+YearAndMonth.m in Sources */,
+				7CBE560C4E8E81FE558049E46965E912 /* PGDatePicker-dummy.m in Sources */,
+				6D7F8E65EB1A9BD1946F33237334E925 /* PGDatePicker.m in Sources */,
+				83DCF4CF2621D0D24FDB846B3A6E4F04 /* PGDatePickerView.m in Sources */,
+				1FBDFF691CAEABC62DCDD6FA0D75A2C6 /* PGDatePickManager.m in Sources */,
+				49CC7137A7634FED96B820A469F329E5 /* PGDatePickManagerHeaderView.m in Sources */,
+				08B5214894171CE0AE3025D26F67275C /* UIColor+PGHex.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1CAF952A2C54BFFC1747E2ABD66F2556 /* Sources */ = {
+		5BD0191AB3EBEF5DD50FBA5F669C34C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BCC442BD01838F26B7874978A7E2D42 /* NSBundle+PGDatePicker.m in Sources */,
-				455F85E9D4657DEF2E76A8A8021B2AE5 /* NSCalendar+PGCurrent.m in Sources */,
-				5BDECA07DDC9A5F07C971DB12FCAFBA1 /* NSDate+PGCategory.m in Sources */,
-				8F5B8E2F24825777611FCBB8CAAB6AEB /* PGDatePicker+Common.m in Sources */,
-				013E07C494329273BE6DD23DC73EC764 /* PGDatePicker+Date.m in Sources */,
-				5B2B5076E71A82CABBD9ED369CCE37AD /* PGDatePicker+DateAndTime.m in Sources */,
-				27FA9EB1451EF13B098A597CE96ACD8E /* PGDatePicker+DateHour.m in Sources */,
-				F3CF963C92E7CADB73618A2929B6ABD3 /* PGDatePicker+DateHourMinute.m in Sources */,
-				A057361F58FDBB3557E76D1DC3E33580 /* PGDatePicker+DateHourMinuteSecond.m in Sources */,
-				3155A5B4617970C40A630FE8DEE84399 /* PGDatePicker+Logic.m in Sources */,
-				596B07F3A171459A296F5A138C978FF4 /* PGDatePicker+MinuteAndSecond.m in Sources */,
-				C1B32E7F224C2F7E1A9FA4678F28C7FF /* PGDatePicker+MonthDay.m in Sources */,
-				3F3C604E84F029D9272E17D1EC235CB1 /* PGDatePicker+MonthDayHour.m in Sources */,
-				1434D7A6D1859A511F640B33787B2E55 /* PGDatePicker+MonthDayHourMinute.m in Sources */,
-				3B0C70F9D57F0E01FBC8B102B37B78D4 /* PGDatePicker+MonthDayHourMinuteSecond.m in Sources */,
-				2DBDB85206472744DCC2706AB2939F76 /* PGDatePicker+Time.m in Sources */,
-				4112EEE7A86821ABFE5D467A816FE1C0 /* PGDatePicker+TimeAndSecond.m in Sources */,
-				954C54501E329F4DE199FD896229BBBA /* PGDatePicker+Year.m in Sources */,
-				52A0297E586102DCD825ACD0571BF2DD /* PGDatePicker+YearAndMonth.m in Sources */,
-				F5F6500B8753B849A2C2734B76FBE363 /* PGDatePicker-dummy.m in Sources */,
-				DCA149E48D964666B113D1901C939684 /* PGDatePicker.m in Sources */,
-				032E08A15F527E44D0AFF30B1F31502D /* PGDatePickerView.m in Sources */,
-				16470DE64806C7FBA0C79769FD644EDA /* PGDatePickManager.m in Sources */,
-				4D0E852A7DFAD520665B0E8942A06516 /* PGDatePickManagerHeaderView.m in Sources */,
-				3C06D125F876F20C6634F7A295B1EF18 /* UIColor+PGHex.m in Sources */,
+				D42BDF45AA9C5D6AB2D3D7194E1653C3 /* MJExtension-dummy.m in Sources */,
+				0E57918BD64445EDE0998DCA8F2A2E1D /* MJExtensionConst.m in Sources */,
+				D27FAC5973CA04E4837BD89A6474D181 /* MJFoundation.m in Sources */,
+				4803C0F2E3FDE13311A4F7B00F387FAB /* MJProperty.m in Sources */,
+				6ED6289891CC0EEBBFB9B1F37EB7D2AA /* MJPropertyKey.m in Sources */,
+				D66BBC488DAC88D12035A712341AB063 /* MJPropertyType.m in Sources */,
+				FA929F7A1BB6AFB019E0DB16D3487B37 /* NSObject+MJClass.m in Sources */,
+				3841D9CE0C0DA0545CBBDDBFB0BD89E8 /* NSObject+MJCoding.m in Sources */,
+				4E7A401DDE15EA921B15A58193A5B267 /* NSObject+MJKeyValue.m in Sources */,
+				1E3638F29FD9DC330A35188E91669053 /* NSObject+MJProperty.m in Sources */,
+				AE65CB6C01DD3D3CB525C6EABD8D0A19 /* NSString+MJExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81E5F1B71CD3DD3C1C2C46BBDDD6FE38 /* Sources */ = {
+		80926DDCF0AAE79D69C63601F604AD83 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C68C5B2F401EA803A011A2C8ED10E60D /* TYAlertController+TransitionAnimate.m in Sources */,
-				83F5984CB828E2BA2C6D7F3B7F9E356F /* TYAlertController-dummy.m in Sources */,
-				464A617B29A630A043542E133F7A7985 /* TYAlertController.m in Sources */,
-				D39B80B1E6E8992B4AE60189301AE62B /* TYAlertDropDownAnimation.m in Sources */,
-				9FC096E3F0441B46919ED106D876748D /* TYAlertFadeAnimation.m in Sources */,
-				559C41FD6D99B702CDA7EE0A35107473 /* TYAlertScaleFadeAnimation.m in Sources */,
-				293030084FF01E203FF7C6881C1C58D5 /* TYAlertView.m in Sources */,
-				5A712049B02B76A2002A2854312FB94A /* TYBaseAnimation.m in Sources */,
-				E3F648DC9DDE86C990EC83FEE565D22B /* TYShowAlertView.m in Sources */,
-				B8E6B595E9A99D2467A4E2A01AE6EE0D /* UIView+TYAlertView.m in Sources */,
-				8083FEC9F6DAC74A0E9E5900E945DDAA /* UIView+TYAutoLayout.m in Sources */,
+				281D747FD59E29374E6F22CD23FC416A /* AFAutoPurgingImageCache.m in Sources */,
+				D5D62651633B25C8376D73E746672DFE /* AFHTTPSessionManager.m in Sources */,
+				612A23C9C7EBCA5A6A9D49D31E7061B2 /* AFImageDownloader.m in Sources */,
+				C158C5C592A851A5FC9FF0B04DF7A3B2 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				9D966963A7A592AB8E698E768FB45B20 /* AFNetworking-dummy.m in Sources */,
+				C062F0BE5EF82D3DA1A27522C4AE86D3 /* AFNetworkReachabilityManager.m in Sources */,
+				704F073E21714607AE0B2E5F7050E291 /* AFSecurityPolicy.m in Sources */,
+				B1AEA832564AD586BE123EECC306214E /* AFURLRequestSerialization.m in Sources */,
+				C3F7247283A4DC39A84EA02BE29C2CA5 /* AFURLResponseSerialization.m in Sources */,
+				864B4221EA5682A0F1B85C4E29A4AEC3 /* AFURLSessionManager.m in Sources */,
+				B8BF0B6EF03A4482957B83F97FB01B85 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				CF8B07826835CD67551855D1EAB9310E /* UIButton+AFNetworking.m in Sources */,
+				39FC08457E20F35528C9E478A54794DE /* UIImageView+AFNetworking.m in Sources */,
+				36969546A218B21AB1D6153A0A49CD58 /* UIProgressView+AFNetworking.m in Sources */,
+				AA5A67AA13898BC9ECC3F5EBCCD00CED /* UIRefreshControl+AFNetworking.m in Sources */,
+				76B1180EE21C543282D439925E8CE90B /* UIWebView+AFNetworking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B02DA3F2721FFEA91038CF1CD5B2220 /* Sources */ = {
+		847E1E44C50FB1A80A8E6CB44BC48FD6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1D2542F9E3FC8DB1928D6C0C47A7027 /* Pods-EnvironmentalMonitoring-dummy.m in Sources */,
+				51C3D81836CFFECC9F6C6839AF9E21AD /* Pods-EnvironmentalMonitoring-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B33344124068CA24916553C4E50D541C /* Sources */ = {
+		BC0ADA75251E64DD9AA1149C9F9EC16F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C64ADA912DD6E167B4E3C6DB870667C8 /* MJRefresh-dummy.m in Sources */,
-				635F9EFF4A131A00C8F9BE720E78D446 /* MJRefreshAutoFooter.m in Sources */,
-				E7FA008E96CF99E93D2F596722662B83 /* MJRefreshAutoGifFooter.m in Sources */,
-				5000B5AA92F7956AFA56581E82A81407 /* MJRefreshAutoNormalFooter.m in Sources */,
-				1E38527C36D3C3F2D2EEC3CD45533510 /* MJRefreshAutoStateFooter.m in Sources */,
-				BDA7650B1BB999519160ABFE5E089CD3 /* MJRefreshBackFooter.m in Sources */,
-				186ECA7F2B213C7A11A8F871EFD917CE /* MJRefreshBackGifFooter.m in Sources */,
-				268DA924AEA51CCBE7D187332E4841A5 /* MJRefreshBackNormalFooter.m in Sources */,
-				46D931760B10C6FBE8B29D06AAC94228 /* MJRefreshBackStateFooter.m in Sources */,
-				4D12AC4D83DB34A425A171DD383B8134 /* MJRefreshComponent.m in Sources */,
-				FC091A4266DB8F2CED4F0629F8AE59F2 /* MJRefreshConst.m in Sources */,
-				160E962CE69AF99AE0E349571A381C9A /* MJRefreshFooter.m in Sources */,
-				1E2E1AF6F9351E4FEF7F4D58C242A775 /* MJRefreshGifHeader.m in Sources */,
-				9F06B13BAA0376EAD4E125DA78456B3B /* MJRefreshHeader.m in Sources */,
-				6B8E59D8C26F34D72EB14F5769D0DFEC /* MJRefreshNormalHeader.m in Sources */,
-				341A4BCFB7B1E78548ECD00869FE22B3 /* MJRefreshStateHeader.m in Sources */,
-				B7EAF278902A9B25808126F504317845 /* NSBundle+MJRefresh.m in Sources */,
-				F53754CAAB10BB3C954169DE35007A65 /* UIScrollView+MJExtension.m in Sources */,
-				4982F6A38E149A01137311B533591DD5 /* UIScrollView+MJRefresh.m in Sources */,
-				7CE298FC4680B93B3A466613E565BA0B /* UIView+MJExtension.m in Sources */,
+				C4FD7FB1D96B7145958D046D7DB914F1 /* PGPickerColumnCell.m in Sources */,
+				CB6567B1B73F5B5E235E22780A1C01FB /* PGPickerColumnView.m in Sources */,
+				1D6B83B672340BF751F4E846F191E780 /* PGPickerTableView.m in Sources */,
+				99A15DA5D2D55F014A88F3123D9A79BE /* PGPickerView-dummy.m in Sources */,
+				E7CF8D6F74A81DA1E9B80EAB05BF0267 /* PGPickerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE3C7F77ACB98406106FD6A2FC240643 /* Sources */ = {
+		C9AF65A951B0616164171CFA3728482F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F0107A7976BB48BBDCFF4742BBA39E6 /* MJExtension-dummy.m in Sources */,
-				AD680D4A742F76FCE9211342DD907EB1 /* MJExtensionConst.m in Sources */,
-				9ED36D73584E73C391D18580D2ACED20 /* MJFoundation.m in Sources */,
-				0887A17DD9DF1632570C94CA31CFB9E5 /* MJProperty.m in Sources */,
-				80F0D2D73E4BFA85D98E6CCC269145E9 /* MJPropertyKey.m in Sources */,
-				1B52239818F04048F2521063DDC11527 /* MJPropertyType.m in Sources */,
-				61B69DCB5CCD6280F5C6B8D820E61110 /* NSObject+MJClass.m in Sources */,
-				2E0368CB5E43DF5325FAD0D62C1402E4 /* NSObject+MJCoding.m in Sources */,
-				4E38D41313B9420037871A67158DAD0F /* NSObject+MJKeyValue.m in Sources */,
-				3D41E590C2D15195583D8070C49A765B /* NSObject+MJProperty.m in Sources */,
-				774BFE769BB534897F384F894EF4DC82 /* NSString+MJExtension.m in Sources */,
+				27290A08F2D4A3C69C74968438971EF4 /* MJRefresh-dummy.m in Sources */,
+				8A3FE2C9859B734BCCF232A1F6B4BDCC /* MJRefreshAutoFooter.m in Sources */,
+				79992E5FAA17690D47F4CD9D2AB74F26 /* MJRefreshAutoGifFooter.m in Sources */,
+				935782A2C79C525F33690680ED4C98B2 /* MJRefreshAutoNormalFooter.m in Sources */,
+				8D4FC3AE88ECF9CBA0079DA7249C4476 /* MJRefreshAutoStateFooter.m in Sources */,
+				EAFABACBA257B6B2FF394A8CC1B1BEB1 /* MJRefreshBackFooter.m in Sources */,
+				D6F7838E24908CCBD045074A218B1EE8 /* MJRefreshBackGifFooter.m in Sources */,
+				4BEF78E1065A136DE9EFA3756298A136 /* MJRefreshBackNormalFooter.m in Sources */,
+				2286EEDC0733FEDA8AF326E5FED10658 /* MJRefreshBackStateFooter.m in Sources */,
+				9C5491AE50773281F9F5F4E9C2FDB59C /* MJRefreshComponent.m in Sources */,
+				677767C75BD3CAEE224F5ED5670B5872 /* MJRefreshConst.m in Sources */,
+				F16E8F1485414AA6CF110F3CFF4EADA2 /* MJRefreshFooter.m in Sources */,
+				573164B6986DF363037541BB9AAFE0F1 /* MJRefreshGifHeader.m in Sources */,
+				51AC416EC6CE3452E484DAC6AB0C39BC /* MJRefreshHeader.m in Sources */,
+				F39E719EC0DBFFD65ABE270D4CA559FA /* MJRefreshNormalHeader.m in Sources */,
+				5C0F7581C20219C281BA5DEE500077F9 /* MJRefreshStateHeader.m in Sources */,
+				79937C9C63DEB8056D54BE6882089A85 /* NSBundle+MJRefresh.m in Sources */,
+				6B5C4F01AEFD4D5974480AC2EB032251 /* UIScrollView+MJExtension.m in Sources */,
+				7EFF7912664C65FA7DEAD8CC4837E9EF /* UIScrollView+MJRefresh.m in Sources */,
+				7A37E2F0B3BB402D14E60E386519E392 /* UIView+MJExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E6C27E0E714610E1A32B3D32D268064A /* Sources */ = {
+		F50EE568DD6ABC31C347C259489F97AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3002957818A39448BC777C90F1AE913 /* PGPickerColumnCell.m in Sources */,
-				0E9B17DD44DDC83C68DA3D1FD01A4A05 /* PGPickerColumnView.m in Sources */,
-				2F60C666F24F4F527AF089868C7D4439 /* PGPickerTableView.m in Sources */,
-				1A2B7631DD7842BF7C4948132236BD90 /* PGPickerView-dummy.m in Sources */,
-				1BC873342C1939D321D3F66FAF918867 /* PGPickerView.m in Sources */,
+				FCA0A0C65549D88B25EBE325C22C5895 /* TYAlertController+TransitionAnimate.m in Sources */,
+				920E7FDF0A9E5654A946E42D057B76D9 /* TYAlertController-dummy.m in Sources */,
+				9E15A8925B82CF94032363B07AAFFB0F /* TYAlertController.m in Sources */,
+				E7D8C5D4FDF48E85C2FB2D4F5FC60180 /* TYAlertDropDownAnimation.m in Sources */,
+				4166CE8AD9CB6129EE5979593A8A4ADF /* TYAlertFadeAnimation.m in Sources */,
+				99F7056E38017599BB2A6591A083791E /* TYAlertScaleFadeAnimation.m in Sources */,
+				071665EE524999B2F2FD30CEBE6A6A76 /* TYAlertView.m in Sources */,
+				06670017EB8C06FB65F2EBC3D63AD6FB /* TYBaseAnimation.m in Sources */,
+				F8F166859ABC0FE17A6FDBAB00007462 /* TYShowAlertView.m in Sources */,
+				D14F44EC89FCD3D1FBB6D8C61C997C32 /* UIView+TYAlertView.m in Sources */,
+				070B23E25EA639F3FA1EB0F38115C34D /* UIView+TYAutoLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1202BFF792310B9AA86AC28326CEB49A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MJRefresh;
-			target = 04CF549EBEEE7BC87AEAE35397184D94 /* MJRefresh */;
-			targetProxy = A6BB28479AD2D1374305994650AB9D5F /* PBXContainerItemProxy */;
-		};
-		17939AD41A82B097FDBFC7F6ADC5E784 /* PBXTargetDependency */ = {
+		007ADA0314D1FFADA26FD580B8E5F365 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PGDatePicker;
-			target = EF32FDB3A282AB193EFC66EFC3C26C4F /* PGDatePicker */;
-			targetProxy = 279F385F26BF10D5A9651E67F4900471 /* PBXContainerItemProxy */;
+			target = 9A8129019156E20ABEE2BE294A408D24 /* PGDatePicker */;
+			targetProxy = B861C1DE47A5CBE247D194EC36A10A43 /* PBXContainerItemProxy */;
 		};
-		3AFF8B8DA67CE0C5EB98AC841793397A /* PBXTargetDependency */ = {
+		11FB070759E3697A4138CE1171704689 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PGPickerView;
+			target = 53186AFAF791AED01FDCF6C67CB1C154 /* PGPickerView */;
+			targetProxy = 91E357961121771D3D01247899CA9802 /* PBXContainerItemProxy */;
+		};
+		27F14DED689F137BA7CEECD6EB1434BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MJRefresh;
+			target = 488D77882F65BA00D291462E43C45C54 /* MJRefresh */;
+			targetProxy = 0E86923A29666F54827F4E1424496A48 /* PBXContainerItemProxy */;
+		};
+		2AE0ED9D128BAFCBA9F65CB36CED27E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AFNetworking;
-			target = 9E033EDB5EC0819481B0546434FA577B /* AFNetworking */;
-			targetProxy = 632DE846ECC7CFF1D7DBA226CD2B3C4E /* PBXContainerItemProxy */;
+			target = 3AF218FD7A134D8063D84CB10E60FB47 /* AFNetworking */;
+			targetProxy = A0241328C4F8DAE7AE0BD012ABAD6468 /* PBXContainerItemProxy */;
 		};
-		7009C730B796DF38056B599290978BF3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PGPickerView;
-			target = 63CA8EC3F0833D492A624470223626FE /* PGPickerView */;
-			targetProxy = 3DFCB9084D6997057E082E78FFD4FAC4 /* PBXContainerItemProxy */;
-		};
-		9EBABC708D31804AB3B215ABD3030B55 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MJExtension;
-			target = A316B54C67E947D23CECD230FA5BFAEF /* MJExtension */;
-			targetProxy = E5677C73FFC2D9422EA0A4DDB9C594B2 /* PBXContainerItemProxy */;
-		};
-		B96323DFEBE6AB849915659F5D583AD0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PGPickerView;
-			target = 63CA8EC3F0833D492A624470223626FE /* PGPickerView */;
-			targetProxy = 4F8085D2A01EE4A1CB38B6CFCB806EE7 /* PBXContainerItemProxy */;
-		};
-		CBF1E5A676D41A16076BB696B2669405 /* PBXTargetDependency */ = {
+		698162437285962209D004799F9BBF3F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TYAlertController;
-			target = CCE48B179421B9FFFD3AC75B1FA27B55 /* TYAlertController */;
-			targetProxy = E07F25758F592C7C1524EE87D3F4375E /* PBXContainerItemProxy */;
+			target = DD6E92E9F59FDA3D1B560F46D2519845 /* TYAlertController */;
+			targetProxy = 5C031CA5724A4B8340CB611CD1D8F1F0 /* PBXContainerItemProxy */;
+		};
+		A46F05ADEE53FB0F74AC7B5A781FE6C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MJExtension;
+			target = E99F35D46275D04DFD566593CECC7304 /* MJExtension */;
+			targetProxy = 22C666FFA91D0A48922DF5F802EDC448 /* PBXContainerItemProxy */;
+		};
+		F773287FF1BD94E737082E84AE3C6C74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PGPickerView;
+			target = 53186AFAF791AED01FDCF6C67CB1C154 /* PGPickerView */;
+			targetProxy = ABBCC11583FFC004BA3777C24B772172 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		064B63FF6B735DFA6E8B26DB4A08D8CA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 054E97DB787814DE29837DCE2516C4BA /* TYAlertController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/TYAlertController/TYAlertController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		22900F8CAB50B0A45B8281681A5D6C45 /* Release */ = {
+		054DAE928468F6D40B5E97DAE58F1988 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C314126FC74B39626001D234A0C91085 /* Pods-EnvironmentalMonitoring.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -1478,19 +1447,21 @@
 			};
 			name = Release;
 		};
-		23D61C1D45BC0F2823F2E043E31B098A /* Release */ = {
+		1198ACBC10A1F46E9E9A3921A3FC6A93 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4BF6B5ED0ED205F92982CEF4D53DDB5 /* MJExtension.xcconfig */;
+			baseConfigurationReference = 0B5AF421C1281B1F4775D1A15DD0BF64 /* PGPickerView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/MJExtension/MJExtension-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				GCC_PREFIX_HEADER = "Target Support Files/PGPickerView/PGPickerView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = PGPickerView;
+				PRODUCT_NAME = PGPickerView;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1500,19 +1471,45 @@
 			};
 			name = Release;
 		};
-		3009569709848BE2C3C56FA7EEA7A5E2 /* Debug */ = {
+		12C13B328CDA69025AE230B94C422080 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4BF6B5ED0ED205F92982CEF4D53DDB5 /* MJExtension.xcconfig */;
+			baseConfigurationReference = 7C27F85A756C0718CDB9457FB05624F8 /* MJRefresh.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/MJExtension/MJExtension-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				GCC_PREFIX_HEADER = "Target Support Files/MJRefresh/MJRefresh-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = MJRefresh;
+				PRODUCT_NAME = MJRefresh;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13599163446E83F3FAD67F16E9F35E44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B5AF421C1281B1F4775D1A15DD0BF64 /* PGPickerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/PGPickerView/PGPickerView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = PGPickerView;
+				PRODUCT_NAME = PGPickerView;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1521,7 +1518,7 @@
 			};
 			name = Debug;
 		};
-		39C5BC78A31CDE101068C530CAC7FA0F /* Debug */ = {
+		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1531,6 +1528,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -1552,6 +1550,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1572,18 +1571,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		5403CB947ED72BD789353EE9D9D58376 /* Release */ = {
+		2CF1E37DFE1A8ED7D82EBF47E16A638E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E1AD4BE4C4AEC885179A9D374CE78651 /* AFNetworking.xcconfig */;
 			buildSettings = {
@@ -1592,10 +1590,35 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = AFNetworking;
+				PRODUCT_NAME = AFNetworking;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5450A28AAE2D7DC6789AACB9206B88AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4BF6B5ED0ED205F92982CEF4D53DDB5 /* MJExtension.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/MJExtension/MJExtension-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = MJExtension;
+				PRODUCT_NAME = MJExtension;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1605,7 +1628,31 @@
 			};
 			name = Release;
 		};
-		64FA9E164993A2DF50FC9451D7072E4D /* Debug */ = {
+		5FEDC73242D924D879577C7E0C9092B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1AD4BE4C4AEC885179A9D374CE78651 /* AFNetworking.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = AFNetworking;
+				PRODUCT_NAME = AFNetworking;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		642E48CCE205C7DDDF298CD44F4D485D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE778609BCA50E2BE29C2CC8DDE9CD76 /* PGDatePicker.xcconfig */;
 			buildSettings = {
@@ -1618,6 +1665,8 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = PGDatePicker;
+				PRODUCT_NAME = PGDatePicker;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1626,19 +1675,45 @@
 			};
 			name = Debug;
 		};
-		7C246F7AA69D78A801B26483203E4806 /* Debug */ = {
+		7FB394D76A51672790A13F74824FFCBC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1AD4BE4C4AEC885179A9D374CE78651 /* AFNetworking.xcconfig */;
+			baseConfigurationReference = 054E97DB787814DE29837DCE2516C4BA /* TYAlertController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				GCC_PREFIX_HEADER = "Target Support Files/TYAlertController/TYAlertController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = TYAlertController;
+				PRODUCT_NAME = TYAlertController;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F69A249C9FB55EC8F904FA1FB7578ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4BF6B5ED0ED205F92982CEF4D53DDB5 /* MJExtension.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/MJExtension/MJExtension-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = MJExtension;
+				PRODUCT_NAME = MJExtension;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1647,7 +1722,7 @@
 			};
 			name = Debug;
 		};
-		7E735C2672630DDA5A31F639BD6FB96C /* Debug */ = {
+		B9064BFB8A1FFC08EE157EA03C83E58B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7C27F85A756C0718CDB9457FB05624F8 /* MJRefresh.xcconfig */;
 			buildSettings = {
@@ -1656,10 +1731,12 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/MJRefresh/MJRefresh-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = MJRefresh;
+				PRODUCT_NAME = MJRefresh;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1668,7 +1745,75 @@
 			};
 			name = Debug;
 		};
-		89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */ = {
+		D8D2D86B2B68748DE4E8076BDE060F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B38CEA717E291CAD790C28794FC88330 /* Pods-EnvironmentalMonitoring.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E211FE71D191F0923DA71937F11E7B04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 054E97DB787814DE29837DCE2516C4BA /* TYAlertController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/TYAlertController/TYAlertController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = TYAlertController;
+				PRODUCT_NAME = TYAlertController;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F010B56854E09C64B25DBCCE6B6F67CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE778609BCA50E2BE29C2CC8DDE9CD76 /* PGDatePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/PGDatePicker/PGDatePicker-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = PGDatePicker;
+				PRODUCT_NAME = PGDatePicker;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDB2FC4A1E5891381CD9D922145497F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1678,6 +1823,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -1699,6 +1845,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1716,214 +1863,85 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		9CB1D04FC823CB434B280BE67CCB52A9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B5AF421C1281B1F4775D1A15DD0BF64 /* PGPickerView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/PGPickerView/PGPickerView-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		A1A32EB663B0D786960B8B05F092EF4E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B38CEA717E291CAD790C28794FC88330 /* Pods-EnvironmentalMonitoring.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		AA4B1B7999CB4C7305F3F36F6DB4311B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C27F85A756C0718CDB9457FB05624F8 /* MJRefresh.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/MJRefresh/MJRefresh-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		BB5C18E1F7ABB1C2E57EECB9E30DC247 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 054E97DB787814DE29837DCE2516C4BA /* TYAlertController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/TYAlertController/TYAlertController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		D27754AFB4EC727ED9D15F7033832CC6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B5AF421C1281B1F4775D1A15DD0BF64 /* PGPickerView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/PGPickerView/PGPickerView-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		D3502259AF83C7E1F2C8E612C6DF36D4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE778609BCA50E2BE29C2CC8DDE9CD76 /* PGDatePicker.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/PGDatePicker/PGDatePicker-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0F8A9D336261CA09CE243CADE92220A1 /* Build configuration list for PBXNativeTarget "PGDatePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				642E48CCE205C7DDDF298CD44F4D485D /* Debug */,
+				F010B56854E09C64B25DBCCE6B6F67CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				39C5BC78A31CDE101068C530CAC7FA0F /* Debug */,
-				89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */,
+				199D972A13F2B4C56847F7A89CCA83BC /* Debug */,
+				FDB2FC4A1E5891381CD9D922145497F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		35FA3F9D780F0A57E55222615ED55C72 /* Build configuration list for PBXNativeTarget "MJRefresh" */ = {
+		4886377FE727ED12F52CD1E0B99FED45 /* Build configuration list for PBXNativeTarget "Pods-EnvironmentalMonitoring" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7E735C2672630DDA5A31F639BD6FB96C /* Debug */,
-				AA4B1B7999CB4C7305F3F36F6DB4311B /* Release */,
+				D8D2D86B2B68748DE4E8076BDE060F7A /* Debug */,
+				054DAE928468F6D40B5E97DAE58F1988 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		483FBC4A668BF7F1A8767452E7E188AC /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
+		4F267348C4865160704454902BECF5D4 /* Build configuration list for PBXNativeTarget "MJRefresh" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7C246F7AA69D78A801B26483203E4806 /* Debug */,
-				5403CB947ED72BD789353EE9D9D58376 /* Release */,
+				B9064BFB8A1FFC08EE157EA03C83E58B /* Debug */,
+				12C13B328CDA69025AE230B94C422080 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		64EE246612F53A73C8FBFCEC3A61508A /* Build configuration list for PBXNativeTarget "MJExtension" */ = {
+		516397E11961F600D6F40C3B840B0EC5 /* Build configuration list for PBXNativeTarget "TYAlertController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3009569709848BE2C3C56FA7EEA7A5E2 /* Debug */,
-				23D61C1D45BC0F2823F2E043E31B098A /* Release */,
+				E211FE71D191F0923DA71937F11E7B04 /* Debug */,
+				7FB394D76A51672790A13F74824FFCBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7BF1EED4436C16B99C5F42834F000856 /* Build configuration list for PBXNativeTarget "TYAlertController" */ = {
+		798A2BB86934F96F6B797BC33B16139D /* Build configuration list for PBXNativeTarget "MJExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BB5C18E1F7ABB1C2E57EECB9E30DC247 /* Debug */,
-				064B63FF6B735DFA6E8B26DB4A08D8CA /* Release */,
+				8F69A249C9FB55EC8F904FA1FB7578ED /* Debug */,
+				5450A28AAE2D7DC6789AACB9206B88AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BA0C3734438944BE1B685E5271BC8E99 /* Build configuration list for PBXNativeTarget "Pods-EnvironmentalMonitoring" */ = {
+		B9E156E4B018563F74949070B9291305 /* Build configuration list for PBXNativeTarget "PGPickerView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A1A32EB663B0D786960B8B05F092EF4E /* Debug */,
-				22900F8CAB50B0A45B8281681A5D6C45 /* Release */,
+				13599163446E83F3FAD67F16E9F35E44 /* Debug */,
+				1198ACBC10A1F46E9E9A3921A3FC6A93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C24289F45168C2F0630825AE22AB8D6C /* Build configuration list for PBXNativeTarget "PGPickerView" */ = {
+		C4DBDFD1FEACD5449F178F90A06ED35D /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D27754AFB4EC727ED9D15F7033832CC6 /* Debug */,
-				9CB1D04FC823CB434B280BE67CCB52A9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E598CB3747A04A2A99CFAE33A783C826 /* Build configuration list for PBXNativeTarget "PGDatePicker" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				64FA9E164993A2DF50FC9451D7072E4D /* Debug */,
-				D3502259AF83C7E1F2C8E612C6DF36D4 /* Release */,
+				2CF1E37DFE1A8ED7D82EBF47E16A638E /* Debug */,
+				5FEDC73242D924D879577C7E0C9092B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

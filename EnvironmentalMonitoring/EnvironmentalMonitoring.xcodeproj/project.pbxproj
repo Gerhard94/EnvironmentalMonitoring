@@ -83,6 +83,12 @@
 		6ED5D11D20844C9B00D8FE40 /* UMPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED5D11C20844C9B00D8FE40 /* UMPush.framework */; };
 		6ED5D11F20844CB100D8FE40 /* UMCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED5D11E20844CB100D8FE40 /* UMCommon.framework */; };
 		6ED5D12120844CBE00D8FE40 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED5D12020844CBD00D8FE40 /* UserNotifications.framework */; };
+		6EE8FD5320C4CF9D00C246A8 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE8FD5220C4CF9D00C246A8 /* libAFNetworking.a */; };
+		6EE8FD5720C4D00C00C246A8 /* libMJExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE8FD5620C4D00C00C246A8 /* libMJExtension.a */; };
+		6EE8FD5920C4D04800C246A8 /* libMJRefresh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE8FD5820C4D04800C246A8 /* libMJRefresh.a */; };
+		6EE8FD5B20C4D08800C246A8 /* libPGDatePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE8FD5A20C4D08800C246A8 /* libPGDatePicker.a */; };
+		6EE8FD5D20C4D08C00C246A8 /* libPGPickerView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE8FD5C20C4D08C00C246A8 /* libPGPickerView.a */; };
+		6EE8FD5F20C4D09000C246A8 /* libTYAlertController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE8FD5E20C4D09000C246A8 /* libTYAlertController.a */; };
 		6EFD5BFD207C8C4F00DBBF0E /* DataDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFD5BFC207C8C4F00DBBF0E /* DataDetail.m */; };
 		6EFD5C00207C908600DBBF0E /* Datapoints.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFD5BFF207C908600DBBF0E /* Datapoints.m */; };
 		6EFD5C0B207CC3F200DBBF0E /* DataDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFD5C09207CC3F200DBBF0E /* DataDetailCell.m */; };
@@ -225,6 +231,13 @@
 		6ED5D11C20844C9B00D8FE40 /* UMPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMPush.framework; sourceTree = "<group>"; };
 		6ED5D11E20844CB100D8FE40 /* UMCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMCommon.framework; sourceTree = "<group>"; };
 		6ED5D12020844CBD00D8FE40 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		6EE8FD5220C4CF9D00C246A8 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EE8FD5420C4CFD500C246A8 /* libMJRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMJRefresh.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EE8FD5620C4D00C00C246A8 /* libMJExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMJExtension.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EE8FD5820C4D04800C246A8 /* libMJRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMJRefresh.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EE8FD5A20C4D08800C246A8 /* libPGDatePicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPGDatePicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EE8FD5C20C4D08C00C246A8 /* libPGPickerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPGPickerView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EE8FD5E20C4D09000C246A8 /* libTYAlertController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTYAlertController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EFD5BFB207C8C4F00DBBF0E /* DataDetail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataDetail.h; sourceTree = "<group>"; };
 		6EFD5BFC207C8C4F00DBBF0E /* DataDetail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataDetail.m; sourceTree = "<group>"; };
 		6EFD5BFE207C908600DBBF0E /* Datapoints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Datapoints.h; sourceTree = "<group>"; };
@@ -241,6 +254,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EE8FD5F20C4D09000C246A8 /* libTYAlertController.a in Frameworks */,
+				6EE8FD5D20C4D08C00C246A8 /* libPGPickerView.a in Frameworks */,
+				6EE8FD5B20C4D08800C246A8 /* libPGDatePicker.a in Frameworks */,
+				6EE8FD5920C4D04800C246A8 /* libMJRefresh.a in Frameworks */,
+				6EE8FD5720C4D00C00C246A8 /* libMJExtension.a in Frameworks */,
+				6EE8FD5320C4CF9D00C246A8 /* libAFNetworking.a in Frameworks */,
 				6ED5D12120844CBE00D8FE40 /* UserNotifications.framework in Frameworks */,
 				6ED5D11B208448EE00D8FE40 /* libsqlite3.tbd in Frameworks */,
 				6ED5D119208448E600D8FE40 /* libz.tbd in Frameworks */,
@@ -715,6 +734,13 @@
 		9487E7956BAE5B497969B46F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6EE8FD5E20C4D09000C246A8 /* libTYAlertController.a */,
+				6EE8FD5C20C4D08C00C246A8 /* libPGPickerView.a */,
+				6EE8FD5A20C4D08800C246A8 /* libPGDatePicker.a */,
+				6EE8FD5820C4D04800C246A8 /* libMJRefresh.a */,
+				6EE8FD5620C4D00C00C246A8 /* libMJExtension.a */,
+				6EE8FD5420C4CFD500C246A8 /* libMJRefresh.a */,
+				6EE8FD5220C4CF9D00C246A8 /* libAFNetworking.a */,
 				6ED5D12020844CBD00D8FE40 /* UserNotifications.framework */,
 				6ED5D11A208448EE00D8FE40 /* libsqlite3.tbd */,
 				6ED5D118208448E600D8FE40 /* libz.tbd */,
@@ -744,7 +770,6 @@
 				6E1B72C3206F64EF0095A184 /* Sources */,
 				6E1B72C4206F64EF0095A184 /* Frameworks */,
 				6E1B72C5206F64EF0095A184 /* Resources */,
-				07B13E9C6CE0F58CDC7C314F /* [CP] Embed Pods Frameworks */,
 				84E6774EBC4163A8966CA34E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -826,21 +851,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		07B13E9C6CE0F58CDC7C314F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EnvironmentalMonitoring/Pods-EnvironmentalMonitoring-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		252FD786CDD08241AC889F05 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -871,7 +881,8 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PGDatePicker.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1084,7 +1095,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
-					"-ObjC",
 					"-l\"AFNetworking\"",
 					"-l\"MJExtension\"",
 					"-l\"MJRefresh\"",
@@ -1102,6 +1112,7 @@
 					"-framework",
 					"\"UIKit\"",
 					"-lstdc++",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jh.3nvironmentalMonitoring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1129,7 +1140,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
-					"-ObjC",
 					"-l\"AFNetworking\"",
 					"-l\"MJExtension\"",
 					"-l\"MJRefresh\"",
@@ -1147,6 +1157,7 @@
 					"-framework",
 					"\"UIKit\"",
 					"-lstdc++",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jh.3nvironmentalMonitoring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
